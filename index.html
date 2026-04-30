@@ -41,9 +41,7 @@
 }
 </script>
 
-<!-- FIX 6: Google Analytics (replace G-XXXXXXXXXX with your Measurement ID) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+<!-- Analytics: Add your GA4 or GTM tag here after deploying, via your hosting panel or tag manager to avoid render-blocking -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Satoshi:wght@300;400;500;700&family=Space+Mono:wght@400&display=swap" media="print" onload="this.media='all'">
@@ -749,8 +747,8 @@ footer{
          class="btn-glow" aria-label="Connect on LinkedIn">
         Connect on LinkedIn &nbsp;↗
       </a>
-      <a href="javascript:void(0)" id="emailBtn" class="btn-plain"
-         aria-label="Send Melvin an email" onclick="var u='inquiries.melvinjose';var d='gmail.com';window.location='mailto:'+u+'@'+d;">
+      <a href="mailto:inquiries.melvinjose&#64;gmail&#46;com" class="btn-plain"
+         aria-label="Send Melvin an email">
         Send an Email
       </a>
     </div>
@@ -781,7 +779,7 @@ footer{
   <span class="footer-left">© 2026 Melvin Jose · Ajman, UAE</span>
   <nav class="footer-right" aria-label="Footer links">
     <a href="https://linkedin.com/in/melvin-jose-" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    <a href="javascript:void(0)" onclick="var u='inquiries.melvinjose';var d='gmail.com';window.location='mailto:'+u+'@'+d;" aria-label="Email Melvin Jose">Email</a>
+    <a href="mailto:inquiries.melvinjose&#64;gmail&#46;com" aria-label="Email Melvin Jose">Email</a>
   </nav>
 </footer>
 
