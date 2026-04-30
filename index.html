@@ -2,319 +2,822 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Melvin Jose</title>
-<meta name="description" content="Melvin Jose — Audit. Digital Marketing. UAE.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Melvin Jose | Audit &amp; Digital Marketing — UAE</title>
+<meta name="description" content="Melvin Jose — UAE-based professional combining audit expertise with digital marketing strategy. Corporate Tax, VAT, Content, Multi-Platform.">
+<meta name="robots" content="index,follow">
+<meta name="author" content="Melvin Jose">
+<link rel="canonical" href="https://camelvinjose.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Melvin Jose | Audit &amp; Digital Marketing — UAE">
+<meta property="og:description" content="UAE-based professional combining audit expertise with digital marketing strategy.">
+<meta property="og:url" content="https://camelvinjose.com/">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Melvin Jose","jobTitle":"Audit & Digital Marketing Professional","url":"https://camelvinjose.com/","sameAs":["https://linkedin.com/in/melvin-jose-"],"address":{"@type":"PostalAddress","addressRegion":"Ajman","addressCountry":"AE"}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Satoshi:wght@300;400;500;700&family=Space+Mono:wght@400&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Space+Mono:wght@400&display=swap"></noscript>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;font-size:16px}
+html{font-size:16px;-webkit-text-size-adjust:100%}
 :root{
-  --bg:#f0ede6;
-  --bg2:#e8e4dc;
-  --ink:#111010;
-  --mid:#3a3835;
-  --muted:#8a857c;
-  --rule:#c8c3b8;
-  --red:#bf2323;
-  --serif:'Lora',serif;
-  --display:'Bebas Neue',sans-serif;
-  --mono:'IBM Plex Mono',monospace;
+  --bg:#F7F5F2;
+  --bg2:#EFECEA;
+  --white:#FFFFFF;
+  --ink:#111111;
+  --mid:#444;
+  --muted:#999;
+  --accent:#1A1A2E;
+  --blue:#4361EE;
+  --rose:#E63946;
+  --gold:#F4A261;
+  --sans:'DM Sans','Segoe UI',system-ui,sans-serif;
+  --display:'DM Sans','Segoe UI',system-ui,sans-serif;
+  --mono:'Space Mono','Courier New',monospace;
 }
-body{background:var(--bg);color:var(--ink);font-family:var(--serif);line-height:1.6;overflow-x:hidden;cursor:none;}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--sans);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
 
-.cursor{width:10px;height:10px;background:var(--ink);border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width 0.2s,height 0.2s,background 0.2s;mix-blend-mode:multiply;}
-.cursor.big{width:42px;height:42px;background:var(--red);opacity:0.45;}
+/* ── SKIP ── */
+.skip{position:absolute;top:-50px;left:1rem;background:var(--ink);color:var(--white);padding:.5rem 1rem;z-index:9999;text-decoration:none;font-size:.8rem;transition:top .2s;}
+.skip:focus{top:.5rem;}
 
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.5rem 4rem;display:flex;justify-content:space-between;align-items:center;}
-.nav-logo{font-family:var(--display);font-size:1.5rem;letter-spacing:0.06em;color:var(--ink);text-decoration:none;}
-.nav-links{display:flex;gap:3rem;list-style:none;}
-.nav-links a{font-family:var(--mono);font-size:0.68rem;color:var(--muted);text-decoration:none;letter-spacing:0.12em;text-transform:uppercase;transition:color 0.2s;}
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:500;
+  padding:1.25rem 3.5rem;
+  display:flex;justify-content:space-between;align-items:center;
+  background:rgba(247,245,242,0.75);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(0,0,0,0.06);
+  transition:padding .3s;
+}
+.nav-logo{
+  font-family:var(--mono);font-size:.8rem;
+  letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink);text-decoration:none;font-weight:400;
+}
+.nav-links{display:flex;gap:2.5rem;list-style:none;}
+.nav-links a{
+  font-family:var(--mono);font-size:.65rem;
+  color:var(--muted);text-decoration:none;
+  letter-spacing:.1em;text-transform:uppercase;
+  transition:color .2s;
+}
 .nav-links a:hover{color:var(--ink);}
 
-/* HERO */
-#hero{min-height:100vh;padding:0 4rem 5rem;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;border-bottom:1px solid var(--rule);}
-.hero-bg-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);font-family:var(--display);font-size:clamp(14rem,28vw,26rem);line-height:0.85;color:transparent;-webkit-text-stroke:1px var(--rule);white-space:nowrap;user-select:none;pointer-events:none;letter-spacing:0.02em;}
-.hero-label{font-family:var(--mono);font-size:0.7rem;color:var(--muted);letter-spacing:0.18em;text-transform:uppercase;margin-bottom:1.25rem;}
-.hero-name{font-family:var(--display);font-size:clamp(5rem,13vw,13rem);line-height:0.88;color:var(--ink);letter-spacing:0.02em;position:relative;z-index:2;}
-.hero-name .line2{display:flex;align-items:center;gap:1.5rem;-webkit-text-stroke:1.5px var(--ink);color:transparent;}
-.hero-name .dot{width:clamp(12px,1.8vw,20px);height:clamp(12px,1.8vw,20px);border-radius:50%;background:var(--red);flex-shrink:0;display:inline-block;}
-.hero-bottom{display:flex;justify-content:space-between;align-items:flex-end;margin-top:3rem;position:relative;z-index:2;}
-.hero-statement{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:var(--mid);line-height:1.7;max-width:380px;}
-.hero-cta{display:inline-flex;align-items:center;gap:0.75rem;padding:1rem 2.25rem;background:var(--ink);color:var(--bg);font-family:var(--mono);font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:background 0.2s;}
-.hero-cta:hover{background:var(--red);}
+/* ── HERO ── */
+#hero{
+  min-height:100vh;
+  display:flex;flex-direction:column;
+  justify-content:center;
+  padding:10rem 3.5rem 6rem;
+  position:relative;overflow:hidden;
+}
 
-/* MARQUEE */
-.marquee-wrap{overflow:hidden;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:0.9rem 0;background:var(--ink);}
-.marquee-track{display:flex;white-space:nowrap;animation:marquee 22s linear infinite;}
-.marquee-track span{font-family:var(--display);font-size:1.1rem;letter-spacing:0.1em;color:var(--bg);padding:0 2rem;}
-.marquee-track span.sep{color:var(--red);}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* Animated grid lines */
+.grid-bg{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(0,0,0,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,.045) 1px, transparent 1px);
+  background-size:80px 80px;
+  animation:grid-drift 20s linear infinite;
+  pointer-events:none;
+}
+@keyframes grid-drift{
+  0%{background-position:0 0;}
+  100%{background-position:80px 80px;}
+}
 
-/* SECTIONS */
-.section-inner{max-width:1200px;margin:0 auto;}
-.sec-num{font-family:var(--mono);font-size:0.65rem;color:var(--muted);letter-spacing:0.14em;margin-bottom:0.5rem;}
-.sec-title{font-family:var(--display);font-size:clamp(3.5rem,7vw,6.5rem);line-height:0.9;letter-spacing:0.02em;color:var(--ink);margin-bottom:2.5rem;}
+/* Floating orbs */
+.orb{
+  position:absolute;border-radius:50%;
+  filter:blur(70px);pointer-events:none;
+  animation:float-orb 8s ease-in-out infinite;
+}
+.orb-1{width:500px;height:500px;background:rgba(67,97,238,.09);top:-10%;right:-5%;animation-delay:0s;}
+.orb-2{width:350px;height:350px;background:rgba(244,162,97,.1);bottom:0%;left:10%;animation-delay:-3s;}
+.orb-3{width:250px;height:250px;background:rgba(230,57,70,.07);top:40%;right:30%;animation-delay:-5s;}
+@keyframes float-orb{
+  0%,100%{transform:translateY(0) scale(1);}
+  50%{transform:translateY(-30px) scale(1.05);}
+}
 
-/* ABOUT */
-#about{padding:7rem 4rem;border-bottom:1px solid var(--rule);}
-.about-grid{display:grid;grid-template-columns:1fr 2fr;gap:6rem;align-items:start;}
-.about-aside-label{font-family:var(--mono);font-size:0.65rem;color:var(--muted);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:1.5rem;border-top:2px solid var(--ink);padding-top:1rem;}
-.about-tags{display:flex;flex-direction:column;gap:0;}
-.about-tag{font-family:var(--mono);font-size:0.68rem;color:var(--mid);letter-spacing:0.08em;padding:0.6rem 0;border-bottom:1px solid var(--rule);}
-.about-pull{font-family:var(--serif);font-style:italic;font-size:clamp(1.3rem,2.2vw,1.9rem);line-height:1.45;color:var(--ink);margin-bottom:2.5rem;padding-left:2rem;border-left:3px solid var(--red);}
-.about-text p{font-family:var(--serif);font-size:0.975rem;color:var(--mid);line-height:1.9;margin-bottom:1.25rem;max-width:580px;}
+.hero-inner{position:relative;z-index:2;max-width:1100px;}
 
-/* DUALITY */
-#duality{padding:7rem 4rem;background:var(--ink);color:var(--bg);border-bottom:1px solid #222;}
-.duality-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:3rem;}
-.duality-card{background:#1a1918;padding:3.5rem 3rem;position:relative;overflow:hidden;}
-.duality-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform 0.4s;}
-.duality-card:hover::after{transform:scaleX(1);}
-.duality-num{font-family:var(--display);font-size:5rem;color:#252422;line-height:1;margin-bottom:1.5rem;user-select:none;}
-.duality-title{font-family:var(--display);font-size:2.6rem;line-height:1;letter-spacing:0.04em;color:#f0ede6;margin-bottom:0.4rem;}
-.duality-sub{font-family:var(--serif);font-size:0.9rem;font-style:italic;color:#5a5855;margin-bottom:1.25rem;}
-.duality-desc{font-family:var(--serif);font-size:0.9rem;color:#7a7672;line-height:1.85;}
-.duality-pills{display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:1.5rem;}
-.duality-pill{font-family:var(--mono);font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.3rem 0.7rem;border:1px solid #2a2927;color:#4a4845;}
+.hero-label{
+  font-family:var(--mono);font-size:.7rem;
+  color:var(--muted);letter-spacing:.18em;
+  text-transform:uppercase;margin-bottom:2rem;
+  display:inline-flex;align-items:center;gap:.75rem;
+  opacity:0;animation:fade-up .8s .2s forwards;
+}
+.hero-label::before{content:'';width:24px;height:1px;background:var(--muted);}
 
-/* STORY */
-#story{padding:7rem 4rem;border-bottom:1px solid var(--rule);}
-.story-layout{display:grid;grid-template-columns:180px 1fr;gap:5rem;margin-top:3rem;}
-.story-nav{position:sticky;top:6rem;height:fit-content;}
-.story-nav-item{font-family:var(--mono);font-size:0.65rem;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;padding:0.8rem 0;border-top:1px solid var(--rule);}
-.story-chapter{padding-bottom:4rem;border-bottom:1px solid var(--rule);margin-bottom:4rem;}
-.story-chapter:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
-.chapter-period{font-family:var(--mono);font-size:0.65rem;color:var(--red);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:1rem;}
-.chapter-title{font-family:var(--display);font-size:clamp(2rem,4vw,3.2rem);line-height:1;letter-spacing:0.03em;color:var(--ink);margin-bottom:1.5rem;}
-.chapter-body{font-family:var(--serif);font-size:0.95rem;color:var(--mid);line-height:1.9;max-width:560px;}
-.chapter-skills{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1.5rem;}
-.chapter-skill{font-family:var(--mono);font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.35rem 0.8rem;background:var(--bg2);color:var(--muted);border:1px solid var(--rule);}
+.hero-name{
+  font-family:var(--display);
+  font-size:clamp(5rem,11vw,11.5rem);
+  font-weight:700;
+  line-height:.9;letter-spacing:-.03em;
+  color:var(--ink);
+  margin-bottom:2rem;
+  opacity:0;animation:fade-up .9s .35s forwards;
+}
+.hero-name .name-line{display:block;overflow:hidden;}
+.hero-name .name-line span{
+  display:inline-block;
+  animation:slide-up .9s cubic-bezier(.16,1,.3,1) forwards;
+  opacity:0;
+}
+.hero-name .name-line:nth-child(1) span{animation-delay:.3s;}
+.hero-name .name-line:nth-child(2) span{animation-delay:.45s;}
 
-/* CONNECT */
-#connect{padding:8rem 4rem;background:var(--bg2);text-align:center;}
-.connect-super{font-family:var(--mono);font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem;}
-.connect-title{font-family:var(--display);font-size:clamp(4rem,10vw,9rem);line-height:0.88;letter-spacing:0.02em;color:var(--ink);margin-bottom:2rem;}
-.connect-title span{display:block;-webkit-text-stroke:1.5px var(--ink);color:transparent;}
-.connect-sub{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:var(--mid);max-width:480px;margin:0 auto 3rem;line-height:1.7;}
-.connect-btn{display:inline-flex;align-items:center;gap:0.8rem;padding:1.15rem 2.75rem;background:var(--ink);color:var(--bg);font-family:var(--mono);font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:background 0.2s;}
-.connect-btn:hover{background:var(--red);}
+@keyframes slide-up{
+  from{transform:translateY(110%);opacity:0;}
+  to{transform:translateY(0);opacity:1;}
+}
+@keyframes fade-up{
+  from{opacity:0;transform:translateY(20px);}
+  to{opacity:1;transform:translateY(0);}
+}
 
-/* FOOTER */
-footer{padding:1.75rem 4rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--rule);}
-.footer-copy{font-family:var(--mono);font-size:0.62rem;color:var(--muted);letter-spacing:0.08em;}
-.footer-right{display:flex;gap:2.5rem;}
-.footer-right a{font-family:var(--mono);font-size:0.62rem;color:var(--muted);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s;}
-.footer-right a:hover{color:var(--ink);}
+.hero-desc{
+  font-size:clamp(1rem,1.6vw,1.25rem);
+  color:var(--mid);line-height:1.7;
+  max-width:480px;margin-bottom:3rem;
+  font-weight:300;
+  opacity:0;animation:fade-up .9s .6s forwards;
+}
 
-/* REVEAL */
-.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.8s cubic-bezier(.16,1,.3,1),transform 0.8s cubic-bezier(.16,1,.3,1);}
-.reveal.on{opacity:1;transform:none;}
+.hero-cta{
+  display:inline-flex;align-items:center;gap:.6rem;
+  padding:1rem 2.25rem;
+  background:var(--ink);color:var(--white);
+  font-family:var(--mono);font-size:.7rem;
+  letter-spacing:.1em;text-transform:uppercase;
+  text-decoration:none;
+  transition:background .2s,transform .15s,box-shadow .2s;
+  border-radius:4px;
+  opacity:0;animation:fade-up .9s .75s forwards;
+}
+.hero-cta:hover{background:var(--blue);transform:translateY(-2px);box-shadow:0 12px 32px rgba(67,97,238,.25);}
+.hero-cta:focus-visible{outline:3px solid var(--blue);outline-offset:3px;}
 
-/* RESPONSIVE */
-@media(max-width:860px){
+/* Scroll indicator */
+.scroll-hint{
+  position:absolute;bottom:2.5rem;left:3.5rem;
+  font-family:var(--mono);font-size:.62rem;
+  color:var(--muted);letter-spacing:.12em;text-transform:uppercase;
+  display:flex;align-items:center;gap:.75rem;
+  opacity:0;animation:fade-up 1s 1.2s forwards;
+}
+.scroll-line{
+  width:1px;height:48px;
+  background:linear-gradient(to bottom, var(--muted), transparent);
+  animation:scroll-pulse 2s ease-in-out infinite;
+}
+@keyframes scroll-pulse{
+  0%,100%{opacity:.4;}50%{opacity:1;}
+}
+
+/* ── 3D SCROLL STAGE ── */
+.scene{
+  perspective:1200px;
+  perspective-origin:50% 30%;
+  overflow:hidden;
+}
+
+/* ── ABOUT ── */
+#about{
+  padding:8rem 3.5rem;
+  background:var(--white);
+  position:relative;
+}
+.about-wrap{
+  max-width:1100px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:6rem;align-items:center;
+}
+
+/* 3D card effect */
+.about-visual{
+  position:relative;
+  transform-style:preserve-3d;
+}
+.av-card{
+  background:var(--bg);
+  border-radius:20px;
+  padding:3rem 2.5rem;
+  border:1px solid rgba(0,0,0,.07);
+  transform:rotateY(-6deg) rotateX(4deg);
+  transition:transform .4s ease;
+  box-shadow:24px 24px 60px rgba(0,0,0,.08);
+}
+.av-card:hover{transform:rotateY(0deg) rotateX(0deg);}
+.av-initial{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:8rem;line-height:1;
+  color:transparent;
+  -webkit-text-stroke:2px var(--ink);
+  margin-bottom:1.5rem;letter-spacing:-.04em;
+}
+.av-tag-stack{display:flex;flex-direction:column;gap:.5rem;}
+.av-tag{
+  font-family:var(--mono);font-size:.65rem;
+  letter-spacing:.08em;text-transform:uppercase;
+  padding:.5rem .85rem;
+  background:var(--white);
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:6px;color:var(--mid);
+  transition:background .2s,color .2s,transform .2s;
+}
+.av-tag:hover{background:var(--ink);color:var(--white);transform:translateX(4px);}
+
+.about-text h2{
+  font-family:var(--display);font-weight:700;
+  font-size:clamp(2.5rem,4vw,4rem);
+  line-height:1;letter-spacing:-.03em;
+  color:var(--ink);margin-bottom:1.5rem;
+}
+.about-text h2 .stroke{
+  display:block;
+  -webkit-text-stroke:1.5px var(--ink);
+  color:transparent;
+}
+.about-quote{
+  font-size:1.15rem;font-weight:500;
+  color:var(--ink);line-height:1.55;
+  border-left:3px solid var(--blue);
+  padding-left:1.25rem;margin-bottom:1.75rem;
+}
+.about-body p{
+  font-size:.95rem;color:var(--mid);
+  line-height:1.85;margin-bottom:1rem;font-weight:300;
+}
+
+/* ── EXPERTISE ── */
+#expertise{
+  padding:8rem 3.5rem;
+  background:var(--bg);
+}
+.exp-wrap{max-width:1100px;margin:0 auto;}
+.sec-label{
+  font-family:var(--mono);font-size:.65rem;
+  color:var(--muted);letter-spacing:.16em;
+  text-transform:uppercase;margin-bottom:.5rem;
+}
+.sec-heading{
+  font-family:var(--display);font-weight:700;
+  font-size:clamp(3rem,6vw,5.5rem);
+  line-height:.92;letter-spacing:-.03em;
+  color:var(--ink);margin-bottom:3.5rem;
+}
+
+/* 3D tilt cards */
+.tilt-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+.tilt-card{
+  border-radius:20px;padding:3rem 2.5rem;
+  position:relative;overflow:hidden;
+  min-height:380px;
+  display:flex;flex-direction:column;justify-content:space-between;
+  transform-style:preserve-3d;
+  transition:transform .1s ease,box-shadow .3s ease;
+  cursor:default;
+}
+.tilt-card.blue-card{
+  background:var(--blue);color:var(--white);
+  box-shadow:0 20px 60px rgba(67,97,238,.3);
+}
+.tilt-card.rose-card{
+  background:var(--white);color:var(--ink);
+  border:1px solid rgba(0,0,0,.07);
+  box-shadow:0 20px 60px rgba(0,0,0,.07);
+}
+.tc-num{
+  font-family:var(--mono);font-size:.65rem;
+  letter-spacing:.14em;opacity:.5;margin-bottom:1.5rem;
+}
+.tc-title{
+  font-family:var(--display);font-weight:700;
+  font-size:clamp(2rem,3vw,3rem);
+  line-height:.95;letter-spacing:-.03em;
+  margin-bottom:.5rem;
+}
+.tc-sub{font-size:.85rem;opacity:.6;margin-bottom:1.25rem;font-style:italic;}
+.tc-desc{font-size:.9rem;line-height:1.8;opacity:.8;max-width:400px;}
+.tc-pills{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.5rem;}
+.tc-pill{
+  font-family:var(--mono);font-size:.58rem;
+  letter-spacing:.08em;text-transform:uppercase;
+  padding:.28rem .68rem;border-radius:4px;
+}
+.blue-card .tc-pill{background:rgba(255,255,255,.12);color:rgba(255,255,255,.8);}
+.rose-card .tc-pill{background:var(--bg);color:var(--mid);border:1px solid rgba(0,0,0,.08);}
+.tc-glyph{
+  position:absolute;right:-1rem;bottom:-1.5rem;
+  font-family:var(--display);font-weight:700;
+  font-size:11rem;line-height:1;
+  opacity:.06;user-select:none;pointer-events:none;
+  letter-spacing:-.04em;
+}
+
+/* ── STORY ── */
+#story{padding:8rem 3.5rem;background:var(--white);}
+.story-wrap{max-width:1100px;margin:0 auto;}
+
+.timeline{position:relative;margin-top:3.5rem;padding-left:2rem;}
+.timeline::before{
+  content:'';position:absolute;
+  left:0;top:0;bottom:0;width:1px;
+  background:linear-gradient(to bottom, var(--blue), var(--rose), var(--gold));
+}
+.tl-item{
+  position:relative;padding:0 0 4rem 3rem;
+  transform-style:preserve-3d;
+}
+.tl-item:last-child{padding-bottom:0;}
+.tl-dot{
+  position:absolute;left:-6px;top:.3rem;
+  width:13px;height:13px;border-radius:50%;
+  background:var(--white);
+  border:2px solid var(--blue);
+  transition:background .3s,transform .3s;
+}
+.tl-item:nth-child(2) .tl-dot{border-color:var(--rose);}
+.tl-item:nth-child(3) .tl-dot{border-color:var(--gold);}
+.tl-item:hover .tl-dot{background:var(--blue);transform:scale(1.4);}
+.tl-item:nth-child(2):hover .tl-dot{background:var(--rose);}
+.tl-item:nth-child(3):hover .tl-dot{background:var(--gold);}
+
+.tl-content{
+  background:var(--bg);
+  border-radius:16px;padding:2.25rem 2rem;
+  border:1px solid rgba(0,0,0,.06);
+  transition:transform .3s ease,box-shadow .3s ease;
+  transform:perspective(800px) rotateX(2deg);
+}
+.tl-item:hover .tl-content{
+  transform:perspective(800px) rotateX(0deg) translateY(-4px);
+  box-shadow:0 16px 48px rgba(0,0,0,.09);
+}
+.tl-period{
+  font-family:var(--mono);font-size:.63rem;
+  letter-spacing:.14em;text-transform:uppercase;
+  margin-bottom:.75rem;
+}
+.tl-item:nth-child(1) .tl-period{color:var(--blue);}
+.tl-item:nth-child(2) .tl-period{color:var(--rose);}
+.tl-item:nth-child(3) .tl-period{color:var(--gold);}
+.tl-title{
+  font-family:var(--display);font-weight:700;
+  font-size:clamp(1.6rem,2.5vw,2.4rem);
+  line-height:1.05;letter-spacing:-.02em;
+  color:var(--ink);margin-bottom:1rem;
+}
+.tl-body{
+  font-size:.925rem;color:var(--mid);
+  line-height:1.85;max-width:560px;font-weight:300;
+}
+.tl-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.25rem;}
+.tl-tag{
+  font-family:var(--mono);font-size:.6rem;
+  letter-spacing:.07em;text-transform:uppercase;
+  padding:.28rem .7rem;border-radius:4px;
+  background:var(--white);color:var(--mid);
+  border:1px solid rgba(0,0,0,.08);
+}
+
+/* ── CONNECT ── */
+#connect{
+  padding:8rem 3.5rem;
+  background:var(--accent);
+  position:relative;overflow:hidden;
+}
+.connect-orb-1{
+  position:absolute;width:600px;height:600px;
+  background:radial-gradient(circle, rgba(67,97,238,.3) 0%, transparent 70%);
+  top:-150px;right:-150px;border-radius:50%;pointer-events:none;
+}
+.connect-orb-2{
+  position:absolute;width:400px;height:400px;
+  background:radial-gradient(circle, rgba(230,57,70,.2) 0%, transparent 70%);
+  bottom:-100px;left:-100px;border-radius:50%;pointer-events:none;
+}
+.connect-wrap{
+  max-width:1100px;margin:0 auto;
+  position:relative;z-index:2;
+}
+.connect-tag{
+  font-family:var(--mono);font-size:.68rem;
+  color:rgba(255,255,255,.4);letter-spacing:.18em;
+  text-transform:uppercase;margin-bottom:1.5rem;
+}
+.connect-h{
+  font-family:var(--display);font-weight:700;
+  font-size:clamp(4rem,10vw,10rem);
+  line-height:.88;letter-spacing:-.03em;
+  color:var(--white);margin-bottom:2rem;
+}
+.connect-h .outline-w{
+  display:block;
+  -webkit-text-stroke:1.5px rgba(255,255,255,.4);
+  color:transparent;
+}
+.connect-sub{
+  font-size:1.05rem;color:rgba(255,255,255,.55);
+  max-width:480px;line-height:1.75;
+  margin-bottom:2.75rem;font-weight:300;
+}
+.connect-btns{display:flex;gap:1rem;flex-wrap:wrap;}
+.btn-glow{
+  display:inline-flex;align-items:center;gap:.6rem;
+  padding:1rem 2.25rem;
+  background:var(--blue);color:var(--white);
+  font-family:var(--mono);font-size:.7rem;
+  letter-spacing:.1em;text-transform:uppercase;
+  text-decoration:none;border-radius:8px;
+  box-shadow:0 0 0 rgba(67,97,238,.5);
+  transition:transform .2s,box-shadow .3s,background .2s;
+}
+.btn-glow:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 40px rgba(67,97,238,.6);
+  background:#5a78ff;
+}
+.btn-glow:focus-visible{outline:3px solid var(--white);outline-offset:3px;}
+.btn-plain{
+  display:inline-flex;align-items:center;gap:.6rem;
+  padding:1rem 2.25rem;
+  background:transparent;color:rgba(255,255,255,.65);
+  border:1px solid rgba(255,255,255,.2);
+  font-family:var(--mono);font-size:.7rem;
+  letter-spacing:.1em;text-transform:uppercase;
+  text-decoration:none;border-radius:8px;
+  transition:border-color .2s,color .2s,transform .2s;
+}
+.btn-plain:hover{border-color:rgba(255,255,255,.6);color:var(--white);transform:translateY(-3px);}
+
+/* ── FOOTER ── */
+footer{
+  padding:1.5rem 3.5rem;
+  background:#090910;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.footer-left{
+  font-family:var(--mono);font-size:.6rem;
+  color:rgba(255,255,255,.25);letter-spacing:.06em;
+}
+.footer-right{display:flex;gap:1.75rem;}
+.footer-right a{
+  font-family:var(--mono);font-size:.6rem;
+  color:rgba(255,255,255,.3);text-decoration:none;
+  letter-spacing:.06em;text-transform:uppercase;
+  transition:color .2s;
+}
+.footer-right a:hover{color:rgba(255,255,255,.7);}
+
+/* ── SCROLL REVEAL ── */
+.sr{
+  opacity:0;
+  transition:opacity .8s cubic-bezier(.16,1,.3,1),
+             transform .8s cubic-bezier(.16,1,.3,1);
+}
+.sr.from-bottom{transform:translateY(50px);}
+.sr.from-left{transform:translateX(-50px);}
+.sr.from-right{transform:translateX(50px);}
+.sr.scale-in{transform:scale(.92);}
+.sr.on{opacity:1;transform:none;}
+@media(prefers-reduced-motion:reduce){
+  .sr,.hero-name .name-line span,.hero-label,.hero-desc,.hero-cta,.scroll-hint{
+    opacity:1;transform:none;animation:none;transition:none;
+  }
+}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
   nav{padding:1rem 1.5rem;}
   .nav-links{display:none;}
-  #hero{padding:0 1.5rem 4rem;}
-  .hero-bg-text{font-size:8rem;}
-  .hero-bottom{flex-direction:column;align-items:flex-start;gap:1.5rem;}
-  .about-grid,.duality-grid,.story-layout{grid-template-columns:1fr;}
-  .story-nav{display:none;}
-  #about,#duality,#story,#connect{padding:5rem 1.5rem;}
-  footer{flex-direction:column;gap:1rem;padding:1.5rem;}
+  #hero,#about,#expertise,#story,#connect{padding:6rem 1.5rem 4rem;}
+  .about-wrap,.tilt-grid{grid-template-columns:1fr;gap:2.5rem;}
+  .av-card{transform:none;}
+  .connect-h{font-size:clamp(3rem,12vw,6rem);}
+  footer{flex-direction:column;gap:.75rem;padding:1.25rem 1.5rem;text-align:center;}
+  .footer-right{justify-content:center;}
+}
+@media(max-width:480px){
+  .hero-name{font-size:clamp(3.5rem,18vw,5rem);}
+  .tilt-grid{grid-template-columns:1fr;}
+  .tl-content{padding:1.5rem;}
 }
 </style>
 </head>
 <body>
 
-<div class="cursor" id="cursor"></div>
+<a class="skip" href="#main">Skip to content</a>
 
-<nav>
-  <a href="#hero" class="nav-logo">MJ</a>
+<nav role="navigation" aria-label="Main navigation">
+  <a href="/" class="nav-logo" aria-label="Melvin Jose Home">Melvin Jose</a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
-    <li><a href="#duality">Expertise</a></li>
-    <li><a href="#story">Story</a></li>
+    <li><a href="#expertise">Expertise</a></li>
+    <li><a href="#story">Background</a></li>
     <li><a href="#connect">Connect</a></li>
   </ul>
 </nav>
 
-<section id="hero">
-  <div class="hero-bg-text" aria-hidden="true">MJ</div>
-  <p class="hero-label">Audit &nbsp;·&nbsp; Digital Marketing &nbsp;·&nbsp; UAE</p>
-  <h1 class="hero-name">
-    <span class="line1">Melvin</span><br>
-    <span class="line2"><span class="dot"></span>Jose</span>
-  </h1>
-  <div class="hero-bottom">
-    <p class="hero-statement">
-      I built my career reading numbers.<br>Now I use that intelligence to build brands.
+<main id="main">
+
+<!-- ── HERO ── -->
+<section id="hero" aria-label="Introduction">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
+  <div class="orb orb-3" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <p class="hero-label">Audit &nbsp;·&nbsp; Digital Marketing &nbsp;·&nbsp; UAE</p>
+    <h1 class="hero-name" aria-label="Melvin Jose">
+      <span class="name-line"><span>MELVIN</span></span>
+      <span class="name-line"><span>JOSE.</span></span>
+    </h1>
+    <p class="hero-desc">
+      I built my career reading numbers.<br>
+      Now I use that intelligence to build brands.
     </p>
-    <a href="https://linkedin.com/in/melvin-jose-" target="_blank" class="hero-cta">Connect on LinkedIn &nbsp;↗</a>
+    <a href="https://linkedin.com/in/melvin-jose-" target="_blank" rel="noopener noreferrer"
+       class="hero-cta" aria-label="Connect with Melvin Jose on LinkedIn">
+      Connect on LinkedIn &nbsp;↗
+    </a>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <div class="scroll-line"></div>
+    Scroll
   </div>
 </section>
 
-<div class="marquee-wrap" aria-hidden="true">
-  <div class="marquee-track">
-    <span>Audit</span><span class="sep">✦</span><span>Digital Marketing</span><span class="sep">✦</span><span>UAE</span><span class="sep">✦</span><span>Corporate Tax</span><span class="sep">✦</span><span>Content Strategy</span><span class="sep">✦</span><span>VAT</span><span class="sep">✦</span><span>Multi-Platform</span><span class="sep">✦</span><span>Brand Building</span><span class="sep">✦</span><span>FTA Compliance</span><span class="sep">✦</span><span>Melvin Jose</span><span class="sep">✦</span><span>Audit</span><span class="sep">✦</span><span>Digital Marketing</span><span class="sep">✦</span><span>UAE</span><span class="sep">✦</span><span>Corporate Tax</span><span class="sep">✦</span><span>Content Strategy</span><span class="sep">✦</span><span>VAT</span><span class="sep">✦</span><span>Multi-Platform</span><span class="sep">✦</span><span>Brand Building</span><span class="sep">✦</span><span>FTA Compliance</span><span class="sep">✦</span><span>Melvin Jose</span><span class="sep">✦</span>
-  </div>
-</div>
-
-<section id="about">
-  <div class="section-inner">
-    <div class="about-grid">
-      <div class="about-aside reveal">
-        <p class="about-aside-label">Areas</p>
-        <div class="about-tags">
-          <span class="about-tag">Audit</span>
-          <span class="about-tag">Digital Marketing</span>
-          <span class="about-tag">Corporate Tax</span>
-          <span class="about-tag">VAT &amp; FTA</span>
-          <span class="about-tag">Content Strategy</span>
-          <span class="about-tag">Multi-Platform</span>
-          <span class="about-tag">Brand Building</span>
-          <span class="about-tag">UAE</span>
+<!-- ── ABOUT ── -->
+<section id="about" class="scene">
+  <div class="about-wrap">
+    <div class="about-visual sr scale-in">
+      <div class="av-card">
+        <div class="av-initial" aria-hidden="true">MJ</div>
+        <div class="av-tag-stack" role="list">
+          <span class="av-tag" role="listitem">Audit</span>
+          <span class="av-tag" role="listitem">Digital Marketing</span>
+          <span class="av-tag" role="listitem">Corporate Tax</span>
+          <span class="av-tag" role="listitem">VAT &amp; FTA</span>
+          <span class="av-tag" role="listitem">Content Strategy</span>
+          <span class="av-tag" role="listitem">Multi-Platform</span>
+          <span class="av-tag" role="listitem">UAE · 5+ Years</span>
         </div>
       </div>
-      <div class="about-body reveal">
-        <p class="sec-num">00 — About</p>
-        <h2 class="sec-title">The rare<br>combination.</h2>
-        <blockquote class="about-pull">
-          "Most marketers don't understand the numbers. Most auditors can't tell a story. I do both."
-        </blockquote>
-        <div class="about-text">
-          <p>I started in audit. Spent years inside the numbers — tax, compliance, risk, regulation. That kind of thinking doesn't leave you. It sharpens everything you do after.</p>
-          <p>I moved into digital marketing not to escape audit, but because I saw how few people could bring both disciplines together. I can read a balance sheet and write a campaign brief. That combination is uncommon — and it's where I operate.</p>
-          <p>Based in the UAE, working at the intersection of financial expertise and digital execution.</p>
-        </div>
+    </div>
+    <div class="about-text">
+      <p class="sec-label sr from-bottom">00 — About</p>
+      <h2 class="sr from-bottom">
+        The Rare<br>
+        <span class="stroke">Combination.</span>
+      </h2>
+      <blockquote class="about-quote sr from-bottom">
+        "Most marketers don't understand the numbers. Most auditors can't tell a story. I do both."
+      </blockquote>
+      <div class="about-body sr from-bottom">
+        <p>I started in audit. Years inside the numbers — tax, compliance, risk, regulation. That thinking doesn't leave you. It sharpens everything.</p>
+        <p>I moved into digital marketing because I saw how rare it was to find both skills in one person. I can read a balance sheet and write a campaign brief. That's the edge.</p>
+        <p>Based in the UAE, operating at the intersection of financial expertise and digital execution.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="duality">
-  <div class="section-inner">
-    <p class="sec-num" style="color:#4a4845;">01 — Expertise</p>
-    <h2 class="sec-title" style="color:#f0ede6;margin-bottom:0;">Two disciplines.<br>One person.</h2>
-    <div class="duality-grid">
-      <div class="duality-card reveal">
-        <div class="duality-num">01</div>
-        <h3 class="duality-title">Audit</h3>
-        <p class="duality-sub">The foundation</p>
-        <p class="duality-desc">Corporate tax, VAT, FTA compliance, statutory audit — years developing precision thinking and regulatory depth. The kind of credibility that can't be faked or shortcut.</p>
-        <div class="duality-pills">
-          <span class="duality-pill">Corporate Tax</span>
-          <span class="duality-pill">VAT</span>
-          <span class="duality-pill">FTA</span>
-          <span class="duality-pill">Statutory Audit</span>
-          <span class="duality-pill">E-Invoicing</span>
-          <span class="duality-pill">MIS Reporting</span>
+<!-- ── EXPERTISE ── -->
+<section id="expertise">
+  <div class="exp-wrap">
+    <p class="sec-label sr from-bottom">01 — Expertise</p>
+    <h2 class="sec-heading sr from-bottom">Two Disciplines.<br>One Person.</h2>
+    <div class="tilt-grid" id="tiltGrid">
+      <article class="tilt-card blue-card sr from-left" tabindex="0">
+        <div>
+          <p class="tc-num">01 / 02</p>
+          <h3 class="tc-title">Audit</h3>
+          <p class="tc-sub">The foundation</p>
+          <p class="tc-desc">Corporate tax, VAT, FTA compliance, statutory audit — years of precision thinking and regulatory depth. Credibility that can't be faked or shortcut.</p>
+          <div class="tc-pills">
+            <span class="tc-pill">Corporate Tax</span>
+            <span class="tc-pill">VAT</span>
+            <span class="tc-pill">FTA</span>
+            <span class="tc-pill">Statutory Audit</span>
+            <span class="tc-pill">E-Invoicing</span>
+            <span class="tc-pill">MIS Reporting</span>
+          </div>
         </div>
-      </div>
-      <div class="duality-card reveal">
-        <div class="duality-num">02</div>
-        <h3 class="duality-title">Digital Marketing</h3>
-        <p class="duality-sub">The edge</p>
-        <p class="duality-desc">Multi-platform content strategy, campaign architecture, email marketing, performance reporting, brand building — executed with the analytical discipline that most marketers never had to develop.</p>
-        <div class="duality-pills">
-          <span class="duality-pill">Content Strategy</span>
-          <span class="duality-pill">Multi-Platform</span>
-          <span class="duality-pill">Email Campaigns</span>
-          <span class="duality-pill">Brand Building</span>
-          <span class="duality-pill">Performance Reports</span>
-          <span class="duality-pill">Graphic Design</span>
+        <div class="tc-glyph" aria-hidden="true">A</div>
+      </article>
+      <article class="tilt-card rose-card sr from-right" tabindex="0">
+        <div>
+          <p class="tc-num">02 / 02</p>
+          <h3 class="tc-title">Digital Marketing</h3>
+          <p class="tc-sub">The edge</p>
+          <p class="tc-desc">Multi-platform content strategy, campaign architecture, email marketing, performance reporting — executed with the analytical discipline most marketers never developed.</p>
+          <div class="tc-pills">
+            <span class="tc-pill">Content Strategy</span>
+            <span class="tc-pill">Multi-Platform</span>
+            <span class="tc-pill">Email Campaigns</span>
+            <span class="tc-pill">Brand Building</span>
+            <span class="tc-pill">Performance Reports</span>
+            <span class="tc-pill">Graphic Design</span>
+          </div>
         </div>
-      </div>
+        <div class="tc-glyph" aria-hidden="true">D</div>
+      </article>
     </div>
   </div>
 </section>
 
+<!-- ── STORY ── -->
 <section id="story">
-  <div class="section-inner">
-    <p class="sec-num">02 — Background</p>
-    <h2 class="sec-title">How I got<br>here.</h2>
-    <div class="story-layout">
-      <div class="story-nav">
-        <div class="story-nav-item">The Audit Years</div>
-        <div class="story-nav-item">The Shift</div>
-        <div class="story-nav-item">Now</div>
-      </div>
-      <div class="story-chapters">
-        <div class="story-chapter reveal">
-          <p class="chapter-period">Chapter One</p>
-          <h3 class="chapter-title">Learning to read<br>the truth in numbers.</h3>
-          <p class="chapter-body">Audit teaches you a specific kind of attention. You learn to question everything, verify assumptions, and find what's buried in complexity. Years in corporate tax, VAT compliance, and statutory audit gave me a foundation that goes deeper than most people in marketing ever reach.</p>
-          <div class="chapter-skills">
-            <span class="chapter-skill">Corporate Tax</span>
-            <span class="chapter-skill">VAT &amp; FTA</span>
-            <span class="chapter-skill">Statutory Audit</span>
-            <span class="chapter-skill">E-Invoicing</span>
-            <span class="chapter-skill">Financial Risk</span>
-          </div>
-        </div>
-        <div class="story-chapter reveal">
-          <p class="chapter-period">Chapter Two</p>
-          <h3 class="chapter-title">Learning to tell<br>the story behind them.</h3>
-          <p class="chapter-body">The move into digital marketing wasn't a pivot — it was a natural extension. I brought the same rigour into a creative space. Multi-platform strategy, content systems, campaign architecture, email marketing — all built with the same precision I applied in compliance work.</p>
-          <div class="chapter-skills">
-            <span class="chapter-skill">Content Strategy</span>
-            <span class="chapter-skill">Multi-Platform</span>
-            <span class="chapter-skill">Email Marketing</span>
-            <span class="chapter-skill">Brand Building</span>
-            <span class="chapter-skill">Performance Reporting</span>
-          </div>
-        </div>
-        <div class="story-chapter reveal">
-          <p class="chapter-period">Now</p>
-          <h3 class="chapter-title">Operating at<br>the intersection.</h3>
-          <p class="chapter-body">5+ years in the UAE. Two disciplines sharpened. One identity built — around the belief that the best marketers understand what they're marketing, and the best audit professionals can communicate beyond spreadsheets. I sit where those two things meet.</p>
-          <div class="chapter-skills">
-            <span class="chapter-skill">UAE-based</span>
-            <span class="chapter-skill">5+ Years</span>
-            <span class="chapter-skill">Audit + Marketing</span>
+  <div class="story-wrap">
+    <p class="sec-label sr from-bottom">02 — Background</p>
+    <h2 class="sec-heading sr from-bottom">How I Got Here.</h2>
+    <div class="timeline">
+
+      <div class="tl-item sr from-left">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <p class="tl-period">Chapter One</p>
+          <h3 class="tl-title">Learning to Read<br>the Truth in Numbers.</h3>
+          <p class="tl-body">Audit teaches a specific kind of attention — question everything, verify assumptions, find what's buried in complexity. Years in corporate tax, VAT compliance, and statutory audit built a foundation that goes deeper than most marketers ever reach.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">Corporate Tax</span>
+            <span class="tl-tag">VAT &amp; FTA</span>
+            <span class="tl-tag">Statutory Audit</span>
+            <span class="tl-tag">E-Invoicing</span>
+            <span class="tl-tag">Financial Risk</span>
           </div>
         </div>
       </div>
+
+      <div class="tl-item sr from-left">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <p class="tl-period">Chapter Two</p>
+          <h3 class="tl-title">Learning to Tell<br>the Story Behind Them.</h3>
+          <p class="tl-body">The move into digital marketing wasn't a pivot — it was a natural extension. Same rigour, new canvas. Multi-platform strategy, content systems, email campaigns — built with the same precision applied in compliance work.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">Content Strategy</span>
+            <span class="tl-tag">Multi-Platform</span>
+            <span class="tl-tag">Email Marketing</span>
+            <span class="tl-tag">Brand Building</span>
+            <span class="tl-tag">Performance Reporting</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item sr from-left">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <p class="tl-period">Now</p>
+          <h3 class="tl-title">Operating at<br>the Intersection.</h3>
+          <p class="tl-body">5+ years in the UAE. Two disciplines sharpened. One identity built — around the belief that the best marketers understand what they're marketing, and the best audit professionals can communicate beyond spreadsheets.</p>
+          <div class="tl-tags">
+            <span class="tl-tag">UAE-based</span>
+            <span class="tl-tag">5+ Years</span>
+            <span class="tl-tag">Audit + Marketing</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
+<!-- ── CONNECT ── -->
 <section id="connect">
-  <div class="section-inner">
-    <p class="connect-super">03 — Connect</p>
-    <h2 class="connect-title">
-      Let's<br><span>Talk.</span>
+  <div class="connect-orb-1" aria-hidden="true"></div>
+  <div class="connect-orb-2" aria-hidden="true"></div>
+  <div class="connect-wrap">
+    <p class="connect-tag sr from-bottom">03 — Connect</p>
+    <h2 class="connect-h sr from-bottom">
+      Let's<br>
+      <span class="outline-w">Talk.</span>
     </h2>
-    <p class="connect-sub">If you're building something that needs both financial credibility and sharp digital thinking — I'm interested in that conversation.</p>
-    <a href="https://linkedin.com/in/melvin-jose-" target="_blank" class="connect-btn">Connect on LinkedIn &nbsp;↗</a>
+    <p class="connect-sub sr from-bottom">
+      If you're building something that needs both financial credibility and sharp digital thinking — I'm interested in that conversation.
+    </p>
+    <div class="connect-btns sr from-bottom">
+      <a href="https://linkedin.com/in/melvin-jose-" target="_blank" rel="noopener noreferrer"
+         class="btn-glow" aria-label="Connect on LinkedIn">
+        Connect on LinkedIn &nbsp;↗
+      </a>
+      <a href="mailto:inquiries.melvinjose@gmail.com" class="btn-plain"
+         aria-label="Send Melvin an email">
+        Send an Email
+      </a>
+    </div>
   </div>
 </section>
 
-<footer>
-  <span class="footer-copy">© 2026 Melvin Jose &nbsp;·&nbsp; Ajman, UAE</span>
-  <div class="footer-right">
-    <a href="https://linkedin.com/in/melvin-jose-" target="_blank">LinkedIn</a>
+</main>
+
+<footer role="contentinfo">
+  <span class="footer-left">© 2026 Melvin Jose · Ajman, UAE</span>
+  <nav class="footer-right" aria-label="Footer links">
+    <a href="https://linkedin.com/in/melvin-jose-" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     <a href="mailto:inquiries.melvinjose@gmail.com">Email</a>
-  </div>
+  </nav>
 </footer>
 
 <script>
-const cursor = document.getElementById('cursor');
-document.addEventListener('mousemove', e => {
-  cursor.style.left = e.clientX + 'px';
-  cursor.style.top = e.clientY + 'px';
-});
-document.querySelectorAll('a,button').forEach(el => {
-  el.addEventListener('mouseenter', () => cursor.classList.add('big'));
-  el.addEventListener('mouseleave', () => cursor.classList.remove('big'));
-});
-const obs = new IntersectionObserver(entries => {
-  entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target);} });
-},{threshold:0.1});
-document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+(function(){
+  // ── Scroll reveals ──
+  if('IntersectionObserver' in window){
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.classList.add('on');
+          obs.unobserve(e.target);
+        }
+      });
+    },{threshold:0.1,rootMargin:'0px 0px -60px 0px'});
+    document.querySelectorAll('.sr').forEach(function(el){obs.observe(el);});
+  }
+
+  // ── 3D mouse-tilt on expertise cards ──
+  var cards=document.querySelectorAll('.tilt-card');
+  cards.forEach(function(card){
+    card.addEventListener('mousemove',function(e){
+      var rect=card.getBoundingClientRect();
+      var x=(e.clientX-rect.left)/rect.width-.5;
+      var y=(e.clientY-rect.top)/rect.height-.5;
+      card.style.transform=
+        'perspective(800px) rotateY('+x*14+'deg) rotateX('+(-y*10)+'deg) translateZ(10px)';
+      card.style.boxShadow=
+        (x*20)+'px '+(y*20)+'px 60px rgba(0,0,0,.15)';
+    });
+    card.addEventListener('mouseleave',function(){
+      card.style.transform='perspective(800px) rotateY(0deg) rotateX(0deg) translateZ(0px)';
+      card.style.boxShadow='';
+    });
+  });
+
+  // ── Scroll parallax on timeline items ──
+  var tlItems=document.querySelectorAll('.tl-content');
+  function parallaxTL(){
+    tlItems.forEach(function(el){
+      var rect=el.getBoundingClientRect();
+      var vh=window.innerHeight;
+      if(rect.top<vh && rect.bottom>0){
+        var prog=(vh-rect.top)/(vh+rect.height);
+        var tilt=2-(prog*4);
+        var clamp=Math.max(-3,Math.min(3,tilt));
+        el.style.transform='perspective(800px) rotateX('+clamp+'deg)';
+      }
+    });
+  }
+  window.addEventListener('scroll',parallaxTL,{passive:true});
+  parallaxTL();
+
+  // ── Floating orbs react to mouse (hero) ──
+  var hero=document.getElementById('hero');
+  if(hero){
+    hero.addEventListener('mousemove',function(e){
+      var orbs=hero.querySelectorAll('.orb');
+      var rect=hero.getBoundingClientRect();
+      var px=(e.clientX-rect.left)/rect.width-.5;
+      var py=(e.clientY-rect.top)/rect.height-.5;
+      orbs.forEach(function(orb,i){
+        var depth=(i+1)*12;
+        orb.style.transform=
+          'translate('+(px*depth)+'px,'+(py*depth)+'px)';
+      });
+    });
+    hero.addEventListener('mouseleave',function(){
+      hero.querySelectorAll('.orb').forEach(function(orb){
+        orb.style.transform='';
+      });
+    });
+  }
+
+  // ── Smooth nav shrink on scroll ──
+  var nav=document.querySelector('nav');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>80){
+      nav.style.padding='.85rem 3.5rem';
+    } else {
+      nav.style.padding='1.25rem 3.5rem';
+    }
+  },{passive:true});
+})();
 </script>
 </body>
 </html>
