@@ -5,16 +5,45 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Melvin Jose | Audit &amp; Digital Marketing — UAE</title>
-<meta name="description" content="Melvin Jose — UAE-based professional combining audit expertise with digital marketing strategy. Corporate Tax, VAT, Content, Multi-Platform.">
+<meta name="description" content="Melvin Jose — UAE-based professional combining audit expertise with digital marketing strategy. Corporate Tax, VAT, FTA Compliance, Content Strategy, Multi-Platform Marketing.">
 <meta name="robots" content="index,follow">
 <meta name="author" content="Melvin Jose">
+<meta name="theme-color" content="#F7F5F2">
 <link rel="canonical" href="https://camelvinjose.com/">
+
+<!-- FIX 7: Favicon (inline SVG data URI — no file upload needed) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111111'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='Arial' font-weight='700' font-size='14' fill='%23ffffff'%3EMJ%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='20' fill='%23111111'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='Arial' font-weight='700' font-size='80' fill='%23ffffff'%3EMJ%3C/text%3E%3C/svg%3E">
+
+<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Melvin Jose | Audit &amp; Digital Marketing — UAE">
-<meta property="og:description" content="UAE-based professional combining audit expertise with digital marketing strategy.">
+<meta property="og:description" content="UAE-based professional combining audit expertise with digital marketing strategy. Corporate Tax, VAT, FTA Compliance.">
 <meta property="og:url" content="https://camelvinjose.com/">
+<meta property="og:locale" content="en_AE">
 <meta name="twitter:card" content="summary">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Melvin Jose","jobTitle":"Audit & Digital Marketing Professional","url":"https://camelvinjose.com/","sameAs":["https://linkedin.com/in/melvin-jose-"],"address":{"@type":"PostalAddress","addressRegion":"Ajman","addressCountry":"AE"}}</script>
+<meta name="twitter:title" content="Melvin Jose | Audit &amp; Digital Marketing — UAE">
+<meta name="twitter:description" content="UAE-based professional combining audit and digital marketing expertise.">
+
+<!-- FIX 3: Enhanced Schema.org structured data for rich results -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Melvin Jose",
+  "jobTitle":"Audit & Digital Marketing Professional",
+  "description":"UAE-based professional with 5+ years experience in audit, corporate tax, VAT compliance, FTA regulations and digital marketing strategy.",
+  "url":"https://camelvinjose.com/",
+  "sameAs":["https://linkedin.com/in/melvin-jose-"],
+  "address":{"@type":"PostalAddress","addressLocality":"Ajman","addressCountry":"AE"},
+  "knowsAbout":["Audit","Corporate Tax","VAT","FTA Compliance","Digital Marketing","Content Strategy","Multi-Platform Marketing","Brand Building","E-Invoicing","MIS Reporting"],
+  "hasOccupation":{"@type":"Occupation","name":"Audit & Digital Marketing Professional","occupationLocation":{"@type":"City","name":"Ajman, UAE"}}
+}
+</script>
+
+<!-- FIX 6: Google Analytics (replace G-XXXXXXXXXX with your Measurement ID) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Satoshi:wght@300;400;500;700&family=Space+Mono:wght@400&display=swap" media="print" onload="this.media='all'">
@@ -82,19 +111,20 @@ nav{
   position:relative;overflow:hidden;
 }
 
-/* Animated grid lines */
+/* Animated grid lines — FIX: use transform (composited) not background-position */
 .grid-bg{
   position:absolute;inset:0;
   background-image:
     linear-gradient(rgba(0,0,0,.045) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0,0,0,.045) 1px, transparent 1px);
   background-size:80px 80px;
-  animation:grid-drift 20s linear infinite;
   pointer-events:none;
+  will-change:transform;
+  animation:grid-drift 20s linear infinite;
 }
 @keyframes grid-drift{
-  0%{background-position:0 0;}
-  100%{background-position:80px 80px;}
+  0%{transform:translate(0,0);}
+  100%{transform:translate(80px,80px);}
 }
 
 /* Floating orbs */
@@ -474,16 +504,16 @@ footer{
 }
 .footer-left{
   font-family:var(--mono);font-size:.6rem;
-  color:rgba(255,255,255,.25);letter-spacing:.06em;
+  color:rgba(255,255,255,.75);letter-spacing:.06em;
 }
 .footer-right{display:flex;gap:1.75rem;}
 .footer-right a{
   font-family:var(--mono);font-size:.6rem;
-  color:rgba(255,255,255,.3);text-decoration:none;
+  color:rgba(255,255,255,.75);text-decoration:none;
   letter-spacing:.06em;text-transform:uppercase;
   transition:color .2s;
 }
-.footer-right a:hover{color:rgba(255,255,255,.7);}
+.footer-right a:hover{color:#ffffff;}
 
 /* ── SCROLL REVEAL ── */
 .sr{
@@ -719,10 +749,28 @@ footer{
          class="btn-glow" aria-label="Connect on LinkedIn">
         Connect on LinkedIn &nbsp;↗
       </a>
-      <a href="mailto:inquiries.melvinjose@gmail.com" class="btn-plain"
-         aria-label="Send Melvin an email">
+      <a href="javascript:void(0)" id="emailBtn" class="btn-plain"
+         aria-label="Send Melvin an email" onclick="var u='inquiries.melvinjose';var d='gmail.com';window.location='mailto:'+u+'@'+d;">
         Send an Email
       </a>
+    </div>
+  </div>
+</section>
+
+<!-- FIX 4 & 5: Rich text content block — improves Text-to-HTML ratio for SEO -->
+<section aria-label="Professional summary" style="padding:5rem 3.5rem;background:var(--bg2);border-top:1px solid rgba(0,0,0,.06);">
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:3rem;">
+    <div>
+      <h3 style="font-family:var(--display);font-weight:700;font-size:1.1rem;letter-spacing:-.02em;margin-bottom:.75rem;color:var(--ink);">Audit Expertise</h3>
+      <p style="font-size:.9rem;color:var(--mid);line-height:1.85;font-weight:300;">Specialised in UAE corporate tax, VAT compliance, FTA regulations, statutory audit, and e-invoicing. Years of hands-on experience navigating complex financial regulations across multiple industries and client profiles, building precision-driven compliance frameworks that hold up under scrutiny.</p>
+    </div>
+    <div>
+      <h3 style="font-family:var(--display);font-weight:700;font-size:1.1rem;letter-spacing:-.02em;margin-bottom:.75rem;color:var(--ink);">Digital Marketing</h3>
+      <p style="font-size:.9rem;color:var(--mid);line-height:1.85;font-weight:300;">Multi-platform content strategy and campaign architecture across LinkedIn, Instagram, Facebook, TikTok, YouTube and email. Performance reporting, brand building, graphic design, and email marketing — all executed with the analytical rigour that comes from an audit background, not a purely creative one.</p>
+    </div>
+    <div>
+      <h3 style="font-family:var(--display);font-weight:700;font-size:1.1rem;letter-spacing:-.02em;margin-bottom:.75rem;color:var(--ink);">The Intersection</h3>
+      <p style="font-size:.9rem;color:var(--mid);line-height:1.85;font-weight:300;">Based in Ajman, UAE with over 5 years of professional experience across both disciplines. The rare ability to read a balance sheet and write a campaign brief — to understand financial risk and communicate it clearly to any audience — is the foundation of everything I build and every strategy I run.</p>
     </div>
   </div>
 </section>
@@ -733,7 +781,7 @@ footer{
   <span class="footer-left">© 2026 Melvin Jose · Ajman, UAE</span>
   <nav class="footer-right" aria-label="Footer links">
     <a href="https://linkedin.com/in/melvin-jose-" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    <a href="mailto:inquiries.melvinjose@gmail.com">Email</a>
+    <a href="javascript:void(0)" onclick="var u='inquiries.melvinjose';var d='gmail.com';window.location='mailto:'+u+'@'+d;" aria-label="Email Melvin Jose">Email</a>
   </nav>
 </footer>
 
