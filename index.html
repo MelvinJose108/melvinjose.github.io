@@ -1,320 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Melvin Jose | Learn UAE Tax, Audit &amp; Digital Marketing</title>
-<meta name="description" content="Plain-English guides on UAE Corporate Tax, VAT, audit and digital marketing by Melvin Jose, with a quick tax calculator.">
-<meta name="author" content="Melvin Jose">
-<link rel="canonical" href="https://camelvinjose.com/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Melvin Jose | Learn UAE Tax, Audit &amp; Digital Marketing">
-<meta property="og:description" content="Plain-English guides on UAE Corporate Tax, VAT, audit and digital marketing.">
-<meta property="og:url" content="https://camelvinjose.com/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2310243A'/%3E%3Ctext x='50%25' y='52%25' dominant-baseline='central' text-anchor='middle' font-family='Arial' font-weight='700' font-size='14' fill='%23C99A2E'%3EMJ%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --bg:#F4F7F8;--paper:#FFFFFF;--ink:#10243A;--mute:#55697C;--line:#D5DEE4;
-  --teal:#0E7C86;--brass:#C99A2E;--tax:#0E7C86;--vat:#B7791F;--audit:#3B5BA9;--mkt:#B4456B;
-  --ui:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
-  --display:'Bricolage Grotesque',system-ui,sans-serif;
-  --read:'Source Serif 4',Georgia,serif;
-}
-@media(prefers-color-scheme:dark){
-  :root{--bg:#0C1A28;--paper:#122338;--ink:#EAF0F5;--mute:#9DB0C1;--line:#24394F;--teal:#4FC3CC;--brass:#E2B450;
-  --tax:#4FC3CC;--vat:#E2B450;--audit:#8EA8EE;--mkt:#EE88A9}
-}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font-family:var(--ui);line-height:1.6;-webkit-font-smoothing:antialiased}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
-.wrap{max-width:1120px;margin:0 auto;padding:0 1.5rem}
-
-header{border-bottom:1px solid var(--line)}
-header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:1.1rem;padding-bottom:1.1rem}
-.logo{font-family:var(--display);font-weight:700;font-size:1.15rem;text-decoration:none;letter-spacing:-.01em}
-.logo span{color:var(--brass)}
-nav{display:flex;gap:1.75rem;font-size:.95rem}
-nav a{text-decoration:none;color:var(--mute)}
-nav a:hover{color:var(--ink)}
-
-/* hero */
-.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:4rem;align-items:center;padding:5rem 0 4.5rem}
-h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,5.6vw,4.6rem);line-height:1;letter-spacing:-.035em;margin-bottom:1.5rem}
-.lede{font-size:1.15rem;color:var(--mute);max-width:34rem;margin-bottom:2rem}
-.search{display:flex;max-width:34rem;border:2px solid var(--ink);border-radius:6px;background:var(--paper)}
-.search input{flex:1;border:0;background:transparent;color:var(--ink);font:inherit;padding:.9rem 1rem;min-width:0}
-.search input:focus{outline:none}
-.search:focus-within{border-color:var(--teal);box-shadow:0 0 0 3px rgba(14,124,134,.25)}
-.search button{border:0;background:var(--ink);color:var(--bg);font:inherit;font-weight:600;padding:0 1.4rem;cursor:pointer}
-.search button:hover{background:var(--teal);color:#fff}
-
-/* ledger-style calculator: the one memorable element */
-.sheet{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:1.75rem 1.75rem 1.5rem;
-  background-image:repeating-linear-gradient(transparent,transparent 31px,var(--line) 31px,var(--line) 32px);
-  background-position:0 3.2rem;box-shadow:0 1px 0 var(--line)}
-.sheet h2{font-family:var(--display);font-size:1.35rem;margin-bottom:1rem;background:var(--paper);display:inline-block;padding-right:.5rem}
-.sheet label{display:block;font-size:.85rem;color:var(--mute);margin:.9rem 0 .25rem;background:var(--paper);width:max-content;padding-right:.4rem}
-.sheet select,.sheet input{width:100%;font:inherit;font-size:1.05rem;padding:.65rem .8rem;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink)}
-#out{margin-top:1.25rem;background:var(--paper)}
-#out div{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;border-bottom:1px solid var(--line)}
-#out div:last-child{border-bottom:2px solid var(--ink);font-weight:700;font-size:1.1rem}
-#out dd{font-variant-numeric:tabular-nums;white-space:nowrap}
-.note{font-size:.8rem;color:var(--mute);margin-top:1rem;background:var(--paper)}
-
-/* library */
-.library{padding:1rem 0 5rem}
-.library h2,.li h2,.about h2,.join h2{font-family:var(--display);font-size:clamp(1.9rem,3.4vw,2.7rem);letter-spacing:-.025em;line-height:1.05}
-.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:1rem;margin:0 0 1.5rem}
-.tabs{display:flex;flex-wrap:wrap;gap:1.4rem}
-.tabs button{border:0;background:none;font:inherit;color:var(--mute);padding:.35rem 0;cursor:pointer;border-bottom:3px solid transparent}
-.tabs button:hover{color:var(--ink)}
-.tabs button[aria-pressed=true]{color:var(--ink);font-weight:600;border-bottom-color:var(--brass)}
-#count{color:var(--mute);font-size:.9rem}
-.list{border-top:2px solid var(--ink)}
-.row{display:grid;grid-template-columns:1fr 11rem;gap:1.5rem;padding:1.5rem 0 1.5rem 1.25rem;border-bottom:1px solid var(--line);
-  border-left:5px solid var(--c);text-decoration:none;margin-left:0}
-.row:hover{background:var(--paper)}
-.row h3{font-family:var(--display);font-size:1.4rem;line-height:1.15;letter-spacing:-.015em;margin-bottom:.35rem}
-.row p{color:var(--mute);max-width:42rem}
-.row .meta{font-size:.9rem;color:var(--mute);text-align:right}
-.row .meta b{display:block;color:var(--c);font-weight:600}
-.empty{padding:2rem 0;color:var(--mute)}
-
-/* linkedin */
-.li{padding:0 0 5rem}
-.li-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(20rem,1fr));gap:1.5rem;margin-top:1.5rem;align-items:start}
-.li-grid iframe{width:100%;height:600px;border:1px solid var(--line);border-radius:6px;background:#fff}
-.li-empty{margin-top:1rem;color:var(--mute)}
-.li-empty p{margin-bottom:1rem;max-width:36rem}
-
-/* about + join */
-.about{background:var(--ink);color:var(--bg);padding:4.5rem 0}
-.about .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:4rem}
-.about p{font-family:var(--read);font-size:1.15rem;line-height:1.75;margin-bottom:1rem;opacity:.92}
-.about a{color:var(--brass)}
-.join{padding:4.5rem 0}
-.join p{color:var(--mute);max-width:36rem;margin:.9rem 0 1.5rem}
-.btn{display:inline-block;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:600;padding:.9rem 1.6rem;border-radius:6px}
-.btn:hover{background:var(--teal);color:#fff}
-.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink);margin-left:.6rem}
-.btn.alt:hover{background:var(--ink);color:var(--bg)}
-footer{border-top:1px solid var(--line);padding:1.75rem 0;font-size:.85rem;color:var(--mute)}
-
-/* reader */
-dialog{width:min(46rem,94vw);max-height:92vh;margin:auto;border:0;border-radius:8px;padding:0;background:var(--paper);color:var(--ink);overflow:auto}
-dialog::backdrop{background:rgba(8,18,30,.65)}
-.r-head{padding:2rem 2.25rem 1rem;border-bottom:1px solid var(--line);border-left:6px solid var(--c)}
-.r-head small{color:var(--c);font-weight:600}
-.r-head h2{font-family:var(--display);font-size:clamp(1.7rem,4vw,2.3rem);line-height:1.1;letter-spacing:-.025em;margin:.3rem 0 .2rem}
-.r-head span{color:var(--mute);font-size:.9rem}
-.r-body{padding:1.5rem 2.25rem 2rem;font-family:var(--read);font-size:1.15rem;line-height:1.8;max-width:42rem}
-.r-body h3{font-family:var(--display);font-size:1.25rem;margin:1.6rem 0 .4rem}
-.r-body p,.r-body ul{margin-bottom:1rem}
-.r-body ul{padding-left:1.3rem}
-.r-body .tip{border-left:4px solid var(--brass);padding:.2rem 0 .2rem 1rem;color:var(--mute)}
-.r-foot{padding:0 2.25rem 2rem}
-.r-foot button{font:inherit;font-weight:600;padding:.7rem 1.3rem;border-radius:6px;border:2px solid var(--ink);background:none;color:var(--ink);cursor:pointer}
-.r-foot button:hover{background:var(--ink);color:var(--paper)}
-
-@media(max-width:860px){
-  .hero{grid-template-columns:1fr;gap:3rem;padding:3rem 0}
-  .about .wrap{grid-template-columns:1fr;gap:1.5rem}
-  .row{grid-template-columns:1fr;gap:.5rem}
-  .row .meta{text-align:left}
-  nav{gap:1.1rem}
-  .btn.alt{margin:.6rem 0 0}
-}
-</style>
-</head>
-<body>
-
-<header>
-  <div class="wrap">
-    <a class="logo" href="./">Melvin Jose<span>.</span>learn</a>
-    <nav aria-label="Main">
-      <a href="#library">Guides</a>
-      <a href="#linkedin">LinkedIn</a>
-      <a href="#about">About</a>
-      <a href="#join">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-<section class="wrap hero">
-  <div>
-    <h1>Tax, audit and marketing, explained plainly.</h1>
-    <p class="lede">Short guides from a working audit professional in the UAE. Search the library, pick a topic, or try the calculator.</p>
-    <form class="search" role="search" onsubmit="return false">
-      <label for="q" hidden>Search guides</label>
-      <input id="q" type="search" placeholder="Search guides, for example VAT" autocomplete="off">
-      <button type="button" onclick="document.getElementById('library').scrollIntoView()">Search</button>
-    </form>
-  </div>
-
-  <aside class="sheet" aria-label="Quick calculator">
-    <h2>Quick calculator</h2>
-    <label for="mode">What do you want to work out?</label>
-    <select id="mode"><option value="vat">VAT on an amount</option><option value="ct">Corporate Tax on profit</option></select>
-    <label for="amt" id="amtLabel">Amount before VAT (AED)</label>
-    <input id="amt" type="number" min="0" step="any" inputmode="decimal" value="1000">
-    <dl id="out" aria-live="polite"></dl>
-    <p class="note">Illustrative only. Check current rates and conditions with the Federal Tax Authority.</p>
-  </aside>
-</section>
-
-<section class="wrap library" id="library">
-  <div class="bar">
-    <h2>Guides</h2>
-    <span id="count" aria-live="polite"></span>
-  </div>
-  <div class="tabs" id="tabs" role="group" aria-label="Filter by topic" style="margin-bottom:1.25rem"></div>
-  <div class="list" id="list"></div>
-</section>
-
-<section class="wrap li" id="linkedin">
-  <h2>From LinkedIn</h2>
-  <div class="li-grid" id="liGrid"></div>
-  <div class="li-empty" id="liEmpty" hidden>
-    <p>New posts go up on LinkedIn first. Follow along to see them as they are published.</p>
-    <a class="btn" href="https://linkedin.com/in/melvin-jose-" target="_blank" rel="noopener noreferrer">Follow on LinkedIn</a>
-  </div>
-</section>
-
-<section class="about" id="about">
-  <div class="wrap">
-    <h2>Why this exists</h2>
-    <div>
-      <p>I work in audit in Ajman, handling Corporate Tax, VAT and FTA compliance for businesses across the UAE. The same questions come up again and again, so I write the answers down.</p>
-      <p>I also work in digital marketing, which is why these guides aim to be readable, not just correct.</p>
-      <p>Find me on <a href="https://linkedin.com/in/melvin-jose-" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
-    </div>
-  </div>
-</section>
-
-<section class="wrap join" id="join">
-  <h2>Suggest a topic</h2>
-  <p>Tell me what you would like explained next, or ask about working together.</p>
-  <a class="btn" href="mailto:inquiries.melvinjose&#64;gmail&#46;com?subject=Topic%20suggestion">Email Melvin</a>
-  <a class="btn alt" href="https://linkedin.com/in/melvin-jose-" target="_blank" rel="noopener noreferrer">Message on LinkedIn</a>
-</section>
-</main>
-
-<footer>
-  <div class="wrap">© 2026 Melvin Jose, Ajman, UAE. Educational content only, not tax, legal or financial advice. Rules change, so confirm details with the Federal Tax Authority or a qualified adviser.</div>
-</footer>
-
-<dialog id="reader" aria-labelledby="rTitle">
-  <div class="r-head" id="rHead"><small id="rCat"></small><h2 id="rTitle"></h2><span id="rMeta"></span></div>
-  <div class="r-body" id="rBody"></div>
-  <div class="r-foot"><button type="button" id="rClose">Close guide</button></div>
-</dialog>
-
-<script>
-/* ADD YOUR OWN GUIDES HERE: copy one block, change the text, save. */
-var POSTS=[
-{id:"vat-basics",cat:"VAT",mins:5,title:"VAT in the UAE: the basics",
- excerpt:"What VAT is, who has to register, and the difference between zero-rated and exempt supplies.",
- body:`<p>VAT is an indirect tax added to most goods and services. In the UAE the standard rate is 5%. Businesses collect it from customers and pass it to the Federal Tax Authority (FTA), after deducting the VAT they paid on their own purchases.</p>
-<h3>Who must register</h3><p>A business must register when its taxable supplies and imports pass AED 375,000 over the previous 12 months, or are expected to in the next 30 days. Voluntary registration is available from AED 187,500.</p>
-<h3>Zero-rated is not exempt</h3><ul><li><b>Zero-rated:</b> VAT is charged at 0%, and you can still recover the VAT on your costs.</li><li><b>Exempt:</b> no VAT is charged, and you generally cannot recover the VAT on related costs.</li></ul>
-<p class="tip">Keep tax invoices in the required format. Missing details are one of the most common reasons input VAT is questioned.</p>`},
-{id:"corporate-tax-101",cat:"Corporate Tax",mins:6,title:"Corporate Tax 101: who pays and how much",
- excerpt:"The 0% and 9% bands, what counts as taxable income, and when a business must register.",
- body:`<p>UAE Corporate Tax applies to financial years starting on or after 1 June 2023. Taxable income up to AED 375,000 is taxed at 0%, and the portion above that is taxed at 9%.</p>
-<h3>Start from the accounts</h3><p>Taxable income begins with the accounting profit in your financial statements, then is adjusted for items the law treats differently, such as certain non-deductible expenses and exempt income.</p>
-<h3>Registration and filing</h3><p>Most taxable persons must register with the FTA and file a return after each tax period, even when no tax is due in some cases. Check the current deadlines before you plan your year.</p>
-<p class="tip">Try the calculator at the top of the page to see how the 0% and 9% bands work on a sample figure.</p>`},
-{id:"qfzp",cat:"Corporate Tax",mins:7,title:"Qualifying Free Zone Persons explained",
- excerpt:"How a free zone company can reach a 0% rate on qualifying income, and what can switch it off.",
- body:`<p>A Free Zone Person that meets the conditions to be a Qualifying Free Zone Person (QFZP) can pay 0% on its qualifying income. Income that does not qualify is taxed at the standard rate.</p>
-<h3>The ideas behind the rules</h3><ul><li>The business needs real activity and people in the free zone.</li><li>Its income must come from activities the law treats as qualifying.</li><li>It must keep proper records and meet the other conditions each year.</li></ul>
-<p>Failing a condition can mean losing QFZP status for a period, so this is worth reviewing every year, not just at set-up.</p>
-<p class="tip">Rules and cabinet decisions on qualifying activities are updated from time to time. Always check the latest version.</p>`},
-{id:"audit-start-to-finish",cat:"Audit",mins:6,title:"How an audit works, start to finish",
- excerpt:"Planning, risk assessment, fieldwork and reporting, in the order they actually happen.",
- body:`<p>An audit is an independent check that financial statements give a fair picture of a business. Most audits follow the same path.</p>
-<h3>The stages</h3><ul><li><b>Planning:</b> understand the business, set materiality, and agree timing.</li><li><b>Risk assessment:</b> find where errors are most likely.</li><li><b>Fieldwork:</b> test balances and transactions, and collect evidence.</li><li><b>Reporting:</b> discuss findings with management, then issue the audit opinion.</li></ul>
-<p class="tip">The smoother your trial balance and supporting documents are on day one, the shorter the audit.</p>`},
-{id:"balance-sheet",cat:"Audit",mins:4,title:"Read a balance sheet in five minutes",
- excerpt:"Assets, liabilities and equity, and the three checks that tell you the most.",
- body:`<p>A balance sheet is a snapshot of what a business owns and owes on one date. It always balances: assets equal liabilities plus equity.</p>
-<h3>Three quick checks</h3><ul><li><b>Liquidity:</b> are current assets larger than current liabilities?</li><li><b>Debt:</b> how much is funded by borrowing compared with owners’ money?</li><li><b>Trends:</b> compare with last year, because the direction matters more than one number.</li></ul>`},
-{id:"content-strategy",cat:"Digital Marketing",mins:5,title:"A simple content strategy for professionals",
- excerpt:"Pick three topics, write one idea per post, and reuse each piece across platforms.",
- body:`<p>Professionals do not need a complicated content plan. They need a repeatable one.</p>
-<h3>The method</h3><ul><li><b>Choose three topics</b> you can speak about with authority.</li><li><b>One idea per post.</b> If you need two, write two posts.</li><li><b>Reuse.</b> Turn a guide into a short post, a carousel and an email.</li></ul>
-<p class="tip">Answer the questions clients actually ask you. They are your best content ideas.</p>`}
-];
-var COLORS={"Corporate Tax":"var(--tax)","VAT":"var(--vat)","Audit":"var(--audit)","Digital Marketing":"var(--mkt)"};
-var CATS=["All","Corporate Tax","VAT","Audit","Digital Marketing"];
-var cat="All",q="";
-var $=function(s){return document.querySelector(s)};
-
-function renderTabs(){
-  $("#tabs").innerHTML=CATS.map(function(c){return '<button type="button" aria-pressed="'+(c===cat)+'" data-c="'+c+'">'+c+'</button>'}).join("");
-}
-function render(){
-  var list=POSTS.filter(function(p){return (cat==="All"||p.cat===cat)&&(p.title+" "+p.excerpt+" "+p.cat).toLowerCase().indexOf(q)>-1});
-  $("#count").textContent=list.length+(list.length===1?" guide":" guides");
-  $("#list").innerHTML=list.length?list.map(function(p){
-    return '<a class="row" href="#'+p.id+'" style="--c:'+COLORS[p.cat]+'"><div><h3>'+p.title+'</h3><p>'+p.excerpt+'</p></div><div class="meta"><b>'+p.cat+'</b>'+p.mins+' min read</div></a>';
-  }).join(""):'<p class="empty">No guides match that search. Try a different word, or choose All.</p>';
-}
-$("#tabs").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;cat=b.dataset.c;renderTabs();render();});
-$("#q").addEventListener("input",function(e){q=e.target.value.trim().toLowerCase();render();});
-
-/* reader */
-var dlg=$("#reader");
-function openFromHash(){
-  var id=location.hash.slice(1),p=POSTS.filter(function(x){return x.id===id})[0];
-  if(!p){if(dlg.open)dlg.close();return;}
-  dlg.style.setProperty("--c",COLORS[p.cat]);
-  $("#rCat").textContent=p.cat;$("#rTitle").textContent=p.title;
-  $("#rMeta").textContent=p.mins+" min read by Melvin Jose";$("#rBody").innerHTML=p.body;
-  if(!dlg.open)dlg.showModal();dlg.scrollTop=0;
-}
-dlg.addEventListener("close",function(){if(location.hash)history.replaceState(null,"",location.pathname+location.search);});
-dlg.addEventListener("click",function(e){if(e.target===dlg)dlg.close();});
-$("#rClose").addEventListener("click",function(){dlg.close();});
-window.addEventListener("hashchange",openFromHash);
-
-/* calculator */
-function fmt(n){return n.toLocaleString("en-AE",{minimumFractionDigits:2,maximumFractionDigits:2})}
-function calc(){
-  var a=parseFloat($("#amt").value)||0,rows;
-  if($("#mode").value==="vat"){var v=a*0.05;rows=[["Amount before VAT",a],["VAT at 5%",v],["Total to pay",a+v]];}
-  else{var t=Math.max(0,a-375000)*0.09;rows=[["Taxable income",a],["First AED 375,000 at 0%",0],["Corporate Tax at 9% above that",t]];}
-  $("#out").innerHTML=rows.map(function(r){return "<div><dt>"+r[0]+"</dt><dd>AED "+fmt(r[1])+"</dd></div>"}).join("");
-}
-$("#mode").addEventListener("change",function(){
-  var vat=this.value==="vat";
-  $("#amtLabel").textContent=vat?"Amount before VAT (AED)":"Taxable income for the year (AED)";
-  $("#amt").value=vat?1000:500000;calc();
-});
-$("#amt").addEventListener("input",calc);
-
-/* LINKEDIN POSTS: on a public LinkedIn post, click the three dots, choose "Embed this post",
-   then paste ONLY the address inside src="..." as a new line in the list below. */
-var LINKEDIN=[
-  "https://www.linkedin.com/embed/feed/update/urn:li:share:7525509105244098560?collapsed=1"
-  // add more posts here, one per line, separated by commas
-];
-function renderLI(){
-  var ok=LINKEDIN.filter(function(u){return /^https:\/\/www\.linkedin\.com\/embed\//.test(u)});
-  $("#liGrid").innerHTML=ok.map(function(u,i){
-    var h=/[?&]collapsed=1/.test(u)?263:600;
-    return '<iframe src="'+u+'" style="height:'+h+'px" title="LinkedIn post '+(i+1)+'" loading="lazy" allowfullscreen></iframe>';
-  }).join("");
-  $("#liEmpty").hidden=ok.length>0;
-}
-
-renderTabs();render();calc();renderLI();openFromHash();
-</script>
-</body>
-</html>
+---
+layout: default
+---
+{% assign lead = site.posts.first %}
+<p class="intro">{{ site.description }}</p>
+<div class="cols">
+<div>
+{% if lead %}
+<article class="lead">
+  <p class="kicker">{{ lead.topic }}</p>
+  <h1><a href="{{ lead.url | relative_url }}">{{ lead.title }}</a></h1>
+  <p class="dek">{{ lead.description }}</p>
+  <p class="meta">{{ lead.date | date: "%-d %B %Y" }} · {{ lead.content | number_of_words | divided_by: 200 | plus: 1 }} min read</p>
+</article>
+{% endif %}
+<h2 class="sect">More guides</h2>
+<ul class="feed">
+{% for p in site.posts offset:1 limit:12 %}
+  <li>
+    <p class="kicker">{{ p.topic }}</p>
+    <h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
+    <p>{{ p.description }}</p>
+    <p class="meta">{{ p.date | date: "%-d %B %Y" }} · {{ p.content | number_of_words | divided_by: 200 | plus: 1 }} min read</p>
+  </li>
+{% endfor %}
+</ul>
+</div>
+<aside>
+  <section>
+    <h2 class="sect">Topics</h2>
+    <ul class="topics">
+    {% assign groups = site.posts | group_by: "topic" %}
+    {% for g in groups %}<li><a href="{{ '/guides/' | relative_url }}#{{ g.name | slugify }}">{{ g.name }}</a><span>{{ g.size }}</span></li>{% endfor %}
+    </ul>
+  </section>
+  <section>
+    <h2 class="sect">Follow</h2>
+    <p><a href="{{ '/feed.xml' | relative_url }}">RSS feed</a></p>
+    {% if site.newsletter_url and site.newsletter_url != "" %}<a class="btn" href="{{ site.newsletter_url }}">Get the newsletter</a>{% endif %}
+  </section>
+</aside>
+</div>

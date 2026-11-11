@@ -1,0 +1,17 @@
+title: UAE Tax & Audit Notes
+description: Plain-English guides and updates on UAE Corporate Tax, VAT and audit.
+url: https://camelvinjose.com
+author: Melvin Jose
+# Paste your newsletter signup page link here (Substack, Beehiiv, MailerLite...) to show a button on the home page
+newsletter_url: ""
+permalink: /guides/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
