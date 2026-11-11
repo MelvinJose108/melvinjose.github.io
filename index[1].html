@@ -1,0 +1,21 @@
+---
+layout: default
+---
+{% assign groups = site.posts | group_by: "topic" %}
+<section class="hero">
+  <p class="pill"><span class="dot"></span>Latest update {{ site.posts.first.date | date: "%-d %B %Y" }}</p>
+  <h1>UAE tax and audit, <span class="grad">made clear.</span></h1>
+  <p class="sub">{{ site.description }} {{ site.posts.size }} guides across {{ groups.size }} topics.</p>
+  {% include filters.html %}
+</section>
+<div class="grid">
+{% for p in site.posts limit:12 %}{% include card.html p=p %}{% endfor %}
+</div>
+<p id="none" class="empty" hidden>No guides match that search. Try another word.</p>
+<p class="more"><a href="{{ '/guides/' | relative_url }}">Browse the full archive →</a></p>
+{% if site.newsletter_url and site.newsletter_url != "" %}
+<section class="band">
+  <div><h2>New guides, by email</h2><p>A short note when a guide or tax update is published.</p></div>
+  <a class="btn" href="{{ site.newsletter_url }}" rel="noopener">Get the newsletter</a>
+</section>
+{% endif %}
