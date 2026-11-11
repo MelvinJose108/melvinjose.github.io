@@ -1,0 +1,60 @@
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#FAFAF7;--paper:#fff;--ink:#14202E;--mute:#5B6773;--line:#DAD9D2;--acc:#0F5C6B;--brass:#9A7420;
+--serif:'Source Serif 4',Georgia,serif;--ui:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+@media(prefers-color-scheme:dark){:root{--bg:#10171F;--paper:#17212C;--ink:#ECEFF2;--mute:#9AA6B2;--line:#27323D;--acc:#6CC4D4;--brass:#D7B25A}}
+body{background:var(--bg);color:var(--ink);font-family:var(--ui);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.5rem}
+.top{border-top:6px solid var(--ink);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:.75rem 2rem;padding-top:1.3rem;padding-bottom:1.1rem}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.7rem;letter-spacing:-.01em;text-decoration:none}
+.top nav{display:flex;gap:1.6rem;font-size:.95rem}
+.top nav a{text-decoration:none;color:var(--mute)}
+.top nav a:hover{color:var(--ink)}
+main{padding:2.5rem 0 4rem}
+.intro{color:var(--mute);font-size:1.05rem;margin-bottom:2rem;max-width:40rem}
+.cols{display:grid;grid-template-columns:1fr 17rem;gap:3.5rem}
+.kicker{font-size:.82rem;font-weight:600;color:var(--acc);margin-bottom:.3rem}
+.lead{padding-bottom:2rem;border-bottom:1px solid var(--line);margin-bottom:2rem}
+.lead h1{font-family:var(--serif);font-weight:700;font-size:clamp(2rem,4.4vw,3.1rem);line-height:1.08;letter-spacing:-.02em;margin-bottom:.8rem}
+.lead h1 a,.feed h3 a{text-decoration:none}
+.lead h1 a:hover,.feed h3 a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.dek{font-family:var(--serif);font-size:1.25rem;line-height:1.55;color:var(--mute);margin-bottom:.8rem}
+.meta{font-size:.85rem;color:var(--mute)}
+.sect{font-size:.92rem;font-weight:600;border-bottom:2px solid var(--ink);padding-bottom:.4rem;margin-bottom:1rem}
+.feed{list-style:none}
+.feed li{padding:1.1rem 0;border-bottom:1px solid var(--line)}
+.feed h3{font-family:var(--serif);font-size:1.4rem;line-height:1.2;margin-bottom:.3rem}
+.feed p:not(.kicker):not(.meta){color:var(--mute);margin-bottom:.3rem}
+aside section{margin-bottom:2rem}
+.topics{list-style:none}
+.topics li{display:flex;justify-content:space-between;padding:.5rem 0;border-bottom:1px solid var(--line)}
+.topics a{text-decoration:none}.topics a:hover{color:var(--acc)}
+.topics span{color:var(--mute)}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:600;padding:.7rem 1.2rem;border-radius:4px;margin-top:.6rem}
+.btn:hover{background:var(--acc);color:var(--bg)}
+.pagetitle{font-family:var(--serif);font-size:2.4rem;letter-spacing:-.02em;line-height:1.1;margin-bottom:1.5rem}
+.arch{margin-bottom:2.5rem;max-width:44rem}
+.post{max-width:41rem;margin:0 auto}
+.post h1:not(.pagetitle){font-family:var(--serif);font-size:clamp(2rem,4.6vw,3rem);line-height:1.08;letter-spacing:-.02em;margin:.3rem 0 .8rem}
+.byline{font-size:.9rem;color:var(--mute);padding-bottom:1.4rem;border-bottom:1px solid var(--line);margin-bottom:1.6rem}
+.body{font-family:var(--serif);font-size:1.2rem;line-height:1.8}
+.body h3{font-family:var(--serif);font-size:1.35rem;margin:2rem 0 .5rem}
+.body p,.body ul{margin-bottom:1.1rem}
+.body ul{padding-left:1.4rem}
+.body a,.post .meta a{color:var(--acc)}
+.tip{border-left:4px solid var(--brass);padding-left:1rem;color:var(--mute)}
+.disc{font-size:.85rem;color:var(--mute);border-top:1px solid var(--line);padding-top:1rem;margin:2.5rem 0 1rem}
+.sheet{max-width:30rem}
+.sheet label{display:block;font-size:.85rem;color:var(--mute);margin:1rem 0 .25rem}
+.sheet select,.sheet input{width:100%;font:inherit;font-size:1.05rem;padding:.65rem .8rem;border:1px solid var(--line);border-radius:4px;background:var(--paper);color:var(--ink)}
+#out{margin-top:1.25rem}
+#out div{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;border-bottom:1px solid var(--line)}
+#out div:last-child{border-bottom:2px solid var(--ink);font-weight:700}
+#out dd{font-variant-numeric:tabular-nums;white-space:nowrap}
+.sheet .note{font-size:.8rem;color:var(--mute);margin-top:1rem}
+footer{border-top:1px solid var(--line);padding:1.6rem 0;font-size:.85rem;color:var(--mute)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75rem 2rem}
+footer p{max-width:44rem}
+@media(max-width:860px){.cols{grid-template-columns:1fr;gap:2rem}}

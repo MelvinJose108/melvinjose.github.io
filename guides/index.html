@@ -1,0 +1,17 @@
+---
+layout: default
+title: Archive
+permalink: /guides/
+---
+<h1 class="pagetitle">Archive</h1>
+{% assign groups = site.posts | group_by: "topic" %}
+{% for g in groups %}
+<section id="{{ g.name | slugify }}" class="arch">
+  <h2 class="sect">{{ g.name }}</h2>
+  <ul class="feed">
+  {% for p in g.items %}
+    <li><h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3><p>{{ p.description }}</p><p class="meta">{{ p.date | date: "%-d %B %Y" }}</p></li>
+  {% endfor %}
+  </ul>
+</section>
+{% endfor %}
