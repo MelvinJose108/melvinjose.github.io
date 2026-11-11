@@ -1,0 +1,8 @@
+{% assign groups = site.posts | group_by: "topic" %}
+<div class="tools">
+  <input id="q" type="search" aria-label="Search guides" placeholder="Search guides, for example VAT" autocomplete="off">
+  <div class="chips" role="group" aria-label="Filter by topic">
+    <button class="chip" type="button" data-f="all" aria-pressed="true">All</button>
+    {% for g in groups %}<button class="chip" type="button" data-f="{{ g.name | slugify }}" aria-pressed="false">{{ g.name }}</button>{% endfor %}
+  </div>
+</div>

@@ -2,7 +2,7 @@
 layout: default
 ---
 <article class="post">
-  <p class="kicker">{{ page.topic }}</p>
+  <span class="badge t-{{ page.topic | slugify }}">{{ page.topic }}</span>
   <h1>{{ page.title }}</h1>
   <p class="byline">By {{ site.author }} · Published {{ page.date | date: "%-d %B %Y" }}{% if page.reviewed %} · Last reviewed {{ page.reviewed | date: "%-d %B %Y" }}{% endif %}{% if page.source %} · <a href="{{ page.source }}" rel="noopener">Official source</a>{% endif %}</p>
   <div class="body">{{ content }}</div>
@@ -10,5 +10,5 @@ layout: default
   <aside class="sub"><p><strong>Get new guides by email.</strong> Short updates on UAE tax and audit, sent when something is published.</p><a class="btn" href="{{ site.newsletter_url }}" rel="noopener">Subscribe</a></aside>
   {% endif %}
   <p class="disc">This article is general information and may be out of date. Check the latest guidance from the Federal Tax Authority before acting.</p>
-  <p class="meta"><a href="{{ '/guides/' | relative_url }}">← All guides</a></p>
+  <a class="back" href="{{ '/guides/' | relative_url }}">← All guides</a>
 </article>
