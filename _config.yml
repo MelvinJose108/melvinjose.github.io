@@ -3,7 +3,7 @@ description: Plain-English guides and updates on UAE Corporate Tax, VAT and audi
 url: https://camelvinjose.com
 author: Melvin Jose
 # Paste your newsletter signup page link here (Substack, Beehiiv, MailerLite...) to show a button on the home page
-newsletter_url: ""
+newsletter_url: "https://melvinjoseuae.substack.com/subscribe"
 permalink: /guides/:title/
 plugins:
   - jekyll-feed
