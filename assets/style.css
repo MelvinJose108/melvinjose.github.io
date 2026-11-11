@@ -12,7 +12,7 @@ a{color:inherit}
 .top nav{display:flex;gap:1.6rem;font-size:.95rem}
 .top nav a{text-decoration:none;color:var(--mute)}
 .top nav a:hover{color:var(--ink)}
-main{padding:2.5rem 0 4rem}
+main.wrap{padding-top:2.5rem;padding-bottom:4rem}
 .intro{color:var(--mute);font-size:1.05rem;margin-bottom:2rem;max-width:40rem}
 .cols{display:grid;grid-template-columns:1fr 17rem;gap:3.5rem}
 .kicker{font-size:.82rem;font-weight:600;color:var(--acc);margin-bottom:.3rem}
@@ -58,3 +58,6 @@ footer{border-top:1px solid var(--line);padding:1.6rem 0;font-size:.85rem;color:
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75rem 2rem}
 footer p{max-width:44rem}
 @media(max-width:860px){.cols{grid-template-columns:1fr;gap:2rem}}
+.body blockquote{border-left:4px solid var(--brass);padding-left:1rem;color:var(--mute);margin-bottom:1.1rem}
+.sub{border:1px solid var(--line);background:var(--paper);padding:1.25rem 1.4rem;border-radius:4px;margin:2rem 0}
+.sub p{margin-bottom:.3rem}
