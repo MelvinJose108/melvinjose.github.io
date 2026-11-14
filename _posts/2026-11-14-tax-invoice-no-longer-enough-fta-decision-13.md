@@ -1,8 +1,9 @@
 ---
 date: 2026-11-14 08:01:00 +0400
 title: "Your Tax Invoice Won't Save Your Input VAT Anymore"
+seo_title: "FTA Decision No. 13 of 2026: Input VAT Verification Explained"
 topic: "VAT"
-description: "Since 1 October 2026, a valid tax invoice is where input VAT recovery starts, not where it ends. Here is what FTA Decision No. 13 of 2026 changed and the test that now decides your claim."
+description: "Since 1 October 2026 a valid tax invoice no longer guarantees input VAT recovery. What FTA Decision No. 13 of 2026 changed and the test that decides your claim."
 reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-1-cover.png
 ---
@@ -14,7 +15,7 @@ This is Part 1 of a 5-part series on **FTA Decision No. 13 of 2026** and the FTA
 
 ### What changed
 
-![Timeline: Decision No. 13 issued 22 July 2026, in force 1 October 2026](/assets/images/fta-decision-13/p1-timeline.png)
+![Timeline: Decision No. 13 issued 22 July 2026, in force 1 October 2026](/assets/images/fta-decision-13/p1-timeline.webp){: width="1600" height="900" loading="lazy" decoding="async"}
 
 Two pieces fit together:
 
@@ -27,7 +28,7 @@ Two pieces fit together:
 
 ### The test that decides your claim
 
-![Flowchart of the 'should have been aware' test](/assets/images/fta-decision-13/p1-test.png)
+![Flowchart of the 'should have been aware' test](/assets/images/fta-decision-13/p1-test.webp){: width="1600" height="900" loading="lazy" decoding="async"}
 
 Strip away the legal language and the logic is a single question.
 
@@ -40,7 +41,7 @@ The checks *are* your evidence. Without them, you are defending your claim from 
 
 ### Who has to prove what
 
-![The FTA proves evasion; you prove verification](/assets/images/fta-decision-13/p1-burden.png)
+![The FTA proves evasion; you prove verification](/assets/images/fta-decision-13/p1-burden.webp){: width="1600" height="900" loading="lazy" decoding="async"}
 
 This part is often misunderstood, in both directions.
 
@@ -61,10 +62,10 @@ Decision No. 13 has three pillars:
 
 The rest of the series takes each pillar apart, with the FTA's own examples:
 
-- **Part 2:** Who are you actually buying from? (supplier checks, Examples 1 to 3)
-- **Part 3:** AED 10K, 100K, 375K: the numbers that set your checks
-- **Part 4:** Too cheap, wrong licence, odd bank account (Examples 4 to 7)
-- **Part 5:** If it isn't documented, it didn't happen (Example 8 and a 6-step action plan)
+- **Part 2:** [Who are you actually buying from?]({% post_url 2026-11-14-supplier-verification-identity-premises-red-flags %}) (supplier checks, Examples 1 to 3)
+- **Part 3:** [AED 10K, 100K, 375K: the numbers that set your checks]({% post_url 2026-11-14-input-vat-verification-spend-thresholds %})
+- **Part 4:** [Too cheap, wrong licence, odd bank account]({% post_url 2026-11-14-input-vat-transaction-red-flags-payment-price-licence-origin %}) (Examples 4 to 7)
+- **Part 5:** [If it isn't documented, it didn't happen]({% post_url 2026-11-14-input-vat-documentation-policy-action-plan %}) (Example 8 and a 6-step action plan)
 
 ### What to do this week
 

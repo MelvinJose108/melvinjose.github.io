@@ -1,7 +1,9 @@
 {% assign a = site.data.author %}
-{% if page.url == '/' %}{% assign pt = site.title | append: ': UAE tax and audit guides' %}{% elsif page.seo_title %}{% assign pt = page.seo_title | append: ' | ' | append: site.title %}{% elsif page.title %}{% assign pt = page.title | append: ' | ' | append: site.title %}{% else %}{% assign pt = site.title %}{% endif %}
+{% if page.url == '/' %}{% assign pt = site.title | append: ': UAE VAT, Corporate Tax and Audit Guides' %}{% elsif page.layout == 'post' %}{% assign pt = page.seo_title | default: page.title %}{% elsif page.seo_title %}{% assign pt = page.seo_title | append: ' | ' | append: site.title %}{% elsif page.title %}{% assign pt = page.title | append: ' | ' | append: site.title %}{% else %}{% assign pt = site.title %}{% endif %}
 {% assign pd = page.description | default: site.description %}
 {% assign cu = page.url | absolute_url %}
+{% if page.image %}{% assign oi = page.image | absolute_url %}{% assign ow = 1200 %}{% assign oh = 675 %}{% else %}{% assign oi = '/assets/og-default.png' | absolute_url %}{% assign ow = 1200 %}{% assign oh = 630 %}{% endif %}
+{% if page.layout == 'post' %}{% assign ot = page.title %}{% else %}{% assign ot = pt %}{% endif %}
 <title>{{ pt | escape }}</title>
 <meta name="description" content="{{ pd | strip_html | escape }}">
 <meta name="robots" content="{{ page.robots | default: 'index,follow,max-image-preview:large' }}">
@@ -11,17 +13,27 @@
 <meta property="og:site_name" content="{{ site.title | escape }}">
 <meta property="og:locale" content="en_AE">
 <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
-<meta property="og:title" content="{{ pt | escape }}">
+<meta property="og:title" content="{{ ot | escape }}">
 <meta property="og:description" content="{{ pd | strip_html | escape }}">
 <meta property="og:url" content="{{ cu }}">
-<meta property="og:image" content="{{ '/assets/og-default.png' | absolute_url }}">
+<meta property="og:image" content="{{ oi }}">
+<meta property="og:image:width" content="{{ ow }}">
+<meta property="og:image:height" content="{{ oh }}">
+<meta property="og:image:alt" content="{{ ot | escape }}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ ot | escape }}">
+<meta name="twitter:description" content="{{ pd | strip_html | escape }}">
+<meta name="twitter:image" content="{{ oi }}">
+{% if page.layout == 'post' %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+<meta property="article:modified_time" content="{{ page.reviewed | default: page.date | date_to_xmlschema }}">
+<meta property="article:section" content="{{ page.topic | escape }}">
+<meta property="article:author" content="{{ a.linkedin }}">{% endif %}
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2316181D'/%3E%3Ctext x='50%25' y='53%25' dominant-baseline='central' text-anchor='middle' font-family='Georgia' font-weight='700' font-size='15' fill='%234FD1C5'%3EUL%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
 {"@type":"WebSite","@id":"{{ '/' | absolute_url }}#website","url":"{{ '/' | absolute_url }}","name":{{ site.title | jsonify }},"description":{{ site.description | jsonify }},"inLanguage":"en"},
 {"@type":"Person","@id":"{{ '/about/' | absolute_url }}#author","name":{{ a.name | jsonify }},"jobTitle":{{ a.title | jsonify }},"url":"{{ '/about/' | absolute_url }}","sameAs":[{{ a.linkedin | jsonify }}],"address":{"@type":"PostalAddress","addressLocality":{{ a.city | jsonify }},"addressCountry":"AE"},"knowsAbout":{{ a.expertise | jsonify }}}
-{% if page.layout == 'post' %},{"@type":"BlogPosting","headline":{{ page.title | jsonify }},"description":{{ pd | jsonify }},"datePublished":"{{ page.date | date_to_xmlschema }}","dateModified":"{{ page.reviewed | default: page.date | date_to_xmlschema }}","mainEntityOfPage":"{{ cu }}","author":{"@id":"{{ '/about/' | absolute_url }}#author"},"publisher":{"@type":"Organization","name":{{ site.title | jsonify }},"url":"{{ '/' | absolute_url }}"},"articleSection":{{ page.topic | jsonify }},"inLanguage":"en"}
+{% if page.layout == 'post' %},{"@type":"BlogPosting","headline":{{ page.title | jsonify }},"image":"{{ oi }}","description":{{ pd | jsonify }},"datePublished":"{{ page.date | date_to_xmlschema }}","dateModified":"{{ page.reviewed | default: page.date | date_to_xmlschema }}","mainEntityOfPage":"{{ cu }}","author":{"@id":"{{ '/about/' | absolute_url }}#author"},"publisher":{"@type":"Organization","name":{{ site.title | jsonify }},"url":"{{ '/' | absolute_url }}","logo":{"@type":"ImageObject","url":"{{ '/assets/og-default.png' | absolute_url }}"}},"articleSection":{{ page.topic | jsonify }},"inLanguage":"en"}
 ,{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ '/' | absolute_url }}"},{"@type":"ListItem","position":2,"name":{{ page.topic | jsonify }},"item":"{{ '/' | append: page.topic | slugify | append: '/' | absolute_url }}"},{"@type":"ListItem","position":3,"name":{{ page.title | jsonify }}}]}{% endif %}
 {% if page.layout == 'topic' %},{"@type":"CollectionPage","name":{{ pt | jsonify }},"description":{{ pd | jsonify }},"url":"{{ cu }}","isPartOf":{"@id":"{{ '/' | absolute_url }}#website"}}
 ,{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ '/' | absolute_url }}"},{"@type":"ListItem","position":2,"name":{{ page.topic | jsonify }}}]}{% endif %}
