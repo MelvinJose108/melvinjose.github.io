@@ -1,8 +1,9 @@
 ---
 date: 2026-11-14 08:03:00 +0400
 title: "AED 10K, 100K, 375K: The Three Numbers That Decide How Deep You Verify Suppliers"
+seo_title: "Input VAT Supplier Checks: AED 10K, 100K and 375K Thresholds"
 topic: "VAT"
-description: "Under FTA Decision No. 13 of 2026, the depth of your supplier checks depends on spend per supplier. Why invoice splitting doesn't help, and when to re-verify."
+description: "How spend per supplier sets the depth of your input VAT checks under FTA Decision No. 13 of 2026, why splitting invoices fails, and when to re-verify."
 reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-3-cover.png
 ---
@@ -12,7 +13,7 @@ The answer comes down to three numbers. Get them wrong and you either over-check
 
 ### The three tiers
 
-![Spend ladder: under AED 10,000, standard, over AED 375,000](/assets/images/fta-decision-13/p3-ladder.png)
+![Spend ladder: under AED 10,000, standard, over AED 375,000](/assets/images/fta-decision-13/p3-ladder.webp){: width="1600" height="900" loading="lazy" decoding="async"}
 
 **Under AED 10,000 per supply (excluding VAT)**
 The checks may be skipped. **But not** if the total spend with that supplier exceeds **AED 100,000** in the past 12 months or the next 12 months.
@@ -29,7 +30,7 @@ The key word in all three: **supplier**. The tests look at cumulative spend per 
 
 ### Why splitting invoices doesn't help
 
-![Illustrative chart: AED 9,500 monthly invoices cross AED 100,000 by month 11](/assets/images/fta-decision-13/p3-split-trap.png)
+![Illustrative chart: AED 9,500 monthly invoices cross AED 100,000 by month 11](/assets/images/fta-decision-13/p3-split-trap.webp){: width="1600" height="900" loading="lazy" decoding="async"}
 
 Here is an illustrative example. You use a cleaning contractor at **AED 9,500 a month**. Every single invoice is under AED 10,000, so it looks like the small-supply relief applies.
 
@@ -44,7 +45,7 @@ The same forward-looking logic applies at AED 375,000. An expected contract valu
 
 ### When to verify: four triggers
 
-![Four verification triggers: first dealing, every supply, every 12 months, continuously](/assets/images/fta-decision-13/p3-frequency.png)
+![Four verification triggers: first dealing, every supply, every 12 months, continuously](/assets/images/fta-decision-13/p3-frequency.webp){: width="1600" height="900" loading="lazy" decoding="async"}
 
 1. **First dealing:** verify the supplier before the first VAT-able supply.
 2. **Every supply:** verify each taxable supply you receive or accept.
@@ -65,4 +66,4 @@ If you run Tally or any ERP, three fields on the vendor master do most of the wo
 
 Run a monthly report on rolling 12-month spend per supplier and review anyone who crossed AED 100,000 or AED 375,000 since last month.
 
-**Next, Part 4:** the supplier checks out. Now, is the *transaction* itself genuine? Four red flags from FTA Examples 4 to 7.
+**[Next, Part 4]({% post_url 2026-11-14-input-vat-transaction-red-flags-payment-price-licence-origin %}):** the supplier checks out. Now, is the *transaction* itself genuine? Four red flags from FTA Examples 4 to 7.

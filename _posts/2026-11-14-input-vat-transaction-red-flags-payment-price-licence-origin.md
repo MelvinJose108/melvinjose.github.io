@@ -1,8 +1,9 @@
 ---
 date: 2026-11-14 08:04:00 +0400
 title: "Too Cheap, Wrong Licence, Odd Bank Account: 4 Red Flags That Can Cost You Input VAT"
+seo_title: "Input VAT Red Flags: Payment, Price, Licence and Origin"
 topic: "VAT"
-description: "Article 4 of FTA Decision No. 13 of 2026 asks whether the transaction itself is genuine. Payment, price, licence scope and goods origin, through FTA Examples 4 to 7."
+description: "Four transaction red flags that can cost you input VAT under FTA Decision No. 13 of 2026: payment, price, licence scope and goods origin (FTA Examples 4 to 7)."
 reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-4-cover.png
 ---
@@ -21,13 +22,13 @@ The FTA illustrates four of these with worked examples. Two businesses lost; two
 
 ### Red flag 1: the payment doesn't make sense (Example 4)
 
-![Example 4: one AED 60,000 order split into three invoices from three companies to three foreign bank accounts](/assets/images/fta-decision-13/p4-ex4.png)
+![Example 4: one AED 60,000 order split into three invoices from three companies to three foreign bank accounts](/assets/images/fta-decision-13/p4-ex4.webp){: width="1600" height="900" loading="lazy" decoding="async"}
 
 A bakery orders furniture worth **AED 60,000 (including VAT)** from one manufacturer. It is billed as **three AED 20,000 invoices from three different companies**, each naming a **different foreign bank account**. The reason given: *"convenience"*. The owner accepts it.
 
 **Result:** *should have been aware*. There was no commercial reason for third parties or foreign accounts, under Article 4(2).
 
-![Payment rules: electronic by default, cash only with a reason, third parties and foreign accounts need an explanation](/assets/images/fta-decision-13/p4-payment-rules.png)
+![Payment rules: electronic by default, cash only with a reason, third parties and foreign accounts need an explanation](/assets/images/fta-decision-13/p4-payment-rules.webp){: width="1600" height="900" loading="lazy" decoding="async"}
 
 The payment rules in plain terms:
 
@@ -39,7 +40,7 @@ The payment rules in plain terms:
 
 ### Red flag 2: the price is too good (Example 5)
 
-![Example 5: bed sheets offered at AED 200 against a market range of AED 400 to 800](/assets/images/fta-decision-13/p4-ex5.png)
+![Example 5: bed sheets offered at AED 200 against a market range of AED 400 to 800](/assets/images/fta-decision-13/p4-ex5.webp){: width="1600" height="900" loading="lazy" decoding="async"}
 
 A hotel needs **200 branded bed sheet sets**. The wholesale market price is **AED 400 to 800 per set**. A new wholesaler offers **AED 200**. The hotel accepts without question.
 
@@ -49,7 +50,7 @@ Half the bottom of the market range is not a bargain. It's a flag. A big discoun
 
 ### Checks that worked: licence scope and goods origin (Examples 6 and 7)
 
-![Example 6: shisha seller licensed only for consulting, IT and marketing. Example 7: clinic verifies device origin](/assets/images/fta-decision-13/p4-ex6-ex7.png)
+![Example 6: shisha seller licensed only for consulting, IT and marketing. Example 7: clinic verifies device origin](/assets/images/fta-decision-13/p4-ex6-ex7.webp){: width="1600" height="900" loading="lazy" decoding="async"}
 
 **Example 6: the restaurant.** A new wholesaler offers to sell shishas. The restaurant checks the trade licence. It covers **consulting, IT and marketing only**. The restaurant declines.
 
@@ -70,4 +71,4 @@ For every taxable supply above the small-supply threshold:
 - For goods: origin evidence kept (serial numbers, customs documents, distributor authorisation)
 - Any intermediary: their role and why it's needed, in writing
 
-**Next, Part 5:** the final piece. If none of this is documented, none of it happened. The evidence file, the written policy, FTA Example 8 and a 6-step plan to get compliant.
+**[Next, Part 5]({% post_url 2026-11-14-input-vat-documentation-policy-action-plan %}):** the final piece. If none of this is documented, none of it happened. The evidence file, the written policy, FTA Example 8 and a 6-step plan to get compliant.

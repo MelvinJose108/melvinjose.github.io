@@ -1,8 +1,9 @@
 ---
 date: 2026-11-14 08:05:00 +0400
 title: "If It Isn't Documented, It Didn't Happen: Protecting Your Input VAT Under Decision No. 13"
+seo_title: "Input VAT Evidence File and Verification Policy: Action Plan"
 topic: "VAT"
-description: "The evidence file, the written verification policy and a 6-step action plan under FTA Decision No. 13 of 2026, plus FTA Example 8, where compliance protects the claim."
+description: "The evidence file and written verification policy FTA Decision No. 13 of 2026 requires, FTA Example 8, and a 6-step plan to protect your input VAT."
 reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-5-cover.png
 ---
@@ -12,7 +13,7 @@ A check you did but can't show is, for the FTA's purposes, a check you didn't do
 
 ### Why bother: FTA Example 8
 
-![Example 8: followed every check, evasion found later, not aware, input tax stands](/assets/images/fta-decision-13/p5-ex8.png)
+![Example 8: followed every check, evasion found later, not aware, input tax stands](/assets/images/fta-decision-13/p5-ex8.webp){: width="1600" height="900" loading="lazy" decoding="async"}
 
 Example 8 is the FTA's positive case:
 
@@ -25,13 +26,13 @@ Same evasion in the chain as the businesses that lost. The difference is the fil
 
 ### All eight FTA examples, side by side
 
-![Scorecard of all 8 FTA examples: 4 lost, 4 safe](/assets/images/fta-decision-13/p5-scorecard.png)
+![Scorecard of all 8 FTA examples: 4 lost, 4 safe](/assets/images/fta-decision-13/p5-scorecard.webp){: width="1600" height="900" loading="lazy" decoding="async"}
 
 Look at the four that lost: no ID, an ignored red flag, no reason for foreign accounts, an unquestioned price. **None of them needed expensive tools.** Every one could have been avoided with a few minutes of checking and a note on file.
 
 ### What goes in the file
 
-![Evidence file per supplier and supply, and the written verification policy](/assets/images/fta-decision-13/p5-evidence.png)
+![Evidence file per supplier and supply, and the written verification policy](/assets/images/fta-decision-13/p5-evidence.webp){: width="1600" height="900" loading="lazy" decoding="async"}
 
 **Evidence file, per supplier and supply (Article 5(3))**
 - ID copies and trade licence or registry extract
@@ -50,7 +51,7 @@ The policy is easy to skip because it feels like paperwork. Don't skip it. It's 
 
 ### Your 6-step action plan
 
-![6-step action plan](/assets/images/fta-decision-13/p5-plan.png)
+![6-step action plan](/assets/images/fta-decision-13/p5-plan.webp){: width="1600" height="900" loading="lazy" decoding="async"}
 
 1. **Clean the supplier master.** Collect missing licences, IDs, TRNs and addresses.
 2. **Segment by spend.** Tag every supplier against the AED 10,000, 100,000 and 375,000 tests (see Part 3).

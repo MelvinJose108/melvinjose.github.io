@@ -1,8 +1,9 @@
 ---
 date: 2026-11-14 08:02:00 +0400
 title: "Who Are You Actually Buying From? The Supplier Checks the FTA Now Expects"
+seo_title: "Supplier Verification for Input VAT: FTA Examples 1 to 3"
 topic: "VAT"
-description: "Identity, place of business and three red flags: the supplier checks under Article 3 of FTA Decision No. 13 of 2026, through FTA Examples 1, 2 and 3."
+description: "The supplier checks under FTA Decision No. 13 of 2026: identity, place of business and three red flags, explained through FTA Examples 1, 2 and 3."
 reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-2-cover.png
 ---
@@ -31,7 +32,7 @@ This applies to individuals and companies alike. Confirm there is a **real place
 
 ### FTA Examples 1 and 2: same question, opposite outcomes
 
-![Example 1: boutique hires a curtain installer found on social media vs Example 2: construction firm visits supplier's warehouse](/assets/images/fta-decision-13/p2-ex1-vs-ex2.png)
+![Example 1: boutique hires a curtain installer found on social media vs Example 2: construction firm visits supplier's warehouse](/assets/images/fta-decision-13/p2-ex1-vs-ex2.webp){: width="1600" height="900" loading="lazy" decoding="async"}
 
 **Example 1: the boutique.** A boutique opening a new branch finds a curtain specialist through social media ads. All communication happens on WhatsApp. The supplier's identity is never verified. The job is billed at AED 10,000 + AED 500 VAT for measuring, tailoring and installing.
 
@@ -45,7 +46,7 @@ The difference isn't the size of the business or the deal. It's that one buyer l
 
 ### Check 3: Any red flags?
 
-![Three supplier risk indicators](/assets/images/fta-decision-13/p2-risk-flags.png)
+![Three supplier risk indicators](/assets/images/fta-decision-13/p2-risk-flags.webp){: width="1600" height="900" loading="lazy" decoding="async"}
 
 Decision No. 13 lists three risk indicators. **Any one of them counts as a flag:**
 
@@ -57,7 +58,7 @@ A flag is not an automatic disqualification. It means you need a clear, justifie
 
 ### FTA Example 3: the flag that was ignored
 
-![Example 3: ERP startup claims 25 consultants; website shows 3 employees](/assets/images/fta-decision-13/p2-ex3.png)
+![Example 3: ERP startup claims 25 consultants; website shows 3 employees](/assets/images/fta-decision-13/p2-ex3.webp){: width="1600" height="900" loading="lazy" decoding="async"}
 
 A large warehouse needs a new ERP system for real-time inventory and delivery insight. A startup software firm says it has a team of **25 experienced consultants** and can go live in **4 weeks**.
 
@@ -84,4 +85,4 @@ For every new supplier, before the first VAT-able supply:
 - Key staff changes in last 12 months: ___ (flag if more than 2)
 - Deal size vs supplier size and track record: proportionate? If not, explanation attached
 
-**Next, Part 3:** how much of this you need depends on how much you spend. AED 10,000, 100,000 and 375,000 are the three numbers that set the depth of your checks.
+**[Next, Part 3]({% post_url 2026-11-14-input-vat-verification-spend-thresholds %}):** how much of this you need depends on how much you spend. AED 10,000, 100,000 and 375,000 are the three numbers that set the depth of your checks.
