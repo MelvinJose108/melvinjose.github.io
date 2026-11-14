@@ -1,11 +1,12 @@
 ---
+date: 2026-11-14 08:02:00 +0400
 title: "Who Are You Actually Buying From? The Supplier Checks the FTA Now Expects"
 topic: "VAT"
 description: "Identity, place of business and three red flags: the supplier checks under Article 3 of FTA Decision No. 13 of 2026, through FTA Examples 1, 2 and 3."
-reviewed: 2026-11-19
+reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-2-cover.png
 ---
-In [Part 1]({% post_url 2026-11-16-tax-invoice-no-longer-enough-fta-decision-13 %}) we saw that your input VAT is now only as clean as your supplier. So the obvious next question: **how well do you actually know your suppliers?**
+In [Part 1]({% post_url 2026-11-14-tax-invoice-no-longer-enough-fta-decision-13 %}) we saw that your input VAT is now only as clean as your supplier. So the obvious next question: **how well do you actually know your suppliers?**
 
 For many SMEs, the honest answer is "a phone number and a TRN." Article 3 of Decision No. 13 asks for three things more.
 

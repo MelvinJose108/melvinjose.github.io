@@ -1,11 +1,12 @@
 ---
+date: 2026-11-14 08:05:00 +0400
 title: "If It Isn't Documented, It Didn't Happen: Protecting Your Input VAT Under Decision No. 13"
 topic: "VAT"
 description: "The evidence file, the written verification policy and a 6-step action plan under FTA Decision No. 13 of 2026, plus FTA Example 8, where compliance protects the claim."
-reviewed: 2026-11-30
+reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-5-cover.png
 ---
-Parts [2]({% post_url 2026-11-19-supplier-verification-identity-premises-red-flags %}), [3]({% post_url 2026-11-23-input-vat-verification-spend-thresholds %}) and [4]({% post_url 2026-11-26-input-vat-transaction-red-flags-payment-price-licence-origin %}) covered the checks. This part covers the thing that makes them count: **proof**.
+Parts [2]({% post_url 2026-11-14-supplier-verification-identity-premises-red-flags %}), [3]({% post_url 2026-11-14-input-vat-verification-spend-thresholds %}) and [4]({% post_url 2026-11-14-input-vat-transaction-red-flags-payment-price-licence-origin %}) covered the checks. This part covers the thing that makes them count: **proof**.
 
 A check you did but can't show is, for the FTA's purposes, a check you didn't do.
 

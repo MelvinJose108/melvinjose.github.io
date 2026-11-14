@@ -1,11 +1,12 @@
 ---
+date: 2026-11-14 08:04:00 +0400
 title: "Too Cheap, Wrong Licence, Odd Bank Account: 4 Red Flags That Can Cost You Input VAT"
 topic: "VAT"
 description: "Article 4 of FTA Decision No. 13 of 2026 asks whether the transaction itself is genuine. Payment, price, licence scope and goods origin, through FTA Examples 4 to 7."
-reviewed: 2026-11-26
+reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-4-cover.png
 ---
-A supplier can pass every identity check in [Part 2]({% post_url 2026-11-19-supplier-verification-identity-premises-red-flags %}) and still be part of an evasion chain. That is why Article 4 of Decision No. 13 shifts the focus from **who** you buy from to **what** you are buying, and **how you pay**.
+A supplier can pass every identity check in [Part 2]({% post_url 2026-11-14-supplier-verification-identity-premises-red-flags %}) and still be part of an evasion chain. That is why Article 4 of Decision No. 13 shifts the focus from **who** you buy from to **what** you are buying, and **how you pay**.
 
 There are six supply checks:
 

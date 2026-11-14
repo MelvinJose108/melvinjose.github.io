@@ -1,8 +1,9 @@
 ---
+date: 2026-11-14 08:01:00 +0400
 title: "Your Tax Invoice Won't Save Your Input VAT Anymore"
 topic: "VAT"
 description: "Since 1 October 2026, a valid tax invoice is where input VAT recovery starts, not where it ends. Here is what FTA Decision No. 13 of 2026 changed and the test that now decides your claim."
-reviewed: 2026-11-16
+reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-1-cover.png
 ---
 For years, the input VAT conversation in the UAE was simple: get a valid tax invoice, make sure the supplier's TRN is right, claim it.

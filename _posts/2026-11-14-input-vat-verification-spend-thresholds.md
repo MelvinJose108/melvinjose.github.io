@@ -1,11 +1,12 @@
 ---
+date: 2026-11-14 08:03:00 +0400
 title: "AED 10K, 100K, 375K: The Three Numbers That Decide How Deep You Verify Suppliers"
 topic: "VAT"
 description: "Under FTA Decision No. 13 of 2026, the depth of your supplier checks depends on spend per supplier. Why invoice splitting doesn't help, and when to re-verify."
-reviewed: 2026-11-23
+reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-3-cover.png
 ---
-[Part 2]({% post_url 2026-11-19-supplier-verification-identity-premises-red-flags %}) covered *what* to check about a supplier. This part covers **how deep** you need to go, and **how often**.
+[Part 2]({% post_url 2026-11-14-supplier-verification-identity-premises-red-flags %}) covered *what* to check about a supplier. This part covers **how deep** you need to go, and **how often**.
 
 The answer comes down to three numbers. Get them wrong and you either over-check every AED 300 stationery order, or under-check the supplier who actually matters.
 
