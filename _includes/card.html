@@ -1,5 +1,5 @@
 <a class="card reveal t-{{ include.p.topic | slugify }}" href="{{ include.p.url | relative_url }}" data-topic="{{ include.p.topic | slugify }}" data-text="{{ include.p.title | append: ' ' | append: include.p.description | downcase | escape }}">
-  <span class="badge">{{ include.p.topic }}</span>
+  <span class="badge">{{ include.p.topic }}{% if include.p.kind == 'update' %} · Update{% endif %}</span>
   <h3>{{ include.p.title }}</h3>
   <p>{{ include.p.description }}</p>
   <span class="meta">{{ include.p.date | date: "%-d %b %Y" }} · {{ include.p.content | number_of_words | divided_by: 200 | plus: 1 }} min read</span>

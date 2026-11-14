@@ -1,0 +1,12 @@
+- name: VAT
+  slug: vat
+  summary: "How UAE VAT works: registration, rates, zero-rated and exempt supplies, and returns."
+- name: Corporate Tax
+  slug: corporate-tax
+  summary: "Who pays Corporate Tax, the 0% and 9% bands, free zones and filing."
+- name: E-Invoicing
+  slug: e-invoicing
+  summary: "The UAE’s structured e-invoicing system, accredited providers and rollout dates."
+- name: Audit
+  slug: audit
+  summary: "How audits work, how to read financial statements and how to keep records ready."

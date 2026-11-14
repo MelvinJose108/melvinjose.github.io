@@ -1,0 +1,37 @@
+---
+layout: default
+---
+{% assign t = site.data.topics | where: "name", page.topic | first %}
+{% assign gs = site.posts | where: "topic", page.topic | where_exp: "p", "p.kind != 'update'" %}
+{% assign ups = site.posts | where: "topic", page.topic | where: "kind", "update" %}
+{% assign gal = site.data.gallery | where: "topic", page.topic %}
+<div class="hub t-{{ page.topic | slugify }}">
+  <span class="badge">{{ page.topic }}</span>
+  <h1 class="pagetitle">{{ page.title }}</h1>
+  <p class="sub">{{ t.summary }}</p>
+  <div class="tabs" role="tablist" aria-label="{{ page.topic }} sections">
+    <button class="tab" role="tab" type="button" data-tab="overview" aria-selected="true">Overview</button>
+    <button class="tab" role="tab" type="button" data-tab="guides" aria-selected="false">Guides &amp; blog <span>{{ gs.size }}</span></button>
+    <button class="tab" role="tab" type="button" data-tab="updates" aria-selected="false">Updates <span>{{ ups.size }}</span></button>
+    <button class="tab" role="tab" type="button" data-tab="newsletter" aria-selected="false">Newsletter</button>
+    <button class="tab" role="tab" type="button" data-tab="gallery" aria-selected="false">Gallery <span>{{ gal.size }}</span></button>
+  </div>
+  <section class="panel on" id="p-overview"><div class="body">{{ content }}</div></section>
+  <section class="panel" id="p-guides">
+    {% if gs.size > 0 %}<div class="grid">{% for p in gs %}{% include card.html p=p %}{% endfor %}</div>{% else %}<p class="empty">No guides here yet. Check back soon.</p>{% endif %}
+  </section>
+  <section class="panel" id="p-updates">
+    {% if ups.size > 0 %}<div class="grid">{% for p in ups %}{% include card.html p=p %}{% endfor %}</div>{% else %}<p class="empty">No updates yet. Short notes on changes will appear here.</p>{% endif %}
+  </section>
+  <section class="panel" id="p-newsletter">
+    <div class="sub-box">
+      <h3>The UAE Ledger newsletter</h3>
+      <p>A short email when a {{ page.topic }} guide or update is published, with a link to the full article.</p>
+      {% if site.newsletter_url and site.newsletter_url != "" %}<a class="btn" href="{{ site.newsletter_url }}" rel="noopener">Subscribe</a>{% else %}<p class="empty">The newsletter is coming soon.</p>{% endif %}
+      <p class="meta" style="margin-top:.8rem">Prefer a feed reader? <a href="{{ '/feed.xml' | relative_url }}">Use the RSS feed</a>.</p>
+    </div>
+  </section>
+  <section class="panel" id="p-gallery">
+    {% if gal.size > 0 %}<div class="gallery">{% for g in gal %}<figure><img src="{{ g.image | relative_url }}" alt="{{ g.caption | escape }}" loading="lazy"><figcaption>{{ g.caption }}</figcaption></figure>{% endfor %}</div>{% else %}<p class="empty">Charts and infographics will appear here.</p>{% endif %}
+  </section>
+</div>

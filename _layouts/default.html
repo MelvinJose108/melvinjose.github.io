@@ -17,8 +17,7 @@
 <header class="top"><div class="wrap">
   <a class="brand" href="{{ '/' | relative_url }}"><i></i>{{ site.title | escape }}</a>
   <nav aria-label="Main">
-    <a href="{{ '/' | relative_url }}">Latest</a>
-    <a href="{{ '/guides/' | relative_url }}">Archive</a>
+    {% for t in site.data.topics %}<a href="{{ '/' | append: t.slug | append: '/' | relative_url }}">{{ t.name }}</a>{% endfor %}
     <a href="{{ '/calculator/' | relative_url }}">Calculator</a>
     <a href="{{ '/about/' | relative_url }}">About</a>
     <button class="tt" id="tt" type="button" aria-label="Switch light or dark theme">◐</button>
@@ -29,7 +28,7 @@
 </main>
 <footer><div class="wrap">
   <p>Educational content only, not tax, legal or financial advice. Rules change, so confirm details with the Federal Tax Authority or a qualified adviser.</p>
-  <p>© 2026 {{ site.author }} · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
+  <p>© 2026 {{ site.author }} · <a href="{{ '/guides/' | relative_url }}">Archive</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
 </div></footer>
 <script>
 (function(){
@@ -44,6 +43,10 @@ var q=d.getElementById('q'),cards=[].slice.call(d.querySelectorAll('.card')),f='
 function ap(){var t=q?q.value.toLowerCase().trim():'',n=0;cards.forEach(function(c){var ok=(f==='all'||c.dataset.topic===f)&&c.dataset.text.indexOf(t)>-1;c.hidden=!ok;if(ok)n++});var m=d.getElementById('none');if(m)m.hidden=n>0}
 if(q)q.addEventListener('input',ap);
 d.querySelectorAll('[data-f]').forEach(function(b){b.addEventListener('click',function(){f=b.dataset.f;d.querySelectorAll('[data-f]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});ap()})});
+var tabs=d.querySelectorAll('[data-tab]');
+function show(n){tabs.forEach(function(b){b.setAttribute('aria-selected',b.dataset.tab===n)});d.querySelectorAll('.panel').forEach(function(p){p.classList.toggle('on',p.id==='p-'+n)})}
+tabs.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.tab);history.replaceState(null,'','#'+b.dataset.tab)})});
+if(tabs.length){var h=location.hash.slice(1);if(d.getElementById('p-'+h))show(h)}
 })();
 </script>
 </body>

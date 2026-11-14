@@ -1,0 +1,5 @@
+# To add a picture: upload it to assets/gallery/ in your repo, then replace [] with entries like these (keep the dashes and spacing):
+# - image: /assets/gallery/vat-rates.png
+#   caption: "VAT at a glance"
+#   topic: VAT
+[]
