@@ -1,209 +1,37 @@
 ---
+layout: default
+description: "Plain-English guides and updates on UAE Corporate Tax, VAT, e-invoicing and audit, written by a practising auditor in the UAE."
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<script>document.documentElement.className='js';try{document.documentElement.dataset.theme=localStorage.getItem('t')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')}catch(e){}</script>
-{% seo %}
-{% feed_meta %}
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234F46E5'/%3E%3Cstop offset='1' stop-color='%230EA5E9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='50%25' y='53%25' dominant-baseline='central' text-anchor='middle' font-family='Arial' font-weight='700' font-size='15' fill='white'%3EUL%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#F7F8FC;--surface:#fff;--ink:#0B1020;--mute:#5B6478;--line:#E3E7F0;--a1:#4F46E5;--a2:#0EA5E9;--warm:#FF6B4A;
---display:'Sora',system-ui,sans-serif;--read:'Source Serif 4',Georgia,serif;--ui:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
-:root[data-theme=dark]{--bg:#0A0F1E;--surface:#121A33;--ink:#EEF1FA;--mute:#9AA5C0;--line:#222C4A;--a1:#8B87FF;--a2:#38BDF8;--warm:#FF8A6B}
-[hidden]{display:none!important}
-body{background:var(--bg);color:var(--ink);font-family:var(--ui);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--a1);outline-offset:3px}
-.wrap{max-width:72rem;margin:0 auto;padding:0 1.5rem}
-#bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--a1),var(--a2),var(--warm));z-index:60}
-header.top{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-header .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;padding-top:.9rem;padding-bottom:.9rem}
-.brand{display:flex;align-items:center;gap:.6rem;font-family:var(--display);font-weight:800;font-size:1.15rem;letter-spacing:-.02em;text-decoration:none}
-.brand i{width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,var(--a1),var(--a2))}
-header nav{display:flex;flex-wrap:wrap;align-items:center;gap:1.4rem;font-size:.95rem}
-header nav a{position:relative;text-decoration:none;color:var(--mute);transition:color .2s}
-header nav a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--a1),var(--a2));transform:scaleX(0);transform-origin:left;transition:transform .25s}
-header nav a:hover{color:var(--ink)}header nav a:hover::after{transform:scaleX(1)}
-.tt{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:99px;width:2.2rem;height:2.2rem;cursor:pointer;font-size:1.05rem}
-.tt:hover{border-color:var(--a1)}
-main.wrap{padding-top:1rem;padding-bottom:4rem}
-.hero{position:relative;isolation:isolate;padding:3.5rem 0 2.5rem}
-.hero::before,.hero::after{content:"";position:absolute;z-index:-1;border-radius:50%;filter:blur(70px);opacity:.4;animation:drift 16s ease-in-out infinite alternate}
-.hero::before{width:28rem;height:28rem;background:var(--a1);top:-8rem;left:-7rem}
-.hero::after{width:24rem;height:24rem;background:var(--a2);top:-3rem;right:-5rem;animation-delay:-6s}
-:root[data-theme=dark] .hero::before,:root[data-theme=dark] .hero::after{opacity:.25}
-@keyframes drift{to{transform:translate(40px,30px) scale(1.12)}}
-.pill{display:inline-flex;align-items:center;gap:.5rem;font-size:.85rem;font-weight:500;color:var(--mute);background:var(--surface);border:1px solid var(--line);padding:.3rem .85rem;border-radius:99px;margin-bottom:1.25rem}
-.dot{width:8px;height:8px;border-radius:50%;background:#22C55E;animation:pulse 2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(34,197,94,.6)}70%,100%{box-shadow:0 0 0 8px rgba(34,197,94,0)}}
-.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,6.4vw,5rem);line-height:1.03;letter-spacing:-.035em;max-width:16ch;margin-bottom:1rem}
-.grad{background:linear-gradient(90deg,var(--a1),var(--a2),var(--warm),var(--a1));background-size:250% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 7s linear infinite}
-@keyframes shine{to{background-position:250% center}}
-.sub{color:var(--mute);font-size:1.1rem;max-width:36rem}
-.tools{display:flex;flex-direction:column;gap:1rem;margin-top:1.75rem;max-width:42rem}
-#q{width:100%;font:inherit;font-size:1.05rem;padding:.95rem 1.1rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);box-shadow:0 8px 26px -14px rgba(79,70,229,.5)}
-#q:focus{outline:none;border-color:var(--a1);box-shadow:0 0 0 4px color-mix(in srgb,var(--a1) 25%,transparent)}
-.chips{display:flex;flex-wrap:wrap;gap:.5rem}
-.chip{font:inherit;font-size:.9rem;font-weight:500;padding:.45rem 1rem;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--mute);cursor:pointer;transition:all .15s}
-.chip:hover{color:var(--ink);border-color:var(--a1)}
-.chip[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr));gap:1.25rem;margin-top:1rem}
-.card{--c:var(--a1);display:flex;flex-direction:column;gap:.6rem;background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--c);border-radius:14px;padding:1.4rem;text-decoration:none;transition:transform .2s,box-shadow .2s,opacity .6s}
-.card:hover{transform:translateY(-4px);box-shadow:0 18px 36px -18px color-mix(in srgb,var(--c) 55%,transparent)}
-.card h3{font-family:var(--display);font-size:1.15rem;line-height:1.25;letter-spacing:-.01em}
-.card p{color:var(--mute);font-size:.95rem}
-.card .meta{margin-top:auto;padding-top:.4rem;font-size:.82rem;color:var(--mute)}
-.badge{--c:var(--a1);align-self:flex-start;display:inline-block;font-size:.78rem;font-weight:600;padding:.2rem .65rem;border-radius:99px;color:color-mix(in srgb,var(--c) 65%,var(--ink));background:color-mix(in srgb,var(--c) 15%,transparent)}
-.card .badge{--c:inherit}
-.t-vat{--c:#F59E0B}.t-corporate-tax{--c:#6366F1}.t-audit{--c:#14B8A6}.t-updates{--c:#FF6B4A}
-.js .reveal{opacity:0;transform:translateY(18px)}
-.js .reveal.in{opacity:1;transform:none}
-.js .reveal.in:hover{transform:translateY(-4px)}
-.empty{margin-top:1.5rem;color:var(--mute)}
-.more{margin-top:1.75rem;font-weight:600}.more a{color:var(--a1);text-decoration:none}.more a:hover{text-decoration:underline}
-.band{margin-top:3rem;padding:2.25rem;border-radius:18px;background:linear-gradient(120deg,#4338CA,#0369A1);color:#fff;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem 2rem}
-.band h2{font-family:var(--display);font-size:1.5rem;letter-spacing:-.02em}
-.band p{opacity:.9}
-.btn{display:inline-block;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:600;padding:.8rem 1.4rem;border-radius:10px;transition:transform .15s}
-.btn:hover{transform:translateY(-2px)}
-.band .btn{background:#fff;color:#14172b}
-.pagetitle{font-family:var(--display);font-weight:800;font-size:clamp(2rem,5vw,3rem);letter-spacing:-.03em;line-height:1.1;margin:2rem 0 .6rem}
-.intro{color:var(--mute);margin-bottom:2rem}
-.post{max-width:42rem;margin:2.5rem auto 0}
-.post h1:not(.pagetitle){font-family:var(--display);font-weight:800;font-size:clamp(2rem,5vw,3.1rem);line-height:1.08;letter-spacing:-.03em;margin:.9rem 0 .8rem}
-.post .pagetitle{margin-top:0}
-.byline{font-size:.9rem;color:var(--mute);padding-bottom:1.4rem;border-bottom:1px solid var(--line);margin-bottom:1.6rem}
-.body{font-family:var(--read);font-size:1.2rem;line-height:1.8}
-.body h3{font-family:var(--display);font-size:1.25rem;letter-spacing:-.01em;margin:2rem 0 .5rem}
-.body p,.body ul{margin-bottom:1.1rem}
-.body ul{padding-left:1.4rem}
-.body a,.back,.byline a{color:var(--a1)}
-.tip,.body blockquote{border-left:4px solid var(--warm);padding-left:1rem;color:var(--mute);margin-bottom:1.1rem}
-.sub-box,.sub{border:1px solid var(--line);background:var(--surface);padding:1.25rem 1.4rem;border-radius:14px;margin:2rem 0}
-aside.sub{max-width:none}
-aside.sub p{margin-bottom:.6rem}
-.disc{font-size:.85rem;color:var(--mute);border-top:1px solid var(--line);padding-top:1rem;margin:2rem 0 1rem}
-.back{text-decoration:none;font-weight:600}
-.sheet{max-width:30rem;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.5rem}
-.sheet label{display:block;font-size:.85rem;color:var(--mute);margin:1rem 0 .25rem}
-.sheet select,.sheet input{width:100%;font:inherit;font-size:1.05rem;padding:.65rem .8rem;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
-#out{margin-top:1.25rem}
-#out div{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;border-bottom:1px solid var(--line)}
-#out div:last-child{border-bottom:2px solid var(--a1);font-weight:700}
-#out dd{font-variant-numeric:tabular-nums;white-space:nowrap}
-.sheet .note{font-size:.8rem;color:var(--mute);margin-top:1rem}
-footer{border-top:1px solid var(--line);padding:1.6rem 0;font-size:.85rem;color:var(--mute)}
-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75rem 2rem}
-footer p{max-width:44rem}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .reveal{opacity:1;transform:none}}
-@media(max-width:700px){header nav{gap:.9rem;font-size:.88rem}.hero{padding-top:2.5rem}}
-.secth{font-family:var(--display);font-size:1.3rem;letter-spacing:-.02em;margin:2.5rem 0 .2rem}
-.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem;margin-top:1.25rem}
-.tile{--c:var(--a1);display:flex;flex-direction:column;gap:.4rem;background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--c);border-radius:14px;padding:1.2rem 1.3rem;text-decoration:none;transition:transform .2s,box-shadow .2s,opacity .6s}
-.tile:hover{transform:translateY(-4px);box-shadow:0 18px 36px -18px color-mix(in srgb,var(--c) 55%,transparent)}
-.tile h3{font-family:var(--display);font-size:1.2rem}
-.tile p{color:var(--mute);font-size:.95rem}
-.tile .meta{margin-top:auto;font-size:.82rem;color:var(--mute)}
-.t-vat{--c:#F59E0B}.t-corporate-tax{--c:#6366F1}.t-audit{--c:#14B8A6}.t-e-invoicing{--c:#EC4899}.t-updates{--c:#FF6B4A}
-.hub{max-width:56rem;margin:2.5rem auto 0}
-.hub .pagetitle{margin:.8rem 0 .5rem}
-.hub .badge{--c:inherit}
-.tabs{display:none;gap:.25rem;border-bottom:1px solid var(--line);margin:1.75rem 0 1.5rem;overflow-x:auto}
-.js .tabs{display:flex}
-.tab{font:inherit;font-weight:500;background:none;border:0;padding:.75rem 1rem;color:var(--mute);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap}
-.tab:hover{color:var(--ink)}
-.tab[aria-selected=true]{color:var(--ink);border-bottom-color:var(--c)}
-.tab span{font-size:.75rem;background:var(--line);border-radius:99px;padding:.05rem .5rem;margin-left:.3rem}
-.js .panel{display:none}.js .panel.on{display:block}
-.hist{list-style:none;border-left:2px solid var(--c);padding-left:1.2rem;margin:1rem 0 1.5rem}
-.hist li{margin-bottom:1rem}.hist b{display:block;font-family:var(--display);font-size:1rem}
-.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(16rem,1fr));gap:1rem}
-.gallery figure{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
-.gallery img{display:block;width:100%;height:auto}
-.gallery figcaption{padding:.7rem .9rem;font-size:.9rem;color:var(--mute)}
-</style>
-</head>
-<body>
-<div id="bar"></div>
-<header class="top"><div class="wrap">
-  <a class="brand" href="{{ '/' | relative_url }}"><i></i>{{ site.title | escape }}</a>
-  <nav aria-label="Main">
-    {% for t in site.data.topics %}<a href="{{ '/' | append: t.slug | append: '/' | relative_url }}">{{ t.name }}</a>{% endfor %}
-    <a href="{{ '/calculator/' | relative_url }}">Calculator</a>
-    <a href="{{ '/about/' | relative_url }}">About</a>
-    <button class="tt" id="tt" type="button" aria-label="Switch light or dark theme">◐</button>
-  </nav>
-</div></header>
-<main class="wrap">
-{% assign groups = site.posts | group_by: "topic" %}
+{% assign a = site.data.author %}
 <section class="hero">
-  <p class="pill"><span class="dot"></span>Latest update {{ site.posts.first.date | date: "%-d %B %Y" }}</p>
-  <h1>UAE tax and audit, <span class="grad">made clear.</span></h1>
-  <p class="sub">{{ site.description }} {{ site.posts.size }} posts across {{ groups.size }} topics.</p>
-</section>
-<h2 class="secth">Explore by topic</h2>
-<section class="tiles">
-{% for t in site.data.topics %}
-{% assign n = site.posts | where: "topic", t.name | size %}
-<a class="tile reveal t-{{ t.slug }}" href="{{ '/' | append: t.slug | append: '/' | relative_url }}"><h3>{{ t.name }}</h3><p>{{ t.summary }}</p><span class="meta">{{ n }} {% if n == 1 %}post{% else %}posts{% endif %} · Guides, updates, newsletter</span></a>
-{% endfor %}
-</section>
-<h2 class="secth">Latest</h2>
-{% assign groups = site.posts | group_by: "topic" %}
-<div class="tools">
-  <input id="q" type="search" aria-label="Search guides" placeholder="Search guides, for example VAT" autocomplete="off">
-  <div class="chips" role="group" aria-label="Filter by topic">
-    <button class="chip" type="button" data-f="all" aria-pressed="true">All</button>
-    {% for g in groups %}<button class="chip" type="button" data-f="{{ g.name | slugify }}" aria-pressed="false">{{ g.name }}</button>{% endfor %}
+  <div>
+    <p class="eyebrow">Tax and audit, in plain English</p>
+    <h1>Clear guides to UAE tax and audit.</h1>
+    <p class="lede">Practical explainers on VAT, Corporate Tax, e-invoicing and audit, with the date each one was last reviewed.</p>
+    <div class="cta"><a class="btn" href="{{ '/guides/' | relative_url }}">Read the guides</a>{% if site.newsletter_url and site.newsletter_url != "" %}<a class="btn ghost" href="{{ site.newsletter_url }}" rel="noopener">Get the newsletter</a>{% endif %}</div>
   </div>
-</div>
-<div class="grid">
-{% for p in site.posts limit:12 %}<a class="card reveal t-{{ p.topic | slugify }}" href="{{ p.url | relative_url }}" data-topic="{{ p.topic | slugify }}" data-text="{{ p.title | append: ' ' | append: p.description | downcase | escape }}">
-  <span class="badge">{{ p.topic }}{% if p.kind == 'update' %} · Update{% endif %}</span>
-  <h3>{{ p.title }}</h3>
-  <p>{{ p.description }}</p>
-  <span class="meta">{{ p.date | date: "%-d %b %Y" }} · {{ p.content | number_of_words | divided_by: 200 | plus: 1 }} min read</span>
-</a>{% endfor %}
-</div>
-<p id="none" class="empty" hidden>No guides match that search. Try another word.</p>
-<p class="more"><a href="{{ '/guides/' | relative_url }}">Browse the full archive →</a></p>
-{% if site.newsletter_url and site.newsletter_url != "" %}
-<section class="band">
-  <div><h2>New guides, by email</h2><p>A short note when a guide or tax update is published.</p></div>
-  <a class="btn" href="{{ site.newsletter_url }}" rel="noopener">Get the newsletter</a>
+  <aside class="who" aria-label="About the author">
+    <div class="avatar" aria-hidden="true">{{ a.initials }}</div>
+    <h2>{{ a.name }}</h2>
+    <p class="role">{{ a.title }} · {{ a.city }}, UAE</p>
+    <ul class="tags">{% for e in a.expertise %}<li>{{ e }}</li>{% endfor %}</ul>
+    <p class="links"><a href="{{ '/about/' | relative_url }}">About the author</a> · <a href="{{ a.linkedin }}" rel="noopener" target="_blank">LinkedIn</a></p>
+  </aside>
 </section>
+<section class="sec">
+  <h2>Explore by topic</h2>
+  <div class="tiles">
+  {% for t in site.data.topics %}
+  {% assign n = site.posts | where: "topic", t.name | size %}
+  <a class="tile t-{{ t.slug }}" href="{{ '/' | append: t.slug | append: '/' | relative_url }}"><h3>{{ t.name }}</h3><p>{{ t.summary }}</p><span class="meta">{{ n }} {% if n == 1 %}article{% else %}articles{% endif %}</span></a>
+  {% endfor %}
+  </div>
+</section>
+<section class="sec">
+  <h2>Latest from {{ site.title }}</h2>
+  <div class="grid">{% for p in site.posts limit:6 %}{% include card.html p=p %}{% endfor %}</div>
+  <p class="more"><a href="{{ '/guides/' | relative_url }}">Browse the full archive →</a></p>
+</section>
+{% if site.newsletter_url and site.newsletter_url != "" %}
+<section class="band"><div><h2>New guides, by email</h2><p>A short note when a guide or tax update is published.</p></div><a class="btn" href="{{ site.newsletter_url }}" rel="noopener">Get the newsletter</a></section>
 {% endif %}
-
-</main>
-<footer><div class="wrap">
-  <p>Educational content only, not tax, legal or financial advice. Rules change, so confirm details with the Federal Tax Authority or a qualified adviser.</p>
-  <p>© 2026 {{ site.author }} · <a href="{{ '/guides/' | relative_url }}">Archive</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
-</div></footer>
-<script>
-(function(){
-var d=document,r=d.documentElement;
-var tb=d.getElementById('tt');
-if(tb)tb.addEventListener('click',function(){var t=r.dataset.theme==='dark'?'light':'dark';r.dataset.theme=t;try{localStorage.setItem('t',t)}catch(e){}});
-var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1}):null;
-d.querySelectorAll('.reveal').forEach(function(el){if(io)io.observe(el);else el.classList.add('in')});
-var bar=d.getElementById('bar'),post=d.querySelector('.post .body');
-if(bar&&post)addEventListener('scroll',function(){var h=post.offsetHeight-innerHeight*.5,y=scrollY-post.offsetTop+innerHeight*.3;bar.style.width=Math.max(0,Math.min(1,y/h))*100+'%'},{passive:true});
-var q=d.getElementById('q'),cards=[].slice.call(d.querySelectorAll('.card')),f='all';
-function ap(){var t=q?q.value.toLowerCase().trim():'',n=0;cards.forEach(function(c){var ok=(f==='all'||c.dataset.topic===f)&&c.dataset.text.indexOf(t)>-1;c.hidden=!ok;if(ok)n++});var m=d.getElementById('none');if(m)m.hidden=n>0}
-if(q)q.addEventListener('input',ap);
-d.querySelectorAll('[data-f]').forEach(function(b){b.addEventListener('click',function(){f=b.dataset.f;d.querySelectorAll('[data-f]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});ap()})});
-var tabs=d.querySelectorAll('[data-tab]');
-function show(n){tabs.forEach(function(b){b.setAttribute('aria-selected',b.dataset.tab===n)});d.querySelectorAll('.panel').forEach(function(p){p.classList.toggle('on',p.id==='p-'+n)})}
-tabs.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.tab);history.replaceState(null,'','#'+b.dataset.tab)})});
-if(tabs.length){var h=location.hash.slice(1);if(d.getElementById('p-'+h))show(h)}
-})();
-</script>
-</body>
-</html>

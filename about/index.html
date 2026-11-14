@@ -1,16 +1,26 @@
 ---
 layout: default
 title: About
+seo_title: About the author
+description: "About Melvin Jose, Senior Audit Executive in Ajman, UAE, and how the guides on The UAE Ledger are prepared, reviewed and corrected."
 permalink: /about/
 ---
+{% assign a = site.data.author %}
 <div class="post">
-<h1 class="pagetitle">About</h1>
-<div class="body">
-<p>{{ site.title | escape }} publishes short, plain-English explainers on UAE Corporate Tax, VAT and audit.</p>
-<p>It is written by Melvin Jose, a Senior Audit Executive based in Ajman who works on Corporate Tax, VAT and FTA compliance.</p>
-<h3>How articles are prepared</h3>
-<p>Each article shows when it was published and last reviewed. Where possible it points to the official Federal Tax Authority source. Tax rules change, so older articles may need updating.</p>
-<h3>Corrections and topic suggestions</h3>
-<p>If you spot a mistake or want a topic covered, send a message on <a href="https://linkedin.com/in/melvin-jose-" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
-</div>
+  <div class="aboutHead"><div class="avatar big" aria-hidden="true">{{ a.initials }}</div><div><h1 class="pagetitle">{{ a.name }}</h1><p class="deck">{{ a.title }} · {{ a.city }}, UAE</p></div></div>
+  <div class="body">
+    <p>{{ a.bio }}</p>
+    <h3>Areas of work</h3>
+    <ul>{% for e in a.expertise %}<li>{{ e }}</li>{% endfor %}</ul>
+    <h3>Background</h3>
+    <ol class="hist">
+      <li><b>2026 to present · Senior Audit Executive, Ajman</b>Corporate Tax engagements, VAT advisory and FTA compliance for Free Zone and mainland businesses.</li>
+      <li><b>2024 to 2025 · Audit Executive, Ajman</b>Prepared more than 100 Corporate Tax reports, and handled VAT and FTA compliance work.</li>
+      <li><b>2019 to 2023 · Articleship and tax work, Kerala, India</b>Financial reporting, tax audits and tax compliance.</li>
+    </ol>
+    <h3>How articles are prepared</h3>
+    <p>Each article shows when it was published and when it was last reviewed. Where possible it links to the official Federal Tax Authority or Ministry of Finance source. Tax rules change, so older articles may need updating.</p>
+    <h3>Corrections and topic suggestions</h3>
+    <p>If you spot a mistake or want a topic covered, send a message on <a href="{{ a.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>.</p>
+  </div>
 </div>

@@ -1,14 +1,19 @@
 ---
 layout: default
 ---
-<article class="post">
-  <span class="badge t-{{ page.topic | slugify }}">{{ page.topic }}</span>
+{% assign a = site.data.author %}
+{% assign rel = site.posts | where: "topic", page.topic | where_exp: "p", "p.url != page.url" | slice: 0, 3 %}
+<article class="post t-{{ page.topic | slugify }}">
+  {% include crumbs.html %}
+  <span class="badge">{{ page.topic }}</span>
   <h1>{{ page.title }}</h1>
-  <p class="byline">By {{ site.author }} · Published {{ page.date | date: "%-d %B %Y" }}{% if page.reviewed %} · Last reviewed {{ page.reviewed | date: "%-d %B %Y" }}{% endif %}{% if page.source %} · <a href="{{ page.source }}" rel="noopener">Official source</a>{% endif %}</p>
+  <p class="deck">{{ page.description }}</p>
+  <p class="byline">By <a href="{{ '/about/' | relative_url }}">{{ a.name }}</a> · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>{% if page.reviewed %} · Last reviewed <time datetime="{{ page.reviewed | date_to_xmlschema }}">{{ page.reviewed | date: "%-d %B %Y" }}</time>{% endif %} · {{ content | number_of_words | divided_by: 200 | plus: 1 }} min read{% if page.source %} · <a href="{{ page.source }}" rel="noopener">Official source</a>{% endif %}</p>
   <div class="body">{{ content }}</div>
+  <aside class="authorbox"><div class="avatar" aria-hidden="true">{{ a.initials }}</div><div><strong>{{ a.name }}</strong><span>{{ a.title }}, {{ a.city }}</span><p>{{ a.bio }}</p></div></aside>
   {% if site.newsletter_url and site.newsletter_url != "" %}
-  <aside class="sub"><p><strong>Get new guides by email.</strong> Short updates on UAE tax and audit, sent when something is published.</p><a class="btn" href="{{ site.newsletter_url }}" rel="noopener">Subscribe</a></aside>
+  <aside class="sub-box"><p><strong>Get new guides by email.</strong> A short note when something is published.</p><a class="btn" href="{{ site.newsletter_url }}" rel="noopener">Subscribe</a></aside>
   {% endif %}
   <p class="disc">This article is general information and may be out of date. Check the latest guidance from the Federal Tax Authority before acting.</p>
-  <a class="back" href="{{ '/guides/' | relative_url }}">← All guides</a>
+  {% if rel.size > 0 %}<section class="related"><h2>More on {{ page.topic }}</h2><div class="grid">{% for p in rel %}{% include card.html p=p %}{% endfor %}</div></section>{% endif %}
 </article>
