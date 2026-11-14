@@ -1,6 +1,6 @@
 ---
 title: "The 95% Test: Can Your Companies Form a UAE Tax Group?"
-date: 2026-11-14 17:02:00 +0400
+date: 2026-11-11 17:02:00 +0400
 seo_title: "UAE Tax Group Conditions: The 95% Ownership Test Explained"
 topic: "Corporate Tax"
 description: "The nine conditions to form a UAE Corporate Tax Group, and the 95% ownership traps in the FTA's examples: legal title, nominal value, chains, preferred shares."
@@ -8,7 +8,7 @@ reviewed: 2026-11-14
 image: /assets/images/tax-groups/tg-part-2-cover.png
 ---
 
-[Part 1]({% post_url 2026-11-14-uae-corporate-tax-group-explained %}) covered what a Tax Group gets you. This part covers who qualifies. Most groups that fail don't fail on the obvious conditions. They fail on how "95%" is measured.
+[Part 1]({% post_url 2026-11-11-uae-corporate-tax-group-explained %}) covered what a Tax Group gets you. This part covers who qualifies. Most groups that fail don't fail on the obvious conditions. They fail on how "95%" is measured.
 
 ### The nine conditions
 
@@ -70,4 +70,4 @@ If everything else lines up but the year-ends don't, a company can apply to the 
 - Check shareholder agreements and any preferred shares for **profit and liquidation rights**, not just votes.
 - Confirm one year-end and one accounting standard for everyone.
 
-**[Next, Part 3]({% post_url 2026-11-14-tax-group-joining-leaving-timing-rules %}):** joining, leaving and closing a group, and why a 7-day share transfer can cost a company a whole year.
+**[Next, Part 3]({% post_url 2026-11-11-tax-group-joining-leaving-timing-rules %}):** joining, leaving and closing a group, and why a 7-day share transfer can cost a company a whole year.
