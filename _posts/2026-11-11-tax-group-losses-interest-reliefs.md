@@ -1,6 +1,6 @@
 ---
 title: "Losses, Interest and Reliefs in a UAE Tax Group: What's Shared and What's Ring-Fenced"
-date: 2026-11-14 17:06:00 +0400
+date: 2026-11-11 17:06:00 +0400
 seo_title: "UAE Tax Group Losses, Interest Limits and Reliefs"
 topic: "Corporate Tax"
 description: "How UAE Tax Groups handle pre-Grouping losses, restricted losses, the interest limit, Small Business Relief and loss transfers, with FTA Examples 22, 36 and 39."
@@ -8,7 +8,7 @@ reviewed: 2026-11-14
 image: /assets/images/tax-groups/tg-part-6-cover.png
 ---
 
-Pooling profits and losses is the main reason most groups form a Tax Group ([Part 1]({% post_url 2026-11-14-uae-corporate-tax-group-explained %})). But not every loss pools. Losses brought in from before the group, and a group's existing losses when a new member joins, are ring-fenced. Handle them wrong and they're forfeited.
+Pooling profits and losses is the main reason most groups form a Tax Group ([Part 1]({% post_url 2026-11-11-uae-corporate-tax-group-explained %})). But not every loss pools. Losses brought in from before the group, and a group's existing losses when a new member joins, are ring-fenced. Handle them wrong and they're forfeited.
 
 This is the final part of the series.
 
@@ -80,4 +80,4 @@ The ownership has to hold from the start of the year the loss arose to the end o
 - **Model the 0% band and Small Business Relief.** A group of small companies can end up paying more tax than the same companies filing separately.
 - **Check common ownership before any deal** that involves transferring losses between groups.
 
-That's the series: [what a Tax Group is]({% post_url 2026-11-14-uae-corporate-tax-group-explained %}), [who qualifies]({% post_url 2026-11-14-tax-group-95-percent-conditions %}), [timing]({% post_url 2026-11-14-tax-group-joining-leaving-timing-rules %}), [the numbers]({% post_url 2026-11-14-tax-group-aggregated-financial-statements %}), [the clawback]({% post_url 2026-11-14-tax-group-two-year-clawback-asset-transfers %}) and losses.
+That's the series: [what a Tax Group is]({% post_url 2026-11-11-uae-corporate-tax-group-explained %}), [who qualifies]({% post_url 2026-11-11-tax-group-95-percent-conditions %}), [timing]({% post_url 2026-11-11-tax-group-joining-leaving-timing-rules %}), [the numbers]({% post_url 2026-11-11-tax-group-aggregated-financial-statements %}), [the clawback]({% post_url 2026-11-11-tax-group-two-year-clawback-asset-transfers %}) and losses.

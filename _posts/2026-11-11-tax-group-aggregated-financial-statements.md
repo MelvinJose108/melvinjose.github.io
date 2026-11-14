@@ -1,6 +1,6 @@
 ---
 title: "Aggregated Financial Statements: How a UAE Tax Group's Taxable Income Is Built"
-date: 2026-11-14 17:04:00 +0400
+date: 2026-11-11 17:04:00 +0400
 seo_title: "Tax Group Aggregated Financial Statements: UAE Rules"
 topic: "Corporate Tax"
 description: "How to prepare Aggregated Financial Statements for a UAE Corporate Tax Group: what is eliminated, what isn't, and how they differ from an IFRS consolidation."
@@ -10,7 +10,7 @@ image: /assets/images/tax-groups/tg-part-4-cover.png
 
 A Tax Group has one Taxable Income, and it starts from one number: the profit in the group's **Aggregated Financial Statements**. These aren't the consolidated accounts most groups already prepare. Getting the difference wrong changes the tax.
 
-This is Part 4. Parts [2]({% post_url 2026-11-14-tax-group-95-percent-conditions %}) and [3]({% post_url 2026-11-14-tax-group-joining-leaving-timing-rules %}) covered who's in the group; this part covers how their results are combined.
+This is Part 4. Parts [2]({% post_url 2026-11-11-tax-group-95-percent-conditions %}) and [3]({% post_url 2026-11-11-tax-group-joining-leaving-timing-rules %}) covered who's in the group; this part covers how their results are combined.
 
 ### How they're built
 
@@ -65,4 +65,4 @@ This works one way only. Further impairments after joining are still eliminated 
 
 If you're in a group, or planning one, set up a separate **aggregation workbook** next to your consolidation. It should start from members' standalone pre-tax figures, not the consolidated pack, and keep an elimination schedule that the auditor can trace line by line.
 
-**[Next, Part 5]({% post_url 2026-11-14-tax-group-two-year-clawback-asset-transfers %}):** moving assets between members is tax-free, until someone leaves within 2 years.
+**[Next, Part 5]({% post_url 2026-11-11-tax-group-two-year-clawback-asset-transfers %}):** moving assets between members is tax-free, until someone leaves within 2 years.

@@ -1,6 +1,6 @@
 ---
 title: "One Return for the Whole Group, and One Shared Tax Bill: UAE Corporate Tax Groups Explained"
-date: 2026-11-14 17:01:00 +0400
+date: 2026-11-11 17:01:00 +0400
 seo_title: "UAE Corporate Tax Group Explained: Benefits and Liability"
 topic: "Corporate Tax"
 description: "What a UAE Corporate Tax Group is, what it saves (one return, pooled losses, tax-free intra-group transfers) and the joint liability every member takes on."
@@ -75,4 +75,4 @@ It's usually not worth it when:
 - a key company is a Qualifying Free Zone Person (it can't join; Part 2), or
 - a member has minority shareholders or its own lenders who won't accept it carrying the rest of the group's tax.
 
-**[Next, Part 2]({% post_url 2026-11-14-tax-group-95-percent-conditions %}):** the nine conditions, and the ownership traps in the FTA's examples that stop companies grouping.
+**[Next, Part 2]({% post_url 2026-11-11-tax-group-95-percent-conditions %}):** the nine conditions, and the ownership traps in the FTA's examples that stop companies grouping.

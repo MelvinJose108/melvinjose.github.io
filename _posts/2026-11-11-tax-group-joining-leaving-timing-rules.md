@@ -1,6 +1,6 @@
 ---
 title: "Joining, Leaving or Closing a UAE Tax Group: The Timing Rules That Catch Groups Out"
-date: 2026-11-14 17:03:00 +0400
+date: 2026-11-11 17:03:00 +0400
 seo_title: "Joining or Leaving a UAE Tax Group: Timing and Deadlines"
 topic: "Corporate Tax"
 description: "When changes to a UAE Corporate Tax Group take effect, the 20-business-day notification rule, and why a 7-day share transfer can cost a company a whole year."
@@ -10,7 +10,7 @@ image: /assets/images/tax-groups/tg-part-3-cover.png
 
 Groups change. Companies are bought, sold, merged and set up. Under the Tax Group rules, **when** a change takes effect is often more surprising than the change itself.
 
-This is Part 3. [Part 2]({% post_url 2026-11-14-tax-group-95-percent-conditions %}) covered the conditions; this part covers what happens when they stop being met.
+This is Part 3. [Part 2]({% post_url 2026-11-11-tax-group-95-percent-conditions %}) covered the conditions; this part covers what happens when they stop being met.
 
 ### The core rule: whole periods, not days
 
@@ -76,4 +76,4 @@ Two returns for one calendar year, from one surviving company.
 
 If nobody spots that a member dropped out, the group's return is wrong and has to be corrected. The Parent carries the penalties for that. The member that dropped out may **also** face penalties for not filing its own return. Keep a monthly check of who owns what for every group member.
 
-**[Next, Part 4]({% post_url 2026-11-14-tax-group-aggregated-financial-statements %}):** how the group's taxable income is built from Aggregated Financial Statements, and why your IFRS consolidation won't do.
+**[Next, Part 4]({% post_url 2026-11-11-tax-group-aggregated-financial-statements %}):** how the group's taxable income is built from Aggregated Financial Statements, and why your IFRS consolidation won't do.

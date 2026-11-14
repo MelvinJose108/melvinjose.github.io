@@ -1,6 +1,6 @@
 ---
 title: "The 2-Year Clawback: Moving Assets Inside a UAE Tax Group"
-date: 2026-11-14 17:05:00 +0400
+date: 2026-11-11 17:05:00 +0400
 seo_title: "UAE Tax Group 2-Year Clawback on Asset Transfers"
 topic: "Corporate Tax"
 description: "Asset transfers inside a UAE Tax Group are tax-free until a party leaves within 2 years. How the clawback works, and the elections that follow you out."
@@ -8,7 +8,7 @@ reviewed: 2026-11-14
 image: /assets/images/tax-groups/tg-part-5-cover.png
 ---
 
-Inside a Tax Group, moving an asset from one company to another has no tax effect. The gain is eliminated on aggregation ([Part 4]({% post_url 2026-11-14-tax-group-aggregated-financial-statements %})). That makes restructuring cheap, but only as long as both companies stay in the group.
+Inside a Tax Group, moving an asset from one company to another has no tax effect. The gain is eliminated on aggregation ([Part 4]({% post_url 2026-11-11-tax-group-aggregated-financial-statements %})). That makes restructuring cheap, but only as long as both companies stay in the group.
 
 This is Part 5.
 
@@ -26,7 +26,7 @@ T, U and W are in a Tax Group. The asset has a book value of AED 1m throughout.
 
 1. **31 March 2024:** T transfers the asset to U (market value AED 1.2m). Eliminated.
 2. **31 March 2025:** U transfers it to W (market value AED 1.4m). Eliminated.
-3. **1 February 2027:** T sells U to a third party. U is out of the group **from 1 January 2027** ([Part 3]({% post_url 2026-11-14-tax-group-joining-leaving-timing-rules %})).
+3. **1 February 2027:** T sells U to a third party. U is out of the group **from 1 January 2027** ([Part 3]({% post_url 2026-11-11-tax-group-joining-leaving-timing-rules %})).
 
 **The result:**
 - **2024 transfer:** U left more than 2 years after it. No clawback.
@@ -69,4 +69,4 @@ Once a company joins, the group's choices become its choices, **including after 
 - Check the register **before** any sale of a member or exit from the group. Anything moved in the last 2 years is a possible tax charge.
 - Where you can, structure transfers so that **Qualifying Group Relief or Business Restructuring Relief** would apply on their own terms. That's what switches the clawback off.
 
-**[Next, Part 6]({% post_url 2026-11-14-tax-group-losses-interest-reliefs %}):** losses, interest and reliefs. What the group shares, what stays ring-fenced, and how pre-group losses get forfeited.
+**[Next, Part 6]({% post_url 2026-11-11-tax-group-losses-interest-reliefs %}):** losses, interest and reliefs. What the group shares, what stays ring-fenced, and how pre-group losses get forfeited.
