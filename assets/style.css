@@ -1,7 +1,7 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#FBFAF8;--surface:#fff;--soft:#F1EEE8;--ink:#16181D;--mute:#5C636E;--line:#E7E4DD;--acc:#0F766E;
+:root{--bg:#F6F3EC;--surface:#FFFDF8;--soft:#EEE9DD;--ink:#141B33;--mute:#5D6070;--line:#E4DED1;--acc:#1D3FBF;
 --display:'Fraunces',Georgia,'Times New Roman',serif;--ui:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
-:root[data-theme=dark]{--bg:#0F1214;--surface:#171B1E;--soft:#1B2024;--ink:#EDEFF1;--mute:#9AA3AD;--line:#262C31;--acc:#4FD1C5}
+:root[data-theme=dark]{--bg:#0D1120;--surface:#151A2D;--soft:#1C2238;--ink:#ECEEF5;--mute:#9AA0B8;--line:#262D47;--acc:#9DB0FF}
 [hidden]{display:none!important}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:var(--ui);line-height:1.65;-webkit-font-smoothing:antialiased}
@@ -49,8 +49,8 @@ main.wrap{padding-top:1rem;padding-bottom:4.5rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr));gap:1rem}
 .badge{--c:var(--acc);align-self:flex-start;display:inline-block;font-size:.76rem;font-weight:600;padding:.18rem .6rem;border-radius:99px;color:color-mix(in srgb,var(--c) 70%,var(--ink));background:color-mix(in srgb,var(--c) 13%,transparent)}
 .card .badge,.post .badge,.hub .badge{--c:inherit}
-.t-vat{--c:#B45309}.t-corporate-tax{--c:#0F766E}.t-e-invoicing{--c:#BE185D}.t-audit{--c:#3B5BA5}.t-updates{--c:#B45309}
-:root[data-theme=dark] .t-vat,:root[data-theme=dark] .t-updates{--c:#F6A94C}:root[data-theme=dark] .t-corporate-tax{--c:#4FD1C5}:root[data-theme=dark] .t-e-invoicing{--c:#F472B6}:root[data-theme=dark] .t-audit{--c:#8FA9E8}
+.t-vat{--c:#B45309}.t-corporate-tax{--c:#0F766E}.t-e-invoicing{--c:#BE185D}.t-audit{--c:#6D3FC0}.t-updates{--c:#B45309}
+:root[data-theme=dark] .t-vat,:root[data-theme=dark] .t-updates{--c:#F6A94C}:root[data-theme=dark] .t-corporate-tax{--c:#4FD1C5}:root[data-theme=dark] .t-e-invoicing{--c:#F472B6}:root[data-theme=dark] .t-audit{--c:#B69CFF}
 .more{margin-top:1.5rem;font-weight:600}.more a{color:var(--acc);text-decoration:none}.more a:hover{text-decoration:underline}
 .band{margin-top:3.5rem;padding:2.25rem;border-radius:16px;background:var(--ink);color:var(--bg);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem 2rem}
 .band h2{font-size:1.5rem}.band p{opacity:.8}
@@ -230,3 +230,12 @@ img.avatar.photo.big{width:6.5rem;height:6.5rem}
 .band .btn.ghost{background:transparent;color:var(--bg);border-color:var(--bg)}
 .band .btn.ghost:hover{background:var(--bg);color:var(--ink)}
 @media(max-width:820px){.proof{grid-template-columns:1fr 1fr}.proof li:nth-child(3){border-left:0}.proof li:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* ink blue theme */
+.btn{background:var(--acc);border-color:var(--acc);color:#fff}
+.btn:hover{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+:root[data-theme=dark] .btn{color:#0D1120}
+:root[data-theme=dark] .btn:hover{color:#0D1120;background:#ECEEF5}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.proof b{color:var(--acc)}
+.brand i{background:var(--acc);color:#fff}
