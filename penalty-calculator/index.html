@@ -33,7 +33,7 @@ description: "Estimate UAE FTA penalties for VAT and Corporate Tax: late payment
   <dl class="out" id="p-out" aria-live="polite"></dl>
   <ul class="notes" id="p-notes"></ul>
   <details class="basis"><summary>Legal basis for each line</summary><ul id="p-basis"></ul></details>
-  <p class="note">An estimate only, not advice. VAT penalties use Cabinet Decision No. 40 of 2017 as amended by Cabinet Decision No. 129 of 2025 (in force from 14 April 2026). Corporate Tax penalties use Cabinet Decision No. 75 of 2023 as amended by Cabinet Decision No. 10 of 2024. Monthly penalties count each month or part of a month from the day after the due date. Business-day deadlines ignore public holidays. The FTA's assessment in EmaraTax is final.</p>
+  <p class="note">An estimate only, not advice. VAT penalties use Cabinet Decision No. 40 of 2017 as amended by Cabinet Decision No. 129 of 2025 (in force from 14 April 2026). Corporate Tax penalties use Cabinet Decision No. 75 of 2023 as amended by Cabinet Decision No. 10 of 2024. Monthly penalties count each month or part of a month from the day after the due date. Business-day deadlines count from the day after the trigger date and skip weekends and UAE public holidays (built in for 2026 and 2027; Islamic holiday dates for 2027 are expected). The FTA's assessment in EmaraTax is final.</p>
 </div>
 
 <section class="hsec body" style="margin-top:2.5rem">
@@ -90,7 +90,10 @@ function calc(){var tax=$("#p-tax").value,k=$("#p-kind").value,a=parseFloat($("#
   L.push('<div class="total"><dt>Estimated penalty</dt><dd>'+f(r.total)+"</dd></div>");
   $("#p-out").innerHTML=L.join("");
   var notes=r.notes.slice();
-  if(k==="vd"||k==="audit"){var pd=T.addBusinessDays(T.parseDate(e),20);notes.push("Pay the tax difference by about "+T.fmtDate(pd)+" (20 business days, ignoring public holidays) to avoid the late payment penalty.");}
+  if(k==="vd"||k==="audit"){var bd=T.addBusinessDaysDetail(T.parseDate(e),20),txt="Pay the tax difference by "+T.fmtDate(bd.date)+" (20 business days after "+e+", counting from the next day and excluding weekends"+(bd.skipped.length?" and "+bd.skipped.map(function(h){return h.name+" on "+h.date+(h.status==="expected"?" (expected)":"")}).join(", "):"")+") to avoid the late payment penalty.";
+    if(!bd.holidaysCovered)txt+=" Public holidays are built in for 2026 and 2027 only, so check this date against the official holiday list.";
+    else if(bd.usesExpected)txt+=" Islamic holiday dates for 2027 are expected dates and can move by a day after the moon sighting.";
+    notes.push(txt);}
   $("#p-notes").innerHTML=notes.map(function(x){return"<li>"+x+"</li>"}).join("");
   $("#p-basis").innerHTML=r.lines.map(function(l){return"<li>"+l.label+": "+l.basis+"</li>"}).join("");}
 ["#p-tax","#p-kind"].forEach(function(s){$(s).addEventListener("change",ui)});
