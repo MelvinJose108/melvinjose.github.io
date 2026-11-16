@@ -347,3 +347,9 @@ img.avatar.photo.big{width:6.5rem;height:6.5rem}
 .body a.btn{color:#fff;text-decoration:none}
 .body a.btn.ghost{color:var(--ink)}
 :root[data-theme=dark] .body a.btn:not(.ghost){color:#0D1120}
+
+/* checkbox rows in any calculator */
+.calc label.tick{display:flex;gap:.6rem;align-items:flex-start;margin:0;padding:.45rem 0;color:var(--ink);font-size:.95rem;border-bottom:1px solid var(--line);cursor:pointer}
+.calc label.tick input{width:1.05rem;height:1.05rem;flex:none;margin-top:.2rem;accent-color:var(--acc)}
+.calc .dd-ticks{display:flex;flex-direction:column;gap:.15rem;margin-top:.9rem}
+.ob .dd-h{font-family:var(--ui);font-size:1rem;font-weight:700;margin:1.6rem 0 .2rem;letter-spacing:0}
