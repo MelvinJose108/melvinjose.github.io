@@ -7,7 +7,7 @@
   {% for p in posts %}{% assign url = 'https://www.linkedin.com/feed/update/' | append: p.urn | append: '/' %}
     <article class="li-card">
       <header class="li-head">
-        <span class="avatar li-av" aria-hidden="true">{{ a.initials }}</span>
+        {% include avatar.html cls="li-av" %}
         <span><b>{{ a.name }}</b><span class="li-meta">LinkedIn · {{ p.date | date: "%-d %b %Y" }}</span></span>
         <svg class="li-logo" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M7.1 9.4H4.6V19h2.5V9.4zM5.9 5a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9zM19.4 13.4c0-2.6-1.4-4.2-3.6-4.2-1.3 0-2.1.7-2.5 1.3V9.4h-2.4V19h2.5v-5c0-1.3.6-2.1 1.7-2.1 1 0 1.6.7 1.6 2.1v5h2.6v-5.6z"/></svg>
       </header>

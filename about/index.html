@@ -7,7 +7,7 @@ permalink: /about/
 ---
 {% assign a = site.data.author %}
 <div class="post">
-  <div class="aboutHead"><div class="avatar big" aria-hidden="true">{{ a.initials }}</div><div><h1 class="pagetitle">{{ a.name }}</h1><p class="deck">{{ a.title }} · {{ a.city }}, UAE · Chartered Accountant finalist</p></div></div>
+  <div class="aboutHead">{% include avatar.html cls="big" big=true eager=true %}<div><h1 class="pagetitle">{{ a.name }}</h1><p class="deck">{{ a.title }} · {{ a.city }}, UAE · Chartered Accountant finalist</p></div></div>
   <div class="body">
     <p>I'm a Chartered Accountant finalist with 6+ years in audit and tax across the UAE and India. I lead Corporate Tax, VAT and audit engagements for Free Zone and mainland businesses.</p>
     <p>Most of my work sits where tax rules meet day-to-day bookkeeping: a Corporate Tax return that depends on how the year's entries were booked, a VAT refund that stands or falls on the documents behind it, an FTA query that needs a clear, well-supported answer. I write here to make those rules easier to apply before they become a problem.</p>
