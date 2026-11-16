@@ -1,0 +1,99 @@
+---
+layout: default
+title: Gratuity Calculator
+permalink: /gratuity/
+seo_title: "UAE Gratuity Calculator and Year-End Provision (2026)"
+description: "Calculate UAE end-of-service gratuity under Article 51 of the Labour Law, and work out the year-end gratuity provision for your whole team."
+---
+<h1 class="pagetitle">Gratuity Calculator</h1>
+<p class="deck">End-of-service gratuity for private-sector employees under Article 51 of Federal Decree-Law No. 33 of 2021, plus a year-end provision for your whole team.</p>
+
+<div class="calc gr">
+  <div class="tabs" role="tablist">
+    <button type="button" role="tab" aria-selected="true" data-tab="one">One employee</button>
+    <button type="button" role="tab" aria-selected="false" data-tab="team">Year-end provision</button>
+  </div>
+  <div data-panel="one">
+    <div class="fgrid2">
+      <div><label for="g-basic">Last basic monthly salary (AED)</label><input id="g-basic" type="number" min="0" step="any" value="10000"></div>
+      <div><label for="g-unp">Unpaid leave days during service</label><input id="g-unp" type="number" min="0" step="1" value="0"></div>
+      <div><label for="g-start">Start date</label><input id="g-start" type="date" value="2019-01-01"></div>
+      <div><label for="g-end">Last working day</label><input id="g-end" type="date"></div>
+    </div>
+    <dl class="out" id="g-out" aria-live="polite"></dl>
+    <ul class="notes" id="g-notes"></ul>
+  </div>
+  <div data-panel="team" hidden>
+    <p class="dd-lede">Paste your staff list from Excel: name, start date, basic monthly salary, and (optional) unpaid leave days. The provision is what you'd owe if everyone left on the date below.</p>
+    <div class="fgrid2">
+      <div><label for="t-asat">Provision as at</label><input id="t-asat" type="date"></div>
+      <div><label for="t-prior">Provision in last year's accounts (AED, optional)</label><input id="t-prior" type="number" min="0" step="any" placeholder="0"></div>
+    </div>
+    <label class="tick" style="margin-top:.6rem"><input type="checkbox" id="t-u1" checked> Include staff with under one year of service (they become entitled once they complete a year)</label>
+    <label for="t-in">Staff list</label>
+    <textarea id="t-in" rows="7" placeholder="Asha Menon&#9;2021-04-01&#9;8000&#10;Ravi Kumar; 15/07/2023; 5500&#10;Sara Ali; 2025-09-01; 7000; 10"></textarea>
+    <div class="dd-actions"><button type="button" class="btn" id="t-go">Calculate provision</button><button type="button" class="btn ghost" id="t-csv" hidden>Download as CSV</button></div>
+    <div id="t-out"></div>
+  </div>
+  <p class="note">For full-time employees in the private sector, including most free zones (DIFC and ADGM have their own employment rules). Daily wage = basic salary ÷ 30; a year = 365 days; part years are pro-rated; unpaid leave doesn't count as service; the total is capped at two years' basic salary. Gratuity is due only after one year of continuous service, and resignation no longer reduces it. Employers on the voluntary savings scheme calculate differently. Nothing you enter leaves your browser.</p>
+</div>
+
+<section class="hsec body" style="margin-top:2.5rem">
+  <h2>How gratuity is calculated</h2>
+  <table>
+    <thead><tr><th>Service</th><th>Gratuity</th></tr></thead>
+    <tbody>
+      <tr><td>Under 1 year</td><td>None</td></tr>
+      <tr><td>Years 1 to 5</td><td>21 days' basic salary for each year</td></tr>
+      <tr><td>After 5 years</td><td>30 days' basic salary for each additional year</td></tr>
+      <tr><td>Maximum</td><td>Two years' basic salary in total</td></tr>
+    </tbody>
+  </table>
+  <p>Example: a basic salary of AED 10,000 over 3 years gives a daily wage of AED 333.33 × 21 days × 3 years = <b>AED 21,000</b>. The employer must pay final dues, including gratuity, within 14 days of the contract ending.</p>
+  <p><b>For the accounts:</b> the year-end provision is usually the gratuity everyone would receive if they left on the balance sheet date. Larger entities reporting under full IFRS may need an actuarial valuation under IAS 19 instead.</p>
+</section>
+
+<script src="{{ '/assets/obligations.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+<script>
+(function(){
+var O=window.UAEObl,$=function(s){return document.querySelector(s)};
+var aed=function(x){return 'AED '+Number(x).toLocaleString('en-AE',{minimumFractionDigits:2,maximumFractionDigits:2})};
+var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var today=new Date(Date.now()-new Date().getTimezoneOffset()*6e4).toISOString().slice(0,10);
+$('#g-end').value=today;$('#t-asat').value=today.slice(0,4)+'-12-31';
+document.querySelectorAll('.gr .tabs button').forEach(function(b){b.addEventListener('click',function(){
+  document.querySelectorAll('.gr .tabs button').forEach(function(x){x.setAttribute('aria-selected',x===b)});
+  document.querySelectorAll('.gr [data-panel]').forEach(function(p){p.hidden=p.dataset.panel!==b.dataset.tab})})});
+function one(){
+  var g=O.gratuity({start:$('#g-start').value,end:$('#g-end').value,basic:$('#g-basic').value,unpaidDays:$('#g-unp').value});
+  if(!g.ok){$('#g-out').innerHTML='<div><dt>Enter a salary and valid dates</dt><dd></dd></div>';$('#g-notes').innerHTML='';return}
+  var L=[['Service counted',g.days.toLocaleString()+' days ('+g.years.toFixed(2)+' years)'],['Daily basic wage',aed(g.daily)],
+    ['Years 1 to 5: '+g.d21.toFixed(2)+' days',aed(g.daily*g.d21)]];
+  if(g.d30>0)L.push(['After year 5: '+g.d30.toFixed(2)+' days',aed(g.daily*g.d30)]);
+  if(g.capped)L.push(['Capped at two years’ basic salary',aed(g.cap)]);
+  L.push(['Gratuity payable',aed(g.amount),1]);
+  $('#g-out').innerHTML=L.map(function(l){return '<div'+(l[2]?' class="total"':'')+'><dt>'+l[0]+'</dt><dd>'+l[1]+'</dd></div>'}).join('');
+  var N=[];if(!g.eligible)N.push('Less than one year of continuous service, so no gratuity is payable yet. For the accounts, '+aed(g.accrued)+' has accrued so far.');
+  if(g.capped)N.push('The calculated amount ('+aed(g.raw)+') is above the two-year cap.');
+  $('#g-notes').innerHTML=N.map(function(x){return '<li>'+x+'</li>'}).join('');
+}
+document.querySelector('[data-panel=one]').addEventListener('input',one);one();
+var rows=[];
+$('#t-go').addEventListener('click',function(){
+  var staff=O.parseStaff($('#t-in').value),asat=$('#t-asat').value,inc=$('#t-u1').checked;
+  if(!staff.length){$('#t-out').innerHTML='<p class="dd-warn">Paste at least one line: name, start date, basic salary.</p>';$('#t-csv').hidden=true;return}
+  var tot=0;rows=staff.map(function(s){var g=O.gratuity({start:s.start,end:asat,basic:s.basic,unpaidDays:s.unpaid});
+    var p=g.ok?(g.eligible?g.amount:(inc?g.accrued:0)):0;tot+=p;return {name:s.name,start:s.start,basic:s.basic,years:g.ok?g.years:0,eligible:g.ok&&g.eligible,prov:Math.round(p*100)/100}});
+  var prior=parseFloat($('#t-prior').value)||0,mv=tot-prior;
+  $('#t-out').innerHTML='<div class="dd-sum"><div class="std"><b>'+aed(tot).replace('AED ','')+'</b><span>Provision, AED</span></div><div class="std"><b>'+rows.length+'</b><span>employees</span></div>'+($('#t-prior').value?'<div class="'+(mv>=0?'big':'ok')+'"><b>'+aed(Math.abs(mv)).replace('AED ','')+'</b><span>'+(mv>=0?'Increase':'Decrease')+' to book (AED)</span></div>':'')+'</div>'+
+   '<div class="dd-tablewrap"><table class="dd-list"><thead><tr><th>Employee</th><th>Start</th><th>Basic</th><th>Years</th><th>Provision</th></tr></thead><tbody>'+rows.map(function(r){return '<tr><td>'+esc(r.name)+(r.eligible?'':' <span class="pill small">under 1 yr</span>')+'</td><td>'+esc(r.start)+'</td><td>'+aed(r.basic)+'</td><td>'+r.years.toFixed(2)+'</td><td>'+aed(r.prov)+'</td></tr>'}).join('')+'</tbody></table></div>'+
+   ($('#t-prior').value?'<p class="small" style="margin-top:.8rem">Charge for the year (Dr Staff costs, Cr Provision for end-of-service benefits) = this provision − last year’s provision + any gratuity paid out of the provision during the year.</p>':'');
+  $('#t-csv').hidden=false;
+});
+$('#t-csv').addEventListener('click',function(){
+  var q=function(v){return '"'+String(v).replace(/"/g,'""')+'"'};
+  var csv='Employee,Start date,Basic salary,Years of service,Provision\n'+rows.map(function(r){return [q(r.name),r.start,r.basic,r.years.toFixed(2),r.prov].join(',')}).join('\n');
+  var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='gratuity-provision.csv';a.click();
+});
+})();
+</script>
