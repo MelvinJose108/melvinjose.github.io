@@ -1,0 +1,85 @@
+---
+layout: default
+title: Deadline Planner
+permalink: /tax-deadlines/
+seo_title: "UAE Tax Deadline Planner: Corporate Tax, VAT, E-Invoicing"
+description: "Your upcoming UAE Corporate Tax, VAT and e-invoicing deadlines from your year-end and VAT period, moved for weekends and public holidays. Add them to your calendar."
+---
+<h1 class="pagetitle">Deadline Planner</h1>
+<p class="deck">Enter your financial year-end and VAT period to see your next Corporate Tax, VAT and e-invoicing deadlines, adjusted for weekends and UAE public holidays. Then add them to your calendar with a 7-day reminder.</p>
+
+<div class="calc dl">
+  <div class="fgrid2">
+    <div class="pair">
+      <div><label for="t-fym">Financial year ends in</label><select id="t-fym"></select></div>
+      <div><label for="t-fyd">On day</label><select id="t-fyd"><option value="0">Last day</option></select></div>
+    </div>
+    <div><label for="t-vat">VAT returns</label>
+      <select id="t-vat">
+        <option value="q3">Quarterly: periods end Mar, Jun, Sep, Dec</option>
+        <option value="q1">Quarterly: periods end Jan, Apr, Jul, Oct</option>
+        <option value="q2">Quarterly: periods end Feb, May, Aug, Nov</option>
+        <option value="monthly">Monthly</option>
+        <option value="none">Not VAT-registered</option>
+      </select></div>
+    <div><label for="t-ei">E-invoicing</label>
+      <select id="t-ei">
+        <option value="small">Revenue under AED 50 million</option>
+        <option value="large">Revenue of AED 50 million or more</option>
+        <option value="gov">Government entity</option>
+        <option value="none">Not in scope / don't show</option>
+      </select></div>
+    <div><label for="t-ct">Corporate Tax</label>
+      <select id="t-ct"><option value="1">Show my next two returns</option><option value="0">Not registered / don't show</option></select></div>
+  </div>
+  <ol class="dl-list" id="t-out" aria-live="polite"></ol>
+  <div class="dd-actions">
+    <button type="button" class="btn" id="t-ics">Add all to calendar (.ics)</button>
+  </div>
+  <p class="note">The .ics file works with Outlook, Google Calendar and Apple Calendar, and each deadline gets a 7-day reminder. Deadlines that fall on a weekend or public holiday move to the next business day (Tax Procedures Law, Article 49). Public holidays are built in for 2026 and 2027; Islamic holiday dates for 2027 are expected dates. Some first tax periods and FTA-approved extensions have different dates, so check EmaraTax for your own.</p>
+</div>
+
+<section class="hsec body" style="margin-top:2.5rem">
+  <h2>The rules behind the dates</h2>
+  <table>
+    <thead><tr><th>Obligation</th><th>Deadline</th></tr></thead>
+    <tbody>
+      <tr><td>Corporate Tax return and payment</td><td>Within 9 months of the end of the tax period. For a 31 December year-end, that's 30 September of the next year.</td></tr>
+      <tr><td>VAT return and payment</td><td>By the 28th day after the end of each monthly or quarterly tax period</td></tr>
+      <tr><td>E-invoicing (revenue of AED 50m or more)</td><td>Appoint an ASP by 30 October 2026; go live by 1 January 2027</td></tr>
+      <tr><td>E-invoicing (revenue under AED 50m)</td><td>Appoint an ASP by 31 March 2027; go live by 1 July 2027</td></tr>
+      <tr><td>Any deadline on a weekend or public holiday</td><td>Moves to the next business day</td></tr>
+    </tbody>
+  </table>
+  <p>Missed one? The <a href="{{ '/penalty-calculator/' | relative_url }}">Penalty Estimator</a> works out what it costs. More on e-invoicing: <a href="{% post_url 2026-11-16-uae-e-invoicing-who-must-comply %}">who must comply and when</a>.</p>
+</section>
+
+<script src="{{ '/assets/tax-calc.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+<script>
+(function(){
+var T=window.TaxCalc,$=function(s){return document.querySelector(s)};
+var M=['January','February','March','April','May','June','July','August','September','October','November','December'];
+M.forEach(function(m,i){var o=document.createElement('option');o.value=i+1;o.textContent=m;if(i===11)o.selected=true;$('#t-fym').appendChild(o)});
+for(var d=1;d<=31;d++){var o=document.createElement('option');o.value=d;o.textContent=d;$('#t-fyd').appendChild(o)}
+var today=new Date(Date.now()-new Date().getTimezoneOffset()*6e4).toISOString().slice(0,10),list=[];
+try{var saved=JSON.parse(localStorage.getItem('dl')||'null');if(saved){['fym','fyd','vat','ei','ct'].forEach(function(k){if(saved[k]!=null)$('#t-'+k).value=saved[k]})}}catch(e){}
+var fmt=function(iso){return new Date(iso+'T00:00:00').toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'long',year:'numeric'})};
+var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var lab={ct:'Corporate Tax',vat:'VAT',einv:'E-invoicing'};
+function render(){
+  var o={today:today,vat:$('#t-vat').value,einv:$('#t-ei').value,ctCount:2,vatCount:$('#t-vat').value==='monthly'?6:4};
+  if($('#t-ct').value==='1'){o.fyMonth=+$('#t-fym').value;o.fyDay=+$('#t-fyd').value}
+  try{localStorage.setItem('dl',JSON.stringify({fym:$('#t-fym').value,fyd:$('#t-fyd').value,vat:o.vat,ei:o.einv,ct:$('#t-ct').value}))}catch(e){}
+  list=T.deadlines(o);
+  $('#t-out').innerHTML=list.length?list.map(function(x){
+    var when=x.passed?'<span class="dl-when bad">Passed</span>':x.daysLeft===0?'<span class="dl-when bad">Today</span>':'<span class="dl-when'+(x.daysLeft<=30?' soon':'')+'">in '+x.daysLeft+' day'+(x.daysLeft===1?'':'s')+'</span>';
+    return '<li class="dl-item k-'+x.kind+(x.passed?' passed':'')+'"><div class="dl-date"><b>'+esc(fmt(x.due))+'</b>'+when+'</div><div class="dl-body"><span class="pill">'+lab[x.kind]+'</span> <b>'+esc(x.title)+'</b><p>'+esc(x.detail)+(x.moved?' <em>Moved from '+esc(fmt(x.original))+' ('+esc(x.why.join(', '))+').</em>':'')+(!x.holidaysKnown?' <em>Public holidays for this year aren’t confirmed yet; only weekends are skipped.</em>':'')+'</p></div></li>'}).join(''):'<li class="dl-empty">Nothing to show. Choose at least one tax above.</li>';
+  $('#t-ics').hidden=!list.filter(function(x){return !x.passed}).length;
+}
+document.querySelector('.dl').addEventListener('change',render);
+$('#t-ics').addEventListener('click',function(){
+  var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([T.ics(list.filter(function(x){return !x.passed}),'UAE tax deadlines')],{type:'text/calendar'}));a.download='uae-tax-deadlines.ics';document.body.appendChild(a);a.click();a.remove();
+});
+render();
+})();
+</script>

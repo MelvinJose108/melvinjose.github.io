@@ -295,3 +295,31 @@ img.avatar.photo.big{width:6.5rem;height:6.5rem}
   .dd-record .foot{font-size:8.5pt;color:#555;margin-top:12pt}
 }
 @media(max-width:640px){.dd-sum{grid-template-columns:1fr}.dd .ex{white-space:normal}}
+/* deadline planner */
+.dl .pair{display:grid;grid-template-columns:1.4fr 1fr;gap:0 .75rem}
+.dl-list{list-style:none;margin:1.5rem 0 0;padding:0;display:flex;flex-direction:column;gap:.6rem}
+.dl-item{display:grid;grid-template-columns:13rem 1fr;gap:1rem;padding:1rem;border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:0 10px 10px 0;background:var(--bg)}
+.dl-item.k-vat{border-left-color:#B45309}.dl-item.k-ct{border-left-color:#0F766E}.dl-item.k-einv{border-left-color:#BE185D}
+.dl-item.passed{opacity:.75;border-left-color:#B42318}
+.dl-date{display:flex;flex-direction:column;gap:.25rem}
+.dl-date b{font-size:1rem}
+.dl-when{font-size:.82rem;font-weight:700;color:var(--mute)}.dl-when.soon{color:#B45309}.dl-when.bad{color:#B42318}
+.dl-body p{color:var(--mute);font-size:.9rem;margin-top:.3rem}
+.dl-body em{font-style:normal;color:var(--ink)}
+.dl .pill{background:var(--soft);color:var(--ink)}
+.dl-empty{color:var(--mute)}
+@media(max-width:640px){.dl-item{grid-template-columns:1fr;gap:.4rem}}
+/* toolkit: four tools on one row */
+.toolkit{grid-template-columns:repeat(4,minmax(0,1fr))}
+.toolkit .tool{flex-direction:column;gap:.8rem}
+@media(max-width:1100px){.toolkit{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.toolkit{grid-template-columns:1fr}}
+/* lead magnet */
+.lm-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:1.25rem;margin:2rem 0}
+.lm-what,.lm-get{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.5rem}
+.lm-get{border:2px solid var(--acc)}
+.lm h2{font-size:1.25rem;margin-bottom:.75rem}
+.lm ul{padding-left:1.1rem;display:flex;flex-direction:column;gap:.45rem}
+.lm .small{font-size:.85rem;color:var(--mute);margin-top:.8rem}
+.lm-get p{margin-bottom:1rem}
+@media(max-width:820px){.lm-grid{grid-template-columns:1fr}}

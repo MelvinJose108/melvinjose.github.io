@@ -240,9 +240,67 @@
     return { total: total, months: m, lines: [{ label: "Late deregistration: AED 1,000 then AED 1,000 a month (" + m + " month" + (m === 1 ? "" : "s") + "), capped at AED 10,000", amount: total, basis: "CD 40 of 2017 as amended, Table 1 item 4 / CD 75 of 2023, item 3" }], notes: [] };
   }
 
+
+  /* ---------------- Deadlines ----------------
+   * Tax Procedures Law Art. 49(2): a deadline falling on a non-business day moves to the next business day.
+   * Public holidays are built in for 2026-2027; outside that range only weekends are skipped. */
+  function rollForward(d) {
+    var x = new Date(d.getTime()), moved = false, why = [];
+    while (!isBusinessDay(x)) { var h = HOLIDAYS[fmtDate(x)]; why.push(h ? h[0] : (x.getUTCDay() === 6 ? "Saturday" : "Sunday")); x = addDays(x, 1); moved = true; }
+    return { date: x, original: d, moved: moved, why: why, holidaysKnown: fmtDate(d) <= HOLIDAY_RANGE[1] };
+  }
+  function addMonthsEnd(d, k) { // keeps month-end alignment: 30 Jun + 9 months = 31 Mar
+    var y = d.getUTCFullYear(), m = d.getUTCMonth(), day = d.getUTCDate(), isEnd = day === daysInMonth(y, m);
+    var t = new Date(Date.UTC(y, m + k, 1)), ty = t.getUTCFullYear(), tm = t.getUTCMonth(), last = daysInMonth(ty, tm);
+    return new Date(Date.UTC(ty, tm, isEnd ? last : Math.min(day, last)));
+  }
+  function ctReturnDue(periodEnd) { return addMonthsEnd(periodEnd, 9); }
+  function vatDue(periodEnd) { return new Date(Date.UTC(periodEnd.getUTCFullYear(), periodEnd.getUTCMonth() + 1, 28)); }
+  /* opts: { today:"YYYY-MM-DD", fyMonth:1-12, fyDay:1-31 or 0 (=last day), vat:"none"|"monthly"|"q1"|"q2"|"q3", einv:"none"|"large"|"small"|"gov", ctCount, vatCount } */
+  function deadlines(o) {
+    var today = parseDate(o.today), out = [];
+    function push(kind, title, due, detail) { var r = rollForward(due); if (fmtDate(r.date) >= o.today) out.push({ kind: kind, title: title, due: fmtDate(r.date), original: fmtDate(due), moved: r.moved, why: r.why, holidaysKnown: r.holidaysKnown, detail: detail }); }
+    if (o.fyMonth) {
+      var n = 0, y0 = today.getUTCFullYear() - 2;
+      for (var y = y0; y <= y0 + 4 && n < (o.ctCount || 2); y++) {
+        var m = o.fyMonth - 1, dd = o.fyDay ? Math.min(o.fyDay, daysInMonth(y, m)) : daysInMonth(y, m), end = new Date(Date.UTC(y, m, dd)), due = ctReturnDue(end);
+        if (fmtDate(rollForward(due).date) < o.today) continue;
+        push("ct", "Corporate Tax return and payment", due, "Tax period ending " + fmtDate(end) + ". File the return and pay within 9 months of the period end."); n++;
+      }
+    }
+    if (o.vat && o.vat !== "none") {
+      var ends = [], step = o.vat === "monthly" ? 1 : 3, first = { monthly: 0, q1: 0, q2: 1, q3: 2 }[o.vat]; // q1: Jan/Apr/Jul/Oct, q2: Feb/May/Aug/Nov, q3: Mar/Jun/Sep/Dec
+      for (var k = -14; k < 30; k++) { var mm = today.getUTCMonth() + k; if (((mm % step) + step) % step !== first % step) continue;
+        var e = new Date(Date.UTC(today.getUTCFullYear(), mm + 1, 0)); ends.push(e); }
+      var c = 0;
+      ends.forEach(function (e) { if (c >= (o.vatCount || 4)) return; var due = vatDue(e); if (fmtDate(rollForward(due).date) < o.today) return;
+        var st = new Date(Date.UTC(e.getUTCFullYear(), e.getUTCMonth() - step + 1, 1));
+        push("vat", "VAT return and payment", due, (step === 1 ? "Month" : "Quarter") + " " + fmtDate(st) + " to " + fmtDate(e) + ". File and pay by the 28th day after the period ends."); c++; });
+    }
+    var EI = { large: [["2026-10-30", "Appoint an e-invoicing ASP"], ["2027-01-01", "E-invoicing go-live"]],
+               small: [["2027-03-31", "Appoint an e-invoicing ASP"], ["2027-07-01", "E-invoicing go-live"]],
+               gov: [["2027-03-31", "Appoint an e-invoicing ASP"], ["2027-10-01", "E-invoicing go-live"]] }[o.einv];
+    if (EI) EI.forEach(function (x) { var d = parseDate(x[0]);
+      if (x[0] < o.today) out.push({ kind: "einv", title: x[1], due: x[0], original: x[0], moved: false, why: [], holidaysKnown: true, passed: true, detail: "This deadline has passed. If it isn't done, act now: it falls within the AED 5,000 implementation penalty." });
+      else out.push({ kind: "einv", title: x[1], due: x[0], original: x[0], moved: false, why: [], holidaysKnown: true, detail: "Set by Ministerial Decision No. 244 of 2025, as amended." }); });
+    out.sort(function (a, b) { return a.due < b.due ? -1 : a.due > b.due ? 1 : 0; });
+    out.forEach(function (x) { x.daysLeft = Math.round((parseDate(x.due) - today) / 86400000); });
+    return out;
+  }
+  function ics(items, calName) {
+    function d8(s) { return s.replace(/-/g, ""); }
+    function esc(t) { return String(t).replace(/\\/g, "\\\\").replace(/[,;]/g, function (m) { return "\\" + m; }).replace(/\n/g, "\\n"); }
+    var now = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z";
+    var L = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//The UAE Ledger//Tax deadlines//EN", "CALSCALE:GREGORIAN", "X-WR-CALNAME:" + esc(calName || "UAE tax deadlines")];
+    items.forEach(function (x, i) { var nx = fmtDate(addDays(parseDate(x.due), 1));
+      L.push("BEGIN:VEVENT", "UID:" + d8(x.due) + "-" + x.kind + "-" + i + "@camelvinjose.com", "DTSTAMP:" + now, "DTSTART;VALUE=DATE:" + d8(x.due), "DTEND;VALUE=DATE:" + d8(nx),
+        "SUMMARY:" + esc("Deadline: " + x.title), "DESCRIPTION:" + esc(x.detail + "\nFrom camelvinjose.com/tax-deadlines/"),
+        "BEGIN:VALARM", "TRIGGER:-P7D", "ACTION:DISPLAY", "DESCRIPTION:" + esc(x.title + " due in 7 days"), "END:VALARM", "END:VEVENT"); });
+    L.push("END:VCALENDAR"); return L.join("\r\n");
+  }
   return { VAT_RATE: VAT_RATE, vatAdd: vatAdd, vatExtract: vatExtract, vatInvoice: vatInvoice, vatReturn: vatReturn,
            corporateTax: corporateTax, monthsOrPart: monthsOrPart, parseDate: parseDate, fmtDate: fmtDate,
            addBusinessDays: addBusinessDays, addBusinessDaysDetail: addBusinessDaysDetail, isBusinessDay: isBusinessDay, HOLIDAYS: HOLIDAYS, latePayment: latePayment, lateFiling: lateFiling,
            voluntaryDisclosure: voluntaryDisclosure, auditFinding: auditFinding, fixedPenalty: fixedPenalty,
-           lateDeregistration: lateDeregistration };
+           lateDeregistration: lateDeregistration, rollForward: rollForward, ctReturnDue: ctReturnDue, vatDue: vatDue, deadlines: deadlines, ics: ics };
 });

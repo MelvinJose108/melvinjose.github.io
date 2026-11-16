@@ -47,6 +47,8 @@ Look at the four that lost: no ID, an ignored red flag, no reason for foreign ac
 - Kept at the designated location for tax records
 - Lets the FTA confirm the steps were done correctly
 
+**Free template:** a ready-to-edit [Supplier Verification Policy in Word]({{ '/policy-template/' | relative_url }}), covering roles, tiers, checks, escalation and records.
+
 The policy is easy to skip because it feels like paperwork. Don't skip it. It's what turns "our accountant usually checks" into a control the FTA can rely on.
 
 ### Your 6-step action plan
