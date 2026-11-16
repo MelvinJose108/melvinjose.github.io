@@ -61,13 +61,13 @@ description: "Answer a few questions to see which UAE obligations apply: VAT reg
 (function(){
 var O=window.UAEObl,$=function(s){return document.querySelector(s)};
 var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
-var lab={required:'Applies',option:'Optional',not:'Not required',na:'Not available',check:'Check'};
+var lab={required:'Mandatory',option:'Optional',not:'Not applicable',na:'Not available',check:'Conditional'};
 function render(){
   $('.f-q').hidden=$('#o-fz').value!=='yes';
   var r=O.obligations({type:$('#o-type').value,freeZone:$('#o-fz').value==='yes',qfzp:$('#o-q').value,taxGroup:$('#o-tg').checked,revenue:$('#o-rev').value,prevRevenueUnder3m:$('#o-prev').checked,
     supplies12:$('#o-sup').value,next30:$('#o-next').value,expenses12:$('#o-exp').value,rpt:$('#o-rpt').value,cpMax:$('#o-cp').value,groupRevenue:$('#o-grp').value,mne750:$('#o-mne').checked});
   var c=r.filter(function(x){return x.status==='required'}).length;
-  $('#o-out').innerHTML='<p class="ob-sum"><b>'+c+' obligation'+(c===1?'':'s')+' apply</b> based on your answers.</p>'+r.map(function(x){return '<div class="ob-row s-'+x.status+'"><span class="ob-st">'+lab[x.status]+'</span><div><span class="ob-area">'+esc(x.area)+'</span><b>'+esc(x.title)+'</b><p>'+esc(x.text)+'</p><span class="ob-basis">'+esc(x.basis)+'</span></div></div>'}).join('');
+  $('#o-out').innerHTML='<p class="ob-sum"><b>'+c+' mandatory obligation'+(c===1?'':'s')+'</b> based on your answers.</p>'+r.map(function(x){return '<div class="ob-row s-'+x.status+'"><span class="ob-st">'+lab[x.status]+'</span><div><span class="ob-area">'+esc(x.area)+'</span><b>'+esc(x.title)+'</b><p>'+esc(x.text)+'</p><span class="ob-basis">'+esc(x.basis)+'</span></div></div>'}).join('');
 }
 document.querySelector('.ob').addEventListener('input',render);document.querySelector('.ob').addEventListener('change',render);
 $('#o-print').addEventListener('click',function(){window.print()});
