@@ -1,0 +1,16 @@
+{% assign posts = site.data.linkedin | slice: 0, include.limit %}
+{% if posts.size > 0 %}
+<section class="sec li-sec" aria-labelledby="li-h">
+  <h2 id="li-h">From LinkedIn</h2>
+  <p class="li-lede">Short takes on UAE tax and audit, posted on LinkedIn first.</p>
+  <div class="li-grid">
+  {% for p in posts %}
+    <figure class="li-post">
+      <iframe src="https://www.linkedin.com/embed/feed/update/{{ p.urn }}?collapsed=1" height="508" width="504" frameborder="0" allowfullscreen loading="lazy" title="LinkedIn post: {{ p.title | escape }}"></iframe>
+      {% if p.guide %}<figcaption><a href="{{ p.guide | relative_url }}">Read the full guide →</a></figcaption>{% endif %}
+    </figure>
+  {% endfor %}
+  </div>
+  <p class="more"><a href="{{ site.data.author.linkedin }}" target="_blank" rel="noopener">Follow on LinkedIn →</a></p>
+</section>
+{% endif %}
