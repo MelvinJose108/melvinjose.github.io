@@ -6,7 +6,7 @@ seo_title: "UAE Compliance Checker: VAT, Corporate Tax, Audit, Transfer Pricing"
 description: "Answer a few questions to see which UAE obligations apply: VAT registration, Corporate Tax, Small Business Relief, audited financial statements, transfer pricing, e-invoicing."
 ---
 <h1 class="pagetitle">Compliance Checker</h1>
-<p class="deck">Answer a few questions about the business to see which UAE tax and audit obligations apply: VAT and Corporate Tax registration, Small Business Relief, statutory and Corporate Tax audits, transfer pricing, Pillar Two and e-invoicing.</p>
+<p class="deck">Answer a few questions about the business to see which UAE tax and audit obligations apply: VAT and Corporate Tax registration, Small Business Relief, audited financial statements for Corporate Tax, transfer pricing, Pillar Two and e-invoicing.</p>
 
 <div class="calc ob">
   <h2 class="dd-h">About the business</h2>
@@ -20,11 +20,11 @@ description: "Answer a few questions to see which UAE obligations apply: VAT reg
       <option value="sole">Sole establishment or freelancer (individual)</option>
       <option value="civil">Civil company (professional partnership)</option>
     </select></div>
-    <div><label for="o-rev">Revenue in the latest financial year (AED)</label><input id="o-rev" type="number" min="0" step="any" value="2500000"></div>
+    <div><label for="o-rev">Annual turnover in the latest financial year (AED)</label><input id="o-rev" type="number" min="0" step="any" value="2500000"></div>
     <div class="f-q"><label for="o-q">Claiming Qualifying Free Zone Person (0%) status?</label><select id="o-q"><option value="no">No</option><option value="yes">Yes</option><option value="unsure">Not sure yet</option></select></div>
   </div>
   <div class="dd-ticks">
-    <label class="tick"><input type="checkbox" id="o-prev" checked> Revenue was AED 3 million or less in every earlier tax period too</label>
+    <label class="tick"><input type="checkbox" id="o-prev" checked> Turnover was AED 3 million or less in every earlier tax period too</label>
     <label class="tick"><input type="checkbox" id="o-tg"> The company is in a Corporate Tax Group</label>
     <label class="tick"><input type="checkbox" id="o-mne"> Part of a multinational group with revenue of EUR 750 million or more in 2 of the last 4 years</label>
   </div>
@@ -53,8 +53,7 @@ description: "Answer a few questions to see which UAE obligations apply: VAT reg
       <tr><td>VAT registration</td><td>Mandatory over AED 375,000 of taxable supplies and imports; voluntary over AED 187,500 of supplies or expenses</td></tr>
       <tr><td>Corporate Tax registration</td><td>Every company; individuals with business turnover over AED 1 million</td></tr>
       <tr><td>Small Business Relief</td><td>Revenue of AED 3 million or less in the period and every earlier period; tax periods ending by 31 December 2029</td></tr>
-      <tr><td>Audit for Corporate Tax</td><td>Revenue over AED 50 million, every Qualifying Free Zone Person and every Tax Group</td></tr>
-      <tr><td>Statutory audit</td><td>Every LLC and joint stock company, every year, with no size exemption (Commercial Companies Law, Article 27(1)); optional for partnerships; most free zones require it for licence renewal; not sole establishments</td></tr>
+      <tr><td>Audited financial statements (Corporate Tax)</td><td>Annual turnover over AED 50 million, every Qualifying Free Zone Person and every Tax Group</td></tr>
       <tr><td>Transfer Pricing Disclosure Form</td><td>Related-party transactions over AED 40 million, or over AED 500,000 to one connected person</td></tr>
       <tr><td>Master File and Local File</td><td>Revenue of AED 200 million or more, or group revenue of AED 3.15 billion or more</td></tr>
       <tr><td>Domestic Minimum Top-up Tax</td><td>Multinational groups with revenue of EUR 750 million or more in 2 of the 4 preceding years</td></tr>
