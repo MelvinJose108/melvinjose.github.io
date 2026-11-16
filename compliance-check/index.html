@@ -1,0 +1,76 @@
+---
+layout: default
+title: Compliance Checker
+permalink: /compliance-check/
+seo_title: "UAE Compliance Checker: VAT, Corporate Tax, Audit, Transfer Pricing"
+description: "Answer a few questions to see which UAE obligations apply: VAT registration, Corporate Tax, Small Business Relief, audited financial statements, transfer pricing, e-invoicing."
+---
+<h1 class="pagetitle">Compliance Checker</h1>
+<p class="deck">Answer a few questions about the business to see which UAE tax and audit obligations apply: VAT and Corporate Tax registration, Small Business Relief, audited financial statements, transfer pricing, Pillar Two and e-invoicing.</p>
+
+<div class="calc ob">
+  <h2 class="dd-h">About the business</h2>
+  <div class="fgrid2">
+    <div><label for="o-type">The business is run by</label><select id="o-type"><option value="company">A company (LLC, FZE, FZCO, branch…)</option><option value="individual">An individual (sole establishment, freelancer)</option></select></div>
+    <div><label for="o-rev">Revenue in the latest financial year (AED)</label><input id="o-rev" type="number" min="0" step="any" value="2500000"></div>
+    <div><label for="o-fz">Located in a free zone?</label><select id="o-fz"><option value="no">No, mainland</option><option value="yes">Yes</option></select></div>
+    <div class="f-q"><label for="o-q">Claiming Qualifying Free Zone Person (0%) status?</label><select id="o-q"><option value="no">No</option><option value="yes">Yes</option><option value="unsure">Not sure yet</option></select></div>
+  </div>
+  <div class="dd-ticks">
+    <label class="tick"><input type="checkbox" id="o-prev" checked> Revenue was AED 3 million or less in every earlier tax period too</label>
+    <label class="tick"><input type="checkbox" id="o-tg"> The company is in a Corporate Tax Group</label>
+    <label class="tick"><input type="checkbox" id="o-mne"> Part of a multinational group with revenue of EUR 750 million or more in 2 of the last 4 years</label>
+  </div>
+  <h2 class="dd-h">VAT</h2>
+  <div class="fgrid2">
+    <div><label for="o-sup">Taxable supplies and imports, past 12 months (AED)</label><input id="o-sup" type="number" min="0" step="any" value="2500000"></div>
+    <div><label for="o-next">Expected taxable supplies, next 30 days (AED)</label><input id="o-next" type="number" min="0" step="any" value="0"></div>
+    <div><label for="o-exp">Taxable expenses, past 12 months (AED)</label><input id="o-exp" type="number" min="0" step="any" value="0"></div>
+  </div>
+  <h2 class="dd-h">Related parties</h2>
+  <div class="fgrid2">
+    <div><label for="o-rpt">Total transactions with related parties this year (AED)</label><input id="o-rpt" type="number" min="0" step="any" value="0"></div>
+    <div><label for="o-cp">Largest total paid to one connected person, e.g. an owner or director (AED)</label><input id="o-cp" type="number" min="0" step="any" value="0"></div>
+    <div><label for="o-grp">Group consolidated revenue, if part of a group (AED)</label><input id="o-grp" type="number" min="0" step="any" value="0"></div>
+  </div>
+  <div class="ob-out" id="o-out" aria-live="polite"></div>
+  <div class="dd-actions"><button type="button" class="btn" id="o-print">Print or save as PDF</button><a class="btn ghost" href="{{ '/contact/' | relative_url }}">Ask about your situation</a></div>
+  <p class="note">A screening tool, not advice. It applies the main thresholds only; exemptions, exempt persons, government entities, extractive businesses and first tax periods can change the answer. Nothing you enter leaves your browser.</p>
+</div>
+
+<section class="hsec body" style="margin-top:2.5rem">
+  <h2>The thresholds it uses</h2>
+  <table>
+    <thead><tr><th>Obligation</th><th>Threshold</th></tr></thead>
+    <tbody>
+      <tr><td>VAT registration</td><td>Mandatory over AED 375,000 of taxable supplies and imports; voluntary over AED 187,500 of supplies or expenses</td></tr>
+      <tr><td>Corporate Tax registration</td><td>Every company; individuals with business turnover over AED 1 million</td></tr>
+      <tr><td>Small Business Relief</td><td>Revenue of AED 3 million or less in the period and every earlier period; tax periods ending by 31 December 2029</td></tr>
+      <tr><td>Audited financial statements</td><td>Revenue over AED 50 million, every Qualifying Free Zone Person and every Tax Group</td></tr>
+      <tr><td>Transfer Pricing Disclosure Form</td><td>Related-party transactions over AED 40 million, or over AED 500,000 to one connected person</td></tr>
+      <tr><td>Master File and Local File</td><td>Revenue of AED 200 million or more, or group revenue of AED 3.15 billion or more</td></tr>
+      <tr><td>Domestic Minimum Top-up Tax</td><td>Multinational groups with revenue of EUR 750 million or more in 2 of the 4 preceding years</td></tr>
+      <tr><td>E-invoicing</td><td>Phase 1 from 1 January 2027 at AED 50 million or more of revenue; Phase 2 from 1 July 2027</td></tr>
+    </tbody>
+  </table>
+  <p>Next: put your dates in the <a href="{{ '/tax-deadlines/' | relative_url }}">Deadline Planner</a>, or see <a href="{% post_url 2026-11-16-what-auditors-test-in-your-vat-returns %}">what auditors test in your VAT returns</a>.</p>
+</section>
+
+<script src="{{ '/assets/obligations.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+<script>
+(function(){
+var O=window.UAEObl,$=function(s){return document.querySelector(s)};
+var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var lab={required:'Applies',option:'Optional',not:'Not required',check:'Check'};
+function render(){
+  $('.f-q').hidden=$('#o-fz').value!=='yes';
+  var r=O.obligations({type:$('#o-type').value,freeZone:$('#o-fz').value==='yes',qfzp:$('#o-q').value,taxGroup:$('#o-tg').checked,revenue:$('#o-rev').value,prevRevenueUnder3m:$('#o-prev').checked,
+    supplies12:$('#o-sup').value,next30:$('#o-next').value,expenses12:$('#o-exp').value,rpt:$('#o-rpt').value,cpMax:$('#o-cp').value,groupRevenue:$('#o-grp').value,mne750:$('#o-mne').checked});
+  var c=r.filter(function(x){return x.status==='required'}).length;
+  $('#o-out').innerHTML='<p class="ob-sum"><b>'+c+' obligation'+(c===1?'':'s')+' apply</b> based on your answers.</p>'+r.map(function(x){return '<div class="ob-row s-'+x.status+'"><span class="ob-st">'+lab[x.status]+'</span><div><span class="ob-area">'+esc(x.area)+'</span><b>'+esc(x.title)+'</b><p>'+esc(x.text)+'</p><span class="ob-basis">'+esc(x.basis)+'</span></div></div>'}).join('');
+}
+document.querySelector('.ob').addEventListener('input',render);document.querySelector('.ob').addEventListener('change',render);
+$('#o-print').addEventListener('click',function(){window.print()});
+render();
+})();
+</script>

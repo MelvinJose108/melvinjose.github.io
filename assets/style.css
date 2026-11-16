@@ -282,7 +282,7 @@ img.avatar.photo.big{width:6.5rem;height:6.5rem}
 .pill.enhanced{background:#FFF4E5;color:#8A4B06}.pill.standard{background:var(--soft);color:var(--ink)}.pill.small{background:#E7F4EC;color:#146C43}
 .dd-record{display:none}
 @media print{
-  body *{visibility:hidden}
+  body:has(.dd-record) *{visibility:hidden}
   .dd-record,.dd-record *{visibility:visible}
   .dd-record{display:block;position:absolute;left:0;top:0;width:100%;color:#000;font:11pt/1.45 Georgia,serif}
   .dd-record h1{font-size:18pt;margin:0}.dd-record .sub{margin:2pt 0 12pt;color:#444}
@@ -323,3 +323,22 @@ img.avatar.photo.big{width:6.5rem;height:6.5rem}
 .lm .small{font-size:.85rem;color:var(--mute);margin-top:.8rem}
 .lm-get p{margin-bottom:1rem}
 @media(max-width:820px){.lm-grid{grid-template-columns:1fr}}
+/* compliance checker */
+.ob .f-q[hidden]{display:none}
+.ob-out{margin-top:1.5rem;display:flex;flex-direction:column;gap:.55rem}
+.ob-sum{font-size:1.05rem;margin-bottom:.3rem}
+.ob-row{display:grid;grid-template-columns:7.5rem 1fr;gap:1rem;padding:.9rem 1rem;border:1px solid var(--line);border-radius:10px;background:var(--bg)}
+.ob-st{align-self:start;font-size:.75rem;font-weight:700;text-align:center;padding:.3rem .5rem;border-radius:99px}
+.s-required .ob-st{background:#FDECEA;color:#B42318}.s-option .ob-st{background:#E8ECFB;color:#1D3FBF}.s-not .ob-st{background:#E7F4EC;color:#146C43}.s-check .ob-st{background:#FFF4E5;color:#8A4B06}
+.ob-area{display:block;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:700}
+.ob-row p{color:var(--mute);font-size:.9rem;margin-top:.2rem}
+.ob-basis{display:block;font-size:.75rem;color:var(--mute);margin-top:.3rem;font-style:italic}
+@media(max-width:640px){.ob-row{grid-template-columns:1fr;gap:.4rem}.ob-st{justify-self:start}}
+@media print{body:has(.ob-out) *{visibility:hidden}.ob-out,.ob-out *{visibility:visible}.ob-out{position:absolute;left:0;top:0;width:100%}}
+.gr .tick{display:flex;gap:.6rem;align-items:flex-start;color:var(--ink);font-size:.92rem}
+.gr textarea{width:100%;font:inherit;padding:.6rem .75rem;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+.gr .small{font-size:.85rem;color:var(--mute)}
+/* toolkit: six tools in a 3 x 2 grid */
+.toolkit{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:1000px){.toolkit{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.toolkit{grid-template-columns:1fr}}
