@@ -11,7 +11,7 @@ description: "Plain-English guides and updates on UAE Corporate Tax, VAT, e-invo
     <div class="cta"><a class="btn" href="{{ '/guides/' | relative_url }}">Read the guides</a>{% if site.newsletter_url and site.newsletter_url != "" %}<a class="btn ghost" href="{{ site.newsletter_url }}" rel="noopener">Get the newsletter</a>{% endif %}</div>
   </div>
   <aside class="who" aria-label="About the author">
-    <div class="avatar" aria-hidden="true">{{ a.initials }}</div>
+    {% include avatar.html eager=true %}
     <h2>{{ a.name }}</h2>
     <p class="role">{{ a.title }} · {{ a.city }}, UAE</p>
     <ul class="tags">{% for e in a.expertise %}<li>{{ e }}</li>{% endfor %}</ul>

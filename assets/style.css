@@ -193,3 +193,5 @@ table.lines .x{border:0;background:none;color:var(--mute);font-size:1.3rem;curso
 .feedurl code{flex:1 1 12rem;background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:.55rem .7rem;font-size:.85rem;word-break:break-all}
 .feedurl .btn{padding:.55rem 1rem;font-size:.88rem}
 .fhead{font-size:1.5rem;margin-bottom:1rem}
+img.avatar.photo{object-fit:cover;background:var(--soft);display:block;padding:0}
+img.avatar.photo.big{width:6.5rem;height:6.5rem}
