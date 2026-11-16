@@ -135,8 +135,35 @@
     while (addMonthsRule(start, n, rule) <= end && n < 1200) n++;
     return n;
   }
-  // Add business days (Mon-Fri; UAE weekend is Saturday-Sunday). Public holidays are not excluded.
-  function addBusinessDays(d, n) { var x = new Date(d.getTime()); while (n > 0) { x = addDays(x, 1); var w = x.getUTCDay(); if (w !== 0 && w !== 6) n--; } return x; }
+  /* UAE federal public holidays (Cabinet Resolution No. 27 of 2024), as observed by the federal government and private sector.
+   * 2026: confirmed by FAHR / MOHRE announcements. 2027: expected dates; Islamic holidays move with the moon sighting.
+   * Update this list when the Cabinet announces dates or transfers. Holidays on a Saturday or Sunday are listed for completeness. */
+  var HOLIDAYS = {
+    "2026-01-01": ["New Year's Day", "confirmed"],
+    "2026-03-19": ["Eid Al Fitr (30 Ramadan)", "confirmed"], "2026-03-20": ["Eid Al Fitr", "confirmed"], "2026-03-21": ["Eid Al Fitr", "confirmed"], "2026-03-22": ["Eid Al Fitr", "confirmed"],
+    "2026-05-26": ["Arafat Day", "confirmed"], "2026-05-27": ["Eid Al Adha", "confirmed"], "2026-05-28": ["Eid Al Adha", "confirmed"], "2026-05-29": ["Eid Al Adha", "confirmed"],
+    "2026-06-15": ["Hijri New Year", "confirmed"], "2026-08-28": ["Prophet's Birthday (observed)", "confirmed"],
+    "2026-12-02": ["Eid Al Etihad", "confirmed"], "2026-12-03": ["Eid Al Etihad", "confirmed"],
+    "2027-01-01": ["New Year's Day", "confirmed"],
+    "2027-03-09": ["Eid Al Fitr", "expected"], "2027-03-10": ["Eid Al Fitr", "expected"], "2027-03-11": ["Eid Al Fitr", "expected"],
+    "2027-05-15": ["Arafat Day", "expected"], "2027-05-16": ["Eid Al Adha", "expected"], "2027-05-17": ["Eid Al Adha", "expected"], "2027-05-18": ["Eid Al Adha", "expected"],
+    "2027-06-06": ["Hijri New Year", "expected"], "2027-08-14": ["Prophet's Birthday", "expected"],
+    "2027-12-02": ["Eid Al Etihad", "confirmed"], "2027-12-03": ["Eid Al Etihad", "confirmed"]
+  };
+  var HOLIDAY_RANGE = ["2026-01-01", "2027-12-31"];
+  function isBusinessDay(d) { var w = d.getUTCDay(); return w !== 0 && w !== 6 && !HOLIDAYS[fmtDate(d)]; }
+  /* Add n business days. Day 1 is the first business day AFTER the trigger date (the trigger date itself is not counted).
+   * Skips Saturdays, Sundays and the public holidays above. Returns the date plus the holidays it skipped. */
+  function addBusinessDaysDetail(d, n) {
+    var x = new Date(d.getTime()), skipped = [];
+    while (n > 0) { x = addDays(x, 1); var k = fmtDate(x), w = x.getUTCDay();
+      if (w === 0 || w === 6) continue;
+      if (HOLIDAYS[k]) { skipped.push({ date: k, name: HOLIDAYS[k][0], status: HOLIDAYS[k][1] }); continue; }
+      n--; }
+    var out = fmtDate(x), inRange = fmtDate(d) >= HOLIDAY_RANGE[0] && out <= HOLIDAY_RANGE[1];
+    return { date: x, skipped: skipped, holidaysCovered: inRange, usesExpected: skipped.some(function (h) { return h.status === "expected"; }) };
+  }
+  function addBusinessDays(d, n) { return addBusinessDaysDetail(d, n).date; }
 
   /* ---------------- Penalties ----------------
    * Each returns { total, lines: [{label, amount, basis}], notes: [] }.
@@ -174,7 +201,7 @@
       basis: tax === "ct" ? "Cabinet Decision No. 75 of 2023, table item 10" : "Cabinet Decision No. 40 of 2017 as amended by CD 129 of 2025, Table 1 item 11" }];
     var total = pct;
     if (pos(diff) > 0) { lines.push({ label: "Incorrect tax return (fixed)", amount: 500, basis: tax === "ct" ? "Cabinet Decision No. 75 of 2023, table item 9" : "Cabinet Decision No. 40 of 2017 as amended, Table 1 item 10" }); total += 500; }
-    var notes = ["Any additional tax is due 20 business days after the disclosure is submitted. After that, the 14% a year late payment penalty applies."];
+    var notes = ["Any additional tax is due 20 business days after the disclosure is submitted. After that, the 14% a year late payment penalty applies.", "If an error changes the tax due by more than AED 10,000, the voluntary disclosure must be made within 20 business days of becoming aware of it. Smaller errors can be corrected in the return for the period in which they were found."];
     if (tax === "vat" && parseDate(returnDue) < VAT_CUTOVER) notes.push("The return was due before 14 April 2026. Transitional treatment of older periods may differ; check with the FTA or an adviser.");
     return { total: r2(total), months: m, lines: lines, notes: notes };
   }
@@ -215,7 +242,7 @@
 
   return { VAT_RATE: VAT_RATE, vatAdd: vatAdd, vatExtract: vatExtract, vatInvoice: vatInvoice, vatReturn: vatReturn,
            corporateTax: corporateTax, monthsOrPart: monthsOrPart, parseDate: parseDate, fmtDate: fmtDate,
-           addBusinessDays: addBusinessDays, latePayment: latePayment, lateFiling: lateFiling,
+           addBusinessDays: addBusinessDays, addBusinessDaysDetail: addBusinessDaysDetail, isBusinessDay: isBusinessDay, HOLIDAYS: HOLIDAYS, latePayment: latePayment, lateFiling: lateFiling,
            voluntaryDisclosure: voluntaryDisclosure, auditFinding: auditFinding, fixedPenalty: fixedPenalty,
            lateDeregistration: lateDeregistration };
 });
