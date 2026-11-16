@@ -34,7 +34,7 @@ Some differences are just **timing**. If your VAT quarters don't line up with yo
 
 Others are **errors**. A common one is VAT booked on an advance payment but left out of the return. Under the VAT Law, the date of supply can be the date the payment is received, so the VAT was due then. That needs a voluntary disclosure and may attract penalties.
 
-**[YOUR EXAMPLE: a reconciliation difference you have actually found on an audit, without client details.]**
+**From my audits:** one of the most common differences doesn't show up in the VAT ledger at all. **Bank credits for the year don't match the revenue reported in the VAT returns.** Some of the gap usually has a good reason, such as loans received, capital introduced, transfers between the company's own accounts, or refunds. Whatever is left after those is revenue the auditor has to chase, and VAT that may be missing from the returns. Run this check yourself before the auditor does.
 
 #### 2. Does the VAT control account roll forward?
 
@@ -73,7 +73,7 @@ From 1 October 2026, this check goes further. Under [FTA Decision No. 13 of 2026
 
 Finally, the auditor reads your FTA correspondence, voluntary disclosures, penalty notices and reconsideration requests. The question is whether there's an obligation you should provide for, or a contingent liability you should disclose, under the accounting standards.
 
-**[YOUR EXAMPLE: the most common exposure you see at year end, in one or two sentences.]**
+**From my audits:** the most common exposure is **documentation**. The VAT treatment is often right, but the evidence to prove it isn't on file: export documents, tax invoices, contracts. Without it, a correct position can still be challenged, and that's an exposure the auditor has to weigh.
 
 ### What to have ready before fieldwork
 
