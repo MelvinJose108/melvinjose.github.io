@@ -137,3 +137,8 @@ main.wrap{padding-top:1rem;padding-bottom:4.5rem}
 .li-foot{display:flex;justify-content:space-between;gap:1rem;padding:.75rem 1rem;font-size:.92rem}
 
 .ss-logo{margin:0 .1rem 0 0;order:-1}
+
+/* tap or click an infographic to open it full size */
+a.zoom{display:block;cursor:zoom-in}
+a.zoom img{transition:opacity .15s}
+a.zoom:hover img{opacity:.92}

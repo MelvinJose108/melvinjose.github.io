@@ -1,5 +1,65 @@
-# To add a picture: upload it to assets/gallery/ in your repo, then replace [] with entries like these (keep the dashes and spacing):
-# - image: /assets/gallery/vat-rates.png
-#   caption: "VAT at a glance"
-#   topic: VAT
-[]
+# Infographics shown in each topic page's Gallery. Fields: image, caption, topic (must match a topic name), post (optional link).
+- image: /assets/images/fta-decision-13/p1-test.webp
+  caption: "The 'should have been aware' test for input VAT"
+  topic: "VAT"
+  post: /guides/tax-invoice-no-longer-enough-fta-decision-13/
+- image: /assets/images/fta-decision-13/p2-risk-flags.webp
+  caption: "Three supplier red flags under Decision No. 13"
+  topic: "VAT"
+  post: /guides/supplier-verification-identity-premises-red-flags/
+- image: /assets/images/fta-decision-13/p3-ladder.webp
+  caption: "AED 10K, 100K and 375K: how deep to check suppliers"
+  topic: "VAT"
+  post: /guides/input-vat-verification-spend-thresholds/
+- image: /assets/images/fta-decision-13/p4-payment-rules.webp
+  caption: "Payment rules for input VAT recovery"
+  topic: "VAT"
+  post: /guides/input-vat-transaction-red-flags-payment-price-licence-origin/
+- image: /assets/images/fta-decision-13/p5-scorecard.webp
+  caption: "All 8 FTA examples: 4 lost, 4 safe"
+  topic: "VAT"
+  post: /guides/input-vat-documentation-policy-action-plan/
+- image: /assets/images/fta-decision-13/p5-evidence.webp
+  caption: "The evidence file and written verification policy"
+  topic: "VAT"
+  post: /guides/input-vat-documentation-policy-action-plan/
+- image: /assets/images/tax-groups/tg1-separate-vs-group.webp
+  caption: "Separate filing vs a Tax Group"
+  topic: "Corporate Tax"
+  post: /guides/uae-corporate-tax-group-explained/
+- image: /assets/images/tax-groups/tg2-nine-conditions.webp
+  caption: "Nine conditions to form a Tax Group"
+  topic: "Corporate Tax"
+  post: /guides/tax-group-95-percent-conditions/
+- image: /assets/images/tax-groups/tg2-indirect.webp
+  caption: "Indirect ownership: multiply down the chain"
+  topic: "Corporate Tax"
+  post: /guides/tax-group-95-percent-conditions/
+- image: /assets/images/tax-groups/tg3-whole-period.webp
+  caption: "Seven days out = a whole year out"
+  topic: "Corporate Tax"
+  post: /guides/tax-group-joining-leaving-timing-rules/
+- image: /assets/images/tax-groups/tg4-vs-consolidation.webp
+  caption: "Aggregated vs consolidated financial statements"
+  topic: "Corporate Tax"
+  post: /guides/tax-group-aggregated-financial-statements/
+- image: /assets/images/tax-groups/tg5-ex20.webp
+  caption: "The 2-year clawback, step by step"
+  topic: "Corporate Tax"
+  post: /guides/tax-group-two-year-clawback-asset-transfers/
+- image: /assets/images/tax-groups/tg6-shared.webp
+  caption: "What a Tax Group shares and what stays ring-fenced"
+  topic: "Corporate Tax"
+  post: /guides/tax-group-losses-interest-reliefs/
+- image: /assets/images/e-invoicing/md197-changes.webp
+  caption: "Five changes in Ministerial Decision No. 197 of 2026"
+  topic: "E-Invoicing"
+  post: /guides/uae-e-invoicing-ministerial-decision-197-2026/
+- image: /assets/images/e-invoicing/md197-tax-group.webp
+  caption: "The exclusion follows the VAT group, not the CT group"
+  topic: "E-Invoicing"
+  post: /guides/uae-e-invoicing-ministerial-decision-197-2026/
+- image: /assets/images/e-invoicing/md197-timeline.webp
+  caption: "Key e-invoicing dates, 2026 to 2029"
+  topic: "E-Invoicing"
+  post: /guides/uae-e-invoicing-ministerial-decision-197-2026/

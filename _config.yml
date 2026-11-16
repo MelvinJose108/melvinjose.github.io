@@ -13,6 +13,10 @@ plugins:
   - jekyll-seo-tag
 defaults:
   - scope:
+      path: "google792303a53f9ec03f.html"
+    values:
+      sitemap: false
+  - scope:
       path: ""
       type: posts
     values:

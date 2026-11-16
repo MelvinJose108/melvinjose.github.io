@@ -8,25 +8,26 @@ description: "Work out 5% UAE VAT on an amount, or estimate UAE Corporate Tax on
 <h1 class="pagetitle">Quick calculator</h1>
 <div class="sheet">
   <label for="mode">What do you want to work out?</label>
-  <select id="mode"><option value="vat">VAT on an amount</option><option value="ct">Corporate Tax on profit</option></select>
+  <select id="mode"><option value="vat">Add VAT to an amount</option><option value="vatin">VAT inside a VAT-inclusive amount</option><option value="ct">Corporate Tax on profit</option></select>
   <label for="amt" id="amtLabel">Amount before VAT (AED)</label>
   <input id="amt" type="number" min="0" step="any" inputmode="decimal" value="1000">
   <dl id="out" aria-live="polite"></dl>
-  <p class="note">Illustrative only. It assumes VAT at 5% and Corporate Tax at 0% up to AED 375,000 and 9% above. Check current rates and conditions with the Federal Tax Authority.</p>
+  <p class="note">Illustrative only. It assumes VAT at 5% and Corporate Tax at 0% up to AED 375,000 and 9% above, and ignores reliefs such as Small Business Relief and the Qualifying Free Zone regime. Check current rates and conditions with the Federal Tax Authority.</p>
 </div>
 <script>
 var $=function(s){return document.querySelector(s)};
 function fmt(n){return n.toLocaleString("en-AE",{minimumFractionDigits:2,maximumFractionDigits:2})}
 function calc(){
   var a=parseFloat($("#amt").value)||0,rows;
-  if($("#mode").value==="vat"){var v=a*0.05;rows=[["Amount before VAT",a],["VAT at 5%",v],["Total to pay",a+v]];}
+  var m=$("#mode").value;
+  if(m==="vat"){var v=a*0.05;rows=[["Amount before VAT",a],["VAT at 5%",v],["Total to pay",a+v]];}
+  else if(m==="vatin"){var net=a/1.05;rows=[["Total including VAT",a],["Amount before VAT",net],["VAT included (5/105)",a-net]];}
   else{var t=Math.max(0,a-375000)*0.09;rows=[["Taxable income",a],["First AED 375,000 at 0%",0],["Corporate Tax at 9% above that",t]];}
   $("#out").innerHTML=rows.map(function(r){return "<div><dt>"+r[0]+"</dt><dd>AED "+fmt(r[1])+"</dd></div>"}).join("");
 }
 $("#mode").addEventListener("change",function(){
-  var vat=this.value==="vat";
-  $("#amtLabel").textContent=vat?"Amount before VAT (AED)":"Taxable income for the year (AED)";
-  $("#amt").value=vat?1000:500000;calc();
+  var L={vat:["Amount before VAT (AED)",1000],vatin:["Total including VAT (AED)",1050],ct:["Taxable income for the year (AED)",500000]}[this.value];
+  $("#amtLabel").textContent=L[0];$("#amt").value=L[1];calc();
 });
 $("#amt").addEventListener("input",calc);
 calc();
