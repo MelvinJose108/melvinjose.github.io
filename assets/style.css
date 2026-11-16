@@ -342,3 +342,4 @@ img.avatar.photo.big{width:6.5rem;height:6.5rem}
 .toolkit{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:1000px){.toolkit{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){.toolkit{grid-template-columns:1fr}}
+.s-na .ob-st{background:var(--soft);color:var(--mute)}

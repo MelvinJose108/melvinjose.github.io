@@ -61,7 +61,7 @@ description: "Answer a few questions to see which UAE obligations apply: VAT reg
 (function(){
 var O=window.UAEObl,$=function(s){return document.querySelector(s)};
 var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
-var lab={required:'Applies',option:'Optional',not:'Not required',check:'Check'};
+var lab={required:'Applies',option:'Optional',not:'Not required',na:'Not available',check:'Check'};
 function render(){
   $('.f-q').hidden=$('#o-fz').value!=='yes';
   var r=O.obligations({type:$('#o-type').value,freeZone:$('#o-fz').value==='yes',qfzp:$('#o-q').value,taxGroup:$('#o-tg').checked,revenue:$('#o-rev').value,prevRevenueUnder3m:$('#o-prev').checked,
