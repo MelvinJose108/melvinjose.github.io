@@ -1,7 +1,7 @@
 ---
 date: 2026-11-14 08:01:00 +0400
 title: "Your Tax Invoice Won't Save Your Input VAT Anymore"
-seo_title: "FTA Decision No. 13 of 2026: Input VAT Verification Explained"
+seo_title: "FTA Decision No. 13 of 2026: Input VAT Checks Explained"
 topic: "VAT"
 description: "Since 1 October 2026 a valid tax invoice no longer guarantees input VAT recovery. What FTA Decision No. 13 of 2026 changed and the test that decides your claim."
 reviewed: 2026-11-14

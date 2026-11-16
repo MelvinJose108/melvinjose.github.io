@@ -36,6 +36,7 @@
 <script>
 (function(){
 var d=document,r=d.documentElement,tb=d.getElementById('tt');
+d.querySelectorAll('.body img, .gallery img').forEach(function(i){if(i.closest('a'))return;var a=d.createElement('a');a.href=i.currentSrc||i.src;a.target='_blank';a.rel='noopener';a.className='zoom';a.setAttribute('aria-label','Open full-size image: '+(i.alt||'image'));i.parentNode.insertBefore(a,i);a.appendChild(i);});
 if(tb)tb.addEventListener('click',function(){var t=r.dataset.theme==='dark'?'light':'dark';r.dataset.theme=t;try{localStorage.setItem('t',t)}catch(e){}});
 var q=d.getElementById('q'),cards=[].slice.call(d.querySelectorAll('.card')),f='all';
 function ap(){var t=q?q.value.toLowerCase().trim():'',n=0;cards.forEach(function(c){var ok=(f==='all'||c.dataset.topic===f)&&c.dataset.text.indexOf(t)>-1;c.hidden=!ok;if(ok)n++});var m=d.getElementById('none');if(m)m.hidden=n>0}

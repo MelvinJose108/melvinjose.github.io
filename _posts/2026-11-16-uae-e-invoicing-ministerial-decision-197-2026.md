@@ -1,9 +1,9 @@
 ---
 title: "Five Changes to the UAE E-Invoicing Rules, and the One Most Groups Will Misread"
 date: 2026-11-16 12:00:00 +0400
-seo_title: "UAE E-Invoicing: Ministerial Decision No. 197 of 2026 Explained"
+seo_title: "UAE E-Invoicing Changes: Ministerial Decision 197 of 2026"
 topic: "E-Invoicing"
-description: "What Ministerial Decision No. 197 of 2026 changed in the UAE e-invoicing rules: the 24-month Tax Group exclusion, 14 business days, data storage and system failures."
+description: "What Ministerial Decision No. 197 of 2026 changed in UAE e-invoicing: the 24-month Tax Group exclusion, 14 business days, data storage and system failures."
 reviewed: 2026-11-16
 image: /assets/images/e-invoicing/md197-cover.png
 ---
