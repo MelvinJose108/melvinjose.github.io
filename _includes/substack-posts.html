@@ -1,10 +1,10 @@
 {% assign posts = site.data.substack | slice: 0, include.limit %}
 {% if posts.size > 0 %}
-<section class="sec li-sec" aria-labelledby="ss-h">
+{% unless include.bare %}<section class="sec li-sec" aria-labelledby="ss-h">
   <h2 id="ss-h">From the newsletter</h2>
   <p class="li-lede">Notes and updates sent to subscribers of The UAE Ledger on Substack.</p>
   <div class="li-grid">
-  {% for p in posts %}
+{% endunless %}  {% for p in posts %}
     <article class="li-card">
       <header class="li-head">
         <svg class="li-logo ss-logo" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#FF6719"/><path fill="#fff" d="M6 6h12v1.6H6zM6 9h12v1.6H6zM6 12h12v6.5l-6-3.2-6 3.2z"/></svg>
@@ -15,7 +15,7 @@
       <footer class="li-foot"><a href="{{ p.url }}" target="_blank" rel="noopener">Read on Substack ↗</a></footer>
     </article>
   {% endfor %}
-  </div>
+{% unless include.bare %}  </div>
   {% if site.newsletter_url and site.newsletter_url != "" %}<p class="more"><a href="{{ site.newsletter_url }}" target="_blank" rel="noopener">Subscribe on Substack →</a></p>{% endif %}
 </section>
-{% endif %}
+{% endunless %}{% endif %}
