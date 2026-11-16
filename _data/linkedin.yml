@@ -1,0 +1,7 @@
+# LinkedIn posts shown on the home page, newest first.
+# To add one: LinkedIn post > ... > Embed this post, copy the "urn:li:..." part of the src.
+# Only the first 3 are shown on the home page.
+- urn: "urn:li:share:7527977948612759558"
+  title: "Seven days at 90% takes a subsidiary out of its Tax Group for the whole year"
+  date: 2026-11-16
+  guide: /guides/tax-group-joining-leaving-timing-rules/
