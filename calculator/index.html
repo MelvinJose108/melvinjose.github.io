@@ -3,32 +3,114 @@ layout: default
 title: Calculator
 permalink: /calculator/
 seo_title: "UAE VAT and Corporate Tax Calculator"
-description: "Work out 5% UAE VAT on an amount, or estimate UAE Corporate Tax on profit at the 0% and 9% rates, with a free quick calculator."
+description: "Free UAE VAT and Corporate Tax calculator: add or extract 5% VAT, build an invoice, estimate a VAT return, and work out Corporate Tax with SBR, QFZP and losses."
 ---
-<h1 class="pagetitle">Quick calculator</h1>
-<div class="sheet">
-  <label for="mode">What do you want to work out?</label>
-  <select id="mode"><option value="vat">Add VAT to an amount</option><option value="vatin">VAT inside a VAT-inclusive amount</option><option value="ct">Corporate Tax on profit</option></select>
-  <label for="amt" id="amtLabel">Amount before VAT (AED)</label>
-  <input id="amt" type="number" min="0" step="any" inputmode="decimal" value="1000">
-  <dl id="out" aria-live="polite"></dl>
-  <p class="note">Illustrative only. It assumes VAT at 5% and Corporate Tax at 0% up to AED 375,000 and 9% above, and ignores reliefs such as Small Business Relief and the Qualifying Free Zone regime. Check current rates and conditions with the Federal Tax Authority.</p>
+<h1 class="pagetitle">UAE tax calculator</h1>
+<p class="deck">VAT and Corporate Tax, worked out the way the FTA expects. Need penalties? Use the <a href="{{ '/penalty-calculator/' | relative_url }}">penalty calculator</a>.</p>
+
+<div class="calc">
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-tab="vat">VAT</button>
+    <button role="tab" aria-selected="false" data-tab="inv">Invoice</button>
+    <button role="tab" aria-selected="false" data-tab="ret">VAT return</button>
+    <button role="tab" aria-selected="false" data-tab="ct">Corporate Tax</button>
+  </div>
+
+  <!-- VAT add / extract -->
+  <section class="pane" id="p-vat">
+    <div class="fgrid2">
+      <div><label for="v-mode">What do you have?</label>
+        <select id="v-mode"><option value="add">An amount before VAT</option><option value="ext">A total that already includes VAT</option></select></div>
+      <div><label for="v-amt" id="v-lbl">Amount before VAT (AED)</label><input id="v-amt" type="number" min="0" step="any" inputmode="decimal" value="1000"></div>
+    </div>
+    <dl class="out" id="v-out" aria-live="polite"></dl>
+    <p class="note">5% standard rate. To extract VAT from a VAT-inclusive total, multiply by 5/105.</p>
+  </section>
+
+  <!-- Invoice -->
+  <section class="pane" id="p-inv" hidden>
+    <table class="lines"><thead><tr><th>Description</th><th>Qty</th><th>Unit price (AED)</th><th>VAT</th><th></th></tr></thead><tbody id="i-rows"></tbody></table>
+    <button type="button" class="btn ghost small" id="i-add">+ Add line</button>
+    <dl class="out" id="i-out" aria-live="polite"></dl>
+    <p class="note">Zero-rated supplies (such as exports) carry 0% VAT but still count as taxable supplies. Exempt supplies (such as residential rent or some financial services) carry no VAT, and the input VAT on them generally can't be recovered.</p>
+  </section>
+
+  <!-- VAT return -->
+  <section class="pane" id="p-ret" hidden>
+    <div class="fgrid2">
+      <div><label for="r-std">Standard-rated sales (AED, before VAT)</label><input id="r-std" type="number" min="0" step="any" value="800000"></div>
+      <div><label for="r-zero">Zero-rated sales (AED)</label><input id="r-zero" type="number" min="0" step="any" value="0"></div>
+      <div><label for="r-ex">Exempt sales (AED)</label><input id="r-ex" type="number" min="0" step="any" value="0"></div>
+      <div><label for="r-rcm">Imported services under reverse charge (AED)</label><input id="r-rcm" type="number" min="0" step="any" value="0"></div>
+      <div><label for="r-dir">Input VAT on costs used only for taxable sales (AED)</label><input id="r-dir" type="number" min="0" step="any" value="20000"></div>
+      <div><label for="r-ovh">Input VAT on general overheads (AED)</label><input id="r-ovh" type="number" min="0" step="any" value="5000"></div>
+      <div><label for="r-blk">Input VAT on blocked items (AED)</label><input id="r-blk" type="number" min="0" step="any" value="0"></div>
+    </div>
+    <dl class="out" id="r-out" aria-live="polite"></dl>
+    <p class="note">Blocked items include client entertainment, cars available for personal use and personal benefits for staff (Executive Regulation Art. 53). Overheads and reverse-charge VAT are recovered in the ratio of taxable to total sales (the standard method), but the FTA may approve a special method. An estimate only.</p>
+  </section>
+
+  <!-- Corporate Tax -->
+  <section class="pane" id="p-ct" hidden>
+    <div class="fgrid2">
+      <div><label for="c-reg">Regime</label>
+        <select id="c-reg"><option value="standard">Standard (0% up to AED 375,000, 9% above)</option><option value="sbr">Small Business Relief</option><option value="qfzp">Qualifying Free Zone Person</option></select></div>
+      <div><label for="c-rev">Revenue for the period (AED)</label><input id="c-rev" type="number" min="0" step="any" value="5000000"></div>
+      <div><label for="c-pro">Accounting profit before tax (AED)</label><input id="c-pro" type="number" step="any" value="800000"></div>
+      <div><label for="c-ent">Client entertainment expense (AED)</label><input id="c-ent" type="number" min="0" step="any" value="0"></div>
+      <div><label for="c-pen">Fines and penalties in the P&amp;L (AED)</label><input id="c-pen" type="number" min="0" step="any" value="0"></div>
+      <div><label for="c-oth">Other non-deductible expenses (AED)</label><input id="c-oth" type="number" min="0" step="any" value="0"></div>
+      <div><label for="c-exm">Exempt income, e.g. qualifying dividends (AED)</label><input id="c-exm" type="number" min="0" step="any" value="0"></div>
+      <div><label for="c-los">Tax losses brought forward (AED)</label><input id="c-los" type="number" min="0" step="any" value="0"></div>
+      <div><label for="c-nie">Net interest expense (AED)</label><input id="c-nie" type="number" min="0" step="any" value="0"></div>
+      <div><label for="c-ebi">Tax-adjusted EBITDA (AED)</label><input id="c-ebi" type="number" step="any" value="0"></div>
+      <div class="qf"><label for="c-qi">Qualifying Income (AED)</label><input id="c-qi" type="number" min="0" step="any" value="0"></div>
+      <div class="qf"><label for="c-nqr">Non-qualifying revenue (AED)</label><input id="c-nqr" type="number" min="0" step="any" value="0"></div>
+    </div>
+    <dl class="out" id="c-out" aria-live="polite"></dl>
+    <ul class="notes" id="c-notes"></ul>
+    <p class="note">Illustrative only. It applies the 0%/9% rates, 50% of client entertainment, the 75% cap on loss relief, the interest limit (the higher of AED 12m or 30% of EBITDA), Small Business Relief (revenue up to AED 3m) and the QFZP de minimis test (lower of 5% of revenue or AED 5m). It doesn't cover transfer pricing, Tax Groups, Pillar Two top-up tax or other reliefs. See the <a href="{{ '/corporate-tax/' | relative_url }}">Corporate Tax guides</a>.</p>
+  </section>
 </div>
+
+<script src="{{ '/assets/tax-calc.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 <script>
-var $=function(s){return document.querySelector(s)};
-function fmt(n){return n.toLocaleString("en-AE",{minimumFractionDigits:2,maximumFractionDigits:2})}
-function calc(){
-  var a=parseFloat($("#amt").value)||0,rows;
-  var m=$("#mode").value;
-  if(m==="vat"){var v=a*0.05;rows=[["Amount before VAT",a],["VAT at 5%",v],["Total to pay",a+v]];}
-  else if(m==="vatin"){var net=a/1.05;rows=[["Total including VAT",a],["Amount before VAT",net],["VAT included (5/105)",a-net]];}
-  else{var t=Math.max(0,a-375000)*0.09;rows=[["Taxable income",a],["First AED 375,000 at 0%",0],["Corporate Tax at 9% above that",t]];}
-  $("#out").innerHTML=rows.map(function(r){return "<div><dt>"+r[0]+"</dt><dd>AED "+fmt(r[1])+"</dd></div>"}).join("");
-}
-$("#mode").addEventListener("change",function(){
-  var L={vat:["Amount before VAT (AED)",1000],vatin:["Total including VAT (AED)",1050],ct:["Taxable income for the year (AED)",500000]}[this.value];
-  $("#amtLabel").textContent=L[0];$("#amt").value=L[1];calc();
-});
-$("#amt").addEventListener("input",calc);
-calc();
+(function(){
+var T=window.TaxCalc, $=function(s){return document.querySelector(s)}, n=function(id){return parseFloat($(id).value)||0};
+var f=function(x){return "AED "+Number(x).toLocaleString("en-AE",{minimumFractionDigits:2,maximumFractionDigits:2})};
+function rows(el,list){$(el).innerHTML=list.map(function(r){return "<div"+(r[2]?' class="total"':"")+"><dt>"+r[0]+"</dt><dd>"+(typeof r[1]==="string"?r[1]:f(r[1]))+"</dd></div>"}).join("")}
+// tabs
+document.querySelectorAll(".tabs button").forEach(function(b){b.addEventListener("click",function(){
+  document.querySelectorAll(".tabs button").forEach(function(x){x.setAttribute("aria-selected",x===b)});
+  document.querySelectorAll(".pane").forEach(function(p){p.hidden=p.id!=="p-"+b.dataset.tab});
+  try{history.replaceState(null,"","#"+b.dataset.tab)}catch(e){}
+})});
+var h=location.hash.slice(1); if(h){var tb=document.querySelector('.tabs [data-tab="'+h+'"]'); if(tb) tb.click();}
+// VAT
+function vat(){var add=$("#v-mode").value==="add", a=n("#v-amt"), r=add?T.vatAdd(a):T.vatExtract(a);
+  rows("#v-out",[["Amount before VAT",r.net],["VAT at 5%",r.vat],[add?"Total including VAT":"Total (as entered)",r.gross,1]]);}
+$("#v-mode").addEventListener("change",function(){$("#v-lbl").textContent=this.value==="add"?"Amount before VAT (AED)":"Total including VAT (AED)";$("#v-amt").value=this.value==="add"?1000:1050;vat()});
+$("#v-amt").addEventListener("input",vat);
+// Invoice
+function addRow(d,q,p,r){var tr=document.createElement("tr");
+  tr.innerHTML='<td><input aria-label="Description" placeholder="Description" value="'+(d||"")+'"></td><td><input aria-label="Quantity" placeholder="Qty" type="number" min="0" step="any" value="'+(q||1)+'"></td><td><input aria-label="Unit price" placeholder="Unit price" type="number" min="0" step="any" value="'+(p||0)+'"></td><td><select aria-label="VAT treatment"><option value="standard">5%</option><option value="zero">0% (zero-rated)</option><option value="exempt">Exempt</option></select></td><td><button type="button" class="x" aria-label="Remove line">×</button></td>';
+  tr.querySelector("select").value=r||"standard"; tr.querySelector(".x").onclick=function(){tr.remove();inv()};
+  tr.querySelectorAll("input,select").forEach(function(i){i.addEventListener("input",inv);i.addEventListener("change",inv)});
+  $("#i-rows").appendChild(tr);}
+function inv(){var lines=[].map.call(document.querySelectorAll("#i-rows tr"),function(tr){var i=tr.querySelectorAll("input");return{desc:i[0].value,qty:i[1].value,price:i[2].value,rate:tr.querySelector("select").value}});
+  var r=T.vatInvoice(lines); rows("#i-out",[["Standard-rated (5%)",r.standard],["Zero-rated",r.zero],["Exempt",r.exempt],["VAT",r.vat],["Invoice total",r.total,1]]);}
+addRow("Consulting services",10,1000,"standard"); addRow("Export of goods",1,5000,"zero"); $("#i-add").onclick=function(){addRow("",1,0,"standard");inv()};
+// VAT return
+function ret(){var r=T.vatReturn({standardSales:n("#r-std"),zeroSales:n("#r-zero"),exemptSales:n("#r-ex"),rcmServices:n("#r-rcm"),inputDirect:n("#r-dir"),inputOverheads:n("#r-ovh"),blocked:n("#r-blk")});
+  rows("#r-out",[["Output VAT on standard-rated sales",r.outputStandard],["Output VAT under reverse charge",r.outputReverseCharge],["Recovery rate for overheads",r.recoveryPercent.toFixed(2)+"%"],["Input VAT recoverable",r.inputRecoverable],["Input VAT not recoverable (blocked)",r.blockedNotRecoverable],[r.netPayable>=0?"Net VAT payable":"Net VAT refundable",Math.abs(r.netPayable),1]]);}
+document.querySelectorAll("#p-ret input").forEach(function(i){i.addEventListener("input",ret)});
+// CT
+function ct(){var reg=$("#c-reg").value; document.querySelectorAll(".qf").forEach(function(e){e.hidden=reg!=="qfzp"});
+  var r=T.corporateTax({regime:reg,revenue:n("#c-rev"),profit:n("#c-pro"),entertainment:n("#c-ent"),penalties:n("#c-pen"),addBacks:n("#c-oth"),exemptIncome:n("#c-exm"),lossesBF:n("#c-los"),netInterest:n("#c-nie"),ebitda:n("#c-ebi"),qualifyingIncome:n("#c-qi"),nonQualifyingRevenue:n("#c-nqr")});
+  var L=[["Accounting profit",n("#c-pro")],["Add: 50% of client entertainment",r.entertainmentAddBack],["Add: disallowed interest",r.interestDisallowed],["Adjusted profit",r.adjusted],["Less: tax losses used",r.lossesUsed],["Taxable Income",r.taxableIncome],[r.regime==="qfzp"?"At 0% (Qualifying Income)":"At 0% (first AED 375,000)",r.zeroBand],["At 9%",r.at9],["Losses carried forward",r.lossesCF],["Effective rate on accounting profit",r.effectiveRate.toFixed(2)+"%"],["Corporate Tax payable",r.tax,1]];
+  if(r.regime==="sbr") L=[["Small Business Relief","Elected"],["Taxable Income","AED 0.00"],["Corporate Tax payable",0,1]];
+  rows("#c-out",L); $("#c-notes").innerHTML=r.notes.map(function(x){return"<li>"+x+"</li>"}).join("");}
+document.querySelectorAll("#p-ct input,#p-ct select").forEach(function(i){i.addEventListener("input",ct);i.addEventListener("change",ct)});
+vat();inv();ret();ct();
+})();
 </script>
