@@ -40,7 +40,7 @@
       </ul>
     </div>
     <div><h4>Topics</h4><ul>{% for t in site.data.topics %}<li><a href="{{ '/' | append: t.slug | append: '/' | relative_url }}">{{ t.name }}</a></li>{% endfor %}</ul></div>
-    <div><h4>Toolkit</h4><ul><li><a href="{{ '/calculator/' | relative_url }}">Tax Calculator</a></li><li><a href="{{ '/penalty-calculator/' | relative_url }}">Penalty Estimator</a></li><li><a href="{{ '/supplier-check/' | relative_url }}">Supplier Verification</a></li></ul></div>
+    <div><h4>Toolkit</h4><ul><li><a href="{{ '/calculator/' | relative_url }}">Tax Calculator</a></li><li><a href="{{ '/tax-deadlines/' | relative_url }}">Deadline Planner</a></li><li><a href="{{ '/penalty-calculator/' | relative_url }}">Penalty Estimator</a></li><li><a href="{{ '/supplier-check/' | relative_url }}">Supplier Verification</a></li></ul></div>
     <div><h4>The site</h4><ul><li><a href="{{ '/guides/' | relative_url }}">All guides</a></li><li><a href="{{ '/about/' | relative_url }}">About</a></li><li><a href="{{ '/contact/' | relative_url }}">Ask a question</a></li><li><a href="{{ '/follow/' | relative_url }}">Follow (email / RSS)</a></li>{% if site.newsletter_url and site.newsletter_url != "" %}<li><a href="{{ site.newsletter_url }}" target="_blank" rel="noopener">Newsletter</a></li>{% endif %}<li><a href="{{ au.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li></ul></div>
   </div>
   <div class="wrap legal"><p>Educational content only, not tax, legal or financial advice. Rules change, so confirm details with the Federal Tax Authority or a qualified adviser.</p><p>© {{ 'now' | date: '%Y' }} {{ au.name }}</p></div>
@@ -56,5 +56,6 @@ if(q)q.addEventListener('input',ap);
 d.querySelectorAll('[data-f]').forEach(function(b){b.addEventListener('click',function(){f=b.dataset.f;d.querySelectorAll('[data-f]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});ap()})});
 })();
 </script>
+<!-- Cloudflare Web Analytics -->{% if jekyll.environment == "production" %}<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "21ab1053149047e182d82d1be9aa85b6"}'></script>{% endif %}<!-- End Cloudflare Web Analytics -->
 </body>
 </html>
