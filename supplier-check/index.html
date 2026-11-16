@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Supplier due diligence checker
+title: Supplier Verification
 permalink: /supplier-check/
 seo_title: "Supplier Due Diligence Checker: FTA Decision 13 (Input VAT)"
 description: "Free supplier due diligence checklist for UAE input VAT under FTA Decision No. 13 of 2026: spend tier, required checks, red flags, and a printable evidence record."
 ---
-<h1 class="pagetitle">Supplier due diligence checker</h1>
+<h1 class="pagetitle">Supplier Verification</h1>
 <p class="deck">Work out which checks FTA Decision No. 13 of 2026 expects for a supplier, spot the red flags from the FTA's own examples, and save a signed evidence record for your file. New to the rules? Start with <a href="{% post_url 2026-11-14-tax-invoice-no-longer-enough-fta-decision-13 %}">the 5-part guide</a>.</p>
 
 <div class="calc dd">
@@ -137,7 +137,7 @@ function record(s,r){
    '<tr><th>Payment</th><td>'+esc($('#d-pay').selectedOptions[0].text)+'</td></tr><tr><th>Status</th><td>'+(r.status==='complete'?'Complete':r.status==='exempt'?'Not required':r.pct+'% complete')+'</td></tr><tr><th>Next re-verification</th><td>'+esc(fmtD(r.nextReview))+'</td></tr></table>'+
    (r.tier==='exempt'?'':'<h2>Checks</h2><table class="ck">'+rows+'</table><h2>Red flags and explanations</h2><table class="ck">'+fl+'</table>')+
    '<table class="sign"><tr><td>Checked by<br><b>'+esc(s.by||'')+'</b></td><td>Reviewed by<br><b>'+esc(s.rev||'')+'</b></td><td>Signature</td></tr></table>'+
-   '<p class="foot">Prepared with the supplier due diligence checker at camelvinjose.com. Keep this record with the supporting documents at your designated tax records location (Art. 5).</p>';
+   '<p class="foot">Prepared with the Supplier Verification tool at camelvinjose.com. Keep this record with the supporting documents at your designated tax records location (Art. 5).</p>';
 }
 
 document.querySelector('[data-panel=one]').addEventListener('input',function(e){
