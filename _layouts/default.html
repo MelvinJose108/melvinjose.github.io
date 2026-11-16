@@ -41,7 +41,7 @@
     </div>
     <div><h4>Topics</h4><ul>{% for t in site.data.topics %}<li><a href="{{ '/' | append: t.slug | append: '/' | relative_url }}">{{ t.name }}</a></li>{% endfor %}</ul></div>
     <div><h4>Tools</h4><ul><li><a href="{{ '/calculator/' | relative_url }}">Tax calculator</a></li><li><a href="{{ '/penalty-calculator/' | relative_url }}">Penalty calculator</a></li></ul></div>
-    <div><h4>The site</h4><ul><li><a href="{{ '/guides/' | relative_url }}">All guides</a></li><li><a href="{{ '/about/' | relative_url }}">About</a></li><li><a href="{{ '/follow/' | relative_url }}">Follow (email / RSS)</a></li>{% if site.newsletter_url and site.newsletter_url != "" %}<li><a href="{{ site.newsletter_url }}" target="_blank" rel="noopener">Newsletter</a></li>{% endif %}<li><a href="{{ au.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li></ul></div>
+    <div><h4>The site</h4><ul><li><a href="{{ '/guides/' | relative_url }}">All guides</a></li><li><a href="{{ '/about/' | relative_url }}">About</a></li><li><a href="{{ '/contact/' | relative_url }}">Ask a question</a></li><li><a href="{{ '/follow/' | relative_url }}">Follow (email / RSS)</a></li>{% if site.newsletter_url and site.newsletter_url != "" %}<li><a href="{{ site.newsletter_url }}" target="_blank" rel="noopener">Newsletter</a></li>{% endif %}<li><a href="{{ au.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li></ul></div>
   </div>
   <div class="wrap legal"><p>Educational content only, not tax, legal or financial advice. Rules change, so confirm details with the Federal Tax Authority or a qualified adviser.</p><p>© {{ 'now' | date: '%Y' }} {{ au.name }}</p></div>
 </footer>

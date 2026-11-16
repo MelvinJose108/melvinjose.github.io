@@ -63,6 +63,30 @@
   caption: "Key e-invoicing dates, 2026 to 2029"
   topic: "E-Invoicing"
   post: /guides/uae-e-invoicing-ministerial-decision-197-2026/
+- image: /assets/images/e-invoicing/ei-scope-who.webp
+  caption: "In scope or not? UAE e-invoicing"
+  topic: "E-Invoicing"
+  post: /guides/uae-e-invoicing-who-must-comply/
+- image: /assets/images/e-invoicing/ei-scope-phases.webp
+  caption: "E-invoicing phases: ASP and go-live dates"
+  topic: "E-Invoicing"
+  post: /guides/uae-e-invoicing-who-must-comply/
+- image: /assets/images/e-invoicing/ei-five-corner.webp
+  caption: "The five-corner e-invoicing model"
+  topic: "E-Invoicing"
+  post: /guides/uae-e-invoicing-five-corner-model/
+- image: /assets/images/e-invoicing/ei-buyer-not-ready.webp
+  caption: "When your customer isn't on the system yet"
+  topic: "E-Invoicing"
+  post: /guides/uae-e-invoicing-five-corner-model/
+- image: /assets/images/e-invoicing/ei-asp-checklist.webp
+  caption: "Six things to check when choosing an ASP"
+  topic: "E-Invoicing"
+  post: /guides/choosing-uae-e-invoicing-asp/
+- image: /assets/images/e-invoicing/ei-pen-table.webp
+  caption: "E-invoicing penalties under Cabinet Decision No. 173"
+  topic: "E-Invoicing"
+  post: /guides/uae-e-invoicing-penalties-cabinet-decision-173-2026/
 - image: /assets/images/audit/vat-audit-six-tests.webp
   caption: "Six tests auditors run on your VAT position"
   topic: "Audit"

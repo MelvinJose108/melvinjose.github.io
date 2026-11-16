@@ -1,0 +1,56 @@
+---
+layout: default
+title: Contact
+seo_title: "Contact Melvin Jose: UAE Tax and Audit Questions"
+description: "Send a question about UAE VAT, Corporate Tax, e-invoicing or audit to Melvin Jose, Senior Audit Executive in Ajman."
+permalink: /contact/
+---
+{% assign au = site.data.author %}
+<div class="post contact">
+  <h1 class="pagetitle">Ask a question</h1>
+  <p class="deck">Questions about UAE VAT, Corporate Tax, e-invoicing or audit, or feedback on a guide. I read every message and reply personally, usually within two working days.</p>
+
+  <form id="cform" class="cform" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="{{ site.web3forms_key }}">
+    <input type="hidden" name="subject" value="New question from camelvinjose.com">
+    <input type="hidden" name="from_name" value="The UAE Ledger">
+    <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="fgrid2">
+      <label>Your name<input name="name" required autocomplete="name"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+    </div>
+    <div class="fgrid2">
+      <label>Company <span class="opt">(optional)</span><input name="company" autocomplete="organization"></label>
+      <label>Topic
+        <select name="topic">
+          <option>VAT</option><option>Corporate Tax</option><option>E-Invoicing</option><option>Audit</option><option>Feedback on a guide</option><option>Other</option>
+        </select>
+      </label>
+    </div>
+    <label>Your question<textarea name="message" rows="7" required placeholder="Give the key facts: the type of business, the transaction, the dates and amounts involved."></textarea></label>
+    <p class="small">Please don't include TRNs, bank details or other confidential information. A reply is general information, not formal advice.</p>
+    <button class="btn" type="submit">Send message</button>
+    <p id="cstatus" class="cstatus" role="status" aria-live="polite"></p>
+  </form>
+
+  <p class="small alt">Prefer LinkedIn? <a href="{{ au.linkedin }}" target="_blank" rel="noopener">Message me there</a>.</p>
+</div>
+<script>
+(function(){
+var f=document.getElementById('cform'),s=document.getElementById('cstatus'),b=f.querySelector('button');
+f.addEventListener('submit',function(e){
+  e.preventDefault();
+  if(f.botcheck.checked)return;
+  b.disabled=true;b.textContent='Sending…';s.className='cstatus';s.textContent='';
+  var data=Object.fromEntries(new FormData(f));
+  fetch(f.action,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
+   .then(function(r){return r.json()})
+   .then(function(j){
+     if(j.success){f.reset();s.className='cstatus ok';s.textContent='Thanks, your message has been sent. I’ll reply by email.'}
+     else{throw new Error(j.message||'error')}
+   })
+   .catch(function(){s.className='cstatus bad';s.innerHTML='Sorry, that didn’t send. Please try again, or message me on <a href="{{ au.linkedin }}">LinkedIn</a>.'})
+   .finally(function(){b.disabled=false;b.textContent='Send message'});
+});
+})();
+</script>
