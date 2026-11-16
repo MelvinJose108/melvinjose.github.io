@@ -72,3 +72,5 @@ The rest of the series takes each pillar apart, with the FTA's own examples:
 Pull your top 20 suppliers by spend for the last 12 months. For each one, ask a single question: *if the FTA asked me today how I verified this supplier, what would I show them?*
 
 If the honest answer is "the tax invoice," you have found your gap.
+
+**Free tool:** the [supplier due diligence checker]({{ '/supplier-check/' | relative_url }}) tiers your supplier list by spend and builds a signed evidence record for each supplier.

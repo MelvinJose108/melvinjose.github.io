@@ -239,3 +239,55 @@ img.avatar.photo.big{width:6.5rem;height:6.5rem}
 .btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
 .proof b{color:var(--acc)}
 .brand i{background:var(--acc);color:#fff}
+/* supplier due diligence checker */
+.dd .dd-h{font-family:var(--ui);font-size:1rem;font-weight:700;margin:1.6rem 0 .2rem;letter-spacing:0}
+.dd textarea{width:100%;font:inherit;padding:.6rem .75rem;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);resize:vertical}
+.dd .pair{display:grid;grid-template-columns:1fr 1fr;gap:0 .75rem}
+.dd-tier{margin-top:1rem;padding:.9rem 1rem;border-radius:10px;border:1px solid var(--line);display:flex;flex-direction:column;gap:.2rem;font-size:.92rem}
+.dd-tier b{font-size:1rem}
+.dd-tier.ok{background:#E7F4EC;border-color:#B7DEC6;color:#146C43}
+.dd-tier.std{background:var(--soft);color:var(--ink)}
+.dd-tier.big{background:#FFF4E5;border-color:#F0CF9A;color:#8A4B06}
+.dd-ticks,#d-items{display:flex;flex-direction:column;gap:.15rem;margin-top:.9rem}
+.dd label.tick{display:flex;gap:.6rem;align-items:flex-start;margin:0;padding:.45rem 0;color:var(--ink);font-size:.95rem;border-bottom:1px solid var(--line);cursor:pointer}
+.dd label.tick input{width:1.05rem;height:1.05rem;flex:none;margin-top:.2rem;accent-color:var(--acc)}
+.dd .ex{color:var(--mute);font-size:.78rem;white-space:nowrap}
+.dd-g{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:700;margin:1rem 0 .1rem}
+.dd-flag{margin-top:.9rem;padding:.9rem 1rem;border-radius:10px;background:#FDECEA;border:1px solid #F5C2BC;color:#7A1A12}
+.dd-flag label{color:#7A1A12;margin-top:.6rem}
+.dd-flag textarea{background:#fff;color:#16181D}
+.dd-warn{margin-top:.8rem;font-weight:600;color:#B42318}
+.dd-st{margin-top:1.4rem;padding:1rem 1.1rem;border-radius:10px;display:flex;flex-direction:column;gap:.2rem}
+.dd-st b{font-size:1.15rem}
+.dd-st.ok{background:#E7F4EC;color:#146C43;border:1px solid #B7DEC6}
+.dd-st.bad{background:#FFF4E5;color:#8A4B06;border:1px solid #F0CF9A}
+.dd-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.2rem}
+.dd-actions .btn{cursor:pointer;font:inherit;font-weight:600;font-size:.95rem}
+.dd-lede{color:var(--mute);margin:.5rem 0 0}
+.dd-sum{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin-top:1.2rem}
+.dd-sum div{border-radius:10px;padding:.8rem 1rem;display:flex;flex-direction:column}
+.dd-sum b{font-size:1.6rem;font-family:var(--display)}
+.dd-sum span{font-size:.85rem}
+.dd-sum .big{background:#FFF4E5;color:#8A4B06}.dd-sum .std{background:var(--soft);color:var(--ink)}.dd-sum .ok{background:#E7F4EC;color:#146C43}
+.dd-tablewrap{overflow-x:auto;margin-top:1rem}
+.dd-list{width:100%;border-collapse:collapse;font-size:.9rem}
+.dd-list th{text-align:left;font-size:.78rem;color:var(--mute);padding:.4rem;border-bottom:1px solid var(--line)}
+.dd-list td{padding:.5rem .4rem;border-bottom:1px solid var(--line);vertical-align:top}
+.dd-list td:nth-child(2),.dd-list td:nth-child(3){white-space:nowrap;font-variant-numeric:tabular-nums}
+.pill{display:inline-block;font-size:.75rem;font-weight:700;padding:.2rem .55rem;border-radius:99px;white-space:nowrap}
+.pill.enhanced{background:#FFF4E5;color:#8A4B06}.pill.standard{background:var(--soft);color:var(--ink)}.pill.small{background:#E7F4EC;color:#146C43}
+.dd-record{display:none}
+@media print{
+  body *{visibility:hidden}
+  .dd-record,.dd-record *{visibility:visible}
+  .dd-record{display:block;position:absolute;left:0;top:0;width:100%;color:#000;font:11pt/1.45 Georgia,serif}
+  .dd-record h1{font-size:18pt;margin:0}.dd-record .sub{margin:2pt 0 12pt;color:#444}
+  .dd-record h2{font-size:12pt;margin:14pt 0 4pt}
+  .dd-record table{width:100%;border-collapse:collapse}
+  .dd-record td,.dd-record th{border:1px solid #999;padding:4pt 6pt;text-align:left;vertical-align:top}
+  .dd-record .kv th{width:34%;background:#f2f2f2}
+  .dd-record .ck td:first-child{width:18pt;text-align:center}.dd-record .ck td:last-child{width:70pt;font-size:9pt;color:#444}
+  .dd-record .sign{margin-top:18pt}.dd-record .sign td{height:42pt;width:33%}
+  .dd-record .foot{font-size:8.5pt;color:#555;margin-top:12pt}
+}
+@media(max-width:640px){.dd-sum{grid-template-columns:1fr}.dd .ex{white-space:normal}}
