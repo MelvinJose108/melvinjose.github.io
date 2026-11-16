@@ -11,7 +11,12 @@ OUT = "_data/substack.yml"
 LIMIT = 6
 EXCLUDE = {"welcome-to-the-uae-ledger"}  # post slugs to leave off the site
 
-req = urllib.request.Request(FEED, headers={"User-Agent": "camelvinjose.com feed sync"})
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36",
+    "Accept": "application/rss+xml, application/xml;q=0.9, */*;q=0.8",
+    "Accept-Language": "en-GB,en;q=0.9",
+}
+req = urllib.request.Request(FEED, headers=HEADERS)
 root = ET.fromstring(urllib.request.urlopen(req, timeout=30).read())
 
 posts = []
