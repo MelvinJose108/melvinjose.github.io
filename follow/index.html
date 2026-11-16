@@ -1,0 +1,44 @@
+---
+layout: default
+title: Follow
+seo_title: "Follow The UAE Ledger: Email, LinkedIn or RSS"
+description: "Get new UAE VAT, Corporate Tax, e-invoicing and audit guides from The UAE Ledger by email, on LinkedIn, or in your RSS feed reader."
+permalink: /follow/
+---
+{% assign au = site.data.author %}
+{% capture feed %}{{ '/feed.xml' | absolute_url }}{% endcapture %}
+<div class="post">
+  <h1 class="pagetitle">Follow {{ site.title }}</h1>
+  <p class="deck">New guides on UAE VAT, Corporate Tax, e-invoicing and audit. Pick whichever way suits you.</p>
+
+  <div class="follow">
+    {% if site.newsletter_url and site.newsletter_url != "" %}
+    <div class="fopt">
+      <h2>By email</h2>
+      <p>The easiest option. New guides and FTA updates land in your inbox. Free, and you can unsubscribe any time.</p>
+      <a class="btn" href="{{ site.newsletter_url }}" target="_blank" rel="noopener">Subscribe on Substack</a>
+    </div>
+    {% endif %}
+    <div class="fopt">
+      <h2>On LinkedIn</h2>
+      <p>Short posts with the key point of each guide, plus the infographics.</p>
+      <a class="btn ghost" href="{{ au.linkedin }}" target="_blank" rel="noopener">Follow {{ au.name }}</a>
+    </div>
+    <div class="fopt">
+      <h2>In a feed reader (RSS)</h2>
+      <p>If you use Feedly, Inoreader, NetNewsWire or Outlook's RSS folder, add this link:</p>
+      <div class="feedurl"><code id="feedurl">{{ feed }}</code><button type="button" class="btn ghost" id="copyfeed">Copy link</button></div>
+      <p class="small">Opening the link directly in a browser shows raw code. That's normal; it's meant for feed readers.</p>
+    </div>
+  </div>
+
+  <h2 class="fhead">Latest guides</h2>
+  <div class="grid">{% for p in site.posts limit:6 %}{% include card.html p=p %}{% endfor %}</div>
+</div>
+<script>
+document.getElementById('copyfeed').addEventListener('click',function(){
+  var b=this,t=document.getElementById('feedurl').textContent;
+  function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy link'},2000)}
+  if(navigator.clipboard){navigator.clipboard.writeText(t).then(done,function(){prompt('Copy this link:',t)})}else{prompt('Copy this link:',t)}
+});
+</script>
