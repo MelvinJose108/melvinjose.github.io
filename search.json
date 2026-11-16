@@ -1,0 +1,10 @@
+---
+layout: null
+sitemap: false
+---
+[
+{% for p in site.posts %}{"t":{{ p.title | jsonify }},"u":{{ p.url | relative_url | jsonify }},"k":{{ p.topic | default: "Guide" | jsonify }},"d":{{ p.description | jsonify }},"dt":{{ p.date | date: "%-d %b %Y" | jsonify }},"c":{{ p.content | strip_html | strip_newlines | normalize_whitespace | truncate: 4000, "" | jsonify }}},
+{% endfor %}{% for t in site.data.topics %}{"t":{{ t.name | append: " guides" | jsonify }},"u":{{ '/' | append: t.slug | append: '/' | relative_url | jsonify }},"k":"Topic","d":{{ t.summary | jsonify }},"c":""},
+{% endfor %}{% assign pgs = site.pages | where_exp: "x", "x.title" %}{% for p in pgs %}{% unless p.url contains "/guides/" or p.url == "/" or p.url contains ".xml" or p.url contains ".json" or p.url contains "/404" %}{% assign k = "Page" %}{% if p.url contains "calculator" or p.url contains "tax-deadlines" or p.url contains "supplier-check" or p.url contains "compliance-check" or p.url contains "gratuity" %}{% assign k = "Tool" %}{% endif %}{% if p.layout == "topic" %}{% continue %}{% endif %}{"t":{{ p.title | jsonify }},"u":{{ p.url | relative_url | jsonify }},"k":{{ k | jsonify }},"d":{{ p.description | jsonify }},"c":{{ p.content | strip_html | strip_newlines | normalize_whitespace | truncate: 1500, "" | jsonify }}},
+{% endunless %}{% endfor %}{"t":"Contact","u":{{ '/contact/' | relative_url | jsonify }},"k":"Page","d":"Ask a question about UAE VAT, Corporate Tax, e-invoicing or audit.","c":""}
+]

@@ -175,7 +175,7 @@
     var months = monthsOrPart(due, paid, rule), perMonth = r2(pos(amount) * 0.14 / 12), total = r2(pos(amount) * 0.14 * months / 12);
     var notes = [];
     if (tax === "vat" && due < VAT_CUTOVER) notes.push("The due date is before 14 April 2026. Until that date the old VAT rule applied (2% immediately, 4% monthly, up to 300%), so the penalty for the earlier months may differ. This uses the current rule throughout.");
-    return { total: total, months: months, lines: [{ label: "Late payment: " + months + " month" + (months === 1 ? "" : "s") + " × 14% a year ÷ 12 (AED " + perMonth.toLocaleString("en-AE", { minimumFractionDigits: 2 }) + " a month)", amount: total,
+    return { total: total, months: months, lines: [{ label: "Late payment: " + months + " month" + (months === 1 ? "" : "s") + " \u00d7 14% a year \u00f7 12 (AED " + perMonth.toLocaleString("en-AE", { minimumFractionDigits: 2 }) + " a month)", amount: total,
       basis: tax === "ct" ? "Cabinet Decision No. 75 of 2023, table item 8" : "Cabinet Decision No. 40 of 2017 as amended by CD 129 of 2025, Table 1 item 9" }], notes: notes };
   }
 
@@ -187,8 +187,8 @@
       return { total: amt, lines: [{ label: "Late VAT return" + (repeat ? " (repeat within 24 months)" : " (first time)"), amount: amt, basis: "Cabinet Decision No. 40 of 2017 as amended by CD 129 of 2025, Table 1 item 8" }], notes: [] };
     }
     var m = monthsOrPart(due, filed, "ct"), first = Math.min(m, 12), later = Math.max(0, m - 12);
-    var lines = [{ label: "Months 1 to 12: " + first + " × AED 500", amount: first * 500, basis: "Cabinet Decision No. 75 of 2023, table item 7" }];
-    if (later) lines.push({ label: "Month 13 onwards: " + later + " × AED 1,000", amount: later * 1000, basis: "Cabinet Decision No. 75 of 2023, table item 7" });
+    var lines = [{ label: "Months 1 to 12: " + first + " \u00d7 AED 500", amount: first * 500, basis: "Cabinet Decision No. 75 of 2023, table item 7" }];
+    if (later) lines.push({ label: "Month 13 onwards: " + later + " \u00d7 AED 1,000", amount: later * 1000, basis: "Cabinet Decision No. 75 of 2023, table item 7" });
     return { total: first * 500 + later * 1000, months: m, lines: lines, notes: [] };
   }
 
@@ -197,7 +197,7 @@
   function voluntaryDisclosure(tax, diff, returnDue, vdDate) {
     var rule = tax === "ct" ? "ct" : "vat";
     var m = monthsOrPart(parseDate(returnDue), parseDate(vdDate), rule), pct = r2(pos(diff) * 0.01 * m);
-    var lines = [{ label: "Voluntary disclosure: " + m + " month" + (m === 1 ? "" : "s") + " × 1% of the tax difference", amount: pct,
+    var lines = [{ label: "Voluntary disclosure: " + m + " month" + (m === 1 ? "" : "s") + " \u00d7 1% of the tax difference", amount: pct,
       basis: tax === "ct" ? "Cabinet Decision No. 75 of 2023, table item 10" : "Cabinet Decision No. 40 of 2017 as amended by CD 129 of 2025, Table 1 item 11" }];
     var total = pct;
     if (pos(diff) > 0) { lines.push({ label: "Incorrect tax return (fixed)", amount: 500, basis: tax === "ct" ? "Cabinet Decision No. 75 of 2023, table item 9" : "Cabinet Decision No. 40 of 2017 as amended, Table 1 item 10" }); total += 500; }
@@ -213,7 +213,7 @@
     var fixed = r2(pos(diff) * 0.15), monthly = r2(pos(diff) * 0.01 * m);
     var basis = tax === "ct" ? "Cabinet Decision No. 75 of 2023, table item 11" : "Cabinet Decision No. 40 of 2017 as amended by CD 129 of 2025, Table 1 item 12";
     var lines = [{ label: "Fixed: 15% of the tax difference", amount: fixed, basis: basis },
-                 { label: "Monthly: " + m + " month" + (m === 1 ? "" : "s") + " × 1% of the tax difference", amount: monthly, basis: basis }];
+                 { label: "Monthly: " + m + " month" + (m === 1 ? "" : "s") + " \u00d7 1% of the tax difference", amount: monthly, basis: basis }];
     var total = fixed + monthly;
     if (pos(diff) > 0) { lines.push({ label: "Incorrect tax return (fixed)", amount: 500, basis: tax === "ct" ? "Cabinet Decision No. 75 of 2023, table item 9" : "Cabinet Decision No. 40 of 2017 as amended, Table 1 item 10" }); total += 500; }
     return { total: r2(total), months: m, lines: lines, notes: ["Compare this with a voluntary disclosure made before any audit notice: no 15% fixed penalty. Disclosing early is almost always cheaper."] };

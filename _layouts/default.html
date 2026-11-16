@@ -19,6 +19,7 @@
     {% for t in site.data.topics %}<a href="{{ '/' | append: t.slug | append: '/' | relative_url }}">{{ t.name }}</a>{% endfor %}
     <a href="{{ '/tools/' | relative_url }}">Toolkit</a>
     <a href="{{ '/about/' | relative_url }}">About</a>
+    <button class="sbtn" type="button" data-search-open aria-label="Search the site (press /)" title="Search (press /)"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 0 1 6.3 12.9l5.4 5.4-1.4 1.4-5.4-5.4A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg><span>Search</span></button>
     <button class="tt" id="tt" type="button" aria-label="Switch light or dark theme">◐</button>
   </nav>
 </div></header>
@@ -73,5 +74,7 @@ d.querySelectorAll('[data-f]').forEach(function(b){b.addEventListener('click',fu
 })();
 </script>
 <!-- Cloudflare Web Analytics -->{% if jekyll.environment == "production" %}<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "21ab1053149047e182d82d1be9aa85b6"}'></script>{% endif %}<!-- End Cloudflare Web Analytics -->
+<link rel="search-index" href="{{ '/search.json' | relative_url }}">
+<script src="{{ '/assets/search.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 </body>
 </html>
