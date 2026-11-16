@@ -7,6 +7,8 @@
   /* o: { type:"company"|"individual", freeZone:bool, qfzp:"yes"|"no"|"unsure", taxGroup:bool, revenue, prevRevenueUnder3m:bool,
           supplies12, next30, expenses12, rpt, cpMax, groupRevenue (AED), mne750:bool } */
   function obligations(o) {
+    var form = o.form || (o.type === "individual" ? "sole" : (o.freeZone ? "fz" : "llc"));
+    o.type = form === "sole" ? "individual" : "company"; o.freeZone = form === "fz";
     var R = [], rev = n(o.revenue), sup = n(o.supplies12), nx = n(o.next30), exp = n(o.expenses12), rpt = n(o.rpt), cp = n(o.cpMax), grp = n(o.groupRevenue);
     function add(area, title, status, text, basis) { R.push({ area: area, title: title, status: status, text: text, basis: basis }); }
 
@@ -32,11 +34,20 @@
     else add("Corporate Tax", "Small Business Relief", "na", "Revenue is over AED 3 million in this or an earlier period.", "Ministerial Decision No. 73 of 2023");
 
     // Audited financial statements (for Corporate Tax)
-    if (o.taxGroup) add("Audit", "Audited financial statements", "required", "Every Tax Group must prepare audited special purpose aggregated financial statements, whatever its revenue.", "Ministerial Decision No. 84 of 2025");
-    else if (isQ) add("Audit", "Audited financial statements", "required", "A Qualifying Free Zone Person must keep audited financial statements to keep its 0% rate, whatever its revenue.", "Ministerial Decision No. 84 of 2025");
-    else if (rev > 50 * M) add("Audit", "Audited financial statements", "required", "Revenue is over AED 50 million in the tax period.", "Ministerial Decision No. 84 of 2025");
-    else if (o.freeZone && o.qfzp === "unsure") add("Audit", "Audited financial statements", "check", "Mandatory if you claim Qualifying Free Zone Person status, whatever your revenue. Otherwise not required for Corporate Tax unless revenue is over AED 50 million.", "Ministerial Decision No. 84 of 2025");
-    else add("Audit", "Audited financial statements", "not", "Not required for Corporate Tax: revenue is not over AED 50 million, and the business is not a Qualifying Free Zone Person or a Tax Group. Your free zone or licensing authority, bank or the Commercial Companies Law may still require an audit.", "Ministerial Decision No. 84 of 2025");
+    if (o.taxGroup) add("Audit", "Audit for Corporate Tax", "required", "Every Tax Group must prepare audited special purpose aggregated financial statements, whatever its revenue.", "Ministerial Decision No. 84 of 2025");
+    else if (isQ) add("Audit", "Audit for Corporate Tax", "required", "A Qualifying Free Zone Person must keep audited financial statements to keep its 0% rate, whatever its revenue.", "Ministerial Decision No. 84 of 2025");
+    else if (rev > 50 * M) add("Audit", "Audit for Corporate Tax", "required", "Revenue is over AED 50 million in the tax period.", "Ministerial Decision No. 84 of 2025");
+    else if (o.freeZone && o.qfzp === "unsure") add("Audit", "Audit for Corporate Tax", "check", "Mandatory if you claim Qualifying Free Zone Person status, whatever your revenue. Otherwise not required for Corporate Tax unless revenue is over AED 50 million.", "Ministerial Decision No. 84 of 2025");
+    else add("Audit", "Audit for Corporate Tax", "not", "Not required by the Corporate Tax rules: revenue is not over AED 50 million, and the business is not a Qualifying Free Zone Person or a Tax Group. The FTA can still ask for audited or certified accounts during a review.", "Ministerial Decision No. 84 of 2025");
+    var CL = {
+      llc: ["required", "An LLC must appoint a licensed auditor and have its annual accounts audited, whatever its revenue.", "Commercial Companies Law (Federal Decree-Law No. 32 of 2021)"],
+      jsc: ["required", "Public and private joint stock companies must have their annual accounts audited by a licensed auditor.", "Commercial Companies Law (Federal Decree-Law No. 32 of 2021)"],
+      fz: ["check", "Most free zone authorities (for example DMCC, JAFZA and DAFZA) require audited accounts to renew the licence or for the annual filing. Confirm with your authority.", "Free zone company regulations"],
+      branch: ["check", "Often required by the licensing authority for licence renewal, and by the parent company's group audit. Confirm with your licensing authority.", "Licensing authority rules"],
+      sole: ["not", "A sole establishment isn't required to have a statutory audit under company law. Banks, tenders or the FTA may still ask for audited accounts.", "Commercial Companies Law (Federal Decree-Law No. 32 of 2021)"],
+      civil: ["not", "A civil company isn't generally required to have a statutory audit under company law. Banks, tenders or the FTA may still ask for audited accounts.", "Commercial Companies Law (Federal Decree-Law No. 32 of 2021)"]
+    }[form];
+    if (CL) add("Audit", form === "fz" ? "Audit for licence renewal" : "Statutory audit under company law", CL[0], CL[1], CL[2]);
 
     // Transfer pricing
     if (rpt > 40 * M || cp > 500000) add("Transfer pricing", "Transfer Pricing Disclosure Form", "required", "File it with the Corporate Tax return: " + (rpt > 40 * M ? "related-party transactions are over AED 40 million" : "") + (rpt > 40 * M && cp > 500000 ? ", and " : "") + (cp > 500000 ? "payments or benefits to a connected person are over AED 500,000" : "") + ".", "FTA Corporate Tax return: Transfer Pricing Disclosure Form");
