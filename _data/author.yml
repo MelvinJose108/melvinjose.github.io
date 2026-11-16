@@ -15,3 +15,12 @@ expertise:
 photo: /assets/images/melvin-jose.webp
 photo_small: /assets/images/melvin-jose-160.webp
 photo_jpg: /assets/images/melvin-jose.jpg
+credential: Chartered Accountant finalist
+# Shown in the proof strip on the home page. Keep in line with the About page.
+stats:
+  - value: "200+"
+    label: Corporate Tax engagements delivered
+  - value: "AED 3m+"
+    label: in VAT refunds supported
+  - value: "6+ years"
+    label: in audit and tax, UAE and India

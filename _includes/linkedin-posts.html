@@ -1,10 +1,10 @@
 {% assign posts = site.data.linkedin | slice: 0, include.limit %}
 {% if posts.size > 0 %}{% assign a = site.data.author %}
-<section class="sec li-sec" aria-labelledby="li-h">
+{% unless include.bare %}<section class="sec li-sec" aria-labelledby="li-h">
   <h2 id="li-h">From LinkedIn</h2>
   <p class="li-lede">Short takes on UAE tax and audit, posted on LinkedIn first.</p>
   <div class="li-grid">
-  {% for p in posts %}{% assign url = 'https://www.linkedin.com/feed/update/' | append: p.urn | append: '/' %}
+{% endunless %}  {% for p in posts %}{% assign url = 'https://www.linkedin.com/feed/update/' | append: p.urn | append: '/' %}
     <article class="li-card">
       <header class="li-head">
         {% include avatar.html cls="li-av" %}
@@ -19,7 +19,7 @@
       </footer>
     </article>
   {% endfor %}
-  </div>
+{% unless include.bare %}  </div>
   <p class="more"><a href="{{ a.linkedin }}" target="_blank" rel="noopener">Follow on LinkedIn →</a></p>
 </section>
-{% endif %}
+{% endunless %}{% endif %}

@@ -5,35 +5,63 @@ description: "Plain-English guides and updates on UAE Corporate Tax, VAT, e-invo
 {% assign a = site.data.author %}
 <section class="hero">
   <div>
-    <p class="eyebrow">Tax and audit, in plain English</p>
-    <h1>Clear guides to UAE tax and audit.</h1>
-    <p class="lede">Practical explainers on VAT, Corporate Tax, e-invoicing and audit, with the date each one was last reviewed.</p>
-    <div class="cta"><a class="btn" href="{{ '/guides/' | relative_url }}">Read the guides</a>{% if site.newsletter_url and site.newsletter_url != "" %}<a class="btn ghost" href="{{ site.newsletter_url }}" rel="noopener">Get the newsletter</a>{% endif %}</div>
+    <p class="eyebrow">{{ site.title }} · by {{ a.name }}</p>
+    <h1>UAE tax, explained by the person who audits it.</h1>
+    <p class="lede">Plain-English guides on VAT, Corporate Tax, e-invoicing and audit. Each one links to the official source and shows when it was last reviewed.</p>
+    <div class="cta"><a class="btn" href="{{ '/guides/' | relative_url }}">Read the guides</a><a class="btn ghost" href="{{ '/contact/' | relative_url }}">Ask a question</a></div>
   </div>
-  <aside class="who" aria-label="About the author">
-    {% include avatar.html eager=true %}
+  <aside class="who who-hero" aria-label="About the author">
+    {% include avatar.html cls="big" big=true eager=true %}
     <h2>{{ a.name }}</h2>
-    <p class="role">{{ a.title }} · {{ a.city }}, UAE</p>
-    <ul class="tags">{% for e in a.expertise %}<li>{{ e }}</li>{% endfor %}</ul>
-    <p class="links"><a href="{{ '/about/' | relative_url }}">About the author</a> · <a href="{{ '/contact/' | relative_url }}">Ask a question</a> · <a href="{{ a.linkedin }}" rel="noopener" target="_blank">LinkedIn</a></p>
+    <p class="role">{{ a.title }} · {{ a.city }}, UAE<br>{{ a.credential }}</p>
+    <ul class="tags">{% for e in a.expertise limit:4 %}<li>{{ e }}</li>{% endfor %}</ul>
+    <p class="links"><a href="{{ '/about/' | relative_url }}">About me</a> · <a href="{{ a.linkedin }}" rel="noopener" target="_blank">LinkedIn</a></p>
   </aside>
 </section>
+{% assign gcount = site.posts | size %}
+<ul class="proof" aria-label="Experience">
+  {% for s in a.stats %}<li><b>{{ s.value }}</b><span>{{ s.label }}</span></li>{% endfor %}
+  <li><b>{{ gcount }}</b><span>guides, each linked to the official source</span></li>
+</ul>
 <section class="sec">
   <h2>Explore by topic</h2>
   <div class="tiles">
   {% for t in site.data.topics %}
   {% assign n = site.posts | where: "topic", t.name | size %}
-  <a class="tile t-{{ t.slug }}" href="{{ '/' | append: t.slug | append: '/' | relative_url }}"><h3>{{ t.name }}</h3><p>{{ t.summary }}</p><span class="meta">{{ n }} {% if n == 1 %}article{% else %}articles{% endif %}</span></a>
+  <a class="tile t-{{ t.slug }}" href="{{ '/' | append: t.slug | append: '/' | relative_url }}"><h3>{{ t.name }}</h3><p>{{ t.summary }}</p><span class="meta">{{ n }} {% if n == 1 %}guide{% else %}guides{% endif %}</span></a>
   {% endfor %}
   </div>
 </section>
 <section class="sec">
-  <h2>Latest from {{ site.title }}</h2>
+  <h2>Latest guides</h2>
   <div class="grid">{% for p in site.posts limit:6 %}{% include card.html p=p %}{% endfor %}</div>
-  <p class="more"><a href="{{ '/guides/' | relative_url }}">Browse the full archive →</a></p>
+  <p class="more"><a href="{{ '/guides/' | relative_url }}">Browse all {{ gcount }} guides →</a></p>
 </section>
-{% include linkedin-posts.html limit=3 %}
-{% include substack-posts.html limit=3 %}
-{% if site.newsletter_url and site.newsletter_url != "" %}
-<section class="band"><div><h2>New guides, by email</h2><p>A short note when a guide or tax update is published.</p></div><a class="btn" href="{{ site.newsletter_url }}" rel="noopener">Get the newsletter</a></section>
+<section class="sec">
+  <h2>Free tools</h2>
+  <div class="tools">
+    <a class="tool" href="{{ '/calculator/' | relative_url }}">
+      <span class="ticon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2v4h10V4H7zm1 7v2h2v-2H8zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm-8 4v2h2v-2H8zm4 0v2h2v-2h-2zm4 0v5h2v-5h-2zm-8 4v1h6v-1H8z"/></svg></span>
+      <span><h3>Tax calculator</h3><p>VAT add and extract, invoices, VAT returns with partial recovery, and Corporate Tax including Small Business Relief and QFZP.</p><span class="go">Open the calculator →</span></span>
+    </a>
+    <a class="tool" href="{{ '/penalty-calculator/' | relative_url }}">
+      <span class="ticon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 2 1 21h22L12 2zm0 4.2L19.5 19h-15L12 6.2zM11 10v5h2v-5h-2zm0 6v2h2v-2h-2z"/></svg></span>
+      <span><h3>Penalty calculator</h3><p>FTA penalties for late payment, late filing, voluntary disclosures and audit findings under the 2026 rules, with business days that skip public holidays.</p><span class="go">Open the calculator →</span></span>
+    </a>
+  </div>
+</section>
+{% if site.data.linkedin.size > 0 or site.data.substack.size > 0 %}
+<section class="sec li-sec" aria-labelledby="el-h">
+  <h2 id="el-h">Elsewhere</h2>
+  <p class="li-lede">Shorter takes on LinkedIn, and longer notes in the newsletter.</p>
+  <div class="li-grid">
+    {% include linkedin-posts.html limit=1 bare=true %}
+    {% include substack-posts.html limit=1 bare=true %}
+  </div>
+  <p class="more"><a href="{{ a.linkedin }}" target="_blank" rel="noopener">Follow on LinkedIn →</a>{% if site.newsletter_url and site.newsletter_url != "" %} &nbsp;·&nbsp; <a href="{{ site.newsletter_url }}" target="_blank" rel="noopener">Subscribe on Substack →</a>{% endif %}</p>
+</section>
 {% endif %}
+<section class="band">
+  <div><h2>Stuck on a UAE tax question?</h2><p>Send it in. I read every message and reply personally.</p></div>
+  <div class="band-cta"><a class="btn" href="{{ '/contact/' | relative_url }}">Ask a question</a>{% if site.newsletter_url and site.newsletter_url != "" %}<a class="btn ghost" href="{{ site.newsletter_url }}" target="_blank" rel="noopener">Get guides by email</a>{% endif %}</div>
+</section>
