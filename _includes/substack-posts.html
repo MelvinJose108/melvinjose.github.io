@@ -10,8 +10,8 @@
         <svg class="li-logo ss-logo" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#FF6719"/><path fill="#fff" d="M6 6h12v1.6H6zM6 9h12v1.6H6zM6 12h12v6.5l-6-3.2-6 3.2z"/></svg>
         <span><b>{{ p.title }}</b><span class="li-meta">Substack · {{ p.date | date: "%-d %b %Y" }}</span></span>
       </header>
-      {% if p.excerpt != "" %}<p class="li-hook">{{ p.excerpt }}</p>{% endif %}
-      {% if p.image != "" %}<a href="{{ p.url }}" target="_blank" rel="noopener" class="li-img"><img src="{{ p.image }}" alt="" loading="lazy" decoding="async"></a>{% endif %}
+      {% if p.excerpt and p.excerpt != "" %}<p class="li-hook">{{ p.excerpt }}</p>{% endif %}
+      {% if p.image and p.image != "" %}<a href="{{ p.url }}" target="_blank" rel="noopener" class="li-img"><img src="{% if p.image contains "://" %}{{ p.image }}{% else %}{{ p.image | relative_url }}{% endif %}" alt="" loading="lazy" decoding="async"></a>{% endif %}
       <footer class="li-foot"><a href="{{ p.url }}" target="_blank" rel="noopener">Read on Substack ↗</a></footer>
     </article>
   {% endfor %}
