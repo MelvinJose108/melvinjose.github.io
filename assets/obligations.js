@@ -25,11 +25,11 @@
 
     // Small Business Relief
     var isQ = o.freeZone && o.qfzp === "yes";
-    if (isQ) add("Corporate Tax", "Small Business Relief", "not", "Not available to a Qualifying Free Zone Person.", "Ministerial Decision No. 73 of 2023");
-    else if (grp >= 3150 * M) add("Corporate Tax", "Small Business Relief", "not", "Not available to members of a multinational group with consolidated revenue of AED 3.15 billion or more.", "Ministerial Decision No. 73 of 2023");
+    if (isQ) add("Corporate Tax", "Small Business Relief", "na", "Not available to a Qualifying Free Zone Person.", "Ministerial Decision No. 73 of 2023");
+    else if (grp >= 3150 * M) add("Corporate Tax", "Small Business Relief", "na", "Not available to members of a multinational group with consolidated revenue of AED 3.15 billion or more.", "Ministerial Decision No. 73 of 2023");
     else if (rev <= 3 * M && o.prevRevenueUnder3m !== false)
       add("Corporate Tax", "Small Business Relief", "option", "Available: revenue is AED 3 million or less" + (o.prevRevenueUnder3m ? " in this and every earlier period" : " (it must also have been in every earlier period)") + ". You must elect it in the return, and it applies to tax periods ending on or before 31 December 2029. Losses in relief years can't be carried forward.", "MD No. 73 of 2023 as amended by MD No. 131 of 2026");
-    else add("Corporate Tax", "Small Business Relief", "not", "Revenue is over AED 3 million in this or an earlier period.", "Ministerial Decision No. 73 of 2023");
+    else add("Corporate Tax", "Small Business Relief", "na", "Revenue is over AED 3 million in this or an earlier period.", "Ministerial Decision No. 73 of 2023");
 
     // Audited financial statements (for Corporate Tax)
     if (o.taxGroup) add("Audit", "Audited financial statements", "required", "Every Tax Group must prepare audited special purpose aggregated financial statements, whatever its revenue.", "Ministerial Decision No. 84 of 2025");
