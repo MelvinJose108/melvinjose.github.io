@@ -219,7 +219,9 @@ img.avatar.photo.big{width:6.5rem;height:6.5rem}
 .proof li:first-child{border-left:0}
 .proof b{font-family:var(--display);font-size:1.75rem;line-height:1.1;color:var(--ink)}
 .proof span{color:var(--mute);font-size:.88rem;line-height:1.35}
-.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));gap:1rem}
+.toolkit{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+@media(max-width:960px){.toolkit{grid-template-columns:1fr}}
+.sec-lede{color:var(--mute);margin:-.6rem 0 1.25rem;max-width:44rem}
 .tool{display:flex;gap:1.1rem;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.4rem;text-decoration:none;transition:border-color .15s,box-shadow .15s}
 .tool:hover{border-color:var(--acc);box-shadow:0 10px 26px -18px rgba(0,0,0,.45)}
 .ticon{flex:none;display:grid;place-items:center;width:3rem;height:3rem;border-radius:12px;background:var(--soft);color:var(--acc)}

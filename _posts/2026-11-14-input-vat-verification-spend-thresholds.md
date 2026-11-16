@@ -66,6 +66,6 @@ If you run Tally or any ERP, three fields on the vendor master do most of the wo
 
 Run a monthly report on rolling 12-month spend per supplier and review anyone who crossed AED 100,000 or AED 375,000 since last month.
 
-**Free tool:** the [supplier due diligence checker]({{ '/supplier-check/' | relative_url }}) does the tiering for you: paste your supplier list from Excel and it sorts each supplier into the right tier.
+**Free tool:** the [Supplier Verification tool]({{ '/supplier-check/' | relative_url }}) does the tiering for you: paste your supplier list from Excel and it sorts each supplier into the right tier.
 
 **[Next, Part 4]({% post_url 2026-11-14-input-vat-transaction-red-flags-payment-price-licence-origin %}):** the supplier checks out. Now, is the *transaction* itself genuine? Four red flags from FTA Examples 4 to 7.

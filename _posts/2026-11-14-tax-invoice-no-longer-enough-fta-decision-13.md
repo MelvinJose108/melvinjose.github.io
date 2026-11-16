@@ -73,4 +73,4 @@ Pull your top 20 suppliers by spend for the last 12 months. For each one, ask a 
 
 If the honest answer is "the tax invoice," you have found your gap.
 
-**Free tool:** the [supplier due diligence checker]({{ '/supplier-check/' | relative_url }}) tiers your supplier list by spend and builds a signed evidence record for each supplier.
+**Free tool:** the [Supplier Verification tool]({{ '/supplier-check/' | relative_url }}) tiers your supplier list by spend and builds a signed evidence record for each supplier.

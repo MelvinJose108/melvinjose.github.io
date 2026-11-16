@@ -60,7 +60,7 @@ The policy is easy to skip because it feels like paperwork. Don't skip it. It's 
 5. **Approve the policy.** Name owners, reviewers and supervisors; set the record location.
 6. **Train and re-verify.** Brief procurement and finance; diarise annual reviews.
 
-**Free tool:** the [supplier due diligence checker]({{ '/supplier-check/' | relative_url }}) covers steps 2 and 3: it tiers your suppliers by spend, runs the checklist and red flags for each one, and produces a record you can sign and file.
+**Free tool:** the [Supplier Verification tool]({{ '/supplier-check/' | relative_url }}) covers steps 2 and 3: it tiers your suppliers by spend, runs the checklist and red flags for each one, and produces a record you can sign and file.
 
 Most businesses can finish steps 1 to 3 in a few weeks. If you're also preparing for e-invoicing, run both projects together: they touch the same vendor master, so you only clean it once.
 
