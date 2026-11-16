@@ -63,11 +63,15 @@
   function gratuity(g) {
     var s = d(g.start), e = d(g.end), basic = n(g.basic), unpaid = n(g.unpaidDays);
     if (!s || !e || e < s || !basic) return { ok: false };
-    var days = Math.round((e - s) / 86400000) + 1 - unpaid; if (days < 0) days = 0;
-    var years = days / 365, daily = basic / 30;
+    var endX = new Date(e.getTime() + 86400000);              // service runs to the end of the last working day
+    var days = Math.round((endX - s) / 86400000) - unpaid; if (days < 0) days = 0;
+    // Whole years by anniversary, then the remaining days / 365 (so leap years don't inflate the count)
+    var full = endX.getUTCFullYear() - s.getUTCFullYear(), ann = new Date(Date.UTC(s.getUTCFullYear() + full, s.getUTCMonth(), s.getUTCDate()));
+    if (ann > endX) { full--; ann = new Date(Date.UTC(s.getUTCFullYear() + full, s.getUTCMonth(), s.getUTCDate())); }
+    var years = Math.max(0, full + Math.round((endX - ann) / 86400000) / 365 - unpaid / 365), daily = basic / 30;
     var d21 = Math.min(years, 5) * 21, d30 = Math.max(years - 5, 0) * 30, payDays = d21 + d30;
     var raw = daily * payDays, cap = basic * 24, amt = Math.min(raw, cap);
-    var eligible = days >= 365;
+    var eligible = years >= 1;
     return { ok: true, days: days, years: years, daily: daily, d21: d21, d30: d30, payDays: payDays, raw: raw, cap: cap, capped: raw > cap,
              amount: eligible ? r2(amt) : 0, accrued: r2(amt), eligible: eligible };
   }
