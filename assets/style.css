@@ -142,3 +142,32 @@ main.wrap{padding-top:1rem;padding-bottom:4.5rem}
 a.zoom{display:block;cursor:zoom-in}
 a.zoom img{transition:opacity .15s}
 a.zoom:hover img{opacity:.92}
+
+/* calculators */
+.calc{max-width:52rem;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.25rem 1.5rem 1.5rem}
+.calc label{display:block;font-size:.85rem;color:var(--mute);margin:1rem 0 .25rem}
+.calc select,.calc input{width:100%;font:inherit;padding:.6rem .75rem;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+.fgrid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:0 1.25rem}
+.fgrid2 [hidden]{display:none}
+.tabs{display:flex;gap:.4rem;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:.75rem;margin-bottom:.25rem}
+.tabs button{font:inherit;font-size:.92rem;padding:.5rem .9rem;border-radius:99px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.out{margin-top:1.25rem}
+.out div{display:flex;justify-content:space-between;gap:1rem;padding:.5rem 0;border-bottom:1px solid var(--line)}
+.out div.total{border-bottom:2px solid var(--acc);font-weight:700}
+.out dd{font-variant-numeric:tabular-nums;white-space:nowrap;margin:0}
+.calc .note{font-size:.8rem;color:var(--mute);margin-top:1rem}
+.calc ul.notes{margin:1rem 0 0;padding-left:1.1rem;font-size:.9rem}
+.calc ul.notes li{margin:.35rem 0}
+.calc details.basis{margin-top:1rem;font-size:.88rem}
+.calc details.basis summary{cursor:pointer;color:var(--acc)}
+table.lines{width:100%;border-collapse:collapse;margin-top:1rem}
+table.lines th{text-align:left;font-size:.78rem;color:var(--mute);font-weight:600;padding:.3rem .3rem}
+table.lines td{padding:.25rem .3rem}
+table.lines input,table.lines select{padding:.45rem .55rem}
+table.lines td:nth-child(2){width:5rem}
+table.lines td:nth-child(3){width:9rem}
+table.lines td:nth-child(4){width:9.5rem}
+table.lines .x{border:0;background:none;color:var(--mute);font-size:1.3rem;cursor:pointer;padding:0 .3rem}
+.btn.small{padding:.45rem .85rem;font-size:.88rem;margin-top:.6rem}
+@media (max-width:640px){table.lines thead{display:none}table.lines tr{display:grid;grid-template-columns:1fr 1fr;gap:.3rem;padding:.6rem 0;border-bottom:1px solid var(--line)}table.lines td{width:auto!important}table.lines td:first-child{grid-column:1/-1}}
