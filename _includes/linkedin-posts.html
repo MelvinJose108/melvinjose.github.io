@@ -1,16 +1,25 @@
 {% assign posts = site.data.linkedin | slice: 0, include.limit %}
-{% if posts.size > 0 %}
+{% if posts.size > 0 %}{% assign a = site.data.author %}
 <section class="sec li-sec" aria-labelledby="li-h">
   <h2 id="li-h">From LinkedIn</h2>
   <p class="li-lede">Short takes on UAE tax and audit, posted on LinkedIn first.</p>
   <div class="li-grid">
-  {% for p in posts %}
-    <figure class="li-post">
-      <iframe src="https://www.linkedin.com/embed/feed/update/{{ p.urn }}?collapsed=1" height="508" width="504" frameborder="0" allowfullscreen loading="lazy" title="LinkedIn post: {{ p.title | escape }}"></iframe>
-      {% if p.guide %}<figcaption><a href="{{ p.guide | relative_url }}">Read the full guide →</a></figcaption>{% endif %}
-    </figure>
+  {% for p in posts %}{% assign url = 'https://www.linkedin.com/feed/update/' | append: p.urn | append: '/' %}
+    <article class="li-card">
+      <header class="li-head">
+        <span class="avatar li-av" aria-hidden="true">{{ a.initials }}</span>
+        <span><b>{{ a.name }}</b><span class="li-meta">LinkedIn · {{ p.date | date: "%-d %b %Y" }}</span></span>
+        <svg class="li-logo" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M7.1 9.4H4.6V19h2.5V9.4zM5.9 5a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9zM19.4 13.4c0-2.6-1.4-4.2-3.6-4.2-1.3 0-2.1.7-2.5 1.3V9.4h-2.4V19h2.5v-5c0-1.3.6-2.1 1.7-2.1 1 0 1.6.7 1.6 2.1v5h2.6v-5.6z"/></svg>
+      </header>
+      <p class="li-hook">{{ p.hook }}</p>
+      {% if p.image %}<a href="{{ url }}" target="_blank" rel="noopener" class="li-img"><img src="{{ p.image | relative_url }}" alt="{{ p.image_alt | default: '' | escape }}" width="1600" height="900" loading="lazy" decoding="async"></a>{% endif %}
+      <footer class="li-foot">
+        <a href="{{ url }}" target="_blank" rel="noopener">Read on LinkedIn ↗</a>
+        {% if p.guide %}<a href="{{ p.guide | relative_url }}">Full guide →</a>{% endif %}
+      </footer>
+    </article>
   {% endfor %}
   </div>
-  <p class="more"><a href="{{ site.data.author.linkedin }}" target="_blank" rel="noopener">Follow on LinkedIn →</a></p>
+  <p class="more"><a href="{{ a.linkedin }}" target="_blank" rel="noopener">Follow on LinkedIn →</a></p>
 </section>
 {% endif %}

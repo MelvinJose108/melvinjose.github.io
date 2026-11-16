@@ -1,7 +1,11 @@
-# LinkedIn posts shown on the home page, newest first.
-# To add one: LinkedIn post > ... > Embed this post, copy the "urn:li:..." part of the src.
-# Only the first 3 are shown on the home page.
+# LinkedIn posts shown on the home page, newest first. The home page shows the first 3.
+# urn:    from LinkedIn's "Embed this post" code (urn:li:share:... or urn:li:activity:...)
+# hook:   the opening lines of the post (plain text, keep it to 2-3 short lines)
+# image:  an image on this site (optional)
+# guide:  related article on this site (optional)
 - urn: "urn:li:share:7527977948612759558"
-  title: "Seven days at 90% takes a subsidiary out of its Tax Group for the whole year"
   date: 2026-11-16
+  hook: "The FTA's Tax Group guide has an example every group finance team should read twice. A parent owns 100% of a subsidiary. On 1 October, 10% of the shares go to a third party. On 8 October, they come back. Seven days at 90%."
+  image: /assets/images/tax-groups/tg3-whole-period.webp
+  image_alt: "FTA Example 12: seven days below 95% takes the subsidiary out of the Tax Group for the whole year"
   guide: /guides/tax-group-joining-leaving-timing-rules/
