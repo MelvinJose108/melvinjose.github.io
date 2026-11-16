@@ -74,7 +74,7 @@ d.querySelectorAll('[data-f]').forEach(function(b){b.addEventListener('click',fu
 })();
 </script>
 <!-- Cloudflare Web Analytics -->{% if jekyll.environment == "production" %}<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "21ab1053149047e182d82d1be9aa85b6"}'></script>{% endif %}<!-- End Cloudflare Web Analytics -->
-<link rel="search-index" href="{{ '/search.json' | relative_url }}">
+<link rel="search-index" href="{{ '/search.json' | relative_url }}?v={{ site.time | date: '%s' }}">
 <script src="{{ '/assets/search.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 </body>
 </html>
