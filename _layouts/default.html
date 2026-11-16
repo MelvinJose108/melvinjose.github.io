@@ -48,7 +48,18 @@
 <script>
 (function(){
 var d=document,r=d.documentElement,tb=d.getElementById('tt');
-d.querySelectorAll('.body img, .gallery img').forEach(function(i){if(i.closest('a'))return;var a=d.createElement('a');a.href=i.currentSrc||i.src;a.target='_blank';a.rel='noopener';a.className='zoom';a.setAttribute('aria-label','Open full-size image: '+(i.alt||'image'));i.parentNode.insertBefore(a,i);a.appendChild(i);});
+d.querySelectorAll('.body img, .gallery img').forEach(function(i){if(i.closest('a'))return;var a=d.createElement('a');a.href=i.currentSrc||i.src;a.className='zoom';a.setAttribute('aria-label','Open larger image: '+(i.alt||'image'));i.parentNode.insertBefore(a,i);a.appendChild(i);});
+(function(){var box,img,last;
+function close(){if(!box)return;box.hidden=true;d.documentElement.classList.remove('lb-open');if(last)last.focus()}
+function open(src,alt,from){last=from;if(!box){box=d.createElement('div');box.className='lb';box.setAttribute('role','dialog');box.setAttribute('aria-modal','true');box.setAttribute('aria-label','Image viewer');
+box.innerHTML='<div class="lb-bar"><span class="lb-hint">Swipe sideways to see the whole image</span><a class="lb-full" target="_blank" rel="noopener">Open original</a><button type="button" class="lb-x" aria-label="Close">✕</button></div><div class="lb-scroll"><img alt=""></div>';
+d.body.appendChild(box);img=box.querySelector('img');box.querySelector('.lb-x').addEventListener('click',close);
+box.addEventListener('click',function(e){if(e.target===box||e.target.classList.contains('lb-scroll'))close()});
+d.addEventListener('keydown',function(e){if(e.key==='Escape')close()})}
+img.src=src;img.alt=alt||'';box.querySelector('.lb-full').href=src;box.hidden=false;d.documentElement.classList.add('lb-open');
+var sc=box.querySelector('.lb-scroll');requestAnimationFrame(function(){sc.scrollLeft=0});box.querySelector('.lb-x').focus()}
+d.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a.zoom');if(!a||e.ctrlKey||e.metaKey||e.shiftKey)return;e.preventDefault();var i=a.querySelector('img');open(a.href,i&&i.alt,a)});
+})();
 if(tb)tb.addEventListener('click',function(){var t=r.dataset.theme==='dark'?'light':'dark';r.dataset.theme=t;try{localStorage.setItem('t',t)}catch(e){}});
 var q=d.getElementById('q'),cards=[].slice.call(d.querySelectorAll('.card')),f='all';
 function ap(){var t=q?q.value.toLowerCase().trim():'',n=0;cards.forEach(function(c){var ok=(f==='all'||c.dataset.topic===f)&&c.dataset.text.indexOf(t)>-1;c.hidden=!ok;if(ok)n++});var m=d.getElementById('none');if(m)m.hidden=n>0}
