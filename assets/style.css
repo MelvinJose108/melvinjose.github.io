@@ -236,8 +236,10 @@ img.avatar.photo.big{width:6.5rem;height:6.5rem}
 /* ink blue theme */
 .btn{background:var(--acc);border-color:var(--acc);color:#fff}
 .btn:hover{background:var(--ink);border-color:var(--ink);color:var(--bg)}
-:root[data-theme=dark] .btn{color:#0D1120}
-:root[data-theme=dark] .btn:hover{color:#0D1120;background:#ECEEF5}
+:root[data-theme=dark] .btn:not(.ghost){color:#0D1120}
+:root[data-theme=dark] .btn:not(.ghost):hover{color:#0D1120;background:#ECEEF5;border-color:#ECEEF5}
+:root[data-theme=dark] .band .btn:not(.ghost){background:var(--bg);border-color:var(--bg);color:var(--ink)}
+:root[data-theme=dark] .band .btn:not(.ghost):hover{background:var(--acc);border-color:var(--acc);color:#0D1120}
 .btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
 .proof b{color:var(--acc)}
 .brand i{background:var(--acc);color:#fff}
