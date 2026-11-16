@@ -343,3 +343,7 @@ img.avatar.photo.big{width:6.5rem;height:6.5rem}
 @media(max-width:1000px){.toolkit{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){.toolkit{grid-template-columns:1fr}}
 .s-na .ob-st{background:var(--soft);color:var(--mute)}
+/* buttons inside article text keep button colours */
+.body a.btn{color:#fff;text-decoration:none}
+.body a.btn.ghost{color:var(--ink)}
+:root[data-theme=dark] .body a.btn:not(.ghost){color:#0D1120}
