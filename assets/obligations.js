@@ -40,12 +40,13 @@
     else if (o.freeZone && o.qfzp === "unsure") add("Audit", "Audit for Corporate Tax", "check", "Mandatory if you claim Qualifying Free Zone Person status, whatever your revenue. Otherwise not required for Corporate Tax unless revenue is over AED 50 million.", "Ministerial Decision No. 84 of 2025");
     else add("Audit", "Audit for Corporate Tax", "not", "Not required by the Corporate Tax rules: revenue is not over AED 50 million, and the business is not a Qualifying Free Zone Person or a Tax Group. The FTA can still ask for audited or certified accounts during a review.", "Ministerial Decision No. 84 of 2025");
     var CL = {
-      llc: ["required", "An LLC must appoint a licensed auditor and have its annual accounts audited, whatever its revenue.", "Commercial Companies Law (Federal Decree-Law No. 32 of 2021)"],
-      jsc: ["required", "Public and private joint stock companies must have their annual accounts audited by a licensed auditor.", "Commercial Companies Law (Federal Decree-Law No. 32 of 2021)"],
+      llc: ["required", "Every LLC, including a single-owner LLC, must have one or more auditors audit its accounts each year. There is no revenue or size exemption.", "Federal Decree-Law No. 32 of 2021, Art. 27(1) and Art. 102"],
+      jsc: ["required", "Every public or private joint stock company must have one or more auditors audit its accounts each year.", "Federal Decree-Law No. 32 of 2021, Art. 27(1) and Arts. 245 to 248"],
+      partnership: ["option", "Not mandatory: forms other than LLCs and joint stock companies may appoint an auditor, but don't have to. Banks, tenders or the FTA may still ask for audited accounts.", "Federal Decree-Law No. 32 of 2021, Art. 27(1)"],
       fz: ["check", "Most free zone authorities (for example DMCC, JAFZA and DAFZA) require audited accounts to renew the licence or for the annual filing. Confirm with your authority.", "Free zone company regulations"],
       branch: ["check", "Often required by the licensing authority for licence renewal, and by the parent company's group audit. Confirm with your licensing authority.", "Licensing authority rules"],
-      sole: ["not", "A sole establishment isn't required to have a statutory audit under company law. Banks, tenders or the FTA may still ask for audited accounts.", "Commercial Companies Law (Federal Decree-Law No. 32 of 2021)"],
-      civil: ["not", "A civil company isn't generally required to have a statutory audit under company law. Banks, tenders or the FTA may still ask for audited accounts.", "Commercial Companies Law (Federal Decree-Law No. 32 of 2021)"]
+      sole: ["not", "A sole establishment is licensed to an individual and isn't a company under the Commercial Companies Law, so no statutory audit applies. Banks, tenders or the FTA may still ask for audited accounts.", "Federal Decree-Law No. 32 of 2021"],
+      civil: ["not", "A civil company is governed by the Civil Transactions Law, not the Commercial Companies Law, so no statutory audit applies. Banks, tenders or the FTA may still ask for audited accounts.", "Civil Transactions Law"]
     }[form];
     if (CL) add("Audit", form === "fz" ? "Audit for licence renewal" : "Statutory audit under company law", CL[0], CL[1], CL[2]);
 
