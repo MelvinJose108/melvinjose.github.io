@@ -195,3 +195,16 @@ table.lines .x{border:0;background:none;color:var(--mute);font-size:1.3rem;curso
 .fhead{font-size:1.5rem;margin-bottom:1rem}
 img.avatar.photo{object-fit:cover;background:var(--soft);display:block;padding:0}
 img.avatar.photo.big{width:6.5rem;height:6.5rem}
+.cform{display:flex;flex-direction:column;gap:1rem;max-width:44rem;margin-top:2rem;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.6rem}
+.cform label{display:flex;flex-direction:column;gap:.35rem;font-weight:600;font-size:.92rem}
+.cform input,.cform select,.cform textarea{font:inherit;font-weight:400;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:.65rem .75rem;width:100%}
+.cform input:focus,.cform select:focus,.cform textarea:focus{outline:2px solid var(--acc);border-color:var(--acc)}
+.cform .opt{font-weight:400;color:var(--mute)}
+.cform .small,.contact .small{font-size:.85rem;color:var(--mute)}
+.cform .btn{align-self:flex-start;cursor:pointer}
+.cform .btn:disabled{opacity:.6;cursor:wait}
+.cform .hp{position:absolute;left:-9999px;width:1px;height:1px}
+.cstatus{font-weight:600;font-size:.95rem}.cstatus.ok{color:#146C43}.cstatus.bad{color:#B42318}
+.contact .alt{margin-top:1.2rem}
+.authorbox .ask{display:inline-block;margin-top:.5rem;font-weight:600;color:var(--acc)}
+.cform .fgrid2{gap:1rem 1.25rem}
