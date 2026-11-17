@@ -23,13 +23,19 @@ permalink: /contact/
       <label><span>Company <span class="opt">(optional)</span></span><input name="company" autocomplete="organization"></label>
       <label>Topic
         <select name="topic">
-          <option>VAT</option><option>Corporate Tax</option><option>E-Invoicing</option><option>Audit</option><option>Feedback on a guide</option><option>Other</option>
+          <option>VAT</option><option>Corporate Tax</option><option>E-Invoicing</option><option>Audit</option><option>Labour (gratuity)</option><option>Other</option>
         </select>
       </label>
     </div>
+    <fieldset class="need"><legend>What do you need?</legend>
+      <label><input type="radio" name="need" value="General question" checked><span><b>A general question</b><small>How a rule works or applies</small></span></label>
+      <label><input type="radio" name="need" value="FTA letter, audit or penalty"><span><b>FTA letter, audit or penalty</b><small>A request, query or penalty to respond to</small></span></label>
+      <label><input type="radio" name="need" value="Help with compliance work"><span><b>Help with compliance work</b><small>Registration, filing, e-invoicing or audit prep</small></span></label>
+      <label><input type="radio" name="need" value="Feedback on a guide"><span><b>Feedback on a guide</b><small>A correction or a topic to cover</small></span></label>
+    </fieldset>
     <label>Your question<textarea name="message" rows="7" required placeholder="Give the key facts: the type of business, the transaction, the dates and amounts involved."></textarea></label>
     <p class="small">Please don't include TRNs, bank details or other confidential information. A reply is general information, not formal advice.</p>
-    <button class="btn" type="submit">Send message</button>
+    <div class="csend"><button class="btn" type="submit">Send message</button><span class="reply"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm1 5h-2v6l5 3 1-1.7-4-2.3V7z"/></svg>Personal reply within 2 working days</span></div>
     <p id="cstatus" class="cstatus" role="status" aria-live="polite"></p>
   </form>
 
@@ -42,7 +48,7 @@ f.addEventListener('submit',function(e){
   e.preventDefault();
   if(f.botcheck.checked)return;
   b.disabled=true;b.textContent='Sending…';s.className='cstatus';s.textContent='';
-  var data=Object.fromEntries(new FormData(f));
+  var data=Object.fromEntries(new FormData(f));data.subject='['+(data.need||'Question')+'] '+(data.topic||'')+' | camelvinjose.com';
   fetch(f.action,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
    .then(function(r){return r.json()})
    .then(function(j){
