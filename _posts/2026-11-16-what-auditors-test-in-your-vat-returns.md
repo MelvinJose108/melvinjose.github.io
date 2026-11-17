@@ -34,7 +34,7 @@ Some differences are just **timing**. If your VAT quarters don't line up with yo
 
 Others are **errors**. A common one is VAT booked on an advance payment but left out of the return. Under the VAT Law, the date of supply can be the date the payment is received, so the VAT was due then. That needs a voluntary disclosure and may attract penalties.
 
-**From my audits:** one of the most common differences doesn't show up in the VAT ledger at all. **Bank credits for the year don't match the revenue reported in the VAT returns.** Some of the gap usually has a good reason, such as loans received, capital introduced, transfers between the company's own accounts, or refunds. Whatever is left after those is revenue the auditor has to chase, and VAT that may be missing from the returns. Run this check yourself before the auditor does. Banks now run it too: see [two cases where VAT returns were checked by the FTA and a bank]({% post_url 2026-11-17-vat-returns-checked-by-fta-and-banks %}).
+**From my audits:** one of the most common differences doesn't show up in the VAT ledger at all. **Bank credits for the year don't match the revenue reported in the VAT returns.** Some of the gap usually has a good reason, such as loans received, capital introduced, transfers between the company's own accounts, or refunds. Whatever is left after those is revenue the auditor has to chase, and VAT that may be missing from the returns. Run this check yourself before the auditor does. Banks now run it too: see [the case of a bank that compared VAT returns with bank credits]({% post_url 2026-11-17-bank-credits-vs-vat-returns-facility-renewal %}).
 
 #### 2. Does the VAT control account roll forward?
 

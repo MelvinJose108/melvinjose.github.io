@@ -98,8 +98,16 @@
 - image: /assets/images/audit/ac-bank-recon.webp
   caption: "Bank credits vs VAT returns: the reconciliation a bank asked for"
   topic: "Audit"
-  post: /guides/vat-returns-checked-by-fta-and-banks/
+  post: /guides/bank-credits-vs-vat-returns-facility-renewal/
 - image: /assets/images/audit/ac-sales-file.webp
   caption: "What to have ready for every sale"
   topic: "Audit"
-  post: /guides/vat-returns-checked-by-fta-and-banks/
+  post: /guides/fta-query-customer-tax-evasion/
+- image: /assets/images/audit/ac1-respond.webp
+  caption: "Five steps when the FTA asks for the detail behind your returns"
+  topic: "Audit"
+  post: /guides/fta-query-customer-tax-evasion/
+- image: /assets/images/audit/ac2-items.webp
+  caption: "Common reasons bank credits and VAT returns don't match"
+  topic: "Audit"
+  post: /guides/bank-credits-vs-vat-returns-facility-renewal/
