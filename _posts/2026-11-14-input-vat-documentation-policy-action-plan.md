@@ -6,6 +6,14 @@ topic: "VAT"
 description: "The evidence file and written verification policy FTA Decision No. 13 of 2026 requires, FTA Example 8, and a 6-step plan to protect your input VAT."
 reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-5-cover.png
+tldr: "Under Article 5 of FTA Decision No. 13 of 2026, verification only counts if it is documented: keep an evidence file per supplier and supply, and a written verification policy naming who runs, reviews and supervises the checks. In FTA Example 8 a business that did this kept its input VAT even though evasion was found in its supply chain."
+faq:
+  - q: "What does FTA Example 8 show?"
+    a: "A business that applied all the Decision No. 13 checks and kept the evidence was treated as unaware of evasion elsewhere in its chain, so its input VAT stood."
+  - q: "Do I need a written supplier verification policy?"
+    a: "Yes. Article 5(4) expects a written policy naming who implements, reviews and supervises the checks, kept where tax records are kept."
+  - q: "What goes in a supplier evidence file?"
+    a: "ID and licence copies, place of business proof, the risk review, a bank letter and reputation review above AED 375,000, and the supply assessment of price, scope, origin and payment."
 ---
 Parts [2]({% post_url 2026-11-14-supplier-verification-identity-premises-red-flags %}), [3]({% post_url 2026-11-14-input-vat-verification-spend-thresholds %}) and [4]({% post_url 2026-11-14-input-vat-transaction-red-flags-payment-price-licence-origin %}) covered the checks. This part covers the thing that makes them count: **proof**.
 

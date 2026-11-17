@@ -6,6 +6,14 @@ topic: "VAT"
 description: "The supplier checks under FTA Decision No. 13 of 2026: identity, place of business and three red flags, explained through FTA Examples 1, 2 and 3."
 reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-2-cover.png
+tldr: "Under Article 3 of FTA Decision No. 13 of 2026, a UAE business should verify each supplier's identity (ID for individuals, registry or licence plus the authorised person's ID for companies), confirm a real place of business that fits the activity, and check three red flags: more than two address changes or more than two key staff changes in 12 months, or a deal disproportionate to the supplier's size."
+faq:
+  - q: "What supplier checks does FTA Decision No. 13 require?"
+    a: "Identity, a real place of business that fits the activity, and three risk indicators. Over AED 375,000 of spend you also need a bank account letter and a reputation review."
+  - q: "Is a red flag an automatic reason to stop buying from a supplier?"
+    a: "No. A flag needs a clear, documented explanation consistent with your evidence. Proceeding without one is the problem."
+  - q: "Is checking the supplier's TRN enough?"
+    a: "No. The FTA expects identity, place of business and risk checks as well, all documented before the first VAT-able supply."
 ---
 In [Part 1]({% post_url 2026-11-14-tax-invoice-no-longer-enough-fta-decision-13 %}) we saw that your input VAT is now only as clean as your supplier. So the obvious next question: **how well do you actually know your suppliers?**
 

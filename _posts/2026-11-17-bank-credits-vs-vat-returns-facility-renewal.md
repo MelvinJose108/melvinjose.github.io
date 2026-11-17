@@ -6,6 +6,14 @@ topic: "Audit"
 description: "A real case: a bank found VAT returns didn't match bank credits at facility renewal. How we reconciled it, why it led to a voluntary disclosure, and how to check first."
 reviewed: 2026-11-17
 image: /assets/images/audit/ac2-cover.png
+tldr: "UAE banks increasingly compare VAT returns with bank credits at facility renewal. Reconcile them by removing loans, capital, own-account transfers, refunds and timing, and compare against sales including VAT, with zero-rated and exempt sales. Any unexplained balance is likely unreported sales: over AED 10,000 of tax needs a voluntary disclosure within 20 business days."
+faq:
+  - q: "Why would my bank compare VAT returns with bank credits?"
+    a: "To check that the sales in your VAT returns are consistent with the money coming into your account before it renews or extends a facility."
+  - q: "What explains a gap between bank credits and VAT sales?"
+    a: "Loans and capital, transfers between your own accounts, refunds and other non-sales receipts, timing, and zero-rated or exempt sales. Whatever is left may be unreported sales."
+  - q: "How do I correct unreported sales found in the reconciliation?"
+    a: "Over AED 10,000 of tax: file a voluntary disclosure within 20 business days of becoming aware. AED 10,000 or less: correct it in the return for the period you found it."
 ---
 
 Banks used to look at your audited accounts. Many now also look at your VAT returns, and compare them with the money going into your account.

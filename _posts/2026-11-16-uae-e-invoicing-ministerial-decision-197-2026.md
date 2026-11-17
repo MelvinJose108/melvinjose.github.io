@@ -6,6 +6,14 @@ topic: "E-Invoicing"
 description: "What Ministerial Decision No. 197 of 2026 changed in UAE e-invoicing: the 24-month Tax Group exclusion, 14 business days, data storage and system failures."
 reviewed: 2026-11-16
 image: /assets/images/e-invoicing/md197-cover.png
+tldr: "Ministerial Decision No. 197 of 2026 amends the UAE e-invoicing rules: transactions within the same VAT Tax Group are excluded for 24 months from 1 January 2027, e-invoices must be issued and transmitted within 14 business days, the storage rule now requires retention and production rather than a location, and the system-failure notice was repealed. The exclusion covers VAT groups, not Corporate Tax groups."
+faq:
+  - q: "Are intra-group invoices excluded from UAE e-invoicing?"
+    a: "Only between members of the same VAT Tax Group, and only until 31 December 2028. Transactions within a Corporate Tax Group that isn't a VAT group are in scope."
+  - q: "How long do I have to issue a UAE e-invoice?"
+    a: "Within 14 business days of the transaction, subject to the VAT Law's own timing rules."
+  - q: "Do e-invoices have to be stored in the UAE?"
+    a: "Decision No. 197 only requires you to keep them for the Tax Procedures Law period and produce them on request. It says nothing about location."
 ---
 
 Six weeks before mandatory e-invoicing starts, the Ministry of Finance has changed some of the rules. **Ministerial Decision No. 197 of 2026** amends Ministerial Decision No. 243 of 2025, the main e-invoicing decision. It has been in force since **1 October 2026** and was announced on 19 October.

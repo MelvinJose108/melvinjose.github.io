@@ -6,6 +6,14 @@ topic: "Corporate Tax"
 description: "How to prepare Aggregated Financial Statements for a UAE Corporate Tax Group: what is eliminated, what isn't, and how they differ from an IFRS consolidation."
 reviewed: 2026-11-14
 image: /assets/images/tax-groups/tg-part-4-cover.png
+tldr: "A UAE Tax Group's Taxable Income starts from Aggregated Financial Statements: each member's standalone pre-tax statements, aligned to the Parent's policies in AED, added line by line with transactions between members eliminated. Unlike an IFRS consolidation, the investment and the subsidiary's equity are both kept and acquisition goodwill is left out. They need a special purpose audit and must be submitted within 9 months of year end."
+faq:
+  - q: "Are Aggregated Financial Statements the same as consolidated accounts?"
+    a: "No. Only Tax Group members are included, goodwill and fair value uplifts from buying a company are left out, and the Parent's investment and the subsidiary's equity are both kept."
+  - q: "Do Aggregated Financial Statements need to be audited?"
+    a: "Yes. They need a special purpose audit and must be submitted to the FTA within 9 months of the year end. The members' own statements don't need auditing for Corporate Tax purposes."
+  - q: "Is an impairment of a loan to another group member deductible?"
+    a: "No. An impairment between members is eliminated on aggregation, so it doesn't reduce the group's tax (FTA Example 18)."
 ---
 
 A Tax Group has one Taxable Income, and it starts from one number: the profit in the group's **Aggregated Financial Statements**. These aren't the consolidated accounts most groups already prepare. Getting the difference wrong changes the tax.

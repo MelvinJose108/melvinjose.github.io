@@ -6,6 +6,14 @@ topic: "E-Invoicing"
 description: "Who UAE e-invoicing applies to, what is excluded, how the AED 50 million test works, and your deadlines to appoint an ASP and go live, per Guidelines v2.0."
 reviewed: 2026-11-16
 image: /assets/images/e-invoicing/ei-scope-cover.png
+tldr: "UAE e-invoicing applies to every business doing B2B or B2G business in the UAE, whether or not it is VAT-registered, including free zone businesses. Businesses with revenue of AED 50 million or more had to appoint an ASP by 30 October 2026 and go live by 1 January 2027; smaller businesses appoint by 31 March 2027 and go live by 1 July 2027. Sales to consumers are excluded."
+faq:
+  - q: "Does UAE e-invoicing apply if I'm not VAT-registered?"
+    a: "Yes. It applies regardless of VAT registration. A business without a TRN needs a 10-digit TIN, generated through EmaraTax."
+  - q: "When does UAE e-invoicing start for my business?"
+    a: "Revenue of AED 50 million or more: go live by 1 January 2027. Under AED 50 million: appoint an ASP by 31 March 2027 and go live by 1 July 2027. Government entities: 1 October 2027."
+  - q: "Are sales to consumers covered by UAE e-invoicing?"
+    a: "No. B2C supplies are excluded. You keep issuing normal VAT invoices or receipts to consumers."
 ---
 
 The question I hear most about e-invoicing is "does this even apply to us?" Usually it comes from businesses that aren't VAT registered, or that only invoice group companies. The Ministry of Finance answered most of it in **version 2.0 of the UAE Electronic Invoicing Guidelines**, published on 26 October 2026.

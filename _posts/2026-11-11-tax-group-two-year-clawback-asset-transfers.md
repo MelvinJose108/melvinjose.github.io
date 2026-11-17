@@ -6,6 +6,14 @@ topic: "Corporate Tax"
 description: "Asset transfers inside a UAE Tax Group are tax-free until a party leaves within 2 years. How the clawback works, and the elections that follow you out."
 reviewed: 2026-11-14
 image: /assets/images/tax-groups/tg-part-5-cover.png
+tldr: "Moving an asset between Tax Group members has no tax effect, but if the transferor or transferee leaves the group within 2 years, the eliminated gain or loss is brought back into tax at market value at the date of transfer. There is no clawback where Qualifying Group Relief, Business Restructuring Relief or the Participation Exemption would have applied on their own terms."
+faq:
+  - q: "When is a gain on an intra-group asset transfer clawed back?"
+    a: "When either company leaves the Tax Group within 2 years of the transfer. The gain is measured at market value at the transfer date and taxed in the group on the date the company leaves."
+  - q: "Can relief switch off the 2-year clawback?"
+    a: "Yes, if the gain would have been exempt anyway under Qualifying Group Relief, Business Restructuring Relief or the Participation Exemption, and that relief wouldn't itself have been clawed back."
+  - q: "What tax value does an asset have when its owner leaves the group?"
+    a: "The value in the group's Aggregated Financial Statements. If the clawback applies, the tax cost steps up to the market value at the transfer date."
 ---
 
 Inside a Tax Group, moving an asset from one company to another has no tax effect. The gain is eliminated on aggregation ([Part 4]({% post_url 2026-11-11-tax-group-aggregated-financial-statements %})). That makes restructuring cheap, but only as long as both companies stay in the group.

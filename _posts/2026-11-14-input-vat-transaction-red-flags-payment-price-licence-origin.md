@@ -6,6 +6,14 @@ topic: "VAT"
 description: "Four transaction red flags that can cost you input VAT under FTA Decision No. 13 of 2026: payment, price, licence scope and goods origin (FTA Examples 4 to 7)."
 reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-4-cover.png
+tldr: "Article 4 of FTA Decision No. 13 of 2026 requires checks on the supply itself: a genuine commercial reason, electronic payment to the supplier, a price not unjustifiably far from market, goods or services within the supplier's licence, evidence of goods origin, and a reason for any intermediary. Payments to third parties or foreign accounts, or prices far below market, need a written reason before you pay."
+faq:
+  - q: "Can I pay a UAE supplier's invoice into a foreign or third-party bank account?"
+    a: "Only with a reasonable commercial explanation that fits your evidence. In FTA Example 4, accepting 'convenience' as the reason meant the buyer should have been aware."
+  - q: "Is a very low price a VAT red flag?"
+    a: "Yes. In FTA Example 5, a hotel paid half the bottom of the market range without checking, and should have been aware. A real discount needs a written reason before you buy."
+  - q: "Why check the supplier's trade licence?"
+    a: "The goods or services must fall within the supplier's licensed activity. In FTA Example 6, a licence for consulting and IT only showed the supplier couldn't sell shishas."
 ---
 A supplier can pass every identity check in [Part 2]({% post_url 2026-11-14-supplier-verification-identity-premises-red-flags %}) and still be part of an evasion chain. That is why Article 4 of Decision No. 13 shifts the focus from **who** you buy from to **what** you are buying, and **how you pay**.
 

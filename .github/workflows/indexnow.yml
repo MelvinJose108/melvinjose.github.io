@@ -1,0 +1,25 @@
+name: IndexNow ping
+# After each deploy, tells Bing (and other IndexNow engines) which URLs exist,
+# so new and updated guides reach Bing, and through it ChatGPT search, quickly.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for GitHub Pages to publish
+        run: sleep 150
+      - name: Submit sitemap URLs to IndexNow
+        env:
+          HOST: camelvinjose.com
+          KEY: 3e83cceaf1b24002bb4f1a398668e6b0
+        run: |
+          curl -sf "https://$HOST/$KEY.txt" | grep -q "$KEY" || { echo "Key file not live yet"; exit 1; }
+          urls=$(curl -sf "https://$HOST/sitemap.xml" | grep -o '<loc>[^<]*</loc>' | sed 's/<[^>]*>//g' | jq -R . | jq -s -c .)
+          echo "Submitting $(echo "$urls" | jq length) URLs"
+          body=$(jq -n --arg h "$HOST" --arg k "$KEY" --argjson u "$urls" '{host:$h,key:$k,keyLocation:("https://"+$h+"/"+$k+".txt"),urlList:$u}')
+          code=$(curl -s -o /tmp/r -w '%{http_code}' -H 'Content-Type: application/json; charset=utf-8' -d "$body" https://api.indexnow.org/indexnow)
+          echo "IndexNow responded $code"; cat /tmp/r
+          [ "$code" = "200" ] || [ "$code" = "202" ]

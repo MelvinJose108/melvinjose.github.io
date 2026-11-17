@@ -6,6 +6,14 @@ topic: "Corporate Tax"
 description: "What a UAE Corporate Tax Group is, what it saves (one return, pooled losses, tax-free intra-group transfers) and the joint liability every member takes on."
 reviewed: 2026-11-14
 image: /assets/images/tax-groups/tg-part-1-cover.png
+tldr: "A UAE Corporate Tax Group is two or more UAE resident companies the FTA treats as one Taxable Person: one return, losses offset automatically and intra-group transactions eliminated. In exchange the group gets one AED 375,000 0% band, Small Business Relief is tested on combined revenue, the Aggregated Financial Statements need a special purpose audit, and every member is jointly and severally liable for the group's tax."
+faq:
+  - q: "Is a Corporate Tax Group the same as a VAT group?"
+    a: "No. A Corporate Tax Group is a separate regime under Article 40 of the Corporate Tax Law. Having a VAT group doesn't give you a Corporate Tax Group, or the other way round."
+  - q: "Does each company in a Tax Group get its own 0% band?"
+    a: "No. The group gets one 0% band on the first AED 375,000 of its combined Taxable Income, however many members it has."
+  - q: "Who is liable for a Tax Group's Corporate Tax?"
+    a: "Every member is jointly and severally liable for the group's Corporate Tax for the periods it was a member, even after it leaves. Administrative penalties stay with the Parent Company, and the group can apply to the FTA to limit joint liability."
 ---
 
 If you run two or more UAE companies under common ownership, you've probably been asked whether you should form a Tax Group. It sounds like pure admin relief: one return instead of five. It's more than that, in both directions.
