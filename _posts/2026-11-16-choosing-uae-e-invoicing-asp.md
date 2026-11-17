@@ -6,6 +6,14 @@ topic: "E-Invoicing"
 description: "How to choose a UAE e-invoicing Accredited Service Provider: the Ministry of Finance's selection criteria, contract points to check, and the onboarding steps."
 reviewed: 2026-11-16
 image: /assets/images/e-invoicing/ei-asp-cover.png
+tldr: "A UAE business must appoint one accredited ASP for both sending and receiving e-invoices and onboard through EmaraTax. The Ministry of Finance says to check experience, the product, ERP integration, security and data location, support and uptime, and price. Contracts should also cover archive access and export, switching, rejection handling and data-change notices."
+faq:
+  - q: "Can I use different e-invoicing providers for sales and purchases?"
+    a: "No. You appoint a single ASP for both sending and receiving. Members of a VAT Tax Group can use different ASPs."
+  - q: "What should I check before signing with an ASP?"
+    a: "Accreditation, experience, whether the platform is its own, your ERP connector, security and data location, support and uptime, total cost, and contract terms for archive export and switching."
+  - q: "Who is responsible for keeping e-invoice records?"
+    a: "You are. You can hand storage to the ASP, but the obligation to keep the data for the Tax Procedures Law period, generally 5 years, stays with you."
 ---
 
 Every business in scope needs an **Accredited Service Provider (ASP)**: the company that sends, receives and reports your e-invoices. As of 16 November 2026, the Ministry of Finance lists **88 accredited ASPs**, and most of them will tell you they're the right choice.

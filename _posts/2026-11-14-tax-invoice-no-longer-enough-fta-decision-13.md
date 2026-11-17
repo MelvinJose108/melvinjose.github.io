@@ -6,6 +6,14 @@ topic: "VAT"
 description: "Since 1 October 2026 a valid tax invoice no longer guarantees input VAT recovery. What FTA Decision No. 13 of 2026 changed and the test that decides your claim."
 reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-1-cover.png
+tldr: "Since 1 October 2026, a valid tax invoice no longer guarantees input VAT recovery in the UAE. Under Article 54(bis)(2) of the VAT Law, the FTA can reject input tax on a supply linked to tax evasion if you should have been aware of the link. FTA Decision No. 13 of 2026 sets the checks that prove you weren't: verify the supplier, verify the supply, and document both."
+faq:
+  - q: "Is a valid tax invoice enough to recover input VAT in the UAE?"
+    a: "Not since 1 October 2026. If the FTA establishes evasion in your supply chain, you also need to show you ran the Decision No. 13 checks and kept the evidence."
+  - q: "Are the Decision No. 13 checks mandatory for every purchase?"
+    a: "No. VATP048 says they don't have to be applied to every supply. They matter where the FTA establishes evasion, and you can't know in advance which supplier that will be."
+  - q: "Who has to prove what under Decision No. 13?"
+    a: "The FTA must prove tax evasion. Once it does, you must prove the verification checks you ran."
 ---
 For years, the input VAT conversation in the UAE was simple: get a valid tax invoice, make sure the supplier's TRN is right, claim it.
 

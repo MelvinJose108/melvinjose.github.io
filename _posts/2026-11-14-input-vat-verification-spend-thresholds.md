@@ -6,6 +6,14 @@ topic: "VAT"
 description: "How spend per supplier sets the depth of your input VAT checks under FTA Decision No. 13 of 2026, why splitting invoices fails, and when to re-verify."
 reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-3-cover.png
+tldr: "Spend per supplier sets how deep UAE input VAT checks go under FTA Decision No. 13: supplies under AED 10,000 may skip the checks unless total spend with that supplier exceeds AED 100,000 in the past or next 12 months; all others get full supplier and supply checks; and over AED 375,000 adds a UAE bank account confirmation and a reputation review."
+faq:
+  - q: "Can I skip supplier checks on invoices under AED 10,000?"
+    a: "Only if total spend with that supplier doesn't exceed AED 100,000 in the past 12 months or the next 12 months. The test is per supplier, not per invoice."
+  - q: "Does splitting invoices avoid the verification thresholds?"
+    a: "No. The thresholds look at cumulative spend per supplier, backward and forward, including known contract values."
+  - q: "How often must suppliers be re-verified?"
+    a: "Before the first supply, for each taxable supply, and again for recurring suppliers not checked in the past 12 months."
 ---
 [Part 2]({% post_url 2026-11-14-supplier-verification-identity-premises-red-flags %}) covered *what* to check about a supplier. This part covers **how deep** you need to go, and **how often**.
 

@@ -6,6 +6,14 @@ topic: "E-Invoicing"
 description: "The four UAE e-invoicing penalties under Cabinet Decision No. 173 of 2026, the new AED 50,000 cap, what changed from Decision 106 of 2025, with worked examples."
 reviewed: 2026-11-16
 image: /assets/images/e-invoicing/ei-pen-cover.png
+tldr: "Cabinet Decision No. 173 of 2026 replaces the UAE e-invoicing penalties: AED 5,000 then AED 5,000 a month for failing to implement (including not appointing an ASP), capped at AED 50,000 in 12 months; AED 100 per e-invoice or credit note not issued, capped at AED 5,000 a month; and AED 250 a day for not telling your ASP about data changes, capped at AED 5,000 a month."
+faq:
+  - q: "What is the penalty for not appointing an e-invoicing ASP?"
+    a: "It counts as failing to implement: AED 5,000 for the first instance, then AED 5,000 for each month it continues, capped at AED 50,000 in any 12 months."
+  - q: "What is the penalty for not issuing an e-invoice?"
+    a: "AED 100 per e-invoice or credit note, capped at AED 5,000 per calendar month."
+  - q: "Is voluntary early e-invoicing penalised?"
+    a: "No. Mistakes made before your mandatory date don't attract these penalties."
 ---
 
 On 30 October 2026, the Ministry of Finance announced **Cabinet Decision No. 173 of 2026**, a new penalty table for e-invoicing. It **repeals Cabinet Decision No. 106 of 2025**, so the figures still quoted in many articles are out of date.

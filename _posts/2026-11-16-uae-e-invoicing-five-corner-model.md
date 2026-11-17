@@ -6,6 +6,14 @@ topic: "E-Invoicing"
 description: "How a UAE e-invoice moves from your ERP to your customer and the FTA, what your ASP does, what an e-invoice contains, and what to do when a customer isn't ready."
 reviewed: 2026-11-16
 image: /assets/images/e-invoicing/ei-flow-cover.png
+tldr: "A UAE e-invoice travels as PINT-AE XML through five corners: you send data to your Accredited Service Provider, which validates it and sends it over Peppol to your customer's ASP while reporting the tax data to the FTA. A PDF is no longer the invoice. The supplier stays responsible for every value, and e-invoices must be issued within 14 business days."
+faq:
+  - q: "Is a PDF still a valid invoice under UAE e-invoicing?"
+    a: "No. The legal e-invoice is the PINT-AE XML sent through your ASP. A PDF can go alongside it as a copy, but it doesn't replace it."
+  - q: "What is my Peppol Participant Identifier?"
+    a: "0235 followed by your 10-digit TIN, which is the first 10 digits of your TRN."
+  - q: "What if my customer isn't live on e-invoicing yet?"
+    a: "You still issue the e-invoice through your ASP to the placeholder endpoint 0235:9900000098, and also send a normal tax invoice such as a PDF."
 ---
 
 From go-live, emailing a PDF doesn't count as issuing an invoice. The invoice has to travel as structured data through two service providers, with the tax data reported to the FTA on the way. Here's how that works, based on the Ministry of Finance's **Electronic Invoicing Guidelines v2.0**.

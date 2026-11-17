@@ -6,6 +6,14 @@ topic: "Corporate Tax"
 description: "How UAE Tax Groups handle pre-Grouping losses, restricted losses, the interest limit, Small Business Relief and loss transfers, with FTA Examples 22, 36 and 39."
 reviewed: 2026-11-14
 image: /assets/images/tax-groups/tg-part-6-cover.png
+tldr: "In a UAE Tax Group, current-year losses, the AED 375,000 0% band, Small Business Relief and the interest limit apply to the group as a whole. A member's pre-Grouping losses are ring-fenced: they can only be used against income attributed to that member, within the 75% cap, and they are forfeited if the group has room to use them but doesn't attribute the income."
+faq:
+  - q: "Can a Tax Group use a new member's losses from before it joined?"
+    a: "Only against Taxable Income attributable to that member, worked out as if it filed alone, and subject to the 75% cap on the group's Taxable Income."
+  - q: "Can pre-Grouping losses be forfeited?"
+    a: "Yes. If the group has room to use a member's pre-Grouping loss but doesn't attribute income to that member, the whole loss is forfeited (FTA Example 37)."
+  - q: "Can a Tax Group get Small Business Relief?"
+    a: "Only if the group's combined revenue is AED 3 million or less in the current and every previous Tax Period, and no member belongs to a multinational group that files Country-by-Country Reports."
 ---
 
 Pooling profits and losses is the main reason most groups form a Tax Group ([Part 1]({% post_url 2026-11-11-uae-corporate-tax-group-explained %})). But not every loss pools. Losses brought in from before the group, and a group's existing losses when a new member joins, are ring-fenced. Handle them wrong and they're forfeited.

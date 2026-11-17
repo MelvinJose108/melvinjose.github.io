@@ -6,6 +6,14 @@ topic: "Corporate Tax"
 description: "When changes to a UAE Corporate Tax Group take effect, the 20-business-day notification rule, and why a 7-day share transfer can cost a company a whole year."
 reviewed: 2026-11-14
 image: /assets/images/tax-groups/tg-part-3-cover.png
+tldr: "A Tax Group member must meet every condition throughout the Tax Period. If it fails for even a few days it is out of the group from the start of that period, and the FTA must be notified within 20 business days. Applications to form, join or leave must be made before the end of the Tax Period they apply to."
+faq:
+  - q: "What happens if a Tax Group member drops below 95% for a few days?"
+    a: "It is treated as outside the group for the whole Tax Period. In FTA Example 12, seven days at 90% took the subsidiary out from 1 January, so it had to file its own return for the year."
+  - q: "When does a sold subsidiary leave the Tax Group?"
+    a: "From the start of the Tax Period in which the sale happens, along with any subsidiaries below it. The buyer can't group with it for that period either."
+  - q: "Does a company deregister when it leaves a Tax Group?"
+    a: "No. It keeps its own TRN and files standalone returns. It stays jointly liable for the group's tax for the years it was a member."
 ---
 
 Groups change. Companies are bought, sold, merged and set up. Under the Tax Group rules, **when** a change takes effect is often more surprising than the change itself.

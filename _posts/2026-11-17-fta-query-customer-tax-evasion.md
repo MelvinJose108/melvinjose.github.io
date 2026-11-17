@@ -8,6 +8,14 @@ reviewed: 2026-11-17
 image: /assets/images/audit/ac1-cover.png
 redirect_from:
   - /guides/vat-returns-checked-by-fta-and-banks/
+tldr: "When the FTA investigates a business for tax evasion, it can ask that business's suppliers and customers for the detail behind their VAT returns. In this case the client had invoices, delivery proof and payment matched to every sale, tied to the returns, so the request ended with no legal complications. Keep that file for every sale for the record-keeping period, generally five years."
+faq:
+  - q: "Why would the FTA ask about my VAT returns if I did nothing wrong?"
+    a: "If one of your customers or suppliers is investigated for evasion, the FTA can ask every business in that chain for its side of the transactions."
+  - q: "What should I keep for each sale?"
+    a: "The tax invoice and credit notes, delivery proof, the matched payment, the customer's licence and verified TRN, and a sales listing that ties to each return."
+  - q: "What if I find an error while answering an FTA request?"
+    a: "Correct it. Errors over AED 10,000 of tax need a voluntary disclosure."
 ---
 
 You can file every VAT return correctly and still get a letter from the FTA, because of something one of your customers did.

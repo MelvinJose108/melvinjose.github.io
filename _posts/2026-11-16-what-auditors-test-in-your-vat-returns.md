@@ -6,6 +6,14 @@ topic: "Audit"
 description: "The six checks a UAE auditor runs on your VAT position at year end, why each one finds problems, and how to have the answers ready before fieldwork starts."
 reviewed: 2026-11-16
 image: /assets/images/audit/vat-audit-cover.png
+tldr: "At year end, UAE auditors typically test six things in your VAT position: returns agree to the ledger, the VAT control account rolls forward to EmaraTax, all revenue is in the returns, zero-rating has export evidence, input VAT is recoverable, and exposures are provided for. Bank credits that don't match reported revenue are one of the most common differences."
+faq:
+  - q: "Why does a statutory auditor look at VAT?"
+    a: "VAT affects the balance sheet, errors in VAT usually mean errors in revenue or expenses, and unreported mistakes may need a provision for penalties."
+  - q: "What evidence supports zero-rated exports?"
+    a: "Official and commercial evidence of export within 90 days, such as customs exit documents and bills of lading or airway bills."
+  - q: "What should I prepare before a VAT-related audit?"
+    a: "The returns with a ledger reconciliation, a control account roll-forward agreed to EmaraTax, an export evidence file, a list of blocked input VAT, and the year's FTA correspondence."
 ---
 
 A statutory audit isn't a VAT audit. But VAT runs through almost every balance an auditor tests: revenue, purchases, payables, cash and provisions. So most year-end audits in the UAE end up looking hard at your VAT position.

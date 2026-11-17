@@ -6,6 +6,14 @@ topic: "Corporate Tax"
 description: "The nine conditions to form a UAE Corporate Tax Group, and the 95% ownership traps in the FTA's examples: legal title, nominal value, chains, preferred shares."
 reviewed: 2026-11-14
 image: /assets/images/tax-groups/tg-part-2-cover.png
+tldr: "To form a UAE Tax Group, the Parent and every Subsidiary must be UAE resident juridical persons, not Exempt Persons or Qualifying Free Zone Persons, on the same Financial Year and accounting standards, with the Parent holding at least 95% of share capital, voting rights, and profits and net assets, continuously for the whole Tax Period. The 95% is measured by legal title and nominal value, multiplied down chains of group members."
+faq:
+  - q: "How is indirect ownership counted for the 95% test?"
+    a: "Percentages multiply down the chain, and only through companies that are themselves in the group. If A owns 95% of B and B owns 95% of C, A's stake in C is 90.25%, so C can't join A's group."
+  - q: "Can a foreign parent company be in a UAE Tax Group?"
+    a: "No. A non-resident company can't be a member. Its UAE subsidiaries can only group under a UAE resident Parent Company."
+  - q: "Does the 95% test use the number of shares?"
+    a: "No. It uses legal ownership measured by nominal value. Holding 99% of shares by count can be only 50% by nominal value, which fails the test."
 ---
 
 [Part 1]({% post_url 2026-11-11-uae-corporate-tax-group-explained %}) covered what a Tax Group gets you. This part covers who qualifies. Most groups that fail don't fail on the obvious conditions. They fail on how "95%" is measured.
