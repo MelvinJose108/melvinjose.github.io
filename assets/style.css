@@ -494,3 +494,5 @@ html.sx-open{overflow:hidden}
 }
 @media(max-width:900px){.top .wrap{gap:.5rem .75rem}.hact{margin-left:auto;gap:.4rem}}
 @media(max-width:420px){.top .brand{font-size:1.05rem;gap:.5rem}.hact .tt,.hact .sbtn{width:2.1rem}}
+.cform input:not([type=checkbox]):not([type=hidden]),.cform select{height:3rem;line-height:1.2}
+.cform select{appearance:none;-webkit-appearance:none;padding-right:2.4rem;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath fill='%236B7280' d='M6 8.2 1.8 4l1-1L6 6.2 9.2 3l1 1z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .85rem center;background-size:12px}
