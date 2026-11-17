@@ -13,15 +13,34 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="top"><div class="wrap">
+{% assign u = page.url %}{% assign sec = '' %}{% if page.layout == 'post' or page.layout == 'topic' or u == '/guides/' %}{% assign sec = 'guides' %}{% elsif page.app or u == '/tools/' or u == '/policy-template/' %}{% assign sec = 'tools' %}{% elsif u == '/faq/' %}{% assign sec = 'faq' %}{% elsif u == '/about/' %}{% assign sec = 'about' %}{% endif %}
+<header class="top" id="top"><div class="wrap">
   <a class="brand" href="{{ '/' | relative_url }}"><i>UL</i>{{ site.title | escape }}</a>
-  <nav aria-label="Main">
-    {% for t in site.data.topics %}<a href="{{ '/' | append: t.slug | append: '/' | relative_url }}">{{ t.name }}</a>{% endfor %}
-    <a href="{{ '/tools/' | relative_url }}">Toolkit</a>
-    <a href="{{ '/about/' | relative_url }}">About</a>
+  <nav class="mainnav" id="mainnav" aria-label="Main">
+    <div class="dd">
+      <button class="ddb{% if sec == 'guides' %} on{% endif %}" type="button" aria-expanded="false" aria-controls="dd-guides">Guides<svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path fill="currentColor" d="M6 8.2 1.8 4l1-1L6 6.2 9.2 3l1 1z"/></svg></button>
+      <div class="ddp" id="dd-guides">
+        <div class="ddg">{% for t in site.data.topics %}{% assign n = site.posts | where: "topic", t.name | size %}<a class="ddi t-{{ t.slug }}" href="{{ '/' | append: t.slug | append: '/' | relative_url }}"><b>{{ t.name }}</b><span>{{ t.summary }}</span><em>{{ n }} guide{% if n != 1 %}s{% endif %}</em></a>{% endfor %}</div>
+        <div class="ddf"><a href="{{ '/guides/' | relative_url }}">All {{ site.posts | size }} guides →</a><a href="{{ '/faq/' | relative_url }}">FAQ →</a></div>
+      </div>
+    </div>
+    <div class="dd">
+      <button class="ddb{% if sec == 'tools' %} on{% endif %}" type="button" aria-expanded="false" aria-controls="dd-tools">Toolkit<svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path fill="currentColor" d="M6 8.2 1.8 4l1-1L6 6.2 9.2 3l1 1z"/></svg></button>
+      <div class="ddp" id="dd-tools">
+        <div class="ddg">{% for t in site.data.tools %}<a class="ddi" href="{{ t.url | relative_url }}"><b>{{ t.name }}</b><span>{{ t.short }}</span></a>{% endfor %}</div>
+        <div class="ddf"><a href="{{ '/tools/' | relative_url }}">All tools →</a><a href="{{ '/policy-template/' | relative_url }}">Free policy template →</a></div>
+      </div>
+    </div>
+    <a class="nl{% if sec == 'faq' %} on{% endif %}" href="{{ '/faq/' | relative_url }}">FAQ</a>
+    <a class="nl{% if sec == 'about' %} on{% endif %}" href="{{ '/about/' | relative_url }}">About</a>
+    <div class="mextra"><a href="{{ '/follow/' | relative_url }}">Follow by email or RSS</a>{% if site.newsletter_url and site.newsletter_url != "" %}<a href="{{ site.newsletter_url }}" rel="noopener">Newsletter</a>{% endif %}<a class="btn" href="{{ '/contact/' | relative_url }}">Ask a question</a></div>
+  </nav>
+  <div class="hact">
     <button class="sbtn" type="button" data-search-open aria-label="Search the site (press /)" title="Search (press /)"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 0 1 6.3 12.9l5.4 5.4-1.4 1.4-5.4-5.4A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg><span>Search</span></button>
     <button class="tt" id="tt" type="button" aria-label="Switch light or dark theme">◐</button>
-  </nav>
+    <a class="btn hcta" href="{{ '/contact/' | relative_url }}">Ask a question</a>
+    <button class="mbtn" id="mbtn" type="button" aria-expanded="false" aria-controls="mainnav" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
 </div></header>
 <main id="main" class="wrap">
 {{ content }}
@@ -67,6 +86,13 @@ img.src=src;img.alt=alt||'';box.querySelector('.lb-full').href=src;box.hidden=fa
 d.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a.zoom');if(!a||e.ctrlKey||e.metaKey||e.shiftKey)return;e.preventDefault();var i=a.querySelector('img');open(a.href,i&&i.alt,a)});
 })();
 if(tb)tb.addEventListener('click',function(){var t=r.dataset.theme==='dark'?'light':'dark';r.dataset.theme=t;try{localStorage.setItem('t',t)}catch(e){}});
+(function(){var top=d.getElementById('top'),mb=d.getElementById('mbtn'),dds=[].slice.call(d.querySelectorAll('.dd'));
+function shut(x){dds.forEach(function(o){if(o!==x){o.classList.remove('open');o.querySelector('.ddb').setAttribute('aria-expanded','false')}})}
+dds.forEach(function(o){var b=o.querySelector('.ddb');b.addEventListener('click',function(){if(top.classList.contains('navopen'))return;var on=!o.classList.contains('open');shut();o.classList.toggle('open',on);b.setAttribute('aria-expanded',on)})});
+if(mb)mb.addEventListener('click',function(){var on=!top.classList.contains('navopen');top.classList.toggle('navopen',on);mb.setAttribute('aria-expanded',on);r.classList.toggle('nav-lock',on)});
+d.addEventListener('click',function(e){if(!e.target.closest('.dd'))shut()});
+d.addEventListener('keydown',function(e){if(e.key==='Escape'){shut();if(top.classList.contains('navopen')){top.classList.remove('navopen');mb.setAttribute('aria-expanded','false');r.classList.remove('nav-lock');mb.focus()}}});
+})();
 var q=d.getElementById('q'),cards=[].slice.call(d.querySelectorAll('.card')),f='all';
 function ap(){var t=q?q.value.toLowerCase().trim():'',n=0;cards.forEach(function(c){var ok=(f==='all'||c.dataset.topic===f)&&c.dataset.text.indexOf(t)>-1;c.hidden=!ok;if(ok)n++});var m=d.getElementById('none');if(m)m.hidden=n>0}
 if(q)q.addEventListener('input',ap);
