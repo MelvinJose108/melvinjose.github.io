@@ -12,4 +12,6 @@
 - urn: "urn:li:share:7525509105244098560"
   date: 2026-11-09
   hook: "A client asked me to look over their VAT return before filing. Twenty minutes, they said. Figures tied to the ledger. Then I ran the supplier TRNs through the FTA verification tool, one by one. One didn't verify. Input VAT had been claimed on that supplier for three quarters."
+  image: /assets/images/fta-decision-13/li-trn-check.webp
+  image_alt: "Pre-filing check: one supplier TRN out of six did not verify, and input VAT had been claimed on it for three quarters"
   guide: /guides/supplier-verification-identity-premises-red-flags/
