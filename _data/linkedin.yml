@@ -9,3 +9,7 @@
   image: /assets/images/tax-groups/tg3-whole-period.webp
   image_alt: "FTA Example 12: seven days below 95% takes the subsidiary out of the Tax Group for the whole year"
   guide: /guides/tax-group-joining-leaving-timing-rules/
+- urn: "urn:li:share:7525509105244098560"
+  date: 2026-11-09
+  hook: "A client asked me to look over their VAT return before filing. Twenty minutes, they said. Figures tied to the ledger. Then I ran the supplier TRNs through the FTA verification tool, one by one. One didn't verify. Input VAT had been claimed on that supplier for three quarters."
+  guide: /guides/supplier-verification-identity-premises-red-flags/
