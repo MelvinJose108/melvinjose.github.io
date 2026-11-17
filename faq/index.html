@@ -1,0 +1,29 @@
+---
+layout: default
+title: Frequently asked questions
+permalink: /faq/
+seo_title: "UAE VAT, Corporate Tax and E-Invoicing FAQ"
+description: "Short answers to common questions on UAE VAT, Corporate Tax Groups, FTA Decision No. 13, e-invoicing and audit, each linked to the full guide."
+---
+{% assign withfaq = site.posts | where_exp: "p", "p.faq" %}
+{% assign topics = site.data.topics | map: "name" %}
+<h1 class="pagetitle">Frequently asked questions</h1>
+<p class="deck">Short answers to the questions people ask most about UAE tax. Each one links to the guide with the full explanation, the examples and the official source.</p>
+<nav class="faq-jump" aria-label="FAQ topics">{% for t in topics %}{% assign n = withfaq | where: "topic", t | size %}{% if n == 0 %}{% continue %}{% endif %}<a href="#{{ t | slugify }}">{{ t }}</a>{% endfor %}<a href="#about-the-site">About the site</a></nav>
+{% for t in topics %}{% assign tp = withfaq | where: "topic", t %}{% if tp.size == 0 %}{% continue %}{% endif %}
+<section class="faq-topic t-{{ t | slugify }}" id="{{ t | slugify }}">
+  <h2>{{ t }}</h2>
+  {% assign tp = withfaq | where: "topic", t %}
+  {% for p in tp %}{% for f in p.faq %}
+  <details class="faq-item"><summary>{{ f.q }}</summary><p>{{ f.a }}</p><p class="faq-src">From: <a href="{{ p.url | relative_url }}">{{ p.title }}</a></p></details>
+  {% endfor %}{% endfor %}
+</section>
+{% endfor %}
+<section class="faq-topic" id="about-the-site">
+  <h2>About the site</h2>
+  {% for f in site.data.site_faq %}<details class="faq-item"><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}
+</section>
+<p class="note" style="margin-top:2rem">Question not here? <a href="{{ '/contact/' | relative_url }}">Ask it</a>, and it may become the next guide.</p>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","url":"{{ page.url | absolute_url }}","mainEntity":[{% for p in withfaq %}{% for f in p.faq %}{"@type":"Question","name":{{ f.q | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ f.a | jsonify }},"url":"{{ p.url | absolute_url }}"}},{% endfor %}{% endfor %}{% for f in site.data.site_faq %}{"@type":"Question","name":{{ f.q | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ f.a | jsonify }}}}{% unless forloop.last %},{% endunless %}{% endfor %}]}
+</script>
