@@ -1,0 +1,18 @@
+- name: Compliance Checker
+  url: /compliance-check/
+  short: Which VAT, CT, audit and e-invoicing rules apply
+- name: Tax Calculator
+  url: /calculator/
+  short: VAT and Corporate Tax, including SBR and QFZP
+- name: Deadline Planner
+  url: /tax-deadlines/
+  short: Holiday-adjusted filing dates, into your calendar
+- name: Penalty Estimator
+  url: /penalty-calculator/
+  short: FTA penalties, disclosure vs audit
+- name: Supplier Verification
+  url: /supplier-check/
+  short: Decision No. 13 checks and evidence record
+- name: Gratuity Calculator
+  url: /gratuity/
+  short: End-of-service gratuity and year-end provision
