@@ -496,3 +496,15 @@ html.sx-open{overflow:hidden}
 @media(max-width:420px){.top .brand{font-size:1.05rem;gap:.5rem}.hact .tt,.hact .sbtn{width:2.1rem}}
 .cform input:not([type=checkbox]):not([type=hidden]),.cform select{height:3rem;line-height:1.2}
 .cform select{appearance:none;-webkit-appearance:none;padding-right:2.4rem;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath fill='%236B7280' d='M6 8.2 1.8 4l1-1L6 6.2 9.2 3l1 1z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .85rem center;background-size:12px}
+.cform .need{border:0;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.cform .need legend{font-weight:600;font-size:.92rem;margin-bottom:.45rem;padding:0}
+.cform .need label{flex-direction:row;align-items:flex-start;gap:.6rem;font-weight:400;border:1px solid var(--line);background:var(--bg);border-radius:10px;padding:.75rem .85rem;cursor:pointer;transition:border-color .15s,background .15s}
+.cform .need label:hover{border-color:var(--acc)}
+.cform .need input{width:auto;height:auto;margin:.2rem 0 0;accent-color:var(--acc);flex-shrink:0}
+.cform .need b{display:block;font-size:.92rem}
+.cform .need small{display:block;font-size:.8rem;color:var(--mute);margin-top:.1rem}
+.cform .need label:has(input:checked){border-color:var(--acc);background:color-mix(in srgb,var(--acc) 7%,var(--surface))}
+.cform .csend{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.cform .csend .btn{align-self:auto}
+.cform .reply{display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;color:var(--mute)}
+@media(max-width:640px){.cform .need{grid-template-columns:1fr}}
