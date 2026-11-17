@@ -95,3 +95,11 @@
   caption: "Rolling forward the VAT control account"
   topic: "Audit"
   post: /guides/what-auditors-test-in-your-vat-returns/
+- image: /assets/images/audit/ac-bank-recon.webp
+  caption: "Bank credits vs VAT returns: the reconciliation a bank asked for"
+  topic: "Audit"
+  post: /guides/vat-returns-checked-by-fta-and-banks/
+- image: /assets/images/audit/ac-sales-file.webp
+  caption: "What to have ready for every sale"
+  topic: "Audit"
+  post: /guides/vat-returns-checked-by-fta-and-banks/
