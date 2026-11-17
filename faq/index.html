@@ -10,10 +10,9 @@ description: "Short answers to common questions on UAE VAT, Corporate Tax Groups
 <h1 class="pagetitle">Frequently asked questions</h1>
 <p class="deck">Short answers to the questions people ask most about UAE tax. Each one links to the guide with the full explanation, the examples and the official source.</p>
 <nav class="faq-jump" aria-label="FAQ topics">{% for t in topics %}{% assign n = withfaq | where: "topic", t | size %}{% if n == 0 %}{% continue %}{% endif %}<a href="#{{ t | slugify }}">{{ t }}</a>{% endfor %}<a href="#about-the-site">About the site</a></nav>
-{% for t in topics %}{% assign tp = withfaq | where: "topic", t %}{% if tp.size == 0 %}{% continue %}{% endif %}
+{% for t in topics %}{% assign tp = withfaq | where: "topic", t | reverse %}{% if tp.size == 0 %}{% continue %}{% endif %}
 <section class="faq-topic t-{{ t | slugify }}" id="{{ t | slugify }}">
   <h2>{{ t }}</h2>
-  {% assign tp = withfaq | where: "topic", t %}
   {% for p in tp %}{% for f in p.faq %}
   <details class="faq-item"><summary>{{ f.q }}</summary><p>{{ f.a }}</p><p class="faq-src">From: <a href="{{ p.url | relative_url }}">{{ p.title }}</a></p></details>
   {% endfor %}{% endfor %}
