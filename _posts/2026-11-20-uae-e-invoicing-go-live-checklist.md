@@ -1,6 +1,6 @@
 ---
 title: "E-Invoicing Goes Live on 1 January: A Six-Week Readiness Plan for AED 50m+ Businesses"
-date: 2026-11-20 11:30:00 +0400
+date: 2026-11-20 10:30:00 +0400
 seo_title: "UAE E-Invoicing Go-Live 1 January 2027: Readiness Checklist"
 topic: "E-Invoicing"
 description: "A week-by-week plan for UAE businesses with AED 50 million+ revenue to be ready for mandatory e-invoicing on 1 January 2027: scope, data, testing, controls and cut-over."
