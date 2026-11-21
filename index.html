@@ -3,24 +3,51 @@ layout: default
 description: "Plain-English guides and updates on UAE Corporate Tax, VAT, e-invoicing and audit, written by a practising auditor in the UAE."
 ---
 {% assign a = site.data.author %}
-<section class="hero dp">
-  {% assign latest = site.posts | first %}{% assign gcount = site.posts | size %}{% assign tcount = site.data.tools | size %}
-  <div class="dp-txt">
-    <p class="dp-k">UAE Corporate Tax · VAT · E-Invoicing</p>
-    <h1>Tax rules, read <em>closely</em>, before they cost you.</h1>
-    <p class="lede">I'm {{ a.name }}, a {{ a.title }} in {{ a.city }}. Every guide here starts from the FTA or Ministry document itself, names it, and says when I last checked it.</p>
-    <div class="cta"><a class="btn" href="{{ latest.url | relative_url }}">Read the latest guide</a><a class="dp-link" href="{{ '/tools/' | relative_url }}">Explore free tools</a></div>
-    <p class="dp-pop">Popular: <a href="{{ '/guides/qualifying-free-zone-person-conditions/' | relative_url }}">Free zone 0% conditions</a> · <a href="{{ '/guides/uae-e-invoicing-go-live-checklist/' | relative_url }}">E-invoicing go-live</a> · <a href="{{ '/supplier-check/' | relative_url }}">Supplier checks</a> · <a href="{{ '/gratuity/' | relative_url }}">Gratuity</a></p>
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <svg viewBox="0 0 1440 520" preserveAspectRatio="xMidYMid slice" focusable="false">
+      <g class="hb-city"><path class="hb-city-o" d="M520 470V350H566V470 M574 470V300H608V470 M616 470V330H674V470 M682 470V260H722V470 M730 470V310H794V470 M802 470V220H838V470 M846 470V280H898V470 M906 470V190H950V470 M958 470V270H1028V470 M1036 470V230L1066 196V470 M1074 470V250L1100 222V470 M1150 470V150Q1214 230 1210 470 M1150 210H1166M1150 260H1178M1150 320H1190M1150 380H1198 M1222 470V270H1262V470 M1294 470 L1294 330 L1300 330 L1300 262 L1306 262 L1306 196 L1311 196 L1311 140 L1315 140 L1315 92 L1318 92 L1318 30 L1320 12 L1322 30 L1322 92 L1325 92 L1325 140 L1329 140 L1329 196 L1334 196 L1334 262 L1340 262 L1340 330 L1346 330 L1346 470 M1356 470V290H1394V470 M1400 470V230H1444V470 M0 470H1440"/><path class="hb-city-w" d="M526 368H560 M526 394H560 M526 420H560 M526 446H560 M580 318H602 M580 344H602 M580 370H602 M580 396H602 M580 422H602 M580 448H602 M622 348H668 M622 374H668 M622 400H668 M622 426H668 M622 452H668 M688 278H716 M688 304H716 M688 330H716 M688 356H716 M688 382H716 M688 408H716 M688 434H716 M736 328H788 M736 354H788 M736 380H788 M736 406H788 M736 432H788 M736 458H788 M808 238H832 M808 264H832 M808 290H832 M808 316H832 M808 342H832 M808 368H832 M808 394H832 M808 420H832 M808 446H832 M852 298H892 M852 324H892 M852 350H892 M852 376H892 M852 402H892 M852 428H892 M852 454H892 M912 208H944 M912 234H944 M912 260H944 M912 286H944 M912 312H944 M912 338H944 M912 364H944 M912 390H944 M912 416H944 M912 442H944 M964 288H1022 M964 314H1022 M964 340H1022 M964 366H1022 M964 392H1022 M964 418H1022 M964 444H1022 M1040 260H1062 M1040 284H1062 M1040 308H1062 M1040 332H1062 M1040 356H1062 M1040 380H1062 M1040 404H1062 M1040 428H1062 M1040 452H1062 M1078 276H1096 M1078 300H1096 M1078 324H1096 M1078 348H1096 M1078 372H1096 M1078 396H1096 M1078 420H1096 M1078 444H1096 M1228 288H1256 M1228 314H1256 M1228 340H1256 M1228 366H1256 M1228 392H1256 M1228 418H1256 M1228 444H1256 M1362 308H1388 M1362 334H1388 M1362 360H1388 M1362 386H1388 M1362 412H1388 M1362 438H1388 M1406 248H1438 M1406 274H1438 M1406 300H1438 M1406 326H1438 M1406 352H1438 M1406 378H1438 M1406 404H1438 M1406 430H1438 M1406 456H1438"/></g>
+      <g class="hb-bars">
+        <rect x="140" y="380" width="22" height="90" rx="3" style="--d:.2s"/><rect x="250" y="350" width="22" height="120" rx="3" style="--d:.35s"/>
+        <rect x="360" y="365" width="22" height="105" rx="3" style="--d:.5s"/><rect x="470" y="320" width="22" height="150" rx="3" style="--d:.65s"/>
+        <rect x="580" y="300" width="22" height="170" rx="3" style="--d:.8s"/><rect x="690" y="325" width="22" height="145" rx="3" style="--d:.95s"/>
+        <rect x="800" y="270" width="22" height="200" rx="3" style="--d:1.1s"/><rect x="910" y="245" width="22" height="225" rx="3" style="--d:1.25s"/>
+        <rect x="1020" y="260" width="22" height="210" rx="3" style="--d:1.4s"/><rect x="1130" y="210" width="22" height="260" rx="3" style="--d:1.55s"/>
+        <rect x="1240" y="185" width="22" height="285" rx="3" style="--d:1.7s"/><rect x="1350" y="160" width="22" height="310" rx="3" style="--d:1.85s"/>
+      </g>
+      <path class="hb-area" d="M0 420 L150 395 L260 360 L370 372 L480 330 L590 305 L700 330 L810 278 L920 250 L1030 266 L1140 214 L1250 190 L1360 160 L1440 140 L1440 520 L0 520 Z"/>
+      <path class="hb-line" pathLength="1" d="M0 420 L150 395 L260 360 L370 372 L480 330 L590 305 L700 330 L810 278 L920 250 L1030 266 L1140 214 L1250 190 L1360 160 L1440 140"/>
+      <circle class="hb-dot" cx="1360" cy="160" r="6"/>
+    </svg>
   </div>
-  <figure class="dp-ph">
-    <img src="{{ a.photo | relative_url }}" alt="{{ a.name }}" width="400" height="400" fetchpriority="high">
-    <figcaption><b>{{ a.name }}</b>{{ a.title }}, {{ a.city }}<br>{{ a.credential }}</figcaption>
-  </figure>
+  {% assign latest = site.posts | first %}{% assign gcount = site.posts | size %}
+  <div class="hx">
+    <a class="hx-new" href="{{ latest.url | relative_url }}"><span class="hx-dot"></span>New · {{ latest.title | split: ':' | first | split: '?' | first | truncate: 58 }}</a>
+    <h1>UAE tax rules, explained before they cost you.</h1>
+    <p class="lede">Plain-English guides and free tools on VAT, Corporate Tax and e-invoicing. Every guide is checked against the FTA or Ministry source and dated, so you know it's current.</p>
+    <button class="hx-search" type="button" data-search-open aria-label="Search guides and tools"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 0 1 6.3 12.9l5.4 5.4-1.4 1.4-5.4-5.4A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg><span>What are you trying to work out?</span><kbd>/</kbd></button>
+    <p class="hx-pop"><span>Popular:</span>
+      <a href="{{ '/guides/qualifying-free-zone-person-conditions/' | relative_url }}">Free zone 0% conditions</a>
+      <a href="{{ '/guides/uae-e-invoicing-go-live-checklist/' | relative_url }}">E-invoicing go-live</a>
+      <a href="{{ '/supplier-check/' | relative_url }}">Supplier checks (Decision 13)</a>
+      <a href="{{ '/gratuity/' | relative_url }}">Gratuity calculator</a></p>
+    <div class="cta"><a class="btn" href="{{ '/guides/' | relative_url }}">Browse all {{ gcount }} guides</a><a class="btn ghost" href="{{ '/tools/' | relative_url }}">Use the free tools</a></div>
+  </div>
+  <aside class="hcard" aria-label="About the author and latest guides">
+    <div class="hc-me">
+      {% include avatar.html cls="big" big=true eager=true %}
+      <div><h2>{{ a.name }}</h2><p>{{ a.title }}, {{ a.city }}<br>{{ a.credential }}</p></div>
+    </div>
+    <p class="hc-h">Latest guides</p>
+    <ol class="hc-list">{% for g in site.posts limit:3 %}{% assign t = site.data.topics | where: "name", g.topic | first %}
+      <li><a href="{{ g.url | relative_url }}"><span class="hc-t t-{{ t.slug }}">{{ g.topic }}</span><b>{{ g.title | split: ':' | first | split: '?' | first }}</b><time datetime="{{ g.date | date_to_xmlschema }}">{{ g.date | date: "%-d %b" }}</time></a></li>{% endfor %}
+    </ol>
+    <p class="hc-foot"><a href="{{ '/about/' | relative_url }}">About me</a><a href="{{ a.linkedin }}" rel="noopener" target="_blank">LinkedIn</a><a href="{{ '/follow/' | relative_url }}">Get new guides by email</a></p>
+  </aside>
 </section>
-<ul class="dp-stats" aria-label="At a glance">
-  <li><b>{{ gcount }}</b><span>guides from official sources</span></li>
-  <li><b>{{ tcount }}</b><span>free compliance tools</span></li>
-  {% for s in a.stats %}{% if forloop.index != 2 %}<li><b>{{ s.value | replace: ' years', ' yrs' }}</b><span>{{ s.label }}</span></li>{% endif %}{% endfor %}
+<ul class="proof" aria-label="Experience">
+  {% for s in a.stats %}<li><b>{{ s.value }}</b><span>{{ s.label }}</span></li>{% endfor %}
+  <li><b>{{ gcount }}</b><span>guides, each linked to the official source</span></li>
 </ul>
 <section class="sec">
   <h2>Explore by topic</h2>
