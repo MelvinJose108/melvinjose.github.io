@@ -4,6 +4,8 @@ title: "If It Isn't Documented, It Didn't Happen: Protecting Your Input VAT Unde
 seo_title: "Input VAT Evidence File and Verification Policy: Action Plan"
 topic: "VAT"
 description: "The evidence file and written verification policy FTA Decision No. 13 of 2026 requires, FTA Example 8, and a 6-step plan to protect your input VAT."
+based_on: "FTA Decision No. 13 of 2026"
+based_on_date: "issued 22 July 2026, in force 1 October 2026"
 reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-5-cover.png
 tldr: "Under Article 5 of FTA Decision No. 13 of 2026, verification only counts if it is documented: keep an evidence file per supplier and supply, and a written verification policy naming who runs, reviews and supervises the checks. In FTA Example 8 a business that did this kept its input VAT even though evasion was found in its supply chain."

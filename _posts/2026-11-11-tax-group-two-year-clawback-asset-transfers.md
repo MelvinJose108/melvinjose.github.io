@@ -4,6 +4,9 @@ date: 2026-11-11 17:05:00 +0400
 seo_title: "UAE Tax Group 2-Year Clawback on Asset Transfers"
 topic: "Corporate Tax"
 description: "Asset transfers inside a UAE Tax Group are tax-free until a party leaves within 2 years. How the clawback works, and the elections that follow you out."
+based_on: "FTA Corporate Tax Guide on Tax Groups (CTGTGR1)"
+based_on_date: "updated November 2026"
+based_on_url: "https://tax.gov.ae/en/taxes/corporate.tax/corporate.tax.guides.references.aspx"
 reviewed: 2026-11-14
 image: /assets/images/tax-groups/tg-part-5-cover.png
 tldr: "Moving an asset between Tax Group members has no tax effect, but if the transferor or transferee leaves the group within 2 years, the eliminated gain or loss is brought back into tax at market value at the date of transfer. There is no clawback where Qualifying Group Relief, Business Restructuring Relief or the Participation Exemption would have applied on their own terms."

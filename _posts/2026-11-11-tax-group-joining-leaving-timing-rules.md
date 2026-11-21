@@ -4,6 +4,9 @@ date: 2026-11-11 17:03:00 +0400
 seo_title: "Joining or Leaving a UAE Tax Group: Timing and Deadlines"
 topic: "Corporate Tax"
 description: "When changes to a UAE Corporate Tax Group take effect, the 20-business-day notification rule, and why a 7-day share transfer can cost a company a whole year."
+based_on: "FTA Corporate Tax Guide on Tax Groups (CTGTGR1)"
+based_on_date: "updated November 2026"
+based_on_url: "https://tax.gov.ae/en/taxes/corporate.tax/corporate.tax.guides.references.aspx"
 reviewed: 2026-11-14
 image: /assets/images/tax-groups/tg-part-3-cover.png
 tldr: "A Tax Group member must meet every condition throughout the Tax Period. If it fails for even a few days it is out of the group from the start of that period, and the FTA must be notified within 20 business days. Applications to form, join or leave must be made before the end of the Tax Period they apply to."

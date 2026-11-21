@@ -567,3 +567,6 @@ html{overflow-x:clip}
 .hc-foot a{color:var(--acc)}
 @media(max-width:820px){.hx-search kbd{display:none}.hx-new{font-size:.8rem}}
 @media(prefers-reduced-motion:reduce){.hx-dot{animation:none}}
+.basis{display:inline-flex;flex-wrap:wrap;align-items:baseline;gap:.2rem .45rem;font-family:var(--ui);font-size:.86rem;color:var(--mute);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:.45rem .8rem;margin:-.4rem 0 1.2rem}
+.basis span{font-size:.7rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--acc)}
+.basis a,.basis b{color:var(--ink);font-weight:600}

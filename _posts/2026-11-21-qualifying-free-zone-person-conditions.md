@@ -4,6 +4,9 @@ date: 2026-11-21 09:00:00 +0400
 seo_title: "Qualifying Free Zone Person (QFZP) Conditions in the UAE"
 topic: "Corporate Tax"
 description: "The six conditions to be a Qualifying Free Zone Person and get 0% UAE Corporate Tax, the qualifying and excluded activities under Ministerial Decision 229 of 2025, the de minimis test, and the five-year cost of failing."
+based_on: "Ministerial Decision No. 229 of 2025"
+based_on_date: "issued 28 August 2025, effective from 1 June 2023"
+based_on_url: "https://mof.gov.ae/wp-content/uploads/2025/09/EN-Ministerial-Decision-No.-229-of-2025-Regarding-Qualifying-Activities-and-Excluded-Activities.pdf"
 reviewed: 2026-11-21
 image: /assets/images/free-zones/qfzp-cover.png
 tldr: "A free zone company only pays 0% Corporate Tax if it is a Qualifying Free Zone Person (QFZP): it must keep adequate substance in the free zone, earn Qualifying Income, keep non-qualifying revenue within the lower of 5% of total revenue or AED 5 million, not elect the standard rates, follow transfer pricing rules, and prepare audited financial statements. The 0% covers Qualifying Income only. Failing any condition removes QFZP status from the start of that tax period and for the next four."

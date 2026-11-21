@@ -4,6 +4,9 @@ date: 2026-11-11 17:02:00 +0400
 seo_title: "UAE Tax Group Conditions: The 95% Ownership Test Explained"
 topic: "Corporate Tax"
 description: "The nine conditions to form a UAE Corporate Tax Group, and the 95% ownership traps in the FTA's examples: legal title, nominal value, chains, preferred shares."
+based_on: "FTA Corporate Tax Guide on Tax Groups (CTGTGR1)"
+based_on_date: "updated November 2026"
+based_on_url: "https://tax.gov.ae/en/taxes/corporate.tax/corporate.tax.guides.references.aspx"
 reviewed: 2026-11-14
 image: /assets/images/tax-groups/tg-part-2-cover.png
 tldr: "To form a UAE Tax Group, the Parent and every Subsidiary must be UAE resident juridical persons, not Exempt Persons or Qualifying Free Zone Persons, on the same Financial Year and accounting standards, with the Parent holding at least 95% of share capital, voting rights, and profits and net assets, continuously for the whole Tax Period. The 95% is measured by legal title and nominal value, multiplied down chains of group members."

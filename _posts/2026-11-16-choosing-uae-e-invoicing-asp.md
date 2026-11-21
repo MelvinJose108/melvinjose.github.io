@@ -4,6 +4,9 @@ date: 2026-11-16 13:10:00 +0400
 seo_title: "How to Choose a UAE E-Invoicing ASP: Checklist"
 topic: "E-Invoicing"
 description: "How to choose a UAE e-invoicing Accredited Service Provider: the Ministry of Finance's selection criteria, contract points to check, and the onboarding steps."
+based_on: "MoF Considerations for Selecting an Accredited Service Provider v1.0"
+based_on_date: "Ministry of Finance, February 2026"
+based_on_url: "https://mof.gov.ae/wp-content/uploads/2026/02/Considerations-for-selecting-an-Accredited-Service-Provider_V-1.0-23Feb2024.pdf"
 reviewed: 2026-11-16
 image: /assets/images/e-invoicing/ei-asp-cover.png
 tldr: "A UAE business must appoint one accredited ASP for both sending and receiving e-invoices and onboard through EmaraTax. The Ministry of Finance says to check experience, the product, ERP integration, security and data location, support and uptime, and price. Contracts should also cover archive access and export, switching, rejection handling and data-change notices."

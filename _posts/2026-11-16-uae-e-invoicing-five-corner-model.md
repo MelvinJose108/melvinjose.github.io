@@ -4,6 +4,9 @@ date: 2026-11-16 13:05:00 +0400
 seo_title: "UAE E-Invoicing Five-Corner Model Explained"
 topic: "E-Invoicing"
 description: "How a UAE e-invoice moves from your ERP to your customer and the FTA, what your ASP does, what an e-invoice contains, and what to do when a customer isn't ready."
+based_on: "UAE Electronic Invoicing Guidelines v2.0"
+based_on_date: "Ministry of Finance, 26 October 2026"
+based_on_url: "https://mof.gov.ae/wp-content/uploads/2026/10/UAE-Electronic-Invoicing-Guidelines_En.pdf"
 reviewed: 2026-11-16
 image: /assets/images/e-invoicing/ei-flow-cover.png
 tldr: "A UAE e-invoice travels as PINT-AE XML through five corners: you send data to your Accredited Service Provider, which validates it and sends it over Peppol to your customer's ASP while reporting the tax data to the FTA. A PDF is no longer the invoice. The supplier stays responsible for every value, and e-invoices must be issued within 14 business days."

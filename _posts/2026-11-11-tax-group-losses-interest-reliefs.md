@@ -4,6 +4,9 @@ date: 2026-11-11 17:06:00 +0400
 seo_title: "UAE Tax Group Losses, Interest Limits and Reliefs"
 topic: "Corporate Tax"
 description: "How UAE Tax Groups handle pre-Grouping losses, restricted losses, the interest limit, Small Business Relief and loss transfers, with FTA Examples 22, 36 and 39."
+based_on: "FTA Corporate Tax Guide on Tax Groups (CTGTGR1)"
+based_on_date: "updated November 2026"
+based_on_url: "https://tax.gov.ae/en/taxes/corporate.tax/corporate.tax.guides.references.aspx"
 reviewed: 2026-11-14
 image: /assets/images/tax-groups/tg-part-6-cover.png
 tldr: "In a UAE Tax Group, current-year losses, the AED 375,000 0% band, Small Business Relief and the interest limit apply to the group as a whole. A member's pre-Grouping losses are ring-fenced: they can only be used against income attributed to that member, within the 75% cap, and they are forfeited if the group has room to use them but doesn't attribute the income."

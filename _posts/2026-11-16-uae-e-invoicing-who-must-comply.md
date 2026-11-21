@@ -4,6 +4,9 @@ date: 2026-11-16 13:00:00 +0400
 seo_title: "UAE E-Invoicing: Who Must Comply and When"
 topic: "E-Invoicing"
 description: "Who UAE e-invoicing applies to, what is excluded, how the AED 50 million test works, and your deadlines to appoint an ASP and go live, per Guidelines v2.0."
+based_on: "UAE Electronic Invoicing Guidelines v2.0"
+based_on_date: "Ministry of Finance, 26 October 2026"
+based_on_url: "https://mof.gov.ae/wp-content/uploads/2026/10/UAE-Electronic-Invoicing-Guidelines_En.pdf"
 reviewed: 2026-11-16
 image: /assets/images/e-invoicing/ei-scope-cover.png
 tldr: "UAE e-invoicing applies to every business doing B2B or B2G business in the UAE, whether or not it is VAT-registered, including free zone businesses. Businesses with revenue of AED 50 million or more had to appoint an ASP by 30 October 2026 and go live by 1 January 2027; smaller businesses appoint by 31 March 2027 and go live by 1 July 2027. Sales to consumers are excluded."

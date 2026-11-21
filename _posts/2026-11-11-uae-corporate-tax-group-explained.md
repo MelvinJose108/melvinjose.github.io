@@ -4,6 +4,9 @@ date: 2026-11-11 17:01:00 +0400
 seo_title: "UAE Corporate Tax Group Explained: Benefits and Liability"
 topic: "Corporate Tax"
 description: "What a UAE Corporate Tax Group is, what it saves (one return, pooled losses, tax-free intra-group transfers) and the joint liability every member takes on."
+based_on: "FTA Corporate Tax Guide on Tax Groups (CTGTGR1)"
+based_on_date: "updated November 2026"
+based_on_url: "https://tax.gov.ae/en/taxes/corporate.tax/corporate.tax.guides.references.aspx"
 reviewed: 2026-11-14
 image: /assets/images/tax-groups/tg-part-1-cover.png
 tldr: "A UAE Corporate Tax Group is two or more UAE resident companies the FTA treats as one Taxable Person: one return, losses offset automatically and intra-group transactions eliminated. In exchange the group gets one AED 375,000 0% band, Small Business Relief is tested on combined revenue, the Aggregated Financial Statements need a special purpose audit, and every member is jointly and severally liable for the group's tax."

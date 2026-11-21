@@ -4,6 +4,8 @@ title: "Your Tax Invoice Won't Save Your Input VAT Anymore"
 seo_title: "FTA Decision No. 13 of 2026: Input VAT Checks Explained"
 topic: "VAT"
 description: "Since 1 October 2026 a valid tax invoice no longer guarantees input VAT recovery. What FTA Decision No. 13 of 2026 changed and the test that decides your claim."
+based_on: "FTA Decision No. 13 of 2026"
+based_on_date: "issued 22 July 2026, in force 1 October 2026"
 reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-1-cover.png
 tldr: "Since 1 October 2026, a valid tax invoice no longer guarantees input VAT recovery in the UAE. Under Article 54(bis)(2) of the VAT Law, the FTA can reject input tax on a supply linked to tax evasion if you should have been aware of the link. FTA Decision No. 13 of 2026 sets the checks that prove you weren't: verify the supplier, verify the supply, and document both."
