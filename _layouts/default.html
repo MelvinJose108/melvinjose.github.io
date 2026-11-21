@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<script>document.documentElement.className='js';try{document.documentElement.dataset.theme=localStorage.getItem('t')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')}catch(e){}</script>
+<script>document.documentElement.className='js';try{document.documentElement.dataset.theme=localStorage.getItem('t')||'dark'}catch(e){}</script>
 {% include head.html %}
 {% feed_meta %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 {% assign u = page.url %}{% assign sec = '' %}{% if page.layout == 'post' or page.layout == 'topic' or u == '/guides/' %}{% assign sec = 'guides' %}{% elsif page.app or u == '/tools/' or u == '/policy-template/' %}{% assign sec = 'tools' %}{% elsif u == '/faq/' %}{% assign sec = 'faq' %}{% elsif u == '/about/' %}{% assign sec = 'about' %}{% endif %}
 <header class="top" id="top"><div class="wrap">
-  <a class="brand" href="{{ '/' | relative_url }}"><i>UL</i>{{ site.title | escape }}</a>
+  <a class="brand" href="{{ '/' | relative_url }}">The UAE <em>Ledger</em></a>
   <nav class="mainnav" id="mainnav" aria-label="Main">
     <div class="dd">
       <button class="ddb{% if sec == 'guides' %} on{% endif %}" type="button" aria-expanded="false" aria-controls="dd-guides">Guides<svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path fill="currentColor" d="M6 8.2 1.8 4l1-1L6 6.2 9.2 3l1 1z"/></svg></button>
@@ -49,7 +49,7 @@
   {% assign au = site.data.author %}
   <div class="wrap fgrid">
     <div class="fbrand">
-      <a class="brand" href="{{ '/' | relative_url }}"><i>UL</i>{{ site.title | escape }}</a>
+      <a class="brand" href="{{ '/' | relative_url }}">The UAE <em>Ledger</em></a>
       <p>Plain-English guides on UAE tax and audit.</p>
       <p class="fby">Written by <a href="{{ '/about/' | relative_url }}">{{ au.name }}</a>, {{ au.title }} in {{ au.city }} and Chartered Accountant finalist.</p>
       {% if site.newsletter_url and site.newsletter_url != "" %}<a class="btn fsub" href="{{ site.newsletter_url }}" target="_blank" rel="noopener">Get new guides by email</a>{% endif %}

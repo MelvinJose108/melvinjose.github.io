@@ -3,34 +3,24 @@ layout: default
 description: "Plain-English guides and updates on UAE Corporate Tax, VAT, e-invoicing and audit, written by a practising auditor in the UAE."
 ---
 {% assign a = site.data.author %}
-<section class="hero">
-  {% assign latest = site.posts | first %}{% assign gcount = site.posts | size %}
-  <div class="hx">
-    <p class="hx-kick">The UAE Ledger <span>Working papers on UAE tax</span></p>
-    <h1>UAE tax rules, explained before they cost you.</h1>
-    <p class="lede">Plain-English guides and free tools on VAT, Corporate Tax and e-invoicing, written by a Senior Audit Executive in Ajman. Each one names its official source and the date it was last reviewed.</p>
-    <button class="hx-search" type="button" data-search-open aria-label="Search guides and tools"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 0 1 6.3 12.9l5.4 5.4-1.4 1.4-5.4-5.4A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg><span>What are you trying to work out?</span><kbd>/</kbd></button>
-    <p class="hx-pop"><span>Most read:</span>
-      <a href="{{ '/guides/qualifying-free-zone-person-conditions/' | relative_url }}">Free zone 0% conditions</a>
-      <a href="{{ '/guides/uae-e-invoicing-go-live-checklist/' | relative_url }}">E-invoicing go-live</a>
-      <a href="{{ '/supplier-check/' | relative_url }}">Supplier checks</a>
-      <a href="{{ '/gratuity/' | relative_url }}">Gratuity calculator</a></p>
-    <div class="cta"><a class="btn" href="{{ '/guides/' | relative_url }}">All {{ gcount }} guides</a><a class="btn ghost" href="{{ '/tools/' | relative_url }}">Free tools</a></div>
+<section class="hero dp">
+  {% assign latest = site.posts | first %}{% assign gcount = site.posts | size %}{% assign tcount = site.data.tools | size %}
+  <div class="dp-txt">
+    <p class="dp-k">UAE Corporate Tax · VAT · E-Invoicing</p>
+    <h1>Tax rules, read <em>closely</em>, before they cost you.</h1>
+    <p class="lede">I'm {{ a.name }}, a {{ a.title }} in {{ a.city }}. Every guide here starts from the FTA or Ministry document itself, names it, and says when I last checked it.</p>
+    <div class="cta"><a class="btn" href="{{ latest.url | relative_url }}">Read the latest guide</a><a class="dp-link" href="{{ '/tools/' | relative_url }}">Explore free tools</a></div>
+    <p class="dp-pop">Popular: <a href="{{ '/guides/qualifying-free-zone-person-conditions/' | relative_url }}">Free zone 0% conditions</a> · <a href="{{ '/guides/uae-e-invoicing-go-live-checklist/' | relative_url }}">E-invoicing go-live</a> · <a href="{{ '/supplier-check/' | relative_url }}">Supplier checks</a> · <a href="{{ '/gratuity/' | relative_url }}">Gratuity</a></p>
   </div>
-  <aside class="hcard" aria-label="Latest guides">
-    <p class="hc-h"><span>Index</span><span>Latest working papers</span></p>
-    <ol class="hc-list">{% for g in site.posts limit:5 %}{% assign t = site.data.topics | where: "name", g.topic | first %}{% assign tp = site.posts | where: "topic", g.topic | reverse %}{% for x in tp %}{% if x.url == g.url %}{% assign n = forloop.index %}{% endif %}{% endfor %}
-      <li><a href="{{ g.url | relative_url }}"><span class="hc-ref">{{ t.code }}-{{ n | prepend: '0' | slice: -2, 2 }}</span><b>{{ g.title | split: ':' | first | split: '?' | first }}</b><time datetime="{{ g.date | date_to_xmlschema }}">{{ g.date | date: "%d.%m" }}</time></a></li>{% endfor %}
-    </ol>
-    <div class="hc-me">
-      {% include avatar.html cls="big" big=true eager=true %}
-      <p><b>Prepared by {{ a.name }}</b>{{ a.title }}, {{ a.city }} · {{ a.credential }}<br><a href="{{ '/about/' | relative_url }}">About</a> · <a href="{{ a.linkedin }}" rel="noopener" target="_blank">LinkedIn</a> · <a href="{{ '/follow/' | relative_url }}">Get new guides by email</a></p>
-    </div>
-  </aside>
+  <figure class="dp-ph">
+    <img src="{{ a.photo | relative_url }}" alt="{{ a.name }}" width="400" height="400" fetchpriority="high">
+    <figcaption><b>{{ a.name }}</b>{{ a.title }}, {{ a.city }}<br>{{ a.credential }}</figcaption>
+  </figure>
 </section>
-<ul class="proof" aria-label="Experience">
-  {% for s in a.stats %}<li><b>{{ s.value }}</b><span>{{ s.label }}</span></li>{% endfor %}
-  <li><b>{{ gcount }}</b><span>guides, each linked to the official source</span></li>
+<ul class="dp-stats" aria-label="At a glance">
+  <li><b>{{ gcount }}</b><span>guides from official sources</span></li>
+  <li><b>{{ tcount }}</b><span>free compliance tools</span></li>
+  {% for s in a.stats %}{% if forloop.index != 2 %}<li><b>{{ s.value | replace: ' years', ' yrs' }}</b><span>{{ s.label }}</span></li>{% endif %}{% endfor %}
 </ul>
 <section class="sec">
   <h2>Explore by topic</h2>
