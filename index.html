@@ -20,21 +20,31 @@ description: "Plain-English guides and updates on UAE Corporate Tax, VAT, e-invo
       <circle class="hb-dot" cx="1360" cy="160" r="6"/>
     </svg>
   </div>
-  <div>
-    <p class="eyebrow">{{ site.title }} · by {{ a.name }}</p>
-    <h1>UAE tax, explained by the person who audits it.</h1>
-    <p class="lede">Plain-English guides on VAT, Corporate Tax, e-invoicing and audit. Each one links to the official source and shows when it was last reviewed.</p>
-    <div class="cta"><a class="btn" href="{{ '/guides/' | relative_url }}">Read the guides</a><a class="btn ghost" href="{{ '/contact/' | relative_url }}">Ask a question</a></div>
+  {% assign latest = site.posts | first %}{% assign gcount = site.posts | size %}
+  <div class="hx">
+    <a class="hx-new" href="{{ latest.url | relative_url }}"><span class="hx-dot"></span>New · {{ latest.title | split: ':' | first | split: '?' | first | truncate: 58 }}</a>
+    <h1>UAE tax rules, explained before they cost you.</h1>
+    <p class="lede">Plain-English guides and free tools on VAT, Corporate Tax and e-invoicing. Every guide is checked against the FTA or Ministry source and dated, so you know it's current.</p>
+    <button class="hx-search" type="button" data-search-open aria-label="Search guides and tools"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 0 1 6.3 12.9l5.4 5.4-1.4 1.4-5.4-5.4A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg><span>What are you trying to work out?</span><kbd>/</kbd></button>
+    <p class="hx-pop"><span>Popular:</span>
+      <a href="{{ '/guides/qualifying-free-zone-person-conditions/' | relative_url }}">Free zone 0% conditions</a>
+      <a href="{{ '/guides/uae-e-invoicing-go-live-checklist/' | relative_url }}">E-invoicing go-live</a>
+      <a href="{{ '/supplier-check/' | relative_url }}">Supplier checks (Decision 13)</a>
+      <a href="{{ '/gratuity/' | relative_url }}">Gratuity calculator</a></p>
+    <div class="cta"><a class="btn" href="{{ '/guides/' | relative_url }}">Browse all {{ gcount }} guides</a><a class="btn ghost" href="{{ '/tools/' | relative_url }}">Use the free tools</a></div>
   </div>
-  <aside class="who who-hero" aria-label="About the author">
-    {% include avatar.html cls="big" big=true eager=true %}
-    <h2>{{ a.name }}</h2>
-    <p class="role">{{ a.title }} · {{ a.city }}, UAE<br>{{ a.credential }}</p>
-    <ul class="tags">{% for e in a.expertise limit:4 %}<li>{{ e }}</li>{% endfor %}</ul>
-    <p class="links"><a href="{{ '/about/' | relative_url }}">About me</a> · <a href="{{ a.linkedin }}" rel="noopener" target="_blank">LinkedIn</a></p>
+  <aside class="hcard" aria-label="About the author and latest guides">
+    <div class="hc-me">
+      {% include avatar.html cls="big" big=true eager=true %}
+      <div><h2>{{ a.name }}</h2><p>{{ a.title }}, {{ a.city }}<br>{{ a.credential }}</p></div>
+    </div>
+    <p class="hc-h">Latest guides</p>
+    <ol class="hc-list">{% for g in site.posts limit:3 %}{% assign t = site.data.topics | where: "name", g.topic | first %}
+      <li><a href="{{ g.url | relative_url }}"><span class="hc-t t-{{ t.slug }}">{{ g.topic }}</span><b>{{ g.title | split: ':' | first | split: '?' | first }}</b><time datetime="{{ g.date | date_to_xmlschema }}">{{ g.date | date: "%-d %b" }}</time></a></li>{% endfor %}
+    </ol>
+    <p class="hc-foot"><a href="{{ '/about/' | relative_url }}">About me</a><a href="{{ a.linkedin }}" rel="noopener" target="_blank">LinkedIn</a><a href="{{ '/follow/' | relative_url }}">Get new guides by email</a></p>
   </aside>
 </section>
-{% assign gcount = site.posts | size %}
 <ul class="proof" aria-label="Experience">
   {% for s in a.stats %}<li><b>{{ s.value }}</b><span>{{ s.label }}</span></li>{% endfor %}
   <li><b>{{ gcount }}</b><span>guides, each linked to the official source</span></li>
