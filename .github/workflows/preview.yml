@@ -2,6 +2,8 @@ name: preview build
 on:
   push:
     branches: ['preview-*']
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,8 +13,12 @@ jobs:
         with:
           source: ./
           destination: ./_site
-      - uses: actions/upload-artifact@v4
-        with:
-          name: site
-          path: _site
-          retention-days: 3
+      - name: Push built site to preview-site branch
+        run: |
+          cd _site
+          sudo chown -R "$(id -u)" .
+          git init -q -b preview-site
+          git config user.name preview-bot
+          git config user.email preview-bot@users.noreply.github.com
+          git add -A && git commit -qm "preview of ${GITHUB_SHA}"
+          git push -f -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" preview-site
