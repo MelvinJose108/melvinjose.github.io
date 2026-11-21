@@ -651,3 +651,6 @@ em{font-style:italic}
 .faq h3{font-family:var(--ui);font-weight:600;font-size:1.05rem;letter-spacing:0}
 .crumbs{font-size:.82rem}
 @media(max-width:860px){.hero.dp{grid-template-columns:1fr;gap:2.5rem;padding-top:2.5rem}.dp-ph{max-width:420px}.dp-ph figcaption{left:1rem}.dp-stats{grid-template-columns:1fr 1fr}}
+.top .brand,.foot .brand{gap:0!important;white-space:nowrap}
+.mbtn,.band,.fq-all,.fq-side em,.fq-count,.fq-tag,.lb-x,.sx-x,.kbd,kbd{border-radius:0!important}
+@media(max-width:860px){.dp-ph{max-width:300px}.dp .cta{flex-wrap:wrap;gap:1rem 1.6rem}}
