@@ -10,7 +10,7 @@ layout: default
   <p class="deck">{{ page.description }}</p>
   <div class="byline">
   <p class="by1">By <a href="{{ '/about/' | relative_url }}">{{ a.name }}</a> · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>{% if page.reviewed %} · Last reviewed <time datetime="{{ page.reviewed | date_to_xmlschema }}">{{ page.reviewed | date: "%-d %B %Y" }}</time>{% endif %} · {{ content | number_of_words | divided_by: 200 | plus: 1 }} min read{% if page.source %} · <a href="{{ page.source }}" rel="noopener">Official source</a>{% endif %}</p>
-  {% if page.based_on %}<p class="basis"><span>Based on</span> {% if page.based_on_url %}<a href="{{ page.based_on_url }}" rel="noopener" target="_blank">{{ page.based_on }}</a>{% else %}<b>{{ page.based_on }}</b>{% endif %}{% if page.based_on_date %} · {{ page.based_on_date }}{% endif %}</p>{% endif %}
+  {% if page.based_on %}<p class="srcl"><span>Based on</span> {% if page.based_on_url %}<a href="{{ page.based_on_url }}" rel="noopener" target="_blank">{{ page.based_on }}</a>{% else %}<b>{{ page.based_on }}</b>{% endif %}{% if page.based_on_date %} · {{ page.based_on_date }}{% endif %}</p>{% endif %}
   </div>
   {% if page.tldr %}<aside class="tldr" aria-label="In short"><strong>In short</strong><p>{{ page.tldr }}</p></aside>{% endif %}
   <div class="body">{{ content }}</div>
