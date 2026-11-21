@@ -610,17 +610,17 @@ body{line-height:1.6}
 .band{background:var(--ink)!important;color:var(--bg)}
 
 /* home hero: analysis-pad ruling */
-.hero{position:relative;border-bottom:2px solid var(--ink);margin-bottom:2rem;padding:3rem 0 3rem;background-image:repeating-linear-gradient(to bottom,transparent 0 31px,var(--rule) 31px 32px)}
+.hero{position:relative;border-bottom:2px solid var(--ink);margin-bottom:2rem;padding:3rem 0 3rem}
 .hero::before{content:"";position:absolute;top:0;bottom:0;left:-.9rem;border-left:1px solid var(--red);border-right:1px solid var(--red);width:4px;opacity:.55}
 .hero-bg{display:none!important}
 .hx-kick{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin-bottom:1.1rem;display:flex;gap:.8rem;flex-wrap:wrap}
 .hx-kick span{color:var(--mute)}
 .hero h1,.hx h1{font-size:clamp(2.2rem,4.6vw,3.5rem);font-weight:700;letter-spacing:-.025em;line-height:1.05;max-width:16ch}
-.hx .lede{background:var(--bg);display:inline;line-height:2rem}
+.hx .lede{max-width:38rem}
 .hx-search{background:var(--bg);border:1.5px solid var(--ink);color:var(--mute);font-family:var(--ui);margin-top:1.6rem}
 .hx-search:hover,.hx-search:focus-visible{border-color:var(--acc);outline:none}
 .hx-search kbd{border:1px solid var(--line);background:var(--soft)}
-.hx-pop{gap:.3rem .9rem;background:var(--bg);display:inline-flex;padding-right:.4rem}
+.hx-pop{gap:.3rem .9rem}
 .hx-pop span{font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.05em}
 .hx-pop a{border:0;padding:0;background:none;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
 .hx-pop a:hover{text-decoration-color:var(--acc)}
@@ -670,3 +670,6 @@ body{line-height:1.6}
 .body table th{font-family:var(--mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;background:var(--soft)}
 .faq h3{font-weight:600}
 @media(max-width:700px){.wph-grid{grid-template-columns:1fr 1fr}.wph-grid>div{border-bottom:1px solid var(--line)}.wph-grid>div:nth-child(2n){border-right:0}.stamp{display:none}.wph h1{padding-right:0}.hero::before{display:none}}
+
+.crumbs{font-size:.78rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}
+.crumbs>*{display:inline;margin-right:.45rem}
