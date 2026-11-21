@@ -4,6 +4,8 @@ date: 2026-11-20 10:00:00 +0400
 seo_title: "UAE Family Foundation Corporate Tax: Rules and Conditions"
 topic: "Corporate Tax"
 description: "How UAE Corporate Tax treats a family foundation: when it is taxed at 9%, the five conditions to be treated as transparent, registration, returns and what beneficiaries must do."
+based_on: "FTA Basic Tax Information Bulletin, Treatment of a Family Foundation"
+based_on_date: "October 2026"
 reviewed: 2026-11-20
 image: /assets/images/family-foundations/ff-cover.png
 tldr: "A UAE family foundation that is a juridical person is taxed like a company (0% up to AED 375,000, then 9%) unless it meets five conditions and the FTA approves an application to treat it as a fiscally transparent Unincorporated Partnership. Then the foundation isn't taxed itself, files only an annual confirmation, and its beneficiaries are taxed on their share if they are Taxable Persons. Either way, the foundation must register for Corporate Tax."

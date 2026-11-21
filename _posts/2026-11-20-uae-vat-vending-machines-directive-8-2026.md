@@ -4,6 +4,8 @@ date: 2026-11-20 16:00:00 +0400
 seo_title: "UAE VAT on Vending Machines: FTA Directive No. 8 of 2026"
 topic: "VAT"
 description: "FTA Directive on Tax Transactions No. 8 of 2026 explained: no tax invoice for vending machine sales, the minimum records to keep, what counts as a vending machine, and when VAT is due if a third party runs the machine."
+based_on: "FTA Directive on Tax Transactions No. 8 of 2026"
+based_on_date: "issued 19 November 2026"
 reviewed: 2026-11-20
 image: /assets/images/vat/vm-cover.png
 tldr: "Under FTA Directive on Tax Transactions No. 8 of 2026, issued on 19 November 2026, a business selling through a vending machine doesn't have to issue a tax invoice, as long as it keeps records showing what was sold, the total amount and VAT, and the date of supply. Where a third party operates the machine, the money is treated as collected on the earlier of the date the operator confirms the collection and amount, or the day after 30 days from the operator's collection."

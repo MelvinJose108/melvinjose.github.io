@@ -4,6 +4,8 @@ date: 2026-11-19 08:00:00 +0400
 seo_title: "Free Zone vs Designated Zone for UAE Tax: FTA TAXP010"
 topic: "Corporate Tax"
 description: "FTA Public Clarification TAXP010 explained: the four Free Zone and Designated Zone tests for Corporate Tax, VAT and Excise Tax, and why distributors can lose the 0% rate."
+based_on: "FTA Public Clarification TAXP010"
+based_on_date: "October 2026"
 reviewed: 2026-11-19
 image: /assets/images/free-zones/dz-cover.png
 tldr: "Under FTA Public Clarification TAXP010, being in a free zone doesn't settle your tax position: Corporate Tax, VAT and Excise Tax each have their own Free Zone or Designated Zone test, and you must check each one separately. A Corporate Tax Designated Zone must be both a VAT Designated Zone and a Corporate Tax Free Zone. That matters most for Qualifying Free Zone Persons in distribution, who only get 0% if they distribute in or from a Corporate Tax Designated Zone."

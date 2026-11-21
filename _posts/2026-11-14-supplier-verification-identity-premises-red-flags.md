@@ -4,6 +4,8 @@ title: "Who Are You Actually Buying From? The Supplier Checks the FTA Now Expect
 seo_title: "Supplier Verification for Input VAT: FTA Examples 1 to 3"
 topic: "VAT"
 description: "The supplier checks under FTA Decision No. 13 of 2026: identity, place of business and three red flags, explained through FTA Examples 1, 2 and 3."
+based_on: "FTA Decision No. 13 of 2026"
+based_on_date: "issued 22 July 2026, in force 1 October 2026"
 reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-2-cover.png
 tldr: "Under Article 3 of FTA Decision No. 13 of 2026, a UAE business should verify each supplier's identity (ID for individuals, registry or licence plus the authorised person's ID for companies), confirm a real place of business that fits the activity, and check three red flags: more than two address changes or more than two key staff changes in 12 months, or a deal disproportionate to the supplier's size."

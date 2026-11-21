@@ -4,6 +4,8 @@ title: "AED 10K, 100K, 375K: The Three Numbers That Decide How Deep You Verify S
 seo_title: "Input VAT Supplier Checks: AED 10K, 100K and 375K Thresholds"
 topic: "VAT"
 description: "How spend per supplier sets the depth of your input VAT checks under FTA Decision No. 13 of 2026, why splitting invoices fails, and when to re-verify."
+based_on: "FTA Decision No. 13 of 2026"
+based_on_date: "issued 22 July 2026, in force 1 October 2026"
 reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-3-cover.png
 tldr: "Spend per supplier sets how deep UAE input VAT checks go under FTA Decision No. 13: supplies under AED 10,000 may skip the checks unless total spend with that supplier exceeds AED 100,000 in the past or next 12 months; all others get full supplier and supply checks; and over AED 375,000 adds a UAE bank account confirmation and a reputation review."

@@ -4,6 +4,9 @@ date: 2026-11-11 17:04:00 +0400
 seo_title: "Tax Group Aggregated Financial Statements: UAE Rules"
 topic: "Corporate Tax"
 description: "How to prepare Aggregated Financial Statements for a UAE Corporate Tax Group: what is eliminated, what isn't, and how they differ from an IFRS consolidation."
+based_on: "FTA Corporate Tax Guide on Tax Groups (CTGTGR1)"
+based_on_date: "updated November 2026"
+based_on_url: "https://tax.gov.ae/en/taxes/corporate.tax/corporate.tax.guides.references.aspx"
 reviewed: 2026-11-14
 image: /assets/images/tax-groups/tg-part-4-cover.png
 tldr: "A UAE Tax Group's Taxable Income starts from Aggregated Financial Statements: each member's standalone pre-tax statements, aligned to the Parent's policies in AED, added line by line with transactions between members eliminated. Unlike an IFRS consolidation, the investment and the subsidiary's equity are both kept and acquisition goodwill is left out. They need a special purpose audit and must be submitted within 9 months of year end."

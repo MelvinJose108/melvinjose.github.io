@@ -4,6 +4,8 @@ title: "Too Cheap, Wrong Licence, Odd Bank Account: 4 Red Flags That Can Cost Yo
 seo_title: "Input VAT Red Flags: Payment, Price, Licence and Origin"
 topic: "VAT"
 description: "Four transaction red flags that can cost you input VAT under FTA Decision No. 13 of 2026: payment, price, licence scope and goods origin (FTA Examples 4 to 7)."
+based_on: "FTA Decision No. 13 of 2026"
+based_on_date: "issued 22 July 2026, in force 1 October 2026"
 reviewed: 2026-11-14
 image: /assets/images/fta-decision-13/part-4-cover.png
 tldr: "Article 4 of FTA Decision No. 13 of 2026 requires checks on the supply itself: a genuine commercial reason, electronic payment to the supplier, a price not unjustifiably far from market, goods or services within the supplier's licence, evidence of goods origin, and a reason for any intermediary. Payments to third parties or foreign accounts, or prices far below market, need a written reason before you pay."
