@@ -14,13 +14,13 @@ permalink: /newsletter/
 </form>{% endcapture %}
 
 <section class="lp-hero"><div class="lp-w">
-  <p class="lp-pill"><span></span>Free newsletter · UAE Corporate Tax, VAT, E-Invoicing</p>
+  <p class="lp-pill"><span></span>Free newsletter · UAE tax</p>
   <h1>UAE tax changes, explained the week they land.</h1>
   <p class="lp-sub">One short email when the FTA or Ministry of Finance issues something that affects your business. Plain English, the official source linked, and what to do next.</p>
   <div id="subscribe" class="lp-cta">{{ form }}<p class="lp-note">Free. No spam. Unsubscribe in one click. Delivered through Substack.</p></div>
 
   <div class="lp-shot" aria-label="Example issue">
-    <div class="lp-bar"><i></i><i></i><i></i><span>Inbox</span></div>
+    <div class="lp-bar"><i></i><i></i><i></i><span>Inbox · illustration</span></div>
     <div class="lp-mail">
       <aside class="lp-list">
         <div class="on"><b>The UAE Ledger</b><span>Your free zone licence doesn't get you 0%</span><time>21 Nov</time></div>
@@ -53,8 +53,8 @@ permalink: /newsletter/
 <section class="lp-sec lp-alt"><div class="lp-w lp-two">
   <div>
     <p class="lp-k">Recent topics</p>
-    <h2>What readers got recently</h2>
-    <p class="lp-muted">Each email links to a full guide on camelvinjose.com.</p>
+    <h2>What I've covered recently</h2>
+    <p class="lp-muted">Every issue links to the full guide on camelvinjose.com, with the official source.</p>
   </div>
   <ol class="lp-recent">{% for g in site.posts limit:5 %}
     <li><a href="{{ g.url | relative_url }}"><span class="lp-tag">{{ g.topic }}</span><b>{{ g.title | split: ':' | first | split: '?' | first }}</b><time datetime="{{ g.date | date_to_xmlschema }}">{{ g.date | date: "%-d %b" }}</time></a></li>{% endfor %}
