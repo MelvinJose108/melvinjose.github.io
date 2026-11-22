@@ -5,7 +5,7 @@ author: Melvin Jose
 timezone: Asia/Dubai
 lang: en
 # Paste your newsletter signup page link here (Substack, Beehiiv, MailerLite...) to show a button on the home page
-newsletter_url: "https://melvinjoseuae.substack.com/subscribe"
+newsletter_url: "https://camelvinjose.com/newsletter/"
 # Web3Forms access key for the /contact/ form. Safe to be public: it only delivers to the inbox it was created with.
 web3forms_key: "64d7a1b0-5464-4efe-ba51-5d36c078446b"
 permalink: /guides/:title/

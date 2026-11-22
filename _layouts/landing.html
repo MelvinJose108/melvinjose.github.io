@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+{% include head.html %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="{{ '/assets/landing.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+</head>
+<body class="lp">
+<header class="lp-top"><div class="lp-w">
+  <a class="lp-logo" href="{{ '/' | relative_url }}"><span>UL</span>The UAE Ledger</a>
+  <nav><a href="{{ '/guides/' | relative_url }}">Guides</a><a href="{{ '/tools/' | relative_url }}">Free tools</a><a class="lp-navcta" href="#subscribe">Subscribe</a></nav>
+</div></header>
+<main id="main">
+{{ content }}
+</main>
+<footer class="lp-foot"><div class="lp-w">
+  <span>© {{ site.time | date: '%Y' }} {{ site.data.author.name }} · The UAE Ledger</span>
+  <span><a href="{{ '/' | relative_url }}">Home</a><a href="{{ '/guides/' | relative_url }}">Guides</a><a href="{{ '/about/' | relative_url }}">About</a><a href="{{ '/contact/' | relative_url }}">Contact</a></span>
+</div><p class="lp-w lp-legal">Educational content only, not tax, legal or financial advice.</p></footer>
+</body>
+</html>
