@@ -1,0 +1,87 @@
+---
+layout: landing
+title: Newsletter
+seo_title: "UAE Tax Newsletter: FTA Changes Explained, Free"
+description: "A free email from The UAE Ledger when the FTA or Ministry of Finance issues something that affects your business: plain English, the official source linked, and what to do next."
+permalink: /newsletter/
+---
+{% assign a = site.data.author %}{% assign sub = site.data.author.substack %}
+{% capture form %}<form class="lp-form" action="{{ sub }}/api/v1/free?nojs=true" method="post" target="_blank" rel="noopener">
+  <label class="sr" for="em-{{ include_id }}">Email address</label>
+  <input type="email" name="email" placeholder="you@company.com" required autocomplete="email">
+  <input type="hidden" name="first_url" value="{{ page.url | absolute_url }}">
+  <button type="submit">Subscribe free</button>
+</form>{% endcapture %}
+
+<section class="lp-hero"><div class="lp-w">
+  <p class="lp-pill"><span></span>Free newsletter · UAE Corporate Tax, VAT, E-Invoicing</p>
+  <h1>UAE tax changes, explained the week they land.</h1>
+  <p class="lp-sub">One short email when the FTA or Ministry of Finance issues something that affects your business. Plain English, the official source linked, and what to do next.</p>
+  <div id="subscribe" class="lp-cta">{{ form }}<p class="lp-note">Free. No spam. Unsubscribe in one click. Delivered through Substack.</p></div>
+
+  <div class="lp-shot" aria-label="Example issue">
+    <div class="lp-bar"><i></i><i></i><i></i><span>Inbox</span></div>
+    <div class="lp-mail">
+      <aside class="lp-list">
+        <div class="on"><b>The UAE Ledger</b><span>Your free zone licence doesn't get you 0%</span><time>21 Nov</time></div>
+        <div><b>The UAE Ledger</b><span>Vending machines no longer need a tax invoice</span><time>20 Nov</time></div>
+        <div><b>The UAE Ledger</b><span>E-invoicing goes live on 1 January</span><time>20 Nov</time></div>
+        <div><b>The UAE Ledger</b><span>Free zone or designated zone?</span><time>19 Nov</time></div>
+      </aside>
+      <article class="lp-read">
+        <p class="lp-from"><img src="{{ a.photo_small | relative_url }}" alt="" width="36" height="36"><span><b>Melvin Jose</b> · The UAE Ledger</span><em>Example issue</em></p>
+        <h3>Your free zone licence doesn't get you 0%. Six conditions do.</h3>
+        <p>Ministerial Decision No. 229 of 2025 sets out which activities qualify. Miss one condition and you lose Qualifying Free Zone Person status for five tax periods.</p>
+        <p class="lp-h">What to do this week</p>
+        <ul><li>Classify every revenue stream as qualifying, excluded or other</li><li>Check sales to individuals against the de minimis limit</li><li>Book the audit: it's now a condition</li></ul>
+        <p class="lp-src">Source: Ministerial Decision No. 229 of 2025 · Read the full guide →</p>
+      </article>
+    </div>
+  </div>
+</div></section>
+
+<section class="lp-sec"><div class="lp-w">
+  <p class="lp-k">What you get</p>
+  <h2>Everything you need to act. Nothing you don't.</h2>
+  <div class="lp-feat">
+    <div><span class="lp-ic">01</span><h3>New rules, decoded</h3><p>FTA decisions, public clarifications, Cabinet and Ministerial decisions, turned into a few clear paragraphs.</p></div>
+    <div><span class="lp-ic">02</span><h3>What to do next</h3><p>Every issue ends with practical steps for your business or your clients, not just a summary.</p></div>
+    <div><span class="lp-ic">03</span><h3>The source, always</h3><p>Each issue names the official document it's built on and links to it, so you can check it yourself.</p></div>
+  </div>
+</div></section>
+
+<section class="lp-sec lp-alt"><div class="lp-w lp-two">
+  <div>
+    <p class="lp-k">Recent topics</p>
+    <h2>What readers got recently</h2>
+    <p class="lp-muted">Each email links to a full guide on camelvinjose.com.</p>
+  </div>
+  <ol class="lp-recent">{% for g in site.posts limit:5 %}
+    <li><a href="{{ g.url | relative_url }}"><span class="lp-tag">{{ g.topic }}</span><b>{{ g.title | split: ':' | first | split: '?' | first }}</b><time datetime="{{ g.date | date_to_xmlschema }}">{{ g.date | date: "%-d %b" }}</time></a></li>{% endfor %}
+  </ol>
+</div></section>
+
+<section class="lp-sec"><div class="lp-w lp-two">
+  <div class="lp-me"><img src="{{ a.photo | relative_url }}" alt="{{ a.name }}" width="400" height="400" loading="lazy"></div>
+  <div>
+    <p class="lp-k">Who writes it</p>
+    <h2>{{ a.name }}</h2>
+    <p class="lp-muted">{{ a.title }} in {{ a.city }} and {{ a.credential }}. I work on Corporate Tax, VAT and audit engagements every week, and I write The UAE Ledger to explain the rules the way I'd explain them to a client.</p>
+    <p class="lp-links"><a href="{{ '/about/' | relative_url }}">About me →</a><a href="{{ a.linkedin }}" rel="noopener" target="_blank">LinkedIn →</a></p>
+  </div>
+</div></section>
+
+<section class="lp-sec lp-alt"><div class="lp-w lp-faqw">
+  <p class="lp-k">Questions</p>
+  <h2>Before you subscribe</h2>
+  <details><summary>How often will I get emails?</summary><p>Only when something worth your time is issued, such as a new FTA decision, clarification or deadline. There's no fixed schedule and no filler.</p></details>
+  <details><summary>Is it really free?</summary><p>Yes. There's no paid tier and nothing to sell you in the emails.</p></details>
+  <details><summary>Who is it for?</summary><p>Finance managers, accountants, business owners and anyone responsible for VAT, Corporate Tax or e-invoicing compliance in the UAE.</p></details>
+  <details><summary>Can I unsubscribe?</summary><p>Any time, with the link at the bottom of every email.</p></details>
+</div></section>
+
+<section class="lp-end"><div class="lp-w">
+  <h2>Know what changed before it costs you.</h2>
+  <p>Join the newsletter. One email when it matters.</p>
+  {{ form }}
+</div></section>
