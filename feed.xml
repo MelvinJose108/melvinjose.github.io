@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://camelvinjose.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://camelvinjose.com/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-11-23T09:00:33+04:00</updated><id>https://camelvinjose.com/feed.xml</id><title type="html">The UAE Ledger</title><subtitle>Plain-English guides and updates on UAE Corporate Tax, VAT and audit.</subtitle><author><name>Melvin Jose</name></author><entry><title type="html">Is Your Free Zone Company a Qualifying Free Zone Person? The Conditions, Activities and Traps</title><link href="https://camelvinjose.com/guides/qualifying-free-zone-person-conditions/" rel="alternate" type="text/html" title="Is Your Free Zone Company a Qualifying Free Zone Person? The Conditions, Activities and Traps" /><published>2026-11-21T09:00:00+04:00</published><updated>2026-11-21T09:00:00+04:00</updated><id>https://camelvinjose.com/guides/qualifying-free-zone-person-conditions</id><content type="html" xml:base="https://camelvinjose.com/guides/qualifying-free-zone-person-conditions/"><![CDATA[<p>“We’re in a free zone, so we pay 0%.” It’s the most common Corporate Tax assumption I see, and it’s wrong more often than people expect.</p>
+
+<p>The 0% rate belongs to a <strong>Qualifying Free Zone Person (QFZP)</strong>, not to the licence or the zone. A company has to earn it by meeting every condition, in every tax period. And the 0% only applies to <strong>Qualifying Income</strong>. Anything else it earns is taxed at 9%.</p>
+
+<h3 id="first-its-the-company-that-qualifies-not-the-zone">First: it’s the company that qualifies, not the zone</h3>
+
+<p>People search for “is my free zone a qualifying free zone”. There’s no such category. Two separate things have to be true:</p>
+
+<ol>
+  <li><strong>The zone</strong> must be a Free Zone for Corporate Tax purposes. Your free zone authority can confirm it. (<a href="/guides/free-zone-vs-designated-zone-uae-tax/">The four zone tests</a>)</li>
+  <li><strong>The company</strong> must meet the QFZP conditions below.</li>
+</ol>
+
+<h3 id="the-six-conditions">The six conditions</h3>
+
+<p width="1600" height="900" loading="lazy" decoding="async"><img src="/assets/images/free-zones/qfzp-conditions.webp" alt="The six conditions to be a Qualifying Free Zone Person under Article 18 of the Corporate Tax Law" /></p>
+
+<ol>
+  <li><strong>Adequate substance in the free zone.</strong> Its core income-generating activities happen in the free zone, with enough qualified full-time staff, assets and operating spending for the business. A registered address with no people doesn’t pass.</li>
+  <li><strong>It earns Qualifying Income.</strong> Broadly, income from transactions with other Free Zone Persons, and from qualifying activities with anyone else, as long as the activity isn’t an excluded one.</li>
+  <li><strong>Non-qualifying revenue stays within de minimis.</strong> It must not exceed <strong>5% of total revenue or AED 5 million, whichever is lower</strong>.</li>
+  <li><strong>It hasn’t elected the standard rates.</strong> Opting into the normal 9% regime gives up QFZP status.</li>
+  <li><strong>It follows transfer pricing rules.</strong> Related-party transactions at arm’s length, with a Master File and Local File where the thresholds require them.</li>
+  <li><strong>It prepares audited financial statements.</strong> Ministerial Decision No. 229 of 2025 requires them for every QFZP, in line with <strong>Ministerial Decision No. 84 of 2025</strong>, regardless of revenue.</li>
+</ol>
+
+<h3 id="which-activities-qualify-and-which-never-do">Which activities qualify, and which never do</h3>
+
+<p><strong>Ministerial Decision No. 229 of 2025</strong> replaced the 2023 list in September 2025, with effect from 1 June 2023.</p>
+
+<p width="1600" height="900" loading="lazy" decoding="async"><img src="/assets/images/free-zones/qfzp-activities.webp" alt="Qualifying and excluded activities for a Qualifying Free Zone Person under Ministerial Decision No. 229 of 2025" /></p>
+
+<p><strong>Qualifying activities:</strong></p>
+
+<ul>
+  <li>manufacturing of goods or materials, and processing of goods or materials</li>
+  <li>trading of qualifying commodities</li>
+  <li>holding shares and other securities for investment</li>
+  <li>ownership, management and operation of ships</li>
+  <li>reinsurance, fund management, and wealth and investment management services</li>
+  <li>headquarter services to related parties</li>
+  <li>treasury and financing services to related parties, or for its own account</li>
+  <li>financing and leasing of aircraft</li>
+  <li>distribution of goods or materials in or from a Designated Zone</li>
+  <li>logistics services</li>
+  <li>activities ancillary to any of the above</li>
+</ul>
+
+<p><strong>Excluded activities:</strong></p>
+
+<ul>
+  <li>dealings with individuals, except certain ship, fund management, wealth management and aircraft activities</li>
+  <li>banking</li>
+  <li>insurance, except where it falls within reinsurance or headquarter services</li>
+  <li>finance and leasing, except the qualifying ones above</li>
+  <li>owning or operating immovable property, except commercial property in a free zone transacted with Free Zone Persons</li>
+  <li>activities ancillary to these</li>
+</ul>
+
+<h3 id="the-traps-that-cost-the-0">The traps that cost the 0%</h3>
+
+<p><strong>Selling to individuals.</strong> A free zone trader whose customers include walk-in or online retail buyers is dealing with individuals. That revenue is non-qualifying, and it counts against the de minimis limit.</p>
+
+<p><strong>Distribution outside a Designated Zone.</strong> Distribution only qualifies if it runs in or from a zone that is a Designated Zone for Corporate Tax, the goods are imported through that zone, and the buyer resells or processes them. (<a href="/guides/free-zone-vs-designated-zone-uae-tax/">Distribution conditions</a>)</p>
+
+<p><strong>Commodity trading by a logistics-heavy business.</strong> Trading of qualifying commodities doesn’t qualify if 51% or more of the company’s revenue in the tax period comes from distribution, warehousing, logistics or inventory management.</p>
+
+<p><strong>Breaching de minimis by a small amount.</strong> On AED 40 million of revenue, the limit is AED 2 million (5%). On AED 200 million, it’s AED 5 million (the cap). One unusual contract can tip a company over.</p>
+
+<p><strong>Skipping the audit.</strong> No audited financial statements, no QFZP status, however clean the activities are.</p>
+
+<h3 id="the-cost-of-failing-five-years-not-one">The cost of failing: five years, not one</h3>
+
+<p>If a QFZP fails any condition at any point in a tax period, it <strong>stops being a QFZP from the start of that tax period and for the next four</strong>. That’s five tax periods at the standard rates.</p>
+
+<p>A rough sense of scale: a free zone company with AED 10 million of taxable income pays nothing as a QFZP. Taxed at the standard rates, the tax is 9% on everything above AED 375,000, about <strong>AED 866,000 a year</strong>, or over <strong>AED 4.3 million</strong> across the five periods.</p>
+
+<h3 id="what-to-do-now">What to do now</h3>
+
+<ol>
+  <li><strong>Classify every revenue stream</strong> as qualifying, excluded or other, and record why. Check customer types, especially individuals.</li>
+  <li><strong>Calculate de minimis each quarter</strong>, not just at year end, so you see a breach coming.</li>
+  <li><strong>Document substance:</strong> who does the core work, where they sit, and what assets and spending are in the free zone.</li>
+  <li><strong>Check the zone,</strong> and if you distribute goods, whether it’s a Designated Zone for Corporate Tax.</li>
+  <li><strong>Book the audit,</strong> and make sure your transfer pricing files are in order.</li>
+</ol>
+
+<p>The <a href="/compliance-check/">Compliance Checker</a> shows which Corporate Tax, audit and transfer pricing obligations apply to your business, and the <a href="/calculator/">Tax Calculator</a> works out QFZP tax.</p>
+
+<p><strong>Sources:</strong> Federal Decree-Law No. 47 of 2022 (Corporate Tax Law), Article 18; Cabinet Decision No. 100 of 2023 on Qualifying Income; <a href="https://mof.gov.ae/wp-content/uploads/2025/09/EN-Ministerial-Decision-No.-229-of-2025-Regarding-Qualifying-Activities-and-Excluded-Activities.pdf">Ministerial Decision No. 229 of 2025</a> on Qualifying Activities and Excluded Activities; Ministerial Decision No. 84 of 2025 on audited financial statements; FTA Corporate Tax Guide on Free Zone Persons.</p>]]></content><author><name>Melvin Jose</name></author><summary type="html"><![CDATA[The six conditions to be a Qualifying Free Zone Person and get 0% UAE Corporate Tax, the qualifying and excluded activities under Ministerial Decision 229 of 2025, the de minimis test, and the five-year cost of failing.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://camelvinjose.com/assets/images/free-zones/qfzp-cover.png" /><media:content medium="image" url="https://camelvinjose.com/assets/images/free-zones/qfzp-cover.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Vending Machines and UAE VAT: No Tax Invoice Needed, but the Records and Dates Still Matter</title><link href="https://camelvinjose.com/guides/uae-vat-vending-machines-directive-8-2026/" rel="alternate" type="text/html" title="Vending Machines and UAE VAT: No Tax Invoice Needed, but the Records and Dates Still Matter" /><published>2026-11-20T16:00:00+04:00</published><updated>2026-11-20T16:00:00+04:00</updated><id>https://camelvinjose.com/guides/uae-vat-vending-machines-directive-8-2026</id><content type="html" xml:base="https://camelvinjose.com/guides/uae-vat-vending-machines-directive-8-2026/"><![CDATA[<p>On 19 November 2026 the FTA issued <strong>Directive on Tax Transactions No. 8 of 2026</strong>, on the VAT treatment of vending machines. It’s short, three pages, and it settles two practical questions: whether every vending sale needs a tax invoice, and when VAT is due when someone else runs the machine.</p>
+
+<p width="1600" height="900" loading="lazy" decoding="async"><img src="/assets/images/vat/vm-rules.webp" alt="FTA Directive No. 8 of 2026: no tax invoice, minimum records, and timing when a third party operates the vending machine" /></p>
+
+<h3 id="1-no-tax-invoice-for-vending-machine-sales">1. No tax invoice for vending machine sales</h3>
+
+<p>A Taxable Person supplying goods or services through a vending machine <strong>doesn’t have to issue a tax invoice</strong> for those supplies. The condition: it must <strong>keep sufficient records to substantiate the details of the supplies</strong>.</p>
+
+<p>So the obligation moves from the invoice to the records. The VAT is still due. What goes away is the paperwork per sale.</p>
+
+<h3 id="2-the-minimum-records">2. The minimum records</h3>
+
+<p>The directive sets the minimum. Your records must show:</p>
+
+<ul>
+  <li>a <strong>description of the goods or services</strong> supplied,</li>
+  <li>the <strong>total consideration received and the VAT charged</strong>, and</li>
+  <li>the <strong>date of supply</strong>, as set by <strong>Article 26(2) of the VAT Law</strong>.</li>
+</ul>
+
+<p>If your machines report sales electronically, that report is likely to be the core of these records. If they don’t, you need another reliable way to capture what was sold and when the money was collected.</p>
+
+<h3 id="3-what-counts-as-a-vending-machine">3. What counts as a vending machine</h3>
+
+<p>The directive defines a vending machine as <strong>an automated self-service device</strong> used to supply goods or services <strong>automatically and immediately</strong>, as a result of <strong>direct physical interaction by the customer</strong>, <strong>without any human intervention by the supplier</strong>.</p>
+
+<p>Running, maintaining, monitoring or restocking the machine <strong>doesn’t</strong> count as human intervention. So a machine that staff refill each morning still qualifies. A sale where a staff member takes the order or hands over the goods doesn’t.</p>
+
+<h3 id="4-when-someone-else-runs-the-machine">4. When someone else runs the machine</h3>
+
+<p>Many businesses place machines with an operator who collects the money and reports back. For that case, the directive fixes the date the consideration is treated as collected through the machine, for Article 26(2). It’s the <strong>earlier</strong> of:</p>
+
+<ol>
+  <li>the date the Taxable Person <strong>receives information from the operator confirming the collection and the amount collected</strong>, or</li>
+  <li><strong>the day after 30 days</strong> from the operator’s collection.</li>
+</ol>
+
+<p>The 30-day backstop matters. A slow monthly report from the operator doesn’t delay your VAT. If the operator collected on 2 March and only reports in April, the consideration is treated as collected on the day after 30 days from 2 March, and the sale belongs in the VAT return for that period.</p>
+
+<h3 id="what-to-do-now">What to do now</h3>
+
+<ol>
+  <li><strong>Check each machine against the definition.</strong> Automated, immediate, no staff involved in the sale.</li>
+  <li><strong>Make sure your sales reports capture all three minimum fields</strong> (description, total and VAT, date of supply) for every machine.</li>
+  <li><strong>If a third party operates your machines, review the contract.</strong> Ask for collection reports well inside 30 days, showing the date and amount of each collection.</li>
+  <li><strong>Reconcile operator reports to bank receipts</strong> each VAT period, and keep both.</li>
+  <li><strong>Map the dates to your VAT periods</strong> using the earlier-of rule, so sales near the period end land in the right return.</li>
+</ol>
+
+<p><strong>Source:</strong> FTA Directive on Tax Transactions No. 8 of 2026 for Value Added Tax on the Tax Treatment of Vending Machines, issued 19 November 2026, to be published in the Official Gazette.</p>]]></content><author><name>Melvin Jose</name></author><summary type="html"><![CDATA[FTA Directive on Tax Transactions No. 8 of 2026 explained: no tax invoice for vending machine sales, the minimum records to keep, what counts as a vending machine, and when VAT is due if a third party runs the machine.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://camelvinjose.com/assets/images/vat/vm-cover.png" /><media:content medium="image" url="https://camelvinjose.com/assets/images/vat/vm-cover.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">E-Invoicing Goes Live on 1 January: A Six-Week Readiness Plan for AED 50m+ Businesses</title><link href="https://camelvinjose.com/guides/uae-e-invoicing-go-live-checklist/" rel="alternate" type="text/html" title="E-Invoicing Goes Live on 1 January: A Six-Week Readiness Plan for AED 50m+ Businesses" /><published>2026-11-20T10:30:00+04:00</published><updated>2026-11-20T10:30:00+04:00</updated><id>https://camelvinjose.com/guides/uae-e-invoicing-go-live-checklist</id><content type="html" xml:base="https://camelvinjose.com/guides/uae-e-invoicing-go-live-checklist/"><![CDATA[<p>If your business had revenue of <strong>AED 50 million or more</strong> in its latest financial statements, e-invoicing becomes mandatory on <strong>1 January 2027</strong>. That’s six weeks from now, with National Day and the year-end close in between.</p>
+
+<p>This is a week-by-week plan to get there. Every rule in it comes from the Ministry of Finance’s <strong>E-Invoicing Guidelines v2.0</strong>, <strong>Ministerial Decision No. 197 of 2026</strong> and <strong>Cabinet Decision No. 173 of 2026</strong>. Each one has a full guide on this site, linked below.</p>
+
+<p width="1600" height="900" loading="lazy" decoding="async"><img src="/assets/images/e-invoicing/ei-golive-plan.webp" alt="Six-week e-invoicing readiness plan from 23 November 2026 to go-live on 1 January 2027" /></p>
+
+<h3 id="week-of-23-november-scope-and-asp">Week of 23 November: scope and ASP</h3>
+
+<ul>
+  <li><strong>Confirm the phase for each entity</strong>, on revenue in its latest financial statements. The guidelines don’t say whether revenue is added up across a group, so test each entity on its own figures. (<a href="/guides/uae-e-invoicing-who-must-comply/">Who must comply</a>)</li>
+  <li><strong>List what’s excluded:</strong> sales to consumers, imports, exempt and zero-rated financial services, and transactions inside the same <strong>VAT</strong> Tax Group until 31 December 2028. A Corporate Tax Group doesn’t count. (<a href="/guides/uae-e-invoicing-ministerial-decision-197-2026/">MD 197 explained</a>)</li>
+  <li><strong>Check the ASP is signed</strong> and that onboarding has started from the e-invoicing tile in <strong>EmaraTax</strong>. The deadline to appoint was <strong>30 October 2026</strong>. If you haven’t, this is the only job this week. (<a href="/guides/choosing-uae-e-invoicing-asp/">Choosing an ASP</a>)</li>
+  <li><strong>Get a TIN</strong> for any in-scope entity without a TRN, and note each entity’s <strong>Peppol ID</strong>: 0235 followed by its 10-digit TIN.</li>
+</ul>
+
+<h3 id="week-of-30-november-data">Week of 30 November: data</h3>
+
+<ul>
+  <li><strong>Map your invoices against the mandatory fields.</strong> There are 51 under PINT-AE, plus conditional ones. The usual gaps are buyer legal registration details and electronic addresses. (<a href="/guides/uae-e-invoicing-five-corner-model/">The five-corner model</a>)</li>
+  <li><strong>Clean the customer master:</strong> collect each customer’s TRN (or TIN if not VAT-registered). Never put a Corporate Tax TRN in the VAT number field.</li>
+  <li><strong>Tag intra-VAT-group invoices</strong> in the ERP so they can be excluded now and brought in on 1 January 2029.</li>
+</ul>
+
+<h3 id="week-of-7-december-testing">Week of 7 December: testing</h3>
+
+<ul>
+  <li><strong>Test end to end with your ASP:</strong> sending, receiving and FTA reporting, with real scenarios.</li>
+  <li><strong>Include the awkward invoices:</strong> a credit note covering several invoices, an advance and its final invoice, a foreign-currency invoice and a zero-rated sale.</li>
+  <li><strong>Send one that fails on purpose</strong>, so you see how a rejection comes back and who receives it.</li>
+</ul>
+
+<h3 id="week-of-14-december-controls">Week of 14 December: controls</h3>
+
+<ul>
+  <li><strong>The 14-business-day rule.</strong> E-invoices and credit notes must be issued and transmitted within 14 business days of the transaction. VAT timing rules still apply alongside it, so build both into the billing cut-off.</li>
+  <li><strong>Rejections.</strong> Name who monitors failed invoices and how quickly they’re fixed. The 14-day clock doesn’t stop while an invoice sits in an error queue.</li>
+  <li><strong>Customers who aren’t live yet.</strong> You still issue the e-invoice through your ASP, to the placeholder endpoint <strong>0235:9900000098</strong>, and <strong>also</strong> send a normal tax invoice, such as a PDF, so they can recover input VAT.</li>
+</ul>
+
+<h3 id="week-of-21-december-receiving-and-archive">Week of 21 December: receiving and archive</h3>
+
+<ul>
+  <li><strong>Get accounts payable ready to receive.</strong> The penalty for failing to implement applies to recipients too, not only to issuers. (<a href="/guides/uae-e-invoicing-penalties-cabinet-decision-173-2026/">Penalties</a>)</li>
+  <li><strong>Agree archive terms.</strong> You must keep e-invoice data for the Tax Procedures Law period, generally 5 years. If the ASP or ERP host stores it, make sure the contract gives you access and export for that whole period.</li>
+  <li><strong>Set a data-change routine.</strong> Not telling your ASP about changes to your FTA-registered details costs AED 250 a day. Add it to the licence-renewal checklist.</li>
+</ul>
+
+<h3 id="28-december-to-1-january-go-live">28 December to 1 January: go live</h3>
+
+<ul>
+  <li><strong>Sign off the cut-over plan:</strong> which invoices go out the old way before 1 January, and which go through the ASP from then on.</li>
+  <li><strong>Check the first invoices daily</strong> in the first week: delivered, accepted, reported.</li>
+  <li><strong>Start an outage log.</strong> There’s no longer a duty to report system failures, but an outage doesn’t stop the 14-day clock.</li>
+</ul>
+
+<h3 id="if-youre-not-going-to-make-it">If you’re not going to make it</h3>
+
+<p>Say so early, and keep going. The penalty for failing to implement is <strong>AED 5,000 for the first instance, then AED 5,000 for each month or part of a month</strong> it continues, capped at <strong>AED 50,000 in any 12 months</strong>. Every month you’re live sooner saves money. The per-invoice penalty, AED 100 an invoice capped at AED 5,000 a month, matters less than the commercial cost: customers’ payables teams may not process invoices that don’t come through the system.</p>
+
+<h3 id="not-phase-1">Not Phase 1?</h3>
+
+<p>Businesses under AED 50 million appoint an ASP by <strong>31 March 2027</strong> and go live by <strong>1 July 2027</strong>. The same six steps apply, with more time. The <a href="/tax-deadlines/">Deadline Planner</a> puts both dates in your calendar.</p>
+
+<p><strong>Sources:</strong> <a href="https://mof.gov.ae/wp-content/uploads/2026/10/UAE-Electronic-Invoicing-Guidelines_En.pdf">UAE Electronic Invoicing Guidelines v2.0</a> (Ministry of Finance, 26 October 2026); Ministerial Decision No. 197 of 2026; Cabinet Decision No. 173 of 2026; Ministerial Decision No. 244 of 2025 as amended.</p>]]></content><author><name>Melvin Jose</name></author><summary type="html"><![CDATA[A week-by-week plan for UAE businesses with AED 50 million+ revenue to be ready for mandatory e-invoicing on 1 January 2027: scope, data, testing, controls and cut-over.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://camelvinjose.com/assets/images/e-invoicing/ei-golive-cover.png" /><media:content medium="image" url="https://camelvinjose.com/assets/images/e-invoicing/ei-golive-cover.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Family Foundations and UAE Corporate Tax: Taxed, or Transparent?</title><link href="https://camelvinjose.com/guides/uae-family-foundation-corporate-tax/" rel="alternate" type="text/html" title="Family Foundations and UAE Corporate Tax: Taxed, or Transparent?" /><published>2026-11-20T10:00:00+04:00</published><updated>2026-11-20T10:00:00+04:00</updated><id>https://camelvinjose.com/guides/uae-family-foundation-corporate-tax</id><content type="html" xml:base="https://camelvinjose.com/guides/uae-family-foundation-corporate-tax/"><![CDATA[<p>Families are increasingly holding wealth, property and investments through foundations and trusts in the UAE. Corporate Tax gives these structures a choice: be taxed like a company, or be treated as transparent so the foundation itself pays nothing.</p>
+
+<p>The FTA’s <strong>Basic Tax Information Bulletin on the Treatment of a Family Foundation</strong> (October 2026) sets out how that choice works. Here is what it means in practice.</p>
+
+<h3 id="what-counts-as-a-family-foundation">What counts as a family foundation</h3>
+
+<p>For Corporate Tax, a <strong>Family Foundation</strong> is any foundation, trust or similar entity set up to hold and manage family wealth for its beneficiaries, and that meets the conditions below.</p>
+
+<p>One exception matters: <strong>a company such as an LLC is not “similar to a foundation or trust”</strong>, so it can’t be a Family Foundation, unless it is wholly owned and controlled by one.</p>
+
+<h3 id="route-1-taxed-like-a-company-the-default">Route 1: taxed like a company (the default)</h3>
+
+<p>A family foundation that is a <strong>juridical person</strong> is, by default, a Taxable Person in its own right. It:</p>
+
+<ul>
+  <li><strong>registers</strong> on EmaraTax as a Taxable Person,</li>
+  <li>pays Corporate Tax at <strong>0% on Taxable Income up to AED 375,000 and 9% above</strong>, or, if it is a Qualifying Free Zone Person, 0% on Qualifying Income and 9% on the rest, and</li>
+  <li><strong>files a Tax Return</strong> within 9 months of the end of each Tax Period.</li>
+</ul>
+
+<h3 id="route-2-transparent-with-fta-approval">Route 2: transparent, with FTA approval</h3>
+
+<p>A transparent foundation isn’t taxed itself. It’s treated as an <strong>Unincorporated Partnership</strong>, and its members are taxed on their share of its assets, liabilities, income and expenses.</p>
+
+<p>A foundation that is <strong>not a juridical person</strong> is transparent already, and registers on EmaraTax as an Unincorporated Partnership. A foundation that <strong>is</strong> a juridical person has to qualify and apply.</p>
+
+<p width="1600" height="900" loading="lazy" decoding="async"><img src="/assets/images/family-foundations/ff-two-routes.webp" alt="Family foundations: opaque and taxed by default, or transparent with FTA approval" /></p>
+
+<h3 id="the-five-conditions-to-be-transparent">The five conditions to be transparent</h3>
+
+<p>Under <strong>Ministerial Decision No. 261 of 2024</strong> and <strong>FTA Decision No. 5 of 2025</strong>, a family foundation that is a juridical person is treated as transparent only if <strong>all five</strong> are met:</p>
+
+<ol>
+  <li><strong>Beneficiaries:</strong> it was set up for identified or identifiable individuals, a public benefit entity, or both.</li>
+  <li><strong>Activity:</strong> its main activity is receiving, holding, investing, disbursing or disposing of savings and investment assets, or otherwise managing them.</li>
+  <li><strong>No business:</strong> it does nothing that would be a Business if the founder, settlor or a beneficiary did it directly or held the assets themselves.</li>
+  <li><strong>Purpose:</strong> avoiding Corporate Tax is not its main or principal purpose.</li>
+  <li><strong>Approval:</strong> it applies to the FTA to be treated as an Unincorporated Partnership, and the FTA approves.</li>
+</ol>
+
+<p>Miss any one, or don’t get approval, and the foundation stays taxable.</p>
+
+<p width="1600" height="900" loading="lazy" decoding="async"><img src="/assets/images/family-foundations/ff-conditions.webp" alt="Five conditions for a UAE family foundation to be treated as a transparent Unincorporated Partnership" /></p>
+
+<p><strong>The timing matters.</strong> The application must be made <strong>before the end of the Tax Period</strong> it applies to. It can take effect from the current Tax Period, the next one, or another date the FTA sets.</p>
+
+<p>Condition 3 is the one to test hardest. The question isn’t what the foundation calls itself, but whether the same activity, done by the founder or a beneficiary personally, would count as a Business for Corporate Tax. A foundation running a trading operation, for example, would fail it.</p>
+
+<h3 id="registration-and-filing-side-by-side">Registration and filing, side by side</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Taxed (opaque)</th>
+      <th>Transparent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Register on EmaraTax</td>
+      <td>Yes, as a Taxable Person</td>
+      <td>Yes, as an Unincorporated Partnership (or registered, then approved)</td>
+    </tr>
+    <tr>
+      <td>Tax Return</td>
+      <td>Within 9 months of year end</td>
+      <td>Not required</td>
+    </tr>
+    <tr>
+      <td>Annual confirmation</td>
+      <td>Not applicable</td>
+      <td>Within 9 months of year end</td>
+    </tr>
+    <tr>
+      <td>Who pays tax</td>
+      <td>The foundation</td>
+      <td>Beneficiaries that are Taxable Persons, on their share</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Every family foundation formed under UAE law has to register</strong>, one way or the other. A juridical-person foundation registers as a Taxable Person first, and can then apply for transparency.</p>
+
+<h3 id="what-beneficiaries-need-to-do">What beneficiaries need to do</h3>
+
+<ul>
+  <li><strong>Individual beneficiaries</strong> only register and file if they run a business in the UAE outside the foundation and its turnover is <strong>over AED 1 million</strong> in a calendar year.</li>
+  <li><strong>Beneficiaries that are Taxable Persons</strong>, such as a public benefit entity, register in their own right and include their share of a transparent foundation’s results in their own Tax Return.</li>
+</ul>
+
+<h3 id="penalties">Penalties</h3>
+
+<p>Missing a registration, return or annual confirmation can attract administrative penalties under the Corporate Tax penalty rules. The <a href="/penalty-calculator/">Penalty Estimator</a> estimates Corporate Tax penalties for late filing and late payment.</p>
+
+<h3 id="what-to-do-now">What to do now</h3>
+
+<ol>
+  <li><strong>Check the registration.</strong> Make sure the foundation is registered on EmaraTax, as a Taxable Person or an Unincorporated Partnership.</li>
+  <li><strong>Test the five conditions honestly</strong>, especially condition 3. Write down why each one is met.</li>
+  <li><strong>If transparency fits, apply before the Tax Period ends.</strong> After that, the foundation is taxable for that period.</li>
+  <li><strong>Diarise the 9-month deadline</strong>, for the Tax Return or the annual confirmation. The <a href="/tax-deadlines/">Deadline Planner</a> works it out from the year end.</li>
+  <li><strong>Tell individual beneficiaries where they stand.</strong> Most won’t need to register, but those with their own UAE businesses over AED 1 million will.</li>
+</ol>
+
+<p><strong>Source:</strong> FTA Basic Tax Information Bulletin, <em>Treatment of a Family Foundation</em> (October 2026), referring to Ministerial Decision No. 261 of 2024 and FTA Decision No. 5 of 2025. For the full rules, see the FTA’s Corporate Tax Guide on the Taxation of Family Foundations.</p>]]></content><author><name>Melvin Jose</name></author><summary type="html"><![CDATA[How UAE Corporate Tax treats a family foundation: when it is taxed at 9%, the five conditions to be treated as transparent, registration, returns and what beneficiaries must do.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://camelvinjose.com/assets/images/family-foundations/ff-cover.png" /><media:content medium="image" url="https://camelvinjose.com/assets/images/family-foundations/ff-cover.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Free Zone or Designated Zone? Your Address Has to Pass Four Different Tax Tests</title><link href="https://camelvinjose.com/guides/free-zone-vs-designated-zone-uae-tax/" rel="alternate" type="text/html" title="Free Zone or Designated Zone? Your Address Has to Pass Four Different Tax Tests" /><published>2026-11-19T08:00:00+04:00</published><updated>2026-11-19T08:00:00+04:00</updated><id>https://camelvinjose.com/guides/free-zone-vs-designated-zone-uae-tax</id><content type="html" xml:base="https://camelvinjose.com/guides/free-zone-vs-designated-zone-uae-tax/"><![CDATA[<p>“We’re in a free zone, so we’re fine.” I hear it often. For tax, it doesn’t settle much.</p>
+
+<p>On 2 October 2026 the FTA published <strong>Public Clarification TAXP010, Free Zones and Designated Zones for Tax Purposes</strong>. Its point is simple: Corporate Tax, VAT and Excise Tax each define these zones differently, and <strong>you must check your location against each law separately.</strong></p>
+
+<h3 id="four-tests-not-one">Four tests, not one</h3>
+
+<p>TAXP010 names four categories:</p>
+
+<ol>
+  <li><strong>Corporate Tax Free Zone</strong></li>
+  <li><strong>Corporate Tax Designated Zone</strong></li>
+  <li><strong>Excise Tax Designated Zone</strong></li>
+  <li><strong>VAT Designated Zone</strong></li>
+</ol>
+
+<p>One business can be in a Corporate Tax Free Zone without being in a VAT Designated Zone. Or in a VAT Designated Zone without the location counting as a Designated Zone for Corporate Tax.</p>
+
+<p width="1600" height="900" loading="lazy" decoding="async"><img src="/assets/images/free-zones/dz-four.webp" alt="FTA TAXP010: the four Free Zone and Designated Zone tests for Corporate Tax, Excise Tax and VAT" /></p>
+
+<h3 id="1-corporate-tax-free-zone">1. Corporate Tax Free Zone</h3>
+
+<p>A <strong>Free Zone</strong> for Corporate Tax is a defined geographic area in the UAE named in a <strong>Cabinet Decision</strong>, issued on the Minister’s suggestion.</p>
+
+<p>This is the starting point for the 0% regime. A <strong>Qualifying Free Zone Person</strong> must be incorporated, established or registered in a Free Zone, and operate from it, to get 0% on its Qualifying Income.</p>
+
+<h3 id="2-corporate-tax-designated-zone">2. Corporate Tax Designated Zone</h3>
+
+<p>This is the one the clarification is really about. A <strong>Designated Zone</strong> for Corporate Tax is a zone that is a Designated Zone under the VAT Law <strong>and</strong> included as a Free Zone under the Corporate Tax Law.</p>
+
+<blockquote>
+  <p>A VAT Designated Zone is <strong>not automatically</strong> a Designated Zone for Corporate Tax. It must pass both tests.</p>
+</blockquote>
+
+<p>TAXP010 tells taxpayers to confirm with their <strong>free zone authority</strong> whether they are in a Free Zone or a Designated Zone for Corporate Tax.</p>
+
+<h3 id="3-excise-tax-designated-zone">3. Excise Tax Designated Zone</h3>
+
+<p>For Excise Tax, a Designated Zone is either:</p>
+
+<ul>
+  <li><strong>a fenced free zone</strong> that has security measures restricting the movement of people and excise goods in and out, is controlled and supervised by a customs department, and has an appointed <strong>Warehouse Keeper</strong>; or</li>
+  <li><strong>any other area the FTA specifies</strong>, provided it is a specific geographic area with the same kind of security measures and an appointed Warehouse Keeper. The Warehouse Keeper has to apply to the FTA to register the area.</li>
+</ul>
+
+<p>To confirm, ask your <strong>free zone authority</strong>, or the <strong>Warehouse Keeper</strong> whether the FTA has approved the area.</p>
+
+<h3 id="4-vat-designated-zone">4. VAT Designated Zone</h3>
+
+<p>A <strong>VAT Designated Zone</strong> is a fenced area listed in <strong>Cabinet Decision No. 59 of 2017</strong> (as amended). Being on that list is not the whole test: under <strong>Article 51(1) of the VAT Executive Regulation</strong>, it is only treated as outside the UAE for VAT if:</p>
+
+<ul>
+  <li>it is a specific fenced area with security measures and customs controls over people and goods moving in and out,</li>
+  <li>it has internal procedures for keeping, storing and processing goods, and</li>
+  <li>its operator complies with the FTA’s procedures.</li>
+</ul>
+
+<p>So TAXP010 asks for <strong>two checks</strong>: find your zone on the FTA’s published list, then confirm with the free zone authority that <strong>the specific area where you’re based</strong> meets Article 51(1).</p>
+
+<h3 id="why-distributors-should-care-most">Why distributors should care most</h3>
+
+<p>Under <strong>Ministerial Decision No. 229 of 2025</strong>, one of the Qualifying Activities for a Qualifying Free Zone Person is <strong>distribution of goods or materials in or from a Designated Zone</strong>. Being in a free zone isn’t enough for this activity. The distribution itself has to run in or from a <strong>Corporate Tax Designated Zone</strong>, and it has to meet every condition:</p>
+
+<p width="1600" height="900" loading="lazy" decoding="async"><img src="/assets/images/free-zones/dz-distribution.webp" alt="Conditions for distribution to be a Qualifying Activity for a Qualifying Free Zone Person" /></p>
+
+<ul>
+  <li><strong>What counts:</strong> buying and selling goods, materials, component parts or other tangible or movable items. It can include importing, storage, inventory management, handling, transport and export.</li>
+  <li><strong>Where:</strong> in or from a Designated Zone, with goods entering the UAE imported through that zone.</li>
+  <li><strong>Who buys:</strong> a customer who resells, processes or alters the goods for sale or resale, or a public benefit entity.</li>
+  <li><strong>Procedures:</strong> any additional procedures the FTA prescribes, on top of every other Qualifying Free Zone Person condition.</li>
+</ul>
+
+<p>The cost of getting it wrong is high. If a Qualifying Free Zone Person fails any condition at any point in a tax period, it <strong>stops being a Qualifying Free Zone Person from the start of that period and for the next four</strong>. That’s five tax periods at the standard rates.</p>
+
+<h3 id="what-to-do-now">What to do now</h3>
+
+<ol>
+  <li><strong>List every entity and every physical location</strong> your group operates from, including warehouses, not just the licence address.</li>
+  <li><strong>For each location, get written confirmation</strong> from the free zone authority: is it a Corporate Tax Free Zone, a Corporate Tax Designated Zone, an Excise Designated Zone (or ask the Warehouse Keeper), and a VAT Designated Zone that meets Article 51(1)?</li>
+  <li><strong>If you claim 0% on distribution income,</strong> check where the goods are actually imported, stored and shipped from, and who your customers are. Retail customers who consume the goods don’t fit the definition.</li>
+  <li><strong>Keep the confirmations</strong> with your Corporate Tax file. If the FTA questions your Qualifying Income, this is the first thing you’ll need.</li>
+</ol>
+
+<p><strong>Source:</strong> FTA Public Clarification TAXP010, <em>Free Zones and Designated Zones for Tax Purposes</em> (October 2026). For whether your free zone business qualifies overall, run the <a href="/compliance-check/">Compliance Checker</a>. For how Tax Groups treat Qualifying Free Zone Persons, see <a href="/guides/tax-group-95-percent-conditions/">Tax Group conditions</a>.</p>]]></content><author><name>Melvin Jose</name></author><summary type="html"><![CDATA[FTA Public Clarification TAXP010 explained: the four Free Zone and Designated Zone tests for Corporate Tax, VAT and Excise Tax, and why distributors can lose the 0% rate.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://camelvinjose.com/assets/images/free-zones/dz-cover.png" /><media:content medium="image" url="https://camelvinjose.com/assets/images/free-zones/dz-cover.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Bank Compared Our Client’s VAT Returns With Its Bank Credits. They Didn’t Match.</title><link href="https://camelvinjose.com/guides/bank-credits-vs-vat-returns-facility-renewal/" rel="alternate" type="text/html" title="The Bank Compared Our Client’s VAT Returns With Its Bank Credits. They Didn’t Match." /><published>2026-11-17T10:05:00+04:00</published><updated>2026-11-17T10:05:00+04:00</updated><id>https://camelvinjose.com/guides/bank-credits-vs-vat-returns-facility-renewal</id><content type="html" xml:base="https://camelvinjose.com/guides/bank-credits-vs-vat-returns-facility-renewal/"><![CDATA[<p>Banks used to look at your audited accounts. Many now also look at your VAT returns, and compare them with the money going into your account.</p>
+
+<p>This is a case from my practice, with the client’s details left out.</p>
+
+<h3 id="what-happened">What happened</h3>
+
+<p>A client applied to renew a bank facility. As part of its review, the bank compared the sales in the client’s <strong>VAT returns</strong> with the <strong>credits in its bank statements</strong>. The two didn’t match, and the bank asked for an explanation before it would go ahead.</p>
+
+<h3 id="how-we-resolved-it">How we resolved it</h3>
+
+<p>We reconciled the bank credits to the sales in the returns. Most of the gap had ordinary explanations: money coming in that wasn’t sales, and timing.</p>
+
+<p>After those, a balance was left that was <strong>sales which hadn’t been reported in the VAT returns</strong>. The client filed a <strong>voluntary disclosure</strong> to correct the returns, and the reconciliation went back to the bank with the explanation.</p>
+
+<h3 id="what-the-reconciliation-looks-like">What the reconciliation looks like</h3>
+
+<p><img src="/assets/images/audit/ac-bank-recon.webp" alt="Bank credits vs VAT returns reconciliation" width="1600" height="900" loading="lazy" decoding="async" /></p>
+
+<p>With illustrative figures:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>AED</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total credits in the bank statements</td>
+      <td>9,400,000</td>
+    </tr>
+    <tr>
+      <td>Less: loans drawn and capital introduced</td>
+      <td>(1,100,000)</td>
+    </tr>
+    <tr>
+      <td>Less: transfers between the company’s own accounts</td>
+      <td>(650,000)</td>
+    </tr>
+    <tr>
+      <td>Less: refunds and other non-sales receipts</td>
+      <td>(150,000)</td>
+    </tr>
+    <tr>
+      <td>Adjust: timing of customer receipts</td>
+      <td>(100,000)</td>
+    </tr>
+    <tr>
+      <td><strong>Sales receipts that should be in the returns</strong></td>
+      <td><strong>7,400,000</strong></td>
+    </tr>
+    <tr>
+      <td>Sales in the VAT returns, including VAT</td>
+      <td>7,140,000</td>
+    </tr>
+    <tr>
+      <td><strong>Unexplained</strong></td>
+      <td><strong>260,000</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Compare like with like. Bank receipts include VAT, so compare them with sales <strong>including</strong> VAT. And include zero-rated and exempt sales, which are reported in their own boxes of the return.</p>
+
+<h3 id="the-usual-reconciling-items">The usual reconciling items</h3>
+
+<p><img src="/assets/images/audit/ac2-items.webp" alt="Common reasons bank credits and VAT returns don't match" width="1600" height="900" loading="lazy" decoding="async" /></p>
+
+<ul>
+  <li><strong>Loans and capital:</strong> facility drawdowns, shareholder loans and capital injections.</li>
+  <li><strong>Own-account transfers:</strong> money moved between the company’s own bank accounts appears as a credit in one of them.</li>
+  <li><strong>Refunds and other receipts:</strong> supplier refunds, returned deposits, insurance claims and VAT refunds.</li>
+  <li><strong>Timing:</strong> cash received this year for last year’s sales, and this year’s sales still unpaid at year end.</li>
+  <li><strong>Zero-rated and exempt sales:</strong> these belong in their own boxes of the return. Check they were reported there and not left out.</li>
+  <li><strong>Sales left out of the returns:</strong> whatever remains after all of the above. That needs correcting.</li>
+</ul>
+
+<p>Keep a document for every line. “Loan from shareholder” with nothing behind it won’t satisfy a bank, an auditor or the FTA.</p>
+
+<h3 id="when-the-gap-is-unreported-sales">When the gap is unreported sales</h3>
+
+<p>Unreported sales mean the VAT returns were wrong, so this stops being only a bank matter. The Tax Procedures rules decide how to correct it:</p>
+
+<ul>
+  <li><strong>Over AED 10,000 of tax:</strong> file a voluntary disclosure within 20 business days of becoming aware of the error.</li>
+  <li><strong>AED 10,000 or less:</strong> you can correct it in the return for the period in which you found it.</li>
+</ul>
+
+<p>A voluntary disclosure carries penalties, but they’re lower than if the FTA finds the error in an audit. The <a href="/penalty-calculator/">Penalty Estimator</a> compares the two for your figures.</p>
+
+<h3 id="run-the-check-before-anyone-asks">Run the check before anyone asks</h3>
+
+<ul>
+  <li><strong>Reconcile bank credits to sales every quarter,</strong> before you file the VAT return. As a routine it takes an afternoon. In the middle of a facility renewal, it takes weeks.</li>
+  <li><strong>Tag non-sales receipts as they come in:</strong> loans, capital, transfers and refunds. Year-end reconciliation becomes a report instead of a project.</li>
+  <li><strong>Keep a short note and a document for every reconciling item.</strong></li>
+  <li><strong>Fix errors promptly,</strong> through the next return or a voluntary disclosure, depending on the amount.</li>
+</ul>
+
+<p>Your auditor runs the same test at year end: see <a href="/guides/what-auditors-test-in-your-vat-returns/">what your auditor actually tests in your VAT returns</a>.</p>
+
+<p>The other case in this pair: <a href="/guides/fta-query-customer-tax-evasion/">the FTA query that followed a customer’s tax evasion</a>.</p>
+
+<p><strong>Facing the same question from your bank?</strong> <a href="/contact/">Ask me about it</a>.</p>]]></content><author><name>Melvin Jose</name></author><summary type="html"><![CDATA[A real case: a bank found VAT returns didn't match bank credits at facility renewal. How we reconciled it, why it led to a voluntary disclosure, and how to check first.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://camelvinjose.com/assets/images/audit/ac2-cover.png" /><media:content medium="image" url="https://camelvinjose.com/assets/images/audit/ac2-cover.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The FTA Asked About Our Client’s Sales Because a Customer Evaded Tax</title><link href="https://camelvinjose.com/guides/fta-query-customer-tax-evasion/" rel="alternate" type="text/html" title="The FTA Asked About Our Client’s Sales Because a Customer Evaded Tax" /><published>2026-11-17T10:00:00+04:00</published><updated>2026-11-17T10:00:00+04:00</updated><id>https://camelvinjose.com/guides/fta-query-customer-tax-evasion</id><content type="html" xml:base="https://camelvinjose.com/guides/fta-query-customer-tax-evasion/"><![CDATA[<p>You can file every VAT return correctly and still get a letter from the FTA, because of something one of your customers did.</p>
+
+<p>This is a case from my practice, with the client’s details left out.</p>
+
+<h3 id="what-happened">What happened</h3>
+
+<p>A client received an email from the FTA asking for a detailed breakdown behind VAT returns it had already submitted. Our client hadn’t done anything wrong. The reason for the request was that <strong>one of the client’s customers had been found guilty of tax evasion</strong>, and the FTA was looking at the transactions connected to that customer.</p>
+
+<p>When the FTA investigates one business, it looks at who that business bought from and sold to. Every supplier and customer in that chain can be asked to show their side of the transactions.</p>
+
+<h3 id="how-it-ended">How it ended</h3>
+
+<p>The client had the documents. Every sale to that customer was backed by the invoice and its supporting records, and the sales tied to what was reported in the returns.</p>
+
+<p>The client faced no legal complications. The FTA asked for documents, the documents answered the question, and the matter ended there.</p>
+
+<h3 id="what-the-client-took-from-it">What the client took from it</h3>
+
+<p>Their VAT had been right all along. What protected them was being able to <strong>show</strong> it was right: quickly, completely, and with paper behind every number.</p>
+
+<p>Without those records, the same email could have become a much longer review of their returns, at a time when the FTA was already looking closely at that customer.</p>
+
+<blockquote>
+  <p>You don’t control who your customers are or what they do. You control whether your side of every transaction is documented.</p>
+</blockquote>
+
+<h3 id="what-to-have-ready-for-every-sale">What to have ready for every sale</h3>
+
+<p><img src="/assets/images/audit/ac-sales-file.webp" alt="What to have ready for every sale" width="1600" height="900" loading="lazy" decoding="async" /></p>
+
+<p><strong>For each customer</strong></p>
+<ul>
+  <li>Trade licence and TRN, checked on the FTA’s TRN verification tool</li>
+  <li>The contract, quotation or purchase order</li>
+  <li>Who you deal with there, and their authority to act</li>
+</ul>
+
+<p><strong>For each sale</strong></p>
+<ul>
+  <li>The tax invoice, and any credit notes</li>
+  <li>A delivery note or other proof the goods or services were provided</li>
+  <li>The payment received into your account, matched to the invoice</li>
+</ul>
+
+<p><strong>For each VAT return</strong></p>
+<ul>
+  <li>A sales listing that adds up to the sales reported in the return</li>
+  <li>A reconciliation of the return to the ledger</li>
+  <li>Workings for any adjustments</li>
+</ul>
+
+<p>Keep these for the full record-keeping period, generally five years.</p>
+
+<h3 id="if-you-receive-a-request-like-this">If you receive a request like this</h3>
+
+<p><img src="/assets/images/audit/ac1-respond.webp" alt="Five steps when the FTA asks for the detail behind your returns" width="1600" height="900" loading="lazy" decoding="async" /></p>
+
+<ol>
+  <li><strong>Read the request carefully.</strong> Note exactly which periods, customers and documents it asks for, and the deadline it gives.</li>
+  <li><strong>Pull the sales file</strong> for every transaction in scope: invoices, orders, delivery proof and payments.</li>
+  <li><strong>Tie it to the returns.</strong> Show that the sales listing adds up to what you reported for each period.</li>
+  <li><strong>Explain any differences</strong> with a document for each: credit notes, timing, or errors. If you find a real error, correct it. Errors over AED 10,000 of tax need a voluntary disclosure; the <a href="/penalty-calculator/">Penalty Estimator</a> shows what that costs.</li>
+  <li><strong>Reply complete and on time,</strong> as one organised pack, and keep a copy of exactly what you sent.</li>
+</ol>
+
+<p>If the request is unclear or covers a large volume, get help early rather than close to the deadline.</p>
+
+<h3 id="the-purchase-side-is-now-stricter-too">The purchase side is now stricter too</h3>
+
+<p>This case was about sales. On purchases, the bar has risen: since 1 October 2026, FTA Decision No. 13 lets the FTA reject your input VAT if a supplier in your chain evaded tax and you should have been aware of it. The <a href="/guides/tax-invoice-no-longer-enough-fta-decision-13/">five-part Decision No. 13 series</a> covers the checks, and the <a href="/supplier-check/">Supplier Verification tool</a> builds the record for each supplier.</p>
+
+<p>The other case in this pair: <a href="/guides/bank-credits-vs-vat-returns-facility-renewal/">a bank that compared VAT returns with bank credits</a>.</p>
+
+<p><strong>Had a similar request?</strong> <a href="/contact/">Ask me about it</a>.</p>]]></content><author><name>Melvin Jose</name></author><summary type="html"><![CDATA[A real case: a customer was found guilty of tax evasion and the FTA asked our client for the detail behind its VAT returns. Why documents ended it, and what to keep.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://camelvinjose.com/assets/images/audit/ac1-cover.png" /><media:content medium="image" url="https://camelvinjose.com/assets/images/audit/ac1-cover.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The New UAE E-Invoicing Penalties: Cabinet Decision No. 173 of 2026 Explained</title><link href="https://camelvinjose.com/guides/uae-e-invoicing-penalties-cabinet-decision-173-2026/" rel="alternate" type="text/html" title="The New UAE E-Invoicing Penalties: Cabinet Decision No. 173 of 2026 Explained" /><published>2026-11-16T13:15:00+04:00</published><updated>2026-11-16T13:15:00+04:00</updated><id>https://camelvinjose.com/guides/uae-e-invoicing-penalties-cabinet-decision-173-2026</id><content type="html" xml:base="https://camelvinjose.com/guides/uae-e-invoicing-penalties-cabinet-decision-173-2026/"><![CDATA[<p>On 30 October 2026, the Ministry of Finance announced <strong>Cabinet Decision No. 173 of 2026</strong>, a new penalty table for e-invoicing. It <strong>repeals Cabinet Decision No. 106 of 2025</strong>, so the figures still quoted in many articles are out of date.</p>
+
+<p>Overall it’s softer. But one penalty now also applies to recipients, and the largest one still starts the day you miss your date.</p>
+
+<h3 id="the-four-penalties">The four penalties</h3>
+
+<p><img src="/assets/images/e-invoicing/ei-pen-table.webp" alt="The four e-invoicing penalties under Cabinet Decision No. 173 of 2026" width="1600" height="900" loading="lazy" decoding="async" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Violation</th>
+      <th>Penalty</th>
+      <th>Cap</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Not implementing e-invoicing under Ministerial Decision No. 244, <strong>including not appointing an ASP</strong>; or a recipient that has implemented but doesn’t keep up its recipient obligations</td>
+      <td>AED 5,000 for the first instance, then AED 5,000 for each month or part of a month it continues</td>
+      <td>AED 50,000 in any 12 consecutive months</td>
+    </tr>
+    <tr>
+      <td>Not issuing and transmitting an e-invoice to the recipient through the system</td>
+      <td>AED 100 per e-invoice</td>
+      <td>AED 5,000 per calendar month</td>
+    </tr>
+    <tr>
+      <td>Not issuing and transmitting an e-credit note</td>
+      <td>AED 100 per credit note</td>
+      <td>AED 5,000 per calendar month</td>
+    </tr>
+    <tr>
+      <td>Not telling your ASP about changes to your data registered with the FTA</td>
+      <td>AED 250 per day or part of a day</td>
+      <td>AED 5,000 per calendar month</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The decision takes effect the day after it’s published in the Official Gazette.</p>
+
+<h3 id="what-changed-from-decision-no-106-of-2025">What changed from Decision No. 106 of 2025</h3>
+
+<ul>
+  <li><strong>The implementation penalty is now capped</strong> at AED 50,000 in any 12 months. Under the old table it ran at AED 5,000 a month with no overall cap.</li>
+  <li><strong>Recipients are now covered.</strong> The implementation penalty applies to an issuer <strong>or</strong> a recipient that fails to implement. It also catches a recipient that went live but stopped meeting its obligations.</li>
+  <li><strong>The data-change penalty is lower.</strong> It drops from AED 1,000 a day to <strong>AED 250 a day</strong>, with a monthly cap of AED 5,000.</li>
+  <li><strong>The system-failure penalty is gone.</strong> The AED 1,000-a-day penalty for not reporting a system failure has been removed, in line with <a href="/guides/uae-e-invoicing-ministerial-decision-197-2026/">Ministerial Decision No. 197</a>, which repealed the duty to report.</li>
+  <li><strong>No double penalties.</strong> If the same person is both issuer and recipient for the same violation, only one penalty applies.</li>
+</ul>
+
+<p>What hasn’t changed: <strong>voluntary e-invoicing is never penalised.</strong> If you go live before your mandatory date, mistakes made before that date don’t attract these penalties.</p>
+
+<h3 id="what-it-costs-in-practice">What it costs in practice</h3>
+
+<p><img src="/assets/images/e-invoicing/ei-pen-examples.webp" alt="Three worked examples of e-invoicing penalties" width="1600" height="900" loading="lazy" decoding="async" /></p>
+
+<p><strong>A Phase 1 business that isn’t live on 1 January 2027.</strong> AED 5,000 for the first instance, then AED 5,000 for each month or part of a month it stays non-compliant. On those figures it reaches the <strong>AED 50,000 cap</strong> after about nine more months. The cap applies to any 12-month period, so it isn’t a one-off.</p>
+
+<p><strong>Invoices emailed as PDFs instead of going through the ASP.</strong> 120 invoices in March at AED 100 each is AED 12,000. That’s capped at <strong>AED 5,000 for March</strong>, and the cap resets each calendar month.</p>
+
+<p><strong>A trade licence change not passed to the ASP.</strong> Told 12 days late: 12 × AED 250 = <strong>AED 3,000</strong>.</p>
+
+<p>These sit <strong>on top of</strong> ordinary VAT penalties. If an invoice wasn’t issued properly, the VAT questions (output tax timing, your customer’s input tax claim) still apply under the VAT rules. For those, see the <a href="/penalty-calculator/">penalty calculator</a>.</p>
+
+<h3 id="where-the-risk-really-is">Where the risk really is</h3>
+
+<p>The per-invoice penalties are capped at AED 5,000 a month, which a large business could almost ignore. The bigger cost is commercial. If your invoices don’t arrive through the system, your <strong>customers’ accounts payable teams may not process them</strong>, and that delays your cash.</p>
+
+<p>The penalty that matters most is the first one. <strong>Not having an ASP</strong> counts as failing to implement. For Phase 1 businesses, the appointment deadline was 30 October 2026.</p>
+
+<h3 id="what-to-do-now">What to do now</h3>
+
+<ul>
+  <li><strong>Phase 1:</strong> confirm your ASP contract is signed and onboarding has started in EmaraTax. Go-live is 1 January 2027.</li>
+  <li><strong>Phase 2:</strong> put 31 March 2027 (ASP) and 1 July 2027 (go-live) on the board calendar.</li>
+  <li><strong>Make ASP notification a routine step</strong> whenever your licence, address, legal name or other registered details change.</li>
+  <li><strong>Consider going live early.</strong> Voluntary e-invoicing can’t be penalised, so it’s a free test run.</li>
+</ul>
+
+<p><strong>Sources:</strong> <a href="https://mof.gov.ae/wp-content/uploads/2026/10/Cabinet-Decision-No.-173-of-2026-On-the-Violations-and-Administrative-Penalties-Resulting-from-Violation-of-the-Legislation-Regulating-the-Electronic-Invoicing-System_En.pdf">Cabinet Decision No. 173 of 2026</a> on violations and administrative penalties under the e-invoicing legislation (Ministry of Finance), Articles 2 to 5 and the annexed table; <a href="https://mof.gov.ae/wp-content/uploads/2026/10/UAE-Electronic-Invoicing-Guidelines_En.pdf">UAE Electronic Invoicing Guidelines v2.0</a>, Chapter 11.</p>]]></content><author><name>Melvin Jose</name></author><summary type="html"><![CDATA[The four UAE e-invoicing penalties under Cabinet Decision No. 173 of 2026, the new AED 50,000 cap, what changed from Decision 106 of 2025, with worked examples.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://camelvinjose.com/assets/images/e-invoicing/ei-pen-cover.png" /><media:content medium="image" url="https://camelvinjose.com/assets/images/e-invoicing/ei-pen-cover.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Choosing an E-Invoicing Provider (ASP) in the UAE: What to Check Before You Sign</title><link href="https://camelvinjose.com/guides/choosing-uae-e-invoicing-asp/" rel="alternate" type="text/html" title="Choosing an E-Invoicing Provider (ASP) in the UAE: What to Check Before You Sign" /><published>2026-11-16T13:10:00+04:00</published><updated>2026-11-16T13:10:00+04:00</updated><id>https://camelvinjose.com/guides/choosing-uae-e-invoicing-asp</id><content type="html" xml:base="https://camelvinjose.com/guides/choosing-uae-e-invoicing-asp/"><![CDATA[<p>Every business in scope needs an <strong>Accredited Service Provider (ASP)</strong>: the company that sends, receives and reports your e-invoices. As of 16 November 2026, the Ministry of Finance lists <strong>88 accredited ASPs</strong>, and most of them will tell you they’re the right choice.</p>
+
+<p>The Ministry has published its own guidance on what to look at. Here it is, turned into questions to ask, plus the contract points it doesn’t cover.</p>
+
+<h3 id="the-ground-rules">The ground rules</h3>
+
+<ul>
+  <li><strong>One ASP, both directions.</strong> You appoint a single ASP for sending (sales) and receiving (purchases). You can’t split them.</li>
+  <li><strong>Group companies can differ.</strong> Each member of a VAT Tax Group can use a different ASP, but most groups standardise on one.</li>
+  <li><strong>Accredited only.</strong> Check the provider is on the Ministry’s <a href="https://mof.gov.ae/en/about-ministry/mof-initiatives/einvoicing/pre-approved-einvoicing-service-providers">list of accredited ASPs</a>, and note its accreditation number. Some providers’ marketing still refers to an earlier “pre-approved” stage.</li>
+  <li><strong>You start onboarding.</strong> Onboarding begins from the <strong>e-invoicing tile in EmaraTax</strong>, not from the ASP’s side.</li>
+  <li><strong>Phase 1 is already late.</strong> Businesses with revenue of AED 50 million or more had to appoint by <strong>30 October 2026</strong>. Smaller businesses have until <strong>31 March 2027</strong>. (<a href="/guides/uae-e-invoicing-who-must-comply/">Which phase are you in?</a>)</li>
+</ul>
+
+<h3 id="six-things-the-ministry-says-to-check">Six things the Ministry says to check</h3>
+
+<p><img src="/assets/images/e-invoicing/ei-asp-checklist.webp" alt="Six ASP selection criteria from the Ministry of Finance" width="1600" height="900" loading="lazy" decoding="async" /></p>
+
+<p><strong>1. Experience.</strong> How long has it provided e-invoicing, and how long has it been on Peppol? How long has it operated in the UAE, and when was it accredited here? A provider that has run e-invoicing in other countries has already dealt with problems that a new entrant hasn’t met yet.</p>
+
+<p><strong>2. Product.</strong> Is the platform its own, or a resold third-party product? Is support in-house or subcontracted? If it’s resold, find out who you call when something breaks at month-end.</p>
+
+<p><strong>3. ERP integration.</strong> Does it have a ready connector for your ERP, or will someone build a custom integration? Who does the field mapping, and is that in the price? This is where most projects slip.</p>
+
+<p><strong>4. Security and data.</strong> Which certifications does it hold (ISO and others)? How is data encrypted, and what’s its incident response? <strong>Where is your data stored</strong>, in the UAE or overseas?</p>
+
+<p><strong>5. Support and uptime.</strong> What are the response times, and is there an uptime commitment written into the contract?</p>
+
+<p><strong>6. Price.</strong> Per-invoice or subscription? Are there set-up, integration or archive fees? The Ministry recommends that contracts include <strong>100 free e-invoices a year</strong>. Ask whether yours does.</p>
+
+<h3 id="contract-points-the-guidance-doesnt-spell-out">Contract points the guidance doesn’t spell out</h3>
+
+<p>These come from how the rules work, not from the Ministry’s checklist:</p>
+
+<ul>
+  <li><strong>Archive and exit.</strong> <a href="/guides/uae-e-invoicing-ministerial-decision-197-2026/">Ministerial Decision No. 197 of 2026</a> requires you to keep e-invoice data for the full Tax Procedures Law period: generally <strong>5 years</strong>, and longer in some cases, such as real estate. You can hand storage to the ASP, but <strong>the legal obligation stays with you</strong>. The contract should give you full data export in a readable format, during the contract and after it ends.</li>
+  <li><strong>Switching.</strong> The guidelines don’t describe a switching process, so put notice periods, data handover and parallel running into the contract yourself.</li>
+  <li><strong>Rejections.</strong> Agree in writing who monitors failed invoices, how you’re told, and how fast fixes happen. The 14-business-day issuing deadline doesn’t stop while an invoice sits in an error queue.</li>
+  <li><strong>Data-change notices.</strong> Not telling your ASP about changes to your FTA-registered details costs <a href="/guides/uae-e-invoicing-penalties-cabinet-decision-173-2026/">AED 250 a day</a>. Make it part of your licence-renewal checklist.</li>
+</ul>
+
+<h3 id="four-steps-to-go-live">Four steps to go-live</h3>
+
+<p><img src="/assets/images/e-invoicing/ei-asp-steps.webp" alt="Four steps from now to go-live" width="1600" height="900" loading="lazy" decoding="async" /></p>
+
+<p>The guidelines set out the path:</p>
+
+<ol>
+  <li><strong>Understand.</strong> Confirm your phase and date. List the changes needed in your ERP, billing and approval processes.</li>
+  <li><strong>Select and onboard.</strong> Sign with one ASP, onboard through EmaraTax, and get your Peppol Participant Identifier (0235 followed by your TIN).</li>
+  <li><strong>Test.</strong> Agree the data format with the ASP, then test sending, receiving and FTA reporting end to end with real invoice scenarios: credit notes, advances, foreign currency, zero-rated sales.</li>
+  <li><strong>Go live.</strong> Agree roles for monitoring and error fixing, start exchanging, and keep the ASP updated when your details change.</li>
+</ol>
+
+<h3 id="a-practical-shortlist-method">A practical shortlist method</h3>
+
+<ul>
+  <li>Start with 3 providers that already connect to <strong>your</strong> ERP.</li>
+  <li>Ask each for a live demo using <strong>your own</strong> invoices, including a credit note and an advance-payment invoice.</li>
+  <li>Ask for 2 UAE client references of your size.</li>
+  <li>Compare the <strong>total 3-year cost</strong>, not the per-invoice price.</li>
+</ul>
+
+<p><strong>Sources:</strong> <a href="https://mof.gov.ae/wp-content/uploads/2026/02/Considerations-for-selecting-an-Accredited-Service-Provider_V-1.0-23Feb2024.pdf">Considerations for Selecting an Accredited Service Provider v1.0</a> (Ministry of Finance, 23 February 2026); <a href="https://mof.gov.ae/wp-content/uploads/2026/10/UAE-Electronic-Invoicing-Guidelines_En.pdf">UAE Electronic Invoicing Guidelines v2.0</a>, Sections 5.4, 6.1, 9 and Appendix 1; <a href="https://mof.gov.ae/en/about-ministry/mof-initiatives/einvoicing/pre-approved-einvoicing-service-providers">MoF list of accredited ASPs</a> (checked 16 November 2026).</p>]]></content><author><name>Melvin Jose</name></author><summary type="html"><![CDATA[How to choose a UAE e-invoicing Accredited Service Provider: the Ministry of Finance's selection criteria, contract points to check, and the onboarding steps.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://camelvinjose.com/assets/images/e-invoicing/ei-asp-cover.png" /><media:content medium="image" url="https://camelvinjose.com/assets/images/e-invoicing/ei-asp-cover.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">How a UAE E-Invoice Actually Travels: The Five-Corner Model in Plain English</title><link href="https://camelvinjose.com/guides/uae-e-invoicing-five-corner-model/" rel="alternate" type="text/html" title="How a UAE E-Invoice Actually Travels: The Five-Corner Model in Plain English" /><published>2026-11-16T13:05:00+04:00</published><updated>2026-11-16T13:05:00+04:00</updated><id>https://camelvinjose.com/guides/uae-e-invoicing-five-corner-model</id><content type="html" xml:base="https://camelvinjose.com/guides/uae-e-invoicing-five-corner-model/"><![CDATA[<p>From go-live, emailing a PDF doesn’t count as issuing an invoice. The invoice has to travel as structured data through two service providers, with the tax data reported to the FTA on the way. Here’s how that works, based on the Ministry of Finance’s <strong>Electronic Invoicing Guidelines v2.0</strong>.</p>
+
+<h3 id="the-five-corners">The five corners</h3>
+
+<p><img src="/assets/images/e-invoicing/ei-five-corner.webp" alt="The five-corner e-invoicing model" width="1600" height="900" loading="lazy" decoding="async" /></p>
+
+<ol>
+  <li><strong>You (the supplier)</strong> send the invoice data from your ERP or billing system to your ASP, in a format you’ve agreed with them.</li>
+  <li><strong>Your ASP</strong> validates the data and converts it into the UAE standard, <strong>PINT-AE XML</strong>. It also generates the invoice’s unique ID (UUID).</li>
+  <li><strong>Your ASP</strong> sends the invoice over the Peppol network to <strong>your customer’s ASP</strong>, and at the same time reports the tax data to the <strong>FTA</strong>.</li>
+  <li><strong>Your customer’s ASP</strong> validates the invoice, confirms receipt and delivers it to <strong>your customer</strong>.</li>
+  <li><strong>The FTA</strong> confirms the tax data to both ASPs, and each ASP passes the confirmation back to its client.</li>
+</ol>
+
+<p>If the invoice fails validation at your customer’s ASP, that ASP tells your ASP and the FTA. The failure comes back to you to fix.</p>
+
+<p>Two things to take from this:</p>
+
+<ul>
+  <li><strong>You stay responsible.</strong> The ASP does the sending, but the guidelines are clear that the obligation remains with the supplier. You calculate every value on the invoice. A wrong VAT figure is your error, not your ASP’s.</li>
+  <li><strong>There’s no PDF and no QR code.</strong> The legal e-invoice is the XML. You can still send a PDF copy for convenience, but it doesn’t replace the e-invoice.</li>
+</ul>
+
+<h3 id="your-peppol-address">Your Peppol address</h3>
+
+<p>Every business on the system gets a <strong>Participant Identifier</strong>: <strong>0235</strong> followed by its 10-digit <strong>TIN</strong>, the first 10 digits of its TRN. That’s the address invoices are sent to. Each member of a VAT group has its own TIN and identifier, based on its own TRN, not the group representative’s.</p>
+
+<h3 id="what-an-e-invoice-has-to-contain">What an e-invoice has to contain</h3>
+
+<p>The Ministry’s mandatory fields list sets out <strong>51 mandatory fields</strong> under PINT-AE, plus conditional ones. The data falls into a few groups:</p>
+
+<ul>
+  <li><strong>Header:</strong> invoice number, issue date, invoice type code, currency, due date, UUID.</li>
+  <li><strong>Seller and buyer:</strong> name, TRN (or TIN if not VAT-registered), legal registration details and issuing authority, address, electronic address.</li>
+  <li><strong>Lines:</strong> item name, quantity, unit of measure, unit price, discounts and charges, VAT category, rate and amount, and whether it’s goods or services.</li>
+  <li><strong>Totals and VAT breakdown:</strong> net, VAT and gross totals, amounts already paid, amount payable, and VAT by category.</li>
+</ul>
+
+<p>Some points from the clarifications in v2.0:</p>
+
+<ul>
+  <li>A <strong>VAT-registered</strong> seller puts its <strong>15-digit TRN</strong> in the VAT number field. A seller that <strong>isn’t VAT-registered</strong> uses its <strong>10-digit TIN</strong> in a different field. A Corporate Tax TRN must never go in the VAT field.</li>
+  <li><strong>Advance payments:</strong> issue a tax invoice when the advance is received. The final invoice covers only the balance and refers back to the advance invoice.</li>
+  <li><strong>Credit notes:</strong> one credit note can cover several invoices, and it can be partial. A negative invoice must be issued as a credit note.</li>
+  <li><strong>Invoice type code 480</strong> is for supplies entirely outside the scope of UAE VAT.</li>
+  <li><strong>HSN codes</strong> are optional for now. The Ministry will announce when they become mandatory.</li>
+  <li><strong>You can’t add your own fields</strong> to PINT-AE.</li>
+</ul>
+
+<p>The practical point: <strong>most ERPs don’t capture all of this today</strong>, especially buyer legal registration details. That data gap is usually the biggest piece of work in a project, not the connection to the ASP.</p>
+
+<h3 id="when-your-customer-isnt-ready">When your customer isn’t ready</h3>
+
+<p><img src="/assets/images/e-invoicing/ei-buyer-not-ready.webp" alt="What to do when your customer isn't on the e-invoicing system" width="1600" height="900" loading="lazy" decoding="async" /></p>
+
+<p>Phases go live at different times, so you’ll often be live before some customers are. Your obligation doesn’t depend on theirs.</p>
+
+<ul>
+  <li><strong>The customer is in scope but not live yet:</strong> you still issue the e-invoice through your ASP, using the placeholder endpoint <strong>0235:9900000098</strong>, and the tax data is reported. You <strong>also</strong> send a normal tax invoice, such as a PDF, so they can recover input VAT.</li>
+  <li><strong>An overseas customer with no Peppol ID:</strong> you still issue an e-invoice, using the placeholder endpoint <strong>0235:9900000099</strong>.</li>
+  <li><strong>A consumer:</strong> no e-invoice. B2C is outside the system for now.</li>
+</ul>
+
+<h3 id="timing">Timing</h3>
+
+<p>The decisions require e-invoices and credit notes to be issued and transmitted <strong>within 14 business days</strong> of the transaction. VAT timing rules still apply alongside that. <a href="/guides/uae-e-invoicing-ministerial-decision-197-2026/">Ministerial Decision No. 197 of 2026</a> has the detail.</p>
+
+<h3 id="what-to-do-now">What to do now</h3>
+
+<ul>
+  <li><strong>Map your invoice data</strong> against the mandatory fields, and fix the gaps at source in your customer master.</li>
+  <li><strong>Collect customers’ TRNs and TINs</strong> now, rather than at go-live.</li>
+  <li><strong>Agree a rejection process</strong> with your ASP: who sees the failure, who fixes it, and how fast.</li>
+  <li><strong>Keep sending PDF tax invoices</strong> to customers who aren’t live yet.</li>
+</ul>
+
+<p><strong>Sources:</strong> <a href="https://mof.gov.ae/wp-content/uploads/2026/10/UAE-Electronic-Invoicing-Guidelines_En.pdf">UAE Electronic Invoicing Guidelines v2.0</a> (Ministry of Finance, 26 October 2026), Chapter 5, Sections 2, 3, 6, 10 and 12, and Appendix 6; <a href="https://mof.gov.ae/wp-content/uploads/2026/02/UAE-Electronic-Invoice-mandatory-fields_V-1.0-23Feb2026.pdf">UAE Electronic Invoice Mandatory Fields v1.0</a>.</p>]]></content><author><name>Melvin Jose</name></author><summary type="html"><![CDATA[How a UAE e-invoice moves from your ERP to your customer and the FTA, what your ASP does, what an e-invoice contains, and what to do when a customer isn't ready.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://camelvinjose.com/assets/images/e-invoicing/ei-flow-cover.png" /><media:content medium="image" url="https://camelvinjose.com/assets/images/e-invoicing/ei-flow-cover.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

@@ -1,0 +1,21 @@
+# Search engines and AI answer engines are welcome to read and cite this site.
+User-agent: *
+Allow: /
+Disallow: /downloads/
+
+# AI search and assistant crawlers (named so a future catch-all rule can't block them by accident)
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Bingbot
+Allow: /
+Disallow: /downloads/
+
+Sitemap: https://camelvinjose.com/sitemap.xml
