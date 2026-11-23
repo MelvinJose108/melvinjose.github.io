@@ -3,6 +3,12 @@
 # hook:   the opening lines of the post (plain text, keep it to 2-3 short lines)
 # image:  an image on this site (optional)
 # guide:  related article on this site (optional)
+- urn: "urn:li:ugcPost:7530500357131726848"
+  date: 2026-11-23
+  hook: "A free zone client told me their Corporate Tax rate was 0%. Settled, they said. I asked one question: where does the distribution happen? The stock was sold from a warehouse outside any designated zone."
+  image: /assets/images/free-zones/dz-distribution.webp
+  image_alt: "Conditions for distribution to be a Qualifying Activity: in or from a Corporate Tax Designated Zone"
+  guide: /guides/free-zone-vs-designated-zone-uae-tax/
 - urn: "urn:li:share:7527977948612759558"
   date: 2026-11-16
   hook: "The FTA's Tax Group guide has an example every group finance team should read twice. A parent owns 100% of a subsidiary. On 1 October, 10% of the shares go to a third party. On 8 October, they come back. Seven days at 90%."
