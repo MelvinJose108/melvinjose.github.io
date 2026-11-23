@@ -5,49 +5,95 @@ seo_title: "Melvin Jose: UAE Tax and Audit Professional"
 description: "Melvin Jose is a Senior Audit Executive in Ajman, UAE, working on Corporate Tax, VAT, FTA compliance and statutory audit for Free Zone and mainland businesses."
 permalink: /about/
 ---
-{% assign a = site.data.author %}
-<div class="post">
-  <div class="aboutHead">{% include avatar.html cls="big" big=true eager=true %}<div><h1 class="pagetitle">{{ a.name }}</h1><p class="deck">{{ a.title }} · {{ a.city }}, UAE · Chartered Accountant finalist</p></div></div>
-  <div class="body">
-    <p>I'm a Chartered Accountant finalist with 6+ years in audit and tax across the UAE and India. I lead Corporate Tax, VAT and audit engagements for Free Zone and mainland businesses.</p>
-    <p>Most of my work sits where tax rules meet day-to-day bookkeeping: a Corporate Tax return that depends on how the year's entries were booked, a VAT refund that stands or falls on the documents behind it, an FTA query that needs a clear, well-supported answer. I write here to make those rules easier to apply before they become a problem.</p>
+{% assign a = site.data.author %}{% assign gcount = site.posts | size %}
+<div class="ab">
+  <section class="ab-hero">
+    <div class="ab-ph">{% include avatar.html cls="big" big=true eager=true %}</div>
+    <div>
+      <p class="ab-k">About · {{ a.title }}, {{ a.city }}</p>
+      <h1>{{ a.name }}</h1>
+      <p class="ab-line">I work where UAE tax rules meet <em>real books.</em></p>
+      <p class="ab-lede">Chartered Accountant finalist with 6+ years in audit and tax across the UAE and India. I lead Corporate Tax, VAT and audit engagements for Free Zone and mainland businesses, and write The UAE Ledger to make the rules easier to apply.</p>
+      <div class="ab-cta"><a class="btn" href="{{ '/contact/' | relative_url }}">Ask a question</a><a class="btn ghost" href="{{ '/guides/' | relative_url }}">Read the guides</a></div>
+      <div class="ab-soc">
+        <a href="{{ a.linkedin }}" target="_blank" rel="noopener"><span class="ab-ic">in</span><span><small>Connect on</small><b>LinkedIn</b></span><i>↗</i></a>
+        <a href="{{ '/newsletter/' | relative_url }}"><span class="ab-ic">@</span><span><small>Get guides by</small><b>Email</b></span><i>→</i></a>
+        <a href="{{ a.substack }}" target="_blank" rel="noopener"><span class="ab-ic">S</span><span><small>Read on</small><b>Substack</b></span><i>↗</i></a>
+      </div>
+    </div>
+  </section>
 
-    <h3>In numbers</h3>
-    <ul>
-      <li><b>200+</b> Corporate Tax engagements delivered, including registration, return filing, QFZP assessments and Small Business Relief evaluations</li>
-      <li><b>AED 3 million+</b> in VAT refunds supported through documentation and FTA submissions</li>
-      <li><b>6+ years</b> in audit and tax across the UAE and India, including <b>2.5+ years</b> on UAE Corporate Tax and VAT</li>
-    </ul>
+  <nav class="ab-tabs" aria-label="About sections">
+    <a href="#overview"><span>01</span>Overview</a><a href="#experience"><span>02</span>Experience</a><a href="#capabilities"><span>03</span>Capabilities</a><a href="#qualifications"><span>04</span>Qualifications</a>
+  </nav>
 
-    <h3>What I work on</h3>
-    <ul>
-      <li><b>UAE Corporate Tax:</b> registration, returns, QFZP assessments, Small Business Relief, and Corporate Tax and transfer pricing reports</li>
-      <li><b>VAT:</b> registrations, returns, VAT reviews, Tax Groups, deregistration and refund claims</li>
-      <li><b>FTA matters:</b> clarifications, reconsideration requests, penalty waiver submissions and audit queries</li>
-      <li><b>Statutory audit and reporting:</b> IFRS-based financial statements, audit planning and risk assessment</li>
-      <li><b>Sectors:</b> trading, logistics, services, contracting, schools and Free Zone entities</li>
-    </ul>
+  <div class="ab-grid">
+    <div class="ab-main">
+      <section id="overview" class="ab-sec">
+        <p class="ab-n">01 / Snapshot</p>
+        <h2>Tax rules, applied to <em>day-to-day bookkeeping.</em></h2>
+        <p>Most of my work sits where the law meets the ledger: a Corporate Tax return that depends on how the year's entries were booked, a VAT refund that stands or falls on the documents behind it, an FTA query that needs a clear, well-supported answer.</p>
+        <div class="ab-stats">
+          <div><b>200+</b><span>Corporate Tax engagements delivered</span></div>
+          <div><b>AED 3m+</b><span>in VAT refunds supported</span></div>
+          <div><b>6+ yrs</b><span>in audit and tax, UAE and India</span></div>
+          <div><b>{{ gcount }}</b><span>guides on The UAE Ledger</span></div>
+        </div>
+        <div class="ab-focus">
+          <div><span>A</span><div><h3>Corporate Tax, end to end</h3><p>Registration, returns, QFZP assessments, Small Business Relief, and Corporate Tax and transfer pricing reports.</p></div></div>
+          <div><span>B</span><div><h3>VAT and the FTA</h3><p>VAT reviews, refunds, Tax Groups and FTA correspondence: clarifications, reconsiderations and penalty waivers.</p></div></div>
+        </div>
+      </section>
 
-    <h3>Background</h3>
-    <ol class="hist">
-      <li><b>Jan 2026 to present · Senior Audit Executive, Ajman</b>Leads Corporate Tax, VAT and audit engagements and a team of executives. Reviews Corporate Tax and transfer pricing reports, handles VAT refunds end to end and represents clients with the FTA.</li>
-      <li><b>Jan 2024 to Dec 2025 · Audit Executive, Ajman</b>Prepared 100+ Corporate Tax reports for Free Zone and mainland clients, supported VAT Tax Group registrations and handled FTA correspondence and penalty waiver requests.</li>
-      <li><b>Jun 2023 to Aug 2023 · Tax Associate, Kerala, India</b>Tax compliance work.</li>
-      <li><b>Jan 2019 to Jan 2022 · CA Articleship, Thrissur, India</b>Financial reporting and tax audits.</li>
-    </ol>
+      <section id="experience" class="ab-sec">
+        <p class="ab-n">02 / Experience</p>
+        <h2>Where the experience <em>comes from.</em></h2>
+        <ol class="ab-tl">
+          <li><time>Jan 2026 – present</time><div><h3>Senior Audit Executive</h3><p class="ab-at">Audit and tax firm · Ajman, UAE</p><ul><li>Leads Corporate Tax, VAT and audit engagements and a team of executives</li><li>Reviews Corporate Tax and transfer pricing reports</li><li>Handles VAT refunds end to end and represents clients with the FTA</li></ul></div></li>
+          <li><time>Jan 2024 – Dec 2025</time><div><h3>Audit Executive</h3><p class="ab-at">Audit and tax firm · Ajman, UAE</p><ul><li>Prepared 100+ Corporate Tax reports for Free Zone and mainland clients</li><li>Supported VAT Tax Group registrations</li><li>Handled FTA correspondence and penalty waiver requests</li></ul></div></li>
+          <li><time>Jun 2023 – Aug 2023</time><div><h3>Tax Associate</h3><p class="ab-at">Kerala, India</p><ul><li>Tax compliance work</li></ul></div></li>
+          <li><time>Jan 2019 – Jan 2022</time><div><h3>CA Articleship</h3><p class="ab-at">Thrissur, India</p><ul><li>Financial reporting and tax audits</li></ul></div></li>
+        </ol>
+      </section>
 
-    <h3>Qualifications and tools</h3>
-    <ul>
-      <li><b>Qualification:</b> Chartered Accountant finalist, The Institute of Chartered Accountants of India</li>
-      <li><b>Systems:</b> Tally ERP, QuickBooks, Zoho Books, Odoo, Excel (advanced)</li>
-      <li><b>Languages:</b> English, Hindi, Malayalam</li>
-    </ul>
+      <section id="capabilities" class="ab-sec">
+        <p class="ab-n">03 / Capabilities</p>
+        <h2>What I work on.</h2>
+        <div class="ab-caps">
+          <div><h3>UAE Corporate Tax</h3><p>Registration, returns, QFZP assessments, Small Business Relief, Corporate Tax and transfer pricing reports</p></div>
+          <div><h3>VAT</h3><p>Registrations, returns, VAT reviews, Tax Groups, deregistration and refund claims</p></div>
+          <div><h3>FTA matters</h3><p>Clarifications, reconsideration requests, penalty waiver submissions and audit queries</p></div>
+          <div><h3>Audit and reporting</h3><p>IFRS-based financial statements, audit planning and risk assessment</p></div>
+          <div><h3>Sectors</h3><p>Trading, logistics, services, contracting, schools and Free Zone entities</p></div>
+          <div><h3>Systems</h3><p>Tally ERP, QuickBooks, Zoho Books, Odoo, Excel (advanced)</p></div>
+        </div>
+      </section>
 
-    <h3>How articles are prepared</h3>
-    <p>Each article shows when it was published and when it was last reviewed. Where possible it links to the official Federal Tax Authority or Ministry of Finance source. Tax rules change, so older articles may need updating.</p>
+      <section id="qualifications" class="ab-sec">
+        <p class="ab-n">04 / Qualifications</p>
+        <h2>Qualifications.</h2>
+        <div class="ab-quals">
+          <div><span class="ab-st">In progress</span><h3>Chartered Accountancy</h3><p>The Institute of Chartered Accountants of India · CA Final</p></div>
+          <div><span class="ab-st">In progress</span><h3>CMA (US)</h3><p>Institute of Management Accountants</p></div>
+          <div><span class="ab-st done">Completed</span><h3>Bachelor of Commerce</h3><p>University of Madras</p></div>
+          <div><span class="ab-st done">Languages</span><h3>English, Hindi, Malayalam</h3><p>Working proficiency</p></div>
+        </div>
+        <p class="ab-note"><b>How the guides are prepared.</b> Each one names its official FTA or Ministry of Finance source and shows when it was published and last reviewed. Tax rules change, so older guides may need updating.</p>
+      </section>
+    </div>
 
-    <h3>Get in touch</h3>
-    <p>If you spot a mistake, want a topic covered or want to talk through a tax question, <a href="{{ '/contact/' | relative_url }}">send me a question here</a> or message me on <a href="{{ a.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>.</p>
-    <p><a class="btn" href="{{ '/contact/' | relative_url }}">Ask a question</a></p>
+    <aside class="ab-side">
+      <div class="ab-card">
+        <p class="ab-n">Direct line</p>
+        <h3>Let's talk.</h3>
+        <p>Spotted a mistake, want a topic covered, or have a UAE tax question? Send it in. I read every message.</p>
+        <a class="btn" href="{{ '/contact/' | relative_url }}">Ask a question</a>
+        <ul><li><span>📍</span>{{ a.city }}, UAE</li><li><span>in</span><a href="{{ a.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li><li><span>@</span><a href="{{ '/newsletter/' | relative_url }}">Newsletter</a></li></ul>
+      </div>
+      <div class="ab-card ab-latest">
+        <p class="ab-n">Latest guide</p>
+        {% assign g = site.posts | first %}<a href="{{ g.url | relative_url }}"><b>{{ g.title }}</b><span>{{ g.date | date: "%-d %b %Y" }} · {{ g.topic }}</span></a>
+      </div>
+    </aside>
   </div>
 </div>
