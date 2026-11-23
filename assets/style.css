@@ -639,3 +639,5 @@ html{overflow-x:clip}
 .ab-latest a:hover b{color:var(--acc)}
 .ab-latest span{display:block;margin-top:.5rem;font-family:var(--ui);font-size:.8rem;color:var(--mute)}
 @media(max-width:900px){.ab-hero{grid-template-columns:1fr;gap:1.6rem}.ab-ph{justify-self:start}.ab-ph img.avatar{width:9rem;height:9rem}.ab-grid{grid-template-columns:1fr}.ab-side{position:static}.ab-stats{grid-template-columns:1fr 1fr}.ab-focus,.ab-caps,.ab-quals{grid-template-columns:1fr}.ab-tl li{grid-template-columns:1fr;gap:.3rem}}
+.ab-ph img.avatar,.ab-ph img{width:15rem!important;height:15rem!important;max-width:none;border-radius:16px!important}
+@media(max-width:900px){.ab-ph img.avatar,.ab-ph img{width:10rem!important;height:10rem!important}}
