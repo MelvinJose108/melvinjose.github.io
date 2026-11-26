@@ -1,5 +1,7 @@
 ---
 title: "Is Your Free Zone Company a Qualifying Free Zone Person? The Conditions, Activities and Traps"
+redirect_from:
+  - /guides/qfzp/
 date: 2026-11-21 09:00:00 +0400
 seo_title: "Qualifying Free Zone Person (QFZP) Conditions in the UAE"
 topic: "Corporate Tax"
