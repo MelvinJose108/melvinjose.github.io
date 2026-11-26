@@ -3,8 +3,22 @@ layout: default
 app: true
 title: Gratuity Calculator
 permalink: /gratuity/
-seo_title: "UAE Gratuity Calculator 2026"
-description: "Calculate UAE end-of-service gratuity under Article 51 of the Labour Law, and work out the year-end gratuity provision for your whole team."
+seo_title: "UAE Gratuity Calculator 2026: End of Service, Dubai & All Emirates"
+description: "Free UAE gratuity calculator for 2026: end-of-service benefit on your last basic salary under Article 51 of the Labour Law, with worked examples and a year-end provision for your whole team."
+reviewed: 2026-11-26
+faq:
+  - q: "How is gratuity calculated in the UAE?"
+    a: "On your last basic salary, not your total salary. You get 21 days' basic salary for each of your first 5 years of service and 30 days' for each year after that, pro-rated for part years, with a daily wage of basic salary divided by 30. The total can't exceed two years' basic salary."
+  - q: "Do I get gratuity if I resign?"
+    a: "Yes, once you have completed one year of continuous service. Under Federal Decree-Law No. 33 of 2021, resigning no longer reduces gratuity the way it did under the old law."
+  - q: "How much gratuity do I get after 2 years?"
+    a: "42 days' basic salary: 21 days for each of the 2 years. On a basic salary of AED 6,000, that's AED 200 a day × 42 = AED 8,400."
+  - q: "What is the maximum gratuity in the UAE?"
+    a: "Two years' basic salary in total, however long you have worked."
+  - q: "When must the employer pay gratuity?"
+    a: "Within 14 days of the contract ending, together with the employee's other final dues."
+  - q: "Does this apply in DIFC and ADGM?"
+    a: "No. DIFC and ADGM have their own employment laws and end-of-service rules. The calculator covers private-sector employees under the federal Labour Law, which includes most other free zones."
 ---
 <h1 class="pagetitle">Gratuity Calculator</h1>
 <p class="deck">End-of-service gratuity for private-sector employees under Article 51 of Federal Decree-Law No. 33 of 2021, plus a year-end provision for your whole team.</p>
@@ -50,8 +64,25 @@ description: "Calculate UAE end-of-service gratuity under Article 51 of the Labo
       <tr><td>Maximum</td><td>Two years' basic salary in total</td></tr>
     </tbody>
   </table>
-  <p>Example: a basic salary of AED 10,000 over 3 years gives a daily wage of AED 333.33 × 21 days × 3 years = <b>AED 21,000</b>. The employer must pay final dues, including gratuity, within 14 days of the contract ending.</p>
+  <h3>Worked examples</h3>
+  <table>
+    <thead><tr><th>Basic salary</th><th>Service</th><th>Working</th><th>Gratuity</th></tr></thead>
+    <tbody>
+      <tr><td>AED 6,000</td><td>2 years</td><td>AED 200 a day × 21 days × 2 years</td><td><b>AED 8,400</b></td></tr>
+      <tr><td>AED 10,000</td><td>3 years</td><td>AED 333.33 a day × 21 days × 3 years</td><td><b>AED 21,000</b></td></tr>
+      <tr><td>AED 12,000</td><td>7 years</td><td>AED 400 × 21 × 5 = 42,000, plus AED 400 × 30 × 2 = 24,000</td><td><b>AED 66,000</b></td></tr>
+    </tbody>
+  </table>
+  <p>The employer must pay final dues, including gratuity, within 14 days of the contract ending.</p>
   <p><b>For the accounts:</b> the year-end provision is usually the gratuity everyone would receive if they left on the balance sheet date. Larger entities reporting under full IFRS may need an actuarial valuation under IAS 19 instead.</p>
+</section>
+
+<section class="hsec body faq" style="margin-top:2rem">
+  <h2>Common questions</h2>
+  {% for f in page.faq %}<h3>{{ f.q }}</h3>
+  <p>{{ f.a }}</p>
+  {% endfor %}
+  <p class="note">Source: Federal Decree-Law No. 33 of 2021 on the Regulation of Labour Relations, Article 51. Last reviewed {{ page.reviewed | date: "%-d %B %Y" }}.</p>
 </section>
 
 <script src="{{ '/assets/obligations.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
