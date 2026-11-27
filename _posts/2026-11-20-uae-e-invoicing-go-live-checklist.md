@@ -4,10 +4,10 @@ date: 2026-11-20 10:30:00 +0400
 seo_title: "UAE E-Invoicing Go-Live 1 January 2027: Readiness Checklist"
 topic: "E-Invoicing"
 description: "A week-by-week plan for UAE businesses with AED 50 million+ revenue to be ready for mandatory e-invoicing on 1 January 2027: scope, data, testing, controls and cut-over."
-based_on: "UAE Electronic Invoicing Guidelines v2.0"
-based_on_date: "Ministry of Finance, 26 October 2026"
-based_on_url: "https://mof.gov.ae/wp-content/uploads/2026/10/UAE-Electronic-Invoicing-Guidelines_En.pdf"
-reviewed: 2026-11-20
+based_on: "UAE Electronic Invoicing Guidelines v2.1"
+based_on_date: "Ministry of Finance, 25 November 2026"
+based_on_url: "https://mof.gov.ae/einvoicing/"
+reviewed: 2026-11-27
 image: /assets/images/e-invoicing/ei-golive-cover.png
 tldr: "UAE businesses with revenue of AED 50 million or more must be live on e-invoicing by 1 January 2027, through an Accredited Service Provider (ASP) they should already have appointed. With six weeks left, work through it a week at a time: confirm scope and the ASP, fix invoice data, test end to end, set controls for the 14-business-day rule and rejections, get the receiving side and archive ready, then cut over. Not being live counts as failing to implement: AED 5,000, then AED 5,000 a month, capped at AED 50,000 in 12 months."
 faq:
@@ -23,7 +23,7 @@ faq:
 
 If your business had revenue of **AED 50 million or more** in its latest financial statements, e-invoicing becomes mandatory on **1 January 2027**. That's six weeks from now, with National Day and the year-end close in between.
 
-This is a week-by-week plan to get there. Every rule in it comes from the Ministry of Finance's **E-Invoicing Guidelines v2.0**, **Ministerial Decision No. 197 of 2026** and **Cabinet Decision No. 173 of 2026**. Each one has a full guide on this site, linked below.
+This is a week-by-week plan to get there. Every rule in it comes from the Ministry of Finance's **E-Invoicing Guidelines v2.1**, **Ministerial Decision No. 197 of 2026** and **Cabinet Decision No. 173 of 2026**. Each one has a full guide on this site, linked below.
 
 ![Six-week e-invoicing readiness plan from 23 November 2026 to go-live on 1 January 2027]({{ '/assets/images/e-invoicing/ei-golive-plan.webp' | relative_url }})
 {: width="1600" height="900" loading="lazy" decoding="async"}
@@ -73,4 +73,4 @@ Say so early, and keep going. The penalty for failing to implement is **AED 5,00
 
 Businesses under AED 50 million appoint an ASP by **31 March 2027** and go live by **1 July 2027**. The same six steps apply, with more time. The [Deadline Planner]({{ '/tax-deadlines/' | relative_url }}) puts both dates in your calendar.
 
-**Sources:** [UAE Electronic Invoicing Guidelines v2.0](https://mof.gov.ae/wp-content/uploads/2026/10/UAE-Electronic-Invoicing-Guidelines_En.pdf) (Ministry of Finance, 26 October 2026); Ministerial Decision No. 197 of 2026; Cabinet Decision No. 173 of 2026; Ministerial Decision No. 244 of 2025 as amended.
+**Sources:** [UAE Electronic Invoicing Guidelines v2.1](https://mof.gov.ae/einvoicing/) (Ministry of Finance, 25 November 2026); Ministerial Decision No. 197 of 2026; Cabinet Decision No. 173 of 2026; Ministerial Decision No. 244 of 2025 as amended.

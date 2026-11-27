@@ -4,10 +4,10 @@ date: 2026-11-16 13:05:00 +0400
 seo_title: "UAE E-Invoicing Five-Corner Model Explained"
 topic: "E-Invoicing"
 description: "How a UAE e-invoice moves from your ERP to your customer and the FTA, what your ASP does, what an e-invoice contains, and what to do when a customer isn't ready."
-based_on: "UAE Electronic Invoicing Guidelines v2.0"
-based_on_date: "Ministry of Finance, 26 October 2026"
-based_on_url: "https://mof.gov.ae/wp-content/uploads/2026/10/UAE-Electronic-Invoicing-Guidelines_En.pdf"
-reviewed: 2026-11-16
+based_on: "UAE Electronic Invoicing Guidelines v2.1"
+based_on_date: "Ministry of Finance, 25 November 2026"
+based_on_url: "https://mof.gov.ae/einvoicing/"
+reviewed: 2026-11-27
 image: /assets/images/e-invoicing/ei-flow-cover.png
 tldr: "A UAE e-invoice travels as PINT-AE XML through five corners: you send data to your Accredited Service Provider, which validates it and sends it over Peppol to your customer's ASP while reporting the tax data to the FTA. A PDF is no longer the invoice. The supplier stays responsible for every value, and e-invoices must be issued within 14 business days."
 faq:
@@ -51,12 +51,12 @@ The Ministry's mandatory fields list sets out **51 mandatory fields** under PINT
 - **Lines:** item name, quantity, unit of measure, unit price, discounts and charges, VAT category, rate and amount, and whether it's goods or services.
 - **Totals and VAT breakdown:** net, VAT and gross totals, amounts already paid, amount payable, and VAT by category.
 
-Some points from the clarifications in v2.0:
+Some points from the clarifications in the guidelines (v2.1):
 
 - A **VAT-registered** seller puts its **15-digit TRN** in the VAT number field. A seller that **isn't VAT-registered** uses its **10-digit TIN** in a different field. A Corporate Tax TRN must never go in the VAT field.
 - **Advance payments:** issue a tax invoice when the advance is received. The final invoice covers only the balance and refers back to the advance invoice.
 - **Credit notes:** one credit note can cover several invoices, and it can be partial. A negative invoice must be issued as a credit note.
-- **Invoice type code 480** is for supplies entirely outside the scope of UAE VAT.
+- **Invoice type code 480** is for transactions outside the scope of UAE VAT, and for invoices made up entirely of VAT-exempt or non-VAT supplies. Code 380 is for taxable supplies.
 - **HSN codes** are optional for now. The Ministry will announce when they become mandatory.
 - **You can't add your own fields** to PINT-AE.
 
@@ -83,4 +83,4 @@ The decisions require e-invoices and credit notes to be issued and transmitted *
 - **Agree a rejection process** with your ASP: who sees the failure, who fixes it, and how fast.
 - **Keep sending PDF tax invoices** to customers who aren't live yet.
 
-**Sources:** [UAE Electronic Invoicing Guidelines v2.0](https://mof.gov.ae/wp-content/uploads/2026/10/UAE-Electronic-Invoicing-Guidelines_En.pdf) (Ministry of Finance, 26 October 2026), Chapter 5, Sections 2, 3, 6, 10 and 12, and Appendix 6; [UAE Electronic Invoice Mandatory Fields v1.0](https://mof.gov.ae/wp-content/uploads/2026/02/UAE-Electronic-Invoice-mandatory-fields_V-1.0-23Feb2026.pdf).
+**Sources:** [UAE Electronic Invoicing Guidelines v2.1](https://mof.gov.ae/einvoicing/) (Ministry of Finance, 25 November 2026), Chapter 5, Sections 2, 3, 6, 10 and 12, and Appendix 6; [UAE Electronic Invoice Mandatory Fields v1.0](https://mof.gov.ae/wp-content/uploads/2026/02/UAE-Electronic-Invoice-mandatory-fields_V-1.0-23Feb2026.pdf).
