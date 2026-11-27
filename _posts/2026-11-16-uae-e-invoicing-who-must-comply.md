@@ -3,11 +3,11 @@ title: "Does UAE E-Invoicing Apply to Your Business? Scope, Exclusions and Your 
 date: 2026-11-16 13:00:00 +0400
 seo_title: "UAE E-Invoicing: Who Must Comply and When"
 topic: "E-Invoicing"
-description: "Who UAE e-invoicing applies to, what is excluded, how the AED 50 million test works, and your deadlines to appoint an ASP and go live, per Guidelines v2.0."
-based_on: "UAE Electronic Invoicing Guidelines v2.0"
-based_on_date: "Ministry of Finance, 26 October 2026"
-based_on_url: "https://mof.gov.ae/wp-content/uploads/2026/10/UAE-Electronic-Invoicing-Guidelines_En.pdf"
-reviewed: 2026-11-16
+description: "Who UAE e-invoicing applies to, what is excluded, how the AED 50 million test works, and your deadlines to appoint an ASP and go live, per Guidelines v2.1."
+based_on: "UAE Electronic Invoicing Guidelines v2.1"
+based_on_date: "Ministry of Finance, 25 November 2026"
+based_on_url: "https://mof.gov.ae/einvoicing/"
+reviewed: 2026-11-27
 image: /assets/images/e-invoicing/ei-scope-cover.png
 tldr: "UAE e-invoicing applies to every business doing B2B or B2G business in the UAE, whether or not it is VAT-registered, including free zone businesses. Businesses with revenue of AED 50 million or more had to appoint an ASP by 30 October 2026 and go live by 1 January 2027; smaller businesses appoint by 31 March 2027 and go live by 1 July 2027. Sales to consumers are excluded."
 faq:
@@ -19,7 +19,7 @@ faq:
     a: "No. B2C supplies are excluded. You keep issuing normal VAT invoices or receipts to consumers."
 ---
 
-The question I hear most about e-invoicing is "does this even apply to us?" Usually it comes from businesses that aren't VAT registered, or that only invoice group companies. The Ministry of Finance answered most of it in **version 2.0 of the UAE Electronic Invoicing Guidelines**, published on 26 October 2026.
+The question I hear most about e-invoicing is "does this even apply to us?" Usually it comes from businesses that aren't VAT registered, or that only invoice group companies. The Ministry of Finance answers most of it in the **UAE Electronic Invoicing Guidelines**, now at version 2.1 (25 November 2026).
 
 Short answer: if you do business in the UAE, assume you're in scope until you find a specific exclusion.
 
@@ -76,4 +76,4 @@ The deadline to appoint an ASP was **30 October 2026**, and go-live is about six
 - **List intra-VAT-group flows** separately, since they're deferred, not exempt.
 - **Pick your ASP.** Here's [what to check before you sign]({% post_url 2026-11-16-choosing-uae-e-invoicing-asp %}).
 
-**Sources:** [UAE Electronic Invoicing Guidelines v2.0](https://mof.gov.ae/wp-content/uploads/2026/10/UAE-Electronic-Invoicing-Guidelines_En.pdf) (Ministry of Finance, 26 October 2026), Chapters 6 to 8; Ministerial Decision No. 244 of 2025 as amended.
+**Sources:** [UAE Electronic Invoicing Guidelines v2.1](https://mof.gov.ae/einvoicing/) (Ministry of Finance, 25 November 2026), Chapters 6 to 8; Ministerial Decision No. 244 of 2025 as amended.
